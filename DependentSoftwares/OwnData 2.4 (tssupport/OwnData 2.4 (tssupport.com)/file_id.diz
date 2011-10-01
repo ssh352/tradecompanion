@@ -1,0 +1,52 @@
+Allows you using third party data in TradeStation 8.
+
+OwnData v2.4 Buid 321.940
+www.tssupport.com 
+Price: Permanent license $995.00; Monthly lease $49.00 per month 
+
+OwnData 2.2 is the second generation of unique software that allows you using
+third party data in TradeStation 8. OwnData 2.2 opens eSignal, Interactive
+Brokers (TWS), Patsystems (J-Trader), IQFeed, MarketCast, TradeStation2000i
+GlobalServer, CyberTrader, Universal DDE, ASCII (plain text) and other data
+sources to you. It allows you importing ASCII files to native TradeStation 8
+data and gives you a backup in case of any problems with the TradeStation
+Securities feed.
+
+Features
+
+• Improved stability, user interface and compatibility with TradeStation 8
+(Build 2172), simple installation, automatic switch to the latest TradeStation 8
+build.
+
+• Supported data sources: eSignal, Interactive Brokers (TWS), Patsystems
+(J-Trader), TradeStation2000i GlobalServer, TradeStation Securities, Universal
+DDE (20 predefined templates), ASCII (plain text). New data sources can be
+connected on your demand. To receive further information concerning the OwnData
+2.2 API for developers please send us a request.
+
+• A local quote management system for data storage and rapid access to it. All
+the data is stored in the local database, so you don't need to download it over
+and over again. Also, OwnData 2.2 allows you using the received data in offline mode.
+
+• Advanced import of ASCII data into symbols of any data feeds. Automatic
+recognizing of most known formats, high performance and support for
+multigigabyte files. TradeStation 8 users are able to combine native and 3d
+party ASCII data.
+
+• Advanced ASCII mapping. Sometimes importing data to the database is extremely
+complicated or outright impossible. In such a case ASCII mapping is the
+solution, especially if one or several ASCII files constantly used are
+periodically updated. Even if there are just a few updates per day, re-importing
+hundreds of symbols is difficult or just not feasible. When mapping, the file
+path and format is indicated once, and every time a chart is created the program
+finds the file automatically, converts it into the necessary format based on the
+preset configuration and displays the data.
+
+• Charts from different data sources can be used in the same Chart Analysis Window.
+
+• Data Sampling. Automatic creation of minutes from ticks, days from minutes, etc.
+
+• A simplified system of queries creation in TradeStation 8. The selection of
+the desired symbol and data provider is determined by the symbol name and
+prefix. For instance, a query for 'IB:MSFT:A' will return ask data from
+Interactive Brokers for MSFT symbol.

@@ -1,0 +1,72 @@
+
+Dump of file c:/Windows/system32/NSTFEED.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    KERNEL32.dll
+    USER32.dll
+    MSVCRTD.dll
+
+File Type: DLL
+
+  Section contains the following exports for NSTFeed.dll
+
+    00000000 characteristics
+    45B6C09C time date stamp Wed Jan 24 07:42:44 2007
+        0.00 version
+           1 ordinal base
+          39 number of functions
+          39 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0000100A DLLRemoveTicker
+          1    1 00001064 DLLRemoveTicker2
+          4    2 0000107D DLLRequestTicker
+          3    3 00001073 DLLRequestTicker2
+          6    4 000010B4 EXERemoveTicker
+          5    5 000010A5 EXERemoveTicker2
+          8    6 0000105A EXERequestTicker
+          7    7 000010F0 EXERequestTicker2
+          9    8 000010EB GetUserIDPassword
+         10    9 00001069 LoadDLL
+         11    A 000010E6 NSTCOMMITROW
+         13    B 000010AF NSTGETLABEL
+         12    C 0000105F NSTGETLABEL2
+         15    D 000010BE NSTGETLASTUPDATEINDEX
+         14    E 000010C8 NSTGETLASTUPDATEINDEX2
+         17    F 000010B9 NSTGETLASTXDATAROWS
+         16   10 00001023 NSTGETLASTXDATAROWS2
+         19   11 0000100F NSTGETNUMCOLS
+         18   12 0000103C NSTGETNUMCOLS2
+         21   13 000010A0 NSTGETNUMROWS
+         20   14 00001019 NSTGETNUMROWS2
+         22   15 0000102D NSTGETNUMTICKERS
+         23   16 00001055 NSTGETTICKER
+         25   17 000010D2 NSTREQUESTFREQ
+         24   18 000010FA NSTREQUESTFREQ2
+         26   19 000010E1 NSTSETLABEL
+         27   1A 0000108C NSTSETUPDATA
+         28   1B 00001014 NSTSETVALUE
+         30   1C 0000104B NSTUPDATELASTXDATAROWS
+         29   1D 000010C3 NSTUPDATELASTXDATAROWS2
+         31   1E 00001078 NSTUPDATETABLES
+         32   1F 00001041 RequireUserIDPassword
+         33   20 0000101E SetDataFeedhwnd
+         34   21 0000109B SetNSThwnd
+         35   22 00001032 SetUserIDPassword
+         36   23 0000106E UnloadDLL
+         37   24 000010CD UnloadEXE
+         38   25 00001005 UpdatePercent
+         39   26 00001037 UserIDPasswordRequired
+
+  Summary
+
+        4000 .data
+        1000 .idata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+       17000 .text

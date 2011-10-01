@@ -1,0 +1,41 @@
+-- Add a new column with a column-level constraint
+-- to an existing table
+-- An exception will be thrown if the table
+-- contains any rows
+-- since the newcol will be initialized to NULL
+-- in all existing rows in the table
+ALTER TABLE CITIES ADD COLUMN REGION VARCHAR(26)
+CONSTRAINT NEW_CONSTRAINT CHECK (REGION IS NOT NULL);
+
+-- Add a new unique constraint to an existing table
+-- An exception will be thrown if duplicate keys are found
+ALTER TABLE SAMP.DEPARTMENT
+ADD CONSTRAINT NEW_UNIQUE UNIQUE (DEPTNO);
+
+-- add a new foreign key constraint to the
+-- Cities table. Each row in Cities is checked
+-- to make sure it satisfied the constraints.
+-- if any rows don't satisfy the constraint, the
+-- constraint is not added
+ALTER TABLE CITIES ADD CONSTRAINT COUNTRY_FK
+Foreign Key (COUNTRY) REFERENCES COUNTRIES (COUNTRY);
+
+-- Add a primary key constraint to a table
+-- First, create a new table
+CREATE TABLE ACTIVITIES (CITY_ID INT NOT NULL,
+SEASON CHAR(2), ACTIVITY VARCHAR(32) NOT NULL);
+-- You will not be able to add this constraint if the
+-- columns you are including in the primary key have
+-- null data or duplicate values.
+ALTER TABLE Activities ADD PRIMARY KEY (city_id, activity);
+
+-- Drop a primary key constraint from the CITIES table
+ALTER TABLE Cities DROP CONSTRAINT Cities_PK;
+-- Drop a foreign key constraint from the CITIES table
+ALTER TABLE Cities DROP CONSTRAINT COUNTRIES_FK;
+-- add a DEPTNO column with a default value of 1
+ALTER TABLE SAMP.EMP_ACT ADD COLUMN DEPTNO INT DEFAULT 1;
+-- increase the width of a VARCHAR column
+ALTER TABLE SAMP.EMP_PHOTO ALTER PHOTO_FORMAT SET DATA TYPE VARCHAR(30);
+-- change the lock granularity of a table
+ALTER TABLE SAMP.SALES LOCKSIZE TABLE;

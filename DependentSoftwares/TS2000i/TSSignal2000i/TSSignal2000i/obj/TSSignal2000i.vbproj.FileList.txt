@@ -1,0 +1,12 @@
+obj\Debug\TSSignal2000i.exe
+obj\Debug\TSSignal2000i.pdb
+bin\TSSignal2000i.exe
+bin\TSSignal2000i.pdb
+bin\TSSignal2000i.xml
+bin\Interop.ORTCLib.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.ORTCLib.dll
+obj\Debug\TSSignal2000i.vbproj.ResolveComReference.cache
+obj\Debug\TSSignal2000i.vbproj.GenerateResource.Cache
+obj\Debug\TSSignal2000i.xml
+obj\Debug\TSSignal2000i.frmMain.resources

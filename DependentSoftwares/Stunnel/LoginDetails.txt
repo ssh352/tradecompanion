@@ -1,0 +1,25 @@
+replace pbcx10301str.pem with the file in thw installed directory of stunnel
+
+replace the text in the file stunnel.conf with the below, and change the path according to the installled
+location of stunnel:
+
+;
+; stunnel configuration file MS Windows XP
+;
+client=yes
+socket=a:TCP_NODELAY=1
+socket=r:TCP_NODELAY=1
+output=c:\Program Files\stunnel\stunnel.log
+
+[cxStream]
+cert=c:\Program Files\stunnel\pbcx10301str.pem
+connect=63.111.184.124:442
+accept=5000
+
+
+
+MarketData thiough Stunnel Software:
+localhost
+5000
+pbcx10301str
+CNX
