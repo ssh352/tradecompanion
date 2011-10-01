@@ -1,0 +1,96 @@
+
+
+FUTURE TASKS
+============
+Integration with MT4
+	Reading registry and Sending automatic alerts to TC
+
+PL window for Admin
+	Strategy performance report per trader
+
+Implement a third backup to stop bad ticks
+
+Clean up website forum : Delete existing member list and forum threads
+
+Change Manual order dialog box for Limit Orders
+
+Set to Zero functionality : make all columns to zero in Trade companion and export orders to start from scratch 
+
+Graph for Strategy performance report for Admin
+
+Graph for Strategy performance report for Trade Companion
+
+Alert to be sent as an email overnight if TradeCompanion goes down
+
+Old data (database) to be retained on reinstallation
+
+Modifying database for Admin 
+
+Updating the help file, giving a professional look
+
+Support TC in any language
+
+
+BUGS TO BE FIXED
+----------------
+	Bug in mapping table : deleting and modifying trade size
+	Trade id to be automatically added to SPR on new connection	
+	Exception with frequent Connect disconnect Market data in Ariel 
+
+SUGGESTIONs
+-----------
+
+Monitoring Trade companion through admin 
+	Restricting Invalid users
+	Active / Inactive users
+	Forceful logout through admin
+	Extra export features for Admin
+	Cleaning the server database
+Version and Trading ID to be logged on the server for Admin
+User readable log Window on trade companion
+Existing users to be notified if new version trade comapnion is available though email and popup on system tray
+Restrict users : not to use the old version
+Notification[News] to be sent to all active users as a popup in system tray (as it happens in trade station)
+Status bar for trade companion
+Showing busy symbol in strategy performance report while SPR is being processed
+Using string table for messageboxes
+
+
+	
+Estimation [Future Tasks+Bugs+Suggestions]
+==========================================
+
+Installation of MT4 and understanding 		- 3  days
+Integrating MT4 with Trade Companion  		- 3  days
+Modifying database for admin			- 2  days
+PL Window for Admin				- 12 days
+Implement a third backup to stop bad ticks	- 2  days
+Clean up website forum 				- 1  day
+Change Manual order dialog box for Limit Orders [Estimation after requirements are clear]
+Set to Zero functionality 			- 7 days
+Graph in Strategy performance report for Admin	- 5 days
+Graph in SPR for Trade Companion		- 5 days
+Alert to be sent if TradeCompanion goes down	- 10 days
+Old data DB to be retained on reinstallation	- 7 days
+Bug Fixes mentioned above			- 3 days
+
+Monitoring Trade companion			- 20 days
+Version and Trading ID to be logged		- 1 day
+User readable log Window on trade companion	- 5 days
+Existing users to be notified if new version	- 4 days
+Notification[News] to be sent to users		- 4 days
+Status bar for trade companion			- 4 days
+Showing busy symbol in SPR			- 2 days
+
+Buffer						- 10 days
+Testing						- 5 days
+
+				TOTAL		- 115  man days
+	
+
+ 
+
+
+
+
+

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Currenex-dtd  Version 2.0-->
+<!--Wny do we use adjustable date?   -->
+<!-- CurrenexDownload is the root element of the response XML.  It can contain either an Error element or a Trades element -->
+<!ELEMENT CurrenexDownload (Error | Trades)>
+<!-- The Error element tells the requester that trades cannot be returned due to some error, either due to the requeter's request message or some internal error with the service. -->
+<!ELEMENT Error (ErrorCode, ErrorDescription)>
+<!-- Specifies the error code.  Please refer to the error table for details. -->
+<!ELEMENT ErrorCode (#PCDATA)>
+<!-- Provides an actual description to the error code. -->
+<!ELEMENT ErrorDescription (#PCDATA)>
+<!-- Contains 0 or more Trade elements.  It is not an error to receive 0 Trade element. -->
+<!ELEMENT Trades (party*, trade*, tradeError*)>
+<!-- ENTITY(Class) Definition -->
+<!ENTITY % Crx_AmenderComment "amender,  comment">
+<!ENTITY % Crx_Amendment "date, amenderComment+">
+<!ENTITY % Crx_DefinedField "fieldName, fieldValue">
+<!ENTITY % Crx_Event "eventType, eventDateTime,  amendment?">
+<!ENTITY % Crx_SettlementInstruction " beneficiaryName?, beneficiaryBIC?, beneficiaryAccountNumber?, beneficiaryInformation?, field83JSWIFTInformation?, bankName, bankBIC?, bankAccountNumber?, bankClearingRoutingCode?, intermediaryBankName?, intermediaryBankBIC?, intermediaryBankClearingCode?, counterpartySettlementMemo?, internalSettlementMemo?">
+<!ENTITY % Crx_LinkId "tradeId, linkIdType">
+<!ENTITY % Crx_Quotes "tradeQuote*, marketQuote*">
+<!ENTITY % Crx_TradeQuote "trader,  winningQuote?, quote ">
+<!ENTITY % Crx_MarketQuote "marketQuotePartyReference, quote">
+<!ENTITY % Crx_Quote "date, effectiveRate,  bid?, offer?, %Crx_QuoteDirection;  ">
+<!ENTITY % Crx_EffectiveRate "rate, farRate?">
+<!ENTITY % Crx_OneWayPrice "spotRate?, points?, farPoints?">
+<!ENTITY % Crx_TypedPartyId "partyId, partyIdType">
+<!ENTITY % Crx_PartyUser "partyReference, userId, userName?">
+<!ENTITY % Crx_TradeError "partyTradeIdentifier, tradeErrorMessage">
+<!ENTITY % Crx_TradeRequest "requesterPartyReference, buySell, quoteDirection?, specifiedMoney, againstCurrency?, tenor, farTenor?,  farAmount?, deliveryType?, comment?">
+<!ENTITY % Crx_CashFlow "%FpML_Money; ,  buyerPartyReference , valueDate? ,  settlementInstruction?">
+<!ENTITY % Crx_QuoteDirection "currency1 , currency2? , quoteBasis?">
+<!ENTITY % Crx_Deposit "initialPrincipalPayment, finalPrincipalPayment, dayCountConvention, fixedRate, interestPayment?">
+<!ENTITY % Crx_Tenor "(period | valueDate)">
+<!ENTITY % FpML_AdjustableDate "unadjustedDate , dateAdjustments">
+<!ENTITY % FpML_BusinessCenterTime "hourMinuteTime , businessCenter">
+<!ENTITY % FpML_BusinessDayAdjustments "businessDayConvention , (businessCentersReference | businessCenters)?">
+<!ENTITY % FpML_BusinessCenters "businessCenter+">
+<!ENTITY % FpML_BusinessCenterDateTime "date , %FpML_BusinessCenterTime;">
+<!ENTITY % FpML_Fixing "currency1 , currency2 , rateSource , %FpML_BusinessCenterDateTime;">
+<!ENTITY % FpML_FXLeg " cashFlow1, cashFlow2,  valueDate , exchangeRate ">
+<!ENTITY % FpML_Product "productType? , (fxLeg* |  deposit)">
+<!ENTITY % FpML_Party "typedPartyId+ , partyName?">
+<!ENTITY % FpML_PartyTradeIdentifier "partyReference , tradeId+ , linkId*">
+<!ENTITY % FpML_Message " party*, trade*, tradeError*">
+<!ENTITY % FpML_Money "currency , amount">
+<!ENTITY % FpML_Fee "payerPartyReference , receiverPartyReference , paymentType? , paymentAmount , paymentDate? , adjustedPaymentDate?">
+<!ENTITY % FpML_FXCashSettlement "settlementCurrency , fixing+">
+<!ENTITY % FpML_FXRate "%Crx_QuoteDirection; , rate, spotRate?, points?">
+<!ENTITY % FpML_Trade "tradeHeader, tradeRequest?,  product ,  definedField*, otherPartyPayment*, quotes?">
+<!ENTITY % FpML_TradeHeader "partyTradeIdentifier+ , tradeDateTime, tradeStatus,  trader*, subFund?, event?,  pendingAction?, otherPartyReference?">
+<!--Start of complex  element definitions  ======================================================================================-->
+<!ELEMENT amender (%Crx_PartyUser;)>
+<!ATTLIST amender
+	type NMTOKEN #FIXED "PartyUser"
+>
+<!ELEMENT amenderComment (%Crx_AmenderComment;)>
+<!ATTLIST amenderComment
+	type NMTOKEN #FIXED "AmenderComment"
+>
+<!ELEMENT amendment (%Crx_Amendment;)>
+<!ATTLIST amendment
+	type NMTOKEN #FIXED "Amendment"
+>
+<!ELEMENT bid (%Crx_OneWayPrice;)>
+<!ATTLIST bid
+	type NMTOKEN #FIXED "OneWayPrice"
+>
+<!ELEMENT offer (%Crx_OneWayPrice;)>
+<!ATTLIST offer
+	type NMTOKEN #FIXED "OneWayPrice"
+>
+<!ELEMENT deposit (%Crx_Deposit;)>
+<!ATTLIST deposit
+	type NMTOKEN #FIXED "OneWayPrice"
+>
+<!ELEMENT businessCenters (%FpML_BusinessCenters;)>
+<!ATTLIST businessCenters
+	id ID #REQUIRED
+	type NMTOKEN #FIXED "BusinessCenters"
+>
+<!ELEMENT cashFlow1 (%Crx_CashFlow;)>
+<!ATTLIST cashFlow1
+	type NMTOKEN #FIXED "CashFlow"
+>
+<!ELEMENT cashFlow2 (%Crx_CashFlow;)>
+<!ATTLIST cashFlow2
+	type NMTOKEN #FIXED "CashFlow"
+>
+<!ELEMENT dateAdjustments (%FpML_BusinessDayAdjustments;)>
+<!ATTLIST dateAdjustments
+	type NMTOKEN #FIXED "BusinessDayAdjustments"
+>
+<!ELEMENT definedField (%Crx_DefinedField;)>
+<!ATTLIST definedField
+	type NMTOKEN #FIXED "DefinedField"
+>
+<!ELEMENT event (%Crx_Event;)>
+<!ATTLIST event
+	type NMTOKEN #FIXED "Event"
+>
+<!ELEMENT exchangeRate (%FpML_FXRate;)>
+<!ATTLIST exchangeRate
+	type NMTOKEN #FIXED "FXRate"
+>
+<!ELEMENT farTenor (%Crx_Tenor;)>
+<!ATTLIST farTenor
+	type NMTOKEN #FIXED "Tenor"
+>
+<!ELEMENT finalPrincipalPayment (%Crx_CashFlow;)>
+<!ATTLIST finalPrincipalPayment
+	type NMTOKEN #FIXED "CashFlow"
+>
+<!ELEMENT fixing (%FpML_Fixing;)>
+<!ATTLIST fixing
+	type NMTOKEN #FIXED "Fixing"
+>
+<!ELEMENT fxLeg (%FpML_FXLeg;)>
+<!ATTLIST fxLeg
+	type NMTOKEN #FIXED "FXLeg"
+>
+<!ELEMENT initialPrincipalPayment (%Crx_CashFlow;)>
+<!ATTLIST initialPrincipalPayment
+	type NMTOKEN #FIXED "CashFlow"
+>
+<!ELEMENT interestPayment (%Crx_CashFlow;)>
+<!ATTLIST interestPayment
+	type NMTOKEN #FIXED "CashFlow"
+>
+<!ELEMENT linkId (%Crx_LinkId;)>
+<!ATTLIST linkId
+	type NMTOKEN #FIXED "LinkId"
+>
+<!ELEMENT money (%FpML_Money;)>
+<!ATTLIST money
+	type NMTOKEN #FIXED "Money"
+>
+<!ELEMENT nonDeliverableForward (%FpML_FXCashSettlement;)>
+<!ATTLIST nonDeliverableForward
+	type NMTOKEN #FIXED "FXCashSettlement"
+>
+<!ELEMENT otherPartyPayment (%FpML_Fee;)>
+<!ATTLIST otherPartyPayment
+	type NMTOKEN #FIXED "Fee"
+>
+<!ELEMENT quotes (%Crx_Quotes;)>
+<!ATTLIST quotes
+	type NMTOKEN #FIXED "OtherQuotes"
+>
+<!ELEMENT tradeQuote (%Crx_TradeQuote;)>
+<!ATTLIST tradeQuote
+	type NMTOKEN #FIXED "TradeQuote"
+>
+<!ELEMENT marketQuote (%Crx_MarketQuote;)>
+<!ATTLIST marketQuote
+	type NMTOKEN #FIXED "MarketQuote"
+>
+<!ELEMENT quote (%Crx_Quote;)>
+<!ATTLIST quote
+	type NMTOKEN #FIXED "Quote"
+>
+<!ELEMENT effectiveRate (%Crx_EffectiveRate;)>
+<!ATTLIST effectiveRate
+	type NMTOKEN #FIXED "EffectiveRate"
+>
+<!ELEMENT party (%FpML_Party;)>
+<!ATTLIST party
+	id ID #REQUIRED
+	type NMTOKEN #FIXED "Party"
+>
+<!ELEMENT partyTradeIdentifier (%FpML_PartyTradeIdentifier;)>
+<!ATTLIST partyTradeIdentifier
+	type NMTOKEN #FIXED "PartyTradeIdentifier"
+>
+<!ELEMENT paymentAmount (%FpML_Money;)>
+<!ATTLIST paymentAmount
+	type NMTOKEN #FIXED "Money"
+>
+<!ELEMENT paymentDate (%FpML_AdjustableDate;)>
+<!ATTLIST paymentDate
+	type NMTOKEN #FIXED "AdjustableDate"
+>
+<!ELEMENT product (%FpML_Product;)>
+<!ATTLIST product
+	type NMTOKEN #FIXED "Product"
+>
+<!ELEMENT quoteDirection (%Crx_QuoteDirection;)>
+<!ATTLIST quoteDirection
+	type NMTOKEN #FIXED "QuoteDirection"
+>
+<!ELEMENT settlementInstruction (%Crx_SettlementInstruction;)>
+<!ATTLIST settlementInstruction
+	type NMTOKEN #FIXED "SettlementInstruction"
+>
+<!ELEMENT specifiedMoney (%FpML_Money;)>
+<!ATTLIST specifiedMoney
+	type NMTOKEN #FIXED "Money"
+>
+<!ELEMENT tenor (%Crx_Tenor;)>
+<!ATTLIST tenor
+	type NMTOKEN #FIXED "Tenor"
+>
+<!ELEMENT trade (%FpML_Trade;)>
+<!ATTLIST trade
+	type NMTOKEN #FIXED "Trade"
+	base NMTOKEN #FIXED "Product"
+>
+<!ELEMENT tradeError (%Crx_TradeError;)>
+<!ATTLIST trade
+	type NMTOKEN #FIXED "TradeError"
+>
+<!ELEMENT trader (%Crx_PartyUser;)>
+<!ATTLIST trader
+	type NMTOKEN #FIXED "PartyUser"
+>
+<!ELEMENT tradeHeader (%FpML_TradeHeader;)>
+<!ATTLIST tradeHeader
+	type NMTOKEN #FIXED "TradeHeader"
+>
+<!ELEMENT tradeRequest (%Crx_TradeRequest;)>
+<!ATTLIST tradeRequest
+	type NMTOKEN #FIXED "TradeRequest"
+>
+<!ELEMENT typedPartyId (%Crx_TypedPartyId;)>
+<!ATTLIST typedPartyId
+	type NMTOKEN #FIXED "TypedPartyId"
+>
+<!--Start of simple  element definitions  ======================================================================================-->
+<!ELEMENT adjustedPaymentDate (#PCDATA)>
+<!ATTLIST adjustedPaymentDate
+	type NMTOKEN #FIXED "date"
+>
+<!ELEMENT againstCurrency (#PCDATA)>
+<!ATTLIST againstCurrency
+	type NMTOKEN #FIXED "string"
+	currencyScheme CDATA #IMPLIED
+>
+<!ELEMENT amount (#PCDATA)>
+<!ATTLIST amount
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT beneficiaryName (#PCDATA)>
+<!ATTLIST beneficiaryName
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT beneficiaryBIC (#PCDATA)>
+<!ATTLIST beneficiaryBIC
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT beneficiaryAccountNumber (#PCDATA)>
+<!ATTLIST beneficiaryAccountNumber
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT beneficiaryInformation (#PCDATA)>
+<!ATTLIST beneficiaryInformation
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT bankName (#PCDATA)>
+<!ATTLIST bankName
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT bankBIC (#PCDATA)>
+<!ATTLIST bankBIC
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT bankAccountNumber (#PCDATA)>
+<!ATTLIST bankAccountNumber
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT bankClearingRoutingCode (#PCDATA)>
+<!ATTLIST bankClearingRoutingCode
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT intermediaryBankName (#PCDATA)>
+<!ATTLIST intermediaryBankName
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT intermediaryBankBIC (#PCDATA)>
+<!ATTLIST intermediaryBankBIC
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT intermediaryBankClearingCode (#PCDATA)>
+<!ATTLIST intermediaryBankClearingCode
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT counterpartySettlementMemo (#PCDATA)>
+<!ATTLIST counterpartySettlementMemo
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT internalSettlementMemo (#PCDATA)>
+<!ATTLIST internalSettlementMemo
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT businessCenter (#PCDATA)>
+<!ATTLIST businessCenter
+	type NMTOKEN #FIXED "string"
+	businessCenterScheme CDATA #IMPLIED
+>
+<!ELEMENT businessCentersReference EMPTY>
+<!ATTLIST businessCentersReference
+	href CDATA #IMPLIED
+>
+<!ELEMENT businessDayConvention (#PCDATA)>
+<!ATTLIST businessDayConvention
+	type NMTOKEN #FIXED "string"
+	businessDayConventionScheme CDATA #IMPLIED
+>
+<!ELEMENT buyerPartyReference EMPTY>
+<!ATTLIST buyerPartyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT marketQuotePartyReference EMPTY>
+<!ATTLIST marketQuotePartyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT buySell (#PCDATA)>
+<!ATTLIST buySell
+	type NMTOKEN #FIXED "string"
+	value NMTOKENS #FIXED "BUY SELL"
+>
+<!ELEMENT comment (#PCDATA)>
+<!ATTLIST comment
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT currency (#PCDATA)>
+<!ATTLIST currency
+	type NMTOKEN #FIXED "string"
+	currencyScheme CDATA #IMPLIED
+>
+<!ELEMENT currency1 (#PCDATA)>
+<!ATTLIST currency1
+	type NMTOKEN #FIXED "string"
+	currencyScheme CDATA #IMPLIED
+>
+<!ELEMENT currency1BuyerPartyReference EMPTY>
+<!ATTLIST currency1BuyerPartyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT currency1ValueDate (#PCDATA)>
+<!ATTLIST currency1ValueDate
+	type NMTOKEN #FIXED "date"
+>
+<!ELEMENT currency2 (#PCDATA)>
+<!ATTLIST currency2
+	type NMTOKEN #FIXED "string"
+	currencyScheme CDATA #IMPLIED
+>
+<!ELEMENT currency2BuyerPartyReference EMPTY>
+<!ATTLIST currency2BuyerPartyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT currency2ValueDate (#PCDATA)>
+<!ATTLIST currency2ValueDate
+	type NMTOKEN #FIXED "date"
+>
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date
+	type NMTOKEN #FIXED "date"
+>
+<!ELEMENT dayCountConvention (#PCDATA)>
+<!ATTLIST dayCountConvention
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT deliveryType (#PCDATA)>
+<!ATTLIST deliveryType
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT eventDateTime (#PCDATA)>
+<!ATTLIST eventDateTime
+	type NMTOKEN #FIXED "date"
+>
+<!ELEMENT eventType (#PCDATA)>
+<!ATTLIST eventType
+	type NMTOKEN #FIXED "string"
+	eventTypeScheme CDATA #IMPLIED
+>
+<!ELEMENT farAmount (#PCDATA)>
+<!ATTLIST farAmount
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT fixedRate (#PCDATA)>
+<!ATTLIST fixedRate
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT field83JSWIFTInformation (#PCDATA)>
+<!ATTLIST field83JSWIFTInformation
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT fieldName (#PCDATA)>
+<!ATTLIST fieldName
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT fieldValue (#PCDATA)>
+<!ATTLIST fieldValue
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT hourMinuteTime (#PCDATA)>
+<!ATTLIST hourMinuteTime
+	type NMTOKEN #FIXED "time"
+>
+<!ELEMENT linkIdType (#PCDATA)>
+<!ATTLIST linkIdType
+	type NMTOKEN #FIXED "string"
+	linkIdTypeScheme CDATA #IMPLIED
+>
+<!ELEMENT otherPartyReference EMPTY>
+<!ATTLIST otherPartyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT partyId (#PCDATA)>
+<!ATTLIST partyId
+	type NMTOKEN #FIXED "string"
+	partyIdScheme CDATA #IMPLIED
+>
+<!ELEMENT partyIdType (#PCDATA)>
+<!ATTLIST partyIdType
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT partyName (#PCDATA)>
+<!ATTLIST partyName
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT partyReference EMPTY>
+<!ATTLIST partyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT payerPartyReference EMPTY>
+<!ATTLIST payerPartyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT paymentType (#PCDATA)>
+<!ATTLIST paymentType
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT pendingAction (#PCDATA)>
+<!ATTLIST pendingAction
+	type NMTOKEN #FIXED "string"
+	pendingActionScheme CDATA #IMPLIED
+>
+<!ELEMENT period (#PCDATA)>
+<!ATTLIST period
+	type NMTOKEN #FIXED "string"
+	periodScheme CDATA #IMPLIED
+>
+<!ELEMENT points (#PCDATA)>
+<!ATTLIST points
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT farPoints (#PCDATA)>
+<!ATTLIST farPoints
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT productType (#PCDATA)>
+<!ATTLIST productType
+	type NMTOKEN #FIXED "string"
+	productTypeScheme CDATA #IMPLIED
+>
+<!ELEMENT quoteBasis (#PCDATA)>
+<!ATTLIST quoteBasis
+	type NMTOKEN #FIXED "string"
+	quoteBasisScheme CDATA #IMPLIED
+>
+<!ELEMENT rate (#PCDATA)>
+<!ATTLIST rate
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT farRate (#PCDATA)>
+<!ATTLIST farRate
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT rateSource (#PCDATA)>
+<!ATTLIST rateSource
+	type NMTOKEN #FIXED "string"
+	fxRateSourceScheme CDATA #IMPLIED
+>
+<!ELEMENT requesterPartyReference EMPTY>
+<!ATTLIST requesterPartyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT receiverPartyReference EMPTY>
+<!ATTLIST receiverPartyReference
+	href CDATA #REQUIRED
+>
+<!ELEMENT settlementCurrency (#PCDATA)>
+<!ATTLIST settlementCurrency
+	type NMTOKEN #FIXED "string"
+	currencyScheme CDATA #IMPLIED
+>
+<!ELEMENT spotRate (#PCDATA)>
+<!ATTLIST spotRate
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT nearRate (#PCDATA)>
+<!ATTLIST nearRate
+	type NMTOKEN #FIXED "decimal"
+>
+<!ELEMENT subFund (#PCDATA)>
+<!ATTLIST subFund
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT tradeDateTime (#PCDATA)>
+<!ATTLIST tradeDateTime
+	type NMTOKEN #FIXED "dateTime"
+>
+<!ELEMENT tradeErrorMessage (#PCDATA)>
+<!ATTLIST tradeErrorMessage
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT tradeId (#PCDATA)>
+<!ATTLIST tradeId
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT tradeStatus (#PCDATA)>
+<!ATTLIST tradeStatus
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT userId (#PCDATA)>
+<!ATTLIST userId
+	type NMTOKEN #FIXED "string"
+	tradeIdScheme CDATA #IMPLIED
+>
+<!ELEMENT userName (#PCDATA)>
+<!ATTLIST userName
+	type NMTOKEN #FIXED "string"
+>
+<!ELEMENT unadjustedDate (#PCDATA)>
+<!ATTLIST unadjustedDate
+	type NMTOKEN #FIXED "date"
+>
+<!ELEMENT valueDate (#PCDATA)>
+<!ATTLIST valueDate
+	type NMTOKEN #FIXED "date"
+>
+<!ELEMENT winningQuote EMPTY>

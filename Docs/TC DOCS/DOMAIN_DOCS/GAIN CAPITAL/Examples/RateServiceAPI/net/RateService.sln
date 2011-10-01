@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RateServiceAPI", "RateServiceAPI\RateServiceAPI.vbproj", "{4E00515B-4230-4CA4-AC11-2045E0E58B01}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RateServiceExampleVB", "RateServiceExampleVB\RateServiceExampleVB.vbproj", "{D82E010E-4BDE-49B8-BC8F-6466B5DC59A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E00515B-4230-4CA4-AC11-2045E0E58B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E00515B-4230-4CA4-AC11-2045E0E58B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E00515B-4230-4CA4-AC11-2045E0E58B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E00515B-4230-4CA4-AC11-2045E0E58B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D82E010E-4BDE-49B8-BC8F-6466B5DC59A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82E010E-4BDE-49B8-BC8F-6466B5DC59A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82E010E-4BDE-49B8-BC8F-6466B5DC59A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82E010E-4BDE-49B8-BC8F-6466B5DC59A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

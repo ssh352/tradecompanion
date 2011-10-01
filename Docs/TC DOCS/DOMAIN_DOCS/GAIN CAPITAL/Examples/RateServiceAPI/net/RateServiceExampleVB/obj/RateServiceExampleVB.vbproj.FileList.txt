@@ -1,0 +1,8 @@
+obj\Release\RateServiceExampleVB.exe
+bin\RateServiceExampleVB.exe
+bin\RateServiceExampleVB.xml
+bin\RateServiceAPI.dll
+bin\RateServiceAPI.pdb
+bin\RateServiceAPI.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\RateServiceExampleVB.xml

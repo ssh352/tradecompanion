@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ExampleClientVS7">
+</Property><Property Name="Solution File" Value="D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\ExampleClientVS7.sln">
+</Property><Property Name="User Options File" Value="D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\ExampleClientVS7.suo">
+</Property><Property Name="Date" Value="Thursday, January 10, 2008">
+</Property><Property Name="Time" Value="12:15 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ExampleClientVS7.sln" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\ExampleClientVS7.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ExampleClientVS7.suo" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\ExampleClientVS7.suo">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="ExampleClientVS7.vbproj" Description="Project file successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\ExampleClientVS7.vbproj">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="ExampleClientVS7.vbproj.user" Description="Project user file successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\ExampleClientVS7.vbproj.user">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="AssemblyInfo.vb" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="Form1.vb" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\Form1.vb">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="Web References\com.efxnow.api\Reference.vb" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\Web References\com.efxnow.api\Reference.vb">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="Web References\com.efxnow.api\Reference.map" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\Web References\com.efxnow.api\Reference.map">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="Web References\com.efxnow.api\service.disco" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\Web References\com.efxnow.api\service.disco">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="Web References\com.efxnow.api\service.wsdl" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\Web References\com.efxnow.api\service.wsdl">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="Form1.resx" Description="File successfully backed up as D:\ProjectScalper\GAIN CAPITAL\Examples\WebServicesAPI\VS.NET Examples\ExampleClientVS7\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="ExampleClientVS7.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ExampleClientVS7" Source="ExampleClientVS7.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ExampleClientVS7.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ExampleClientVS7.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ExampleClientVS7" Source="ExampleClientVS7.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

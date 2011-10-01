@@ -1,0 +1,6741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!--MW_JS2--><SCRIPT LANGUAGE="JavaScript"><!--
+document.MW_JS_currKey=0;document.MW_JS_mouseclick=0;MW_ActualOpen=window.open;function MW_NullWindow(){this.window;} function MW_Mouse() {document.MW_JS_mouseclick  = 1;var mw_win;mw_win = window;do {mw_win.document.MW_JS_mouseclick = 1;mw_win = mw_win.parent;} while (mw_win != mw_win.parent);top.document.MW_JS_mouseclick = 1;setTimeout("MW_ResetMouseCode()", 200);} function MW_ResetMouseCode(){document.MW_JS_mouseclick  = 0;var mw_win;mw_win = window;do {mw_win.document.MW_JS_mouseclick = 0;mw_win = mw_win.parent;} while (mw_win != mw_win.parent);top.document.MW_JS_mouseclick = 0;} function MW_SetKeyCode(){if (window.length<1){if (window.event.shiftKey) document.MW_JS_currKey  = 16;else if (window.event.ctrlKey) document.MW_JS_currKey  = 17;else document.MW_JS_currKey = window.event.keyCode;}var mw_win;mw_win = window;do {mw_win.document.MW_JS_currKey = document.MW_JS_currKey;mw_win = mw_win.parent;} while (mw_win != mw_win.parent);top.document.MW_JS_currKey = document.MW_JS_currKey;}function MW_ResetKeyCode(){document.MW_JS_currKey=0;}function MW_NewOpen(url,nam,atr){var mw_win;mw_win = window;do {if (mw_win.document.MW_JS_currKey != 0) {document.MW_JS_currKey = mw_win.document.MW_JS_currKey; break;}mw_win = mw_win.parent;} while (mw_win != mw_win.parent);if(document.MW_JS_currKey==0) document.MW_JS_currKey=top.document.MW_JS_currKey;mw_win = window;do {if (mw_win.document.MW_JS_mouseclick == 1){document.MW_JS_mouseclick = 1;break;}mw_win = mw_win.parent;} while (mw_win != mw_win.parent);if (document.MW_JS_mouseclick==0)document.MW_JS_mouseclick=top.document.MW_JS_mouseclick;if(nam=="_self") {document.MW_JS_currKey=0;document.MW_JS_mouseclick=0;return MW_ActualOpen(url,nam,atr);} else if((document.MW_JS_currKey==17)||(document.MW_JS_mouseclick==1)){document.MW_JS_currKey=0;document.MW_JS_mouseclick=0;return(MW_ActualOpen(url,nam,atr));}else{document.MW_JS_currKey=0;document.MW_JS_mouseclick=0;return(new MW_NullWindow());}}window.open=MW_NewOpen;document.onkeydown=MW_SetKeyCode;document.onmousedown=MW_Mouse;document.onkeyup=MW_ResetKeyCode;
+//-->
+</SCRIPT>
+  <head>
+    <title>Full Text Bug Listing</title>
+
+
+
+
+    
+
+    <script type="text/javascript">
+  <!--
+  
+  function initHelp() {}
+  // -->
+  </script>
+
+    <link href="css/global.css" rel="stylesheet" type="text/css">
+
+
+        <link href="css/show_multiple.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+
+
+  <body bgcolor="#ffffff" onload=""
+        class="adam-bugzilla">
+
+
+<div id="banner">
+    <div class="intro"></div>
+      <p id="banner-name">
+        <span>This is Bugzilla</span>
+      </p>
+      <p id="banner-version">
+        <a href="http://www.bugzilla.org/"><span>Bugzilla</span></a>
+        <span>Version 2.18.3</span>
+      </p>
+    <div class="outro"></div>
+    </div>
+
+    <table border="0" cellspacing="0" width="100%">
+      <tr>
+        <td valign="top" align="left">
+          <table border="0" cellpadding="0" cellspacing="2">
+            <tr>
+              <td valign="top" align="left" nowrap="nowrap">
+                <font size="+1"><b>Full Text Bug Listing</b></font>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td valign="middle" align="left">&nbsp;</td>
+        <td valign="middle" align="left"></td>
+      </tr>
+    </table><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1645 - Provide the  P/L Window</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1645">1645</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P1
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Provide the  P/L Window
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-16 11:46
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre> </pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-06-01 12:52 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>FIXED</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1648 - Export functionality [various types] for admin</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1648">1648</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TC Admin
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Export functionality [various types] for admin
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-16 11:52
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>We need this from the admin to be able to export the Trades for each client 
+and so we can work out  the volume for invoicing BGC for all  the Trades so we 
+need a 
+
+Example.
+
+Client 
+Joe = Volume in millions at the end the month or to we need all the Trades 
+with total volume in millions all the Trades added up.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-04-23 18:43 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>FIXED</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1668 - Apply original Janus in TCAdmin</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1668">1668</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;navins&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TC Admin
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Apply original Janus in TCAdmin
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-17 14:21
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre> </pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-04-20 16:19 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>FIXED</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1680 - Add few sound file.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1680">1680</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P5
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Add few sound file.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-24 10:58
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Add few sound (.wav)files in TC so that user can select one of them by 
+pressing Browse button.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:37 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed its good if add few more sound event with few new sound</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1681 - Change help file in format as in trade bullet.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1681">1681</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P4
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Change help file in format as in trade bullet.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-24 11:10
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>help file format must be change according to the (.chm) format so it look 
+better then now.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-05-03 15:03 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>FIXED</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1682 - show msg in mapping table.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1682">1682</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P3
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;show msg in mapping table.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-24 11:14
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Show msg in mapping table when user save it after changing it.
+so he get confermation.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-18 17:18 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1685 - Manual Order Dialog Alert</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1685">1685</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P5
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Manual Order Dialog Alert
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-24 14:23
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>If user did not fill all field and press send button nothing will happens. I 
+think there should be some Alert to user to identify that he has not fill 
+value to this field.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-10 10:47 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>This Bug has fixed </pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1686 - Connect  option in File Menu</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1686">1686</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P5
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Connect  option in File Menu
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-24 14:25
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Connect will connect only Trade no market data connection is made by connect. 
+It should connect both or there are two sub option in connect.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-08 11:22 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>New Option added in file connect option for both connection.</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1692 - Date / and time fields shows date only.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1692">1692</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P1
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TC Admin
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Date / and time fields shows date only.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-24 14:41
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Date/time (customer, server, timestamp)  fields shows date only. It will show 
+time also.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:25 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1702 - System Tray Icon</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1702">1702</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P5
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;System Tray Icon
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-27 17:42
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Icon in Sys Tray change only when connection for trading is made. Not For 
+market data connection</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:suniln&#64;s7solutions.com">Sunil Nayak</a>
+          2007-07-18 17:06 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1703 - Export Functionality</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1703">1703</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P1
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Export Functionality
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-27 17:43
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>when you are displaying alert or MD History and press Export button it would 
+export only Executed orders, not the data which is displaying in windows.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:27 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c2" href="#c2">#2</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:27 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1704 - System Tray Icon did not disappeared</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1704">1704</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;System Tray Icon did not disappeared
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-27 17:45
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>System Tray icon did not get disappear even after exit from the application.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-05-03 14:58 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>FIXED</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1706 - MD History did not get update during application running.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1706">1706</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P1
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;MD History did not get update during application running.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-04-27 17:56
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>it is not updated MD History During running session. It will update only after 
+re start the application.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-04-27 17:56 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>it is not updated MD History During running session. It will update only after 
+re start the application. 
+</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c2" href="#c2">#2</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:28 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1731 - Alerts did not appear in TC. But they got log in log file.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1731">1731</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Alerts did not appear in TC. But they got log in log file.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-02 11:10
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Alert which came in tc, logged in log file but not shown in Tc.if orders from 
+them was not proccess due to any connection problem or other one. It must shown 
+log and then after proccess order and and must show the order proccessing 
+status.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-02 11:10 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Alert which came in tc, logged in log file but not shown in Tc.if orders from 
+them was not proccess due to any connection problem or other one. It must shown 
+log and then after proccess order and and must show the order proccessing 
+status. 
+</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c2" href="#c2">#2</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-05-03 15:02 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>INVALID</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c3" href="#c3">#3</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-06-01 12:49 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>FIXED</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1736 - Make disable 'resize' property of 'about Trade Companion' dialog in tc help-&gt; about trade companion option</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1736">1736</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P3
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Make disable 'resize' property of 'about Trade Companion' dialog in tc help-&gt; about trade companion option
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-02 17:19
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>this property of about trade companion is enable right now. If anybody try to 
+resize it it will look bad.i suggest disable this property so that no body is 
+able to resize it. I also saw this dialog in other application. This property 
+is disable in them to.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-10 10:48 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>This Bug has Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1737 - Market data history show same value for bid price &amp; offer price and at the same time it shows difference between them.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1737">1737</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Market data history show same value for bid price &amp; offer price and at the same time it shows difference between them.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-02 17:20
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Market data history show same value for both bid and offer that is not possible 
+at the same time it show the difference between both. This is the wrong 
+behavior. It should show correct values.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-05-03 15:02 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>FIXED</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1738 - Manual Order Dialog Alert</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1738">1738</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P3
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Manual Order Dialog Alert
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-02 17:21
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>In manual order if i select all the field and afterwards, i remove value from 
+action field and press send button. a order will be process with buy attribute 
+by default. if trade type value removed then it will process order with trade 
+type = 0. if symbol name is remove then only it will give an error msg. and 
+manual order form disappeared. these all situation are wrong.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-10 10:49 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>this Bug has fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1767 - Resize feature must be disable in mapping table.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1767">1767</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P4
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Resize feature must be disable in mapping table.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 13:50
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Resize feature must be disable in mapping table.if user resized it, alignment 
+of button got disturbed and look bed even button overlaped with each other.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:36 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1768 - Help Menu</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1768">1768</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Help Menu
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 13:51
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>In about Trade companion dialog box has resize problem.Resize Property should 
+be disable.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:29 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1769 - Sound Setting Dialog</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1769">1769</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Sound Setting Dialog
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 13:53
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Ok button not working Correctly. When ever you select your sound file from its 
+default dir. and press ok it will show exception. So you can not select any 
+sound from that directory.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:30 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1771 - Strategy performance Report- Periodic Return</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1771">1771</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Strategy performance Report- Periodic Return
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 14:11
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Profit factor showing long decimal value</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:31 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1773 - Strategy performance Report</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1773">1773</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Strategy performance Report
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 14:13
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Group all the combo and other control with group box control and make it same 
+size for all the tab.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:25 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1774 - Strategy performance Report</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1774">1774</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Strategy performance Report
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 14:14
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Resizable property is enable if user resize form it will deform alignment</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:32 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1776 - Performance  Summary</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1776">1776</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Performance  Summary
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 14:16
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>it is good if use text box to display values instead of using labels. it will 
+improove look. And give more visible difference in caption and values.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-14 11:33 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1778 - Strategy performance Report- grid row size</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1778">1778</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P4
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Strategy performance Report- grid row size
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 14:23
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Grid row was not cover the whole width of the grid and come in a smaller 
+portion.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-18 17:23 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1780 - Trouble with Strategy Performance report</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1780">1780</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Trouble with Strategy Performance report
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 17:04
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Currently you can open as many windows as you want but it should be restricted 
+so that user can open only one window for one option as one for mapping 
+table.or one for Strategy Perfo. Report.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-16 14:48 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1781 - Trouble with Mapping Table</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1781">1781</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Trouble with Mapping Table
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-11 17:05
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Currently you can open as many windows as you want but it should be restricted 
+so that user can open only one window for one option as one for mapping 
+table.or one for Strategy Perfo. Report.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-16 14:50 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1786 - Combo Must not editable in Strategy Performance Report</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1786">1786</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Combo Must not editable in Strategy Performance Report
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-16 14:41
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Combo Option is use to select one value from it there is no need of 
+modification by user. So its editable property is set disable so that user can  
+select value.do not edit them.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-01 11:13 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1787 - Dialog window can be seen on desktop even when TC is minimize</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1787">1787</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Dialog window can be seen on desktop even when TC is minimize
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-16 14:42
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>All dialog windows of trade companion remain in side trade companion if tc is 
+minimize all window get minimize along with it. They may not appear on desktop.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-01 11:12 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1788 - Profit Factor must not be round-off. But display  four or five decimal point with out rounding off.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1788">1788</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Profit Factor must not be round-off. But display  four or five decimal point with out rounding off.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-16 14:43
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>see ex: gross profit :45.45670 gross loss:45.45680 Profit factor :0.9999978 now 
+it shows loss as it goes below one but when we round off it it become 1.00 
+means no profit no loss. But actually we are making loss.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-05-16 14:47 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1791 - Add some functionality to mapping table so that user can change default trade size for all symbols at once.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1791">1791</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Add some functionality to mapping table so that user can change default trade size for all symbols at once.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-22 16:11
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Add some functionality to mapping table so that user can change default trade 
+size for all symbols at once.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-01 11:11 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1813 - Exception comes when closing TC Application with out disconnecting Trade Connection first.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1813">1813</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Exception comes when closing TC Application with out disconnecting Trade Connection first.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-30 14:55
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Exception comes when closing TC Application with out disconnecting Trade 
+Connection first.
+Error Message can be seen by follow this link. 
+\\fasttrack\MySharedDoc\TCBugs\Error.jpg</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:rahul.s&#64;s7solutions.com">Rahul</a>
+          2007-06-01 12:49 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>FIXED</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1814 - Latest Built :No Alert Display But in log file</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1814">1814</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Latest Built :No Alert Display But in log file
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-05-31 18:51
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Alert Not Captured by bgc it cames in log file only with Error Msg. Log file 
+Text is given 
+below:                                                                          
+     Captured C:\Program Files\BGC\EXPORT\EURUSD56857.req  -  ... Processing TS 
+alert 1070531 1827 FOREX EURUSD Buy 2 1 Scalper1 -  .... BGC alert:  -
+              symbol-EUR/USD -            exchange- -           monthyear-  -
+              action-1 -            quantity-200000  -              status-2  -
+  .... New alert captured -  .... Sent for execution-  ....Rejected for 
+execution Trader scalperdemo16u1fixtrd not found</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-01 11:06 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1822 - TC Strategy Performance Report(SPR)-Connect market data and open spr.will give error message.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1822">1822</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;TC Strategy Performance Report(SPR)-Connect market data and open spr.will give error message.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-04 15:25
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>bug in TC Strategy Performance Report(SPR). Connect market data and open 
+spr.will give error message. see image 'SPRError1'.will give Unhandled 
+Exception. see image 'SPRError2'.SPR window will get hanged.Open SPR first and 
+close it. Then connect market data. Open SPR now. It will work fine.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:26 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1854 - New Connection button misplaced in most resolutions (1280x1024, 1280x768,1024x768, etc...)</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1854">1854</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;New Connection button misplaced in most resolutions (1280x1024, 1280x768,1024x768, etc...)
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:22
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>New Connection button misplaced in most resolutions (1280x1024, 
+1280x768,1024x768, etc...)</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 11:01 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1855 - Execution Mode group box not self explanatory that it concerns TS</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1855">1855</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Execution Mode group box not self explanatory that it concerns TS
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:23
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Execution Mode group box not self explanatory that it concerns TS</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 11:02 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c2" href="#c2">#2</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:45 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1856 - Connect button misplaced</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1856">1856</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Connect button misplaced
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:23
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Connect button misplaced(I guess connect and disconnect buttons will be placed 
+somewhere outside the trading area).</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:54 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1857 - New Connection and Connect button have misleading or at least confusing Titles.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1857">1857</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;New Connection and Connect button have misleading or at least confusing Titles.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:24
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>New Connection and Connect button have misleading or at least confusing Titles.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:55 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1858 - Could not find any ways to resize Market Data and Executed Orders lists.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1858">1858</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Could not find any ways to resize Market Data and Executed Orders lists.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:24
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Could not find any ways to resize Market Data and Executed Orders lists.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:57 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1859 - Use Symbol Mapping should be kept in Menu</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1859">1859</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Use Symbol Mapping should be kept in Menu
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:28
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Configurations like &quot;Use Symbol Mapping&quot; would be better if accessed from top 
+menu. Front-screen space is precious.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:53 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1860 - Filter group box with the from and to date picker are not self-explanator</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1860">1860</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Filter group box with the from and to date picker are not self-explanator
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:29
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Filter group box with the from and to date picker are not self-explanatory. The 
+get and export buttons as well. Top menu could help with that I believe.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:54 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1862 - Connect, disconnect and new connection buttons shoud have static positions</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1862">1862</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Connect, disconnect and new connection buttons shoud have static positions
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:31
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Connect, disconnect and new connection buttons shoud have static positions in 
+the interface. Right now they move around according to the window size and the 
+users screen resolution. Same goes for the BGC tag in the top right corner.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:52 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1863 - The difference tag in the market data window is more often refered to as &quot;Spread&quot;.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1863">1863</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;The difference tag in the market data window is more often refered to as &quot;Spread&quot;.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:32
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>The difference tag in the market data window is more often refered to 
+as &quot;Spread&quot;.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:52 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1864 - I have concerns regarding CPU usage.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1864">1864</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;I have concerns regarding CPU usage.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:32
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>I have concerns regarding CPU usage. I use a AMD 3000+ CPU and I see a 50% cpu 
+usage for TC alone. This is enormous and at the time of the note we are not in 
+a very volatile market. This could go up in peak market activity to 100% 
+probably which would cause many problems including data lag, packet drops or 
+higher execution times for trades.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:suniln&#64;s7solutions.com">Sunil Nayak</a>
+          2007-07-18 17:39 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Worked alot and performance has improved. Used disconnected dataset approach </pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1866 - Export button not completely visible on my screen in 1280x1024 resolution.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1866">1866</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Export button not completely visible on my screen in 1280x1024 resolution.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:34
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Export button not completely visible on my screen in 1280x1024 resolution.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:52 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1867 - Unclear function of the Connection Status group box and new connection button.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1867">1867</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Unclear function of the Connection Status group box and new connection button.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:34
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Unclear function of the Connection Status group box and new connection button. 
+Example: I added a new connection with the new connection button. It was 
+supposed to be a stream connection so I guess it regards market data. Now I 
+click connect since there is no data coming in. The icon next to the new 
+connection is still yellow but now I am getting data from the default 
+connection which turned green. How do we access connections in the connection 
+status group box? All this will be very confusing for the average user.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:27 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c2" href="#c2">#2</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:46 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1869 - the reconnect attempt field should allow for time intervals under 1 minute</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1869">1869</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;the reconnect attempt field should allow for time intervals under 1 minute
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-11 10:36
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>In the new connection window, the reconnect attempt field should allow for time 
+intervals under 1 minute since I believe many people would appreciate a more 
+responsive system in case of disconnections.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:51 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1881 - When we sell first for a symbol pair it must show unrealized and USD unrealized</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1881">1881</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;When we sell first for a symbol pair it must show unrealized and USD unrealized
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-15 14:12
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>When we sell first for a symbol pair it must show unrealized and USD unrealized</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:26 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1882 - Realized USD is not changing as per the Market rate. It might change according the price.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1882">1882</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Realized USD is not changing as per the Market rate. It might change according the price.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-15 14:55
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Realized USD is not changing as per the Market rate. It might change according 
+the price.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-06-19 10:50 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1891 - Error in realized USD and unrealized USD</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1891">1891</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Error in realized USD and unrealized USD
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-25 11:10
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>If we are trading for a non-USD cur pair. and its corresponding cur symbol is 
+not available. Then, its shows realized USD unrealized USD as zero. but there 
+should be some USD-realized and USD-unrealized value. 
+that can be calculated by using reverse Cur Pair.Example: If symbol is 
+EUR/GBP  realized 20 unrealized 10.And, it shows zero in USD Realized / USD 
+unrealized.
+It could be calculate by using GBP/USD symbol like given below:
+Non USD realized * GBP/USD bid rate = USD realized.
+Non USD unrealized *GBP/USD bid/ask Rate = USD unrealized.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:28 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1892 - if i send a order for 10,000,000 the fills may come back at 5,000,000 at 1 price and the rest filled  at the next price in the spot postion it shows as 15,000,000 but the trade was 10,million filled on 2 fills</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1892">1892</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;if i send a order for 10,000,000 the fills may come back at 5,000,000 at 1 price and the rest filled  at the next price in the spot postion it shows as 15,000,000 but the trade was 10,million filled on 2 fills
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-27 15:51
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>if i send a order for 10,000,000 the fills may come back at 5,000,000 at 1 
+price and the rest filled  at the next price in the spot postion it shows as 
+15,000,000 but the trade was 10,million filled on 2 fills</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:28 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1893 - Disconnect market data button must be disable at the beginning.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1893">1893</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Disconnect market data button must be disable at the beginning.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-06-27 15:53
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Disconnect market data button must be disable at the beginning.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:28 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1897 - Extra Symbol added in PL Cal</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1897">1897</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Extra Symbol added in PL Cal
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-02 11:47
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>When placing order for GBP/CHF or any non USD symbol, which has corresponding 
+USD base symbol like USD/GBP. It add this symbol in pl cal, with zero in every 
+field, which is not expected. Its also reflect in SPR.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-09 11:00 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c2" href="#c2">#2</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-09 11:01 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1898 - Column width is not set properly in Spot position. Data is not visible correctly due to this. It should be set correctly.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1898">1898</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Column width is not set properly in Spot position. Data is not visible correctly due to this. It should be set correctly.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-02 11:47
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Column width is not set properly in Spot position. Data is not visible 
+correctly due to this. It should be set correctly.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-02 16:29 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1899 - When Market Data is under reconnecting State we are not able to disconnect it.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1899">1899</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;When Market Data is under reconnecting State we are not able to disconnect it.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-02 18:20
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>When Market Data is under reconnecting State we are not able to disconnect it.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-09 11:00 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1901 - Trade Companion connected to ariel Server.Market data is updating. But related calculations is not.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1901">1901</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Trade Companion connected to ariel Server.Market data is updating. But related calculations is not.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-03 12:55
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Trade Companion connected to ariel Server.Market data is updating. But related 
+calculations like realized / unrealized USD and non USD values in spr spot 
+position is not getting update. Also the rates updation come only when some 
+order related to that symbol is placed.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-09 11:02 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1910 - In reconnecting state, when try to disconnect it give unhandled exception: Not connected to server.</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1910">1910</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;In reconnecting state, when try to disconnect it give unhandled exception: Not connected to server.
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-05 10:10
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>In reconnecting state, when try to disconnect it give unhandled exception: Not 
+connected to server. When does try to connect it say this ID is already 
+connected.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:navins&#64;s7solutions.com">Navin Saxena</a>
+          2007-07-09 11:03 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>fixed</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1911 - Curren Ex. TC suddenly disappeard</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1911">1911</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Curren Ex. TC suddenly disappeard
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-05 10:16
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Curren Ex. TC suddenly disappeard
+while leaving for regrassive testing it suddenly disappeared twice. first 
+after 550 order execution with in one and half  hour.and second after 40 to 50 
+min and 130 alerts.</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:suniln&#64;s7solutions.com">Sunil Nayak</a>
+          2007-07-18 16:42 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Seems to be stable running whole night along with trade station</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1977 - Bad Tick in Global Server Data feed and Trade Station.Built TC1.0.8</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1977">1977</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Bad Tick in Global Server Data feed and Trade Station.Built TC1.0.8
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-17 12:56
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>&quot;we have real big Problems with data feed, we have discussed this with Lloyd 
+(bgc) and the currenex people…  you see yourself its terrible its not possible 
+to trade a system with this terrible data feed.Where must be somewhere a big 
+problem…please try to solve this major Problem
+&quot;</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:suniln&#64;s7solutions.com">Sunil Nayak</a>
+          2007-07-18 16:34 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Currenex has stopped sending the bad ticks and as a 2nd backup also ignored 
+the first market data values on reconnection</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 1980 - Espeed: Error: Application Has failed to start because MSVCR71.dll was not found TC 1.0.8</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=1980">1980</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;navins&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Espeed: Error: Application Has failed to start because MSVCR71.dll was not found TC 1.0.8
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-17 12:59
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Espeed: Error: Application Has failed to start because MSVCR71.dll was not 
+found TC 1.0.8</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:suniln&#64;s7solutions.com">Sunil Nayak</a>
+          2007-07-18 16:35 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Added dependency dll's in teh setup</pre>
+    </div>
+
+  <hr><img alt="" src="1x1.gif" width="1" height="80" align="left">
+  <div align="center">
+    <b>
+      <font size="+3">Bug 2006 - Error messahe on selecting a new sound file</font>
+    </b>
+  </div>
+
+  <table width="100%">
+    <tr>
+      <td>
+        <b>Bug#:</b>
+        <a href="show_bug.cgi?id=2006">2006</a>
+      </td><td>
+    <b>Product:</b>&nbsp;Scalper (FIX Driver)
+  </td><td>
+    <b>Version:</b>&nbsp;unspecified
+  </td><td>
+    <b>Platform:</b>&nbsp;PC
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>OS/Version:</b>&nbsp;Windows XP
+  </td><td>
+    <b>Status:</b>&nbsp;RESOLVED
+  </td><td>
+    <b>Severity:</b>&nbsp;normal
+  </td><td>
+    <b>Priority:</b>&nbsp;P2
+  </td>
+    </tr>
+
+    <tr><td>
+    <b>Resolution:</b>&nbsp;FIXED
+  </td><td>
+    <b>Assigned To:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td><td>
+    <b>Reported By:</b>&nbsp;suniln&#64;s7solutions.com
+  </td><td>
+    <b>QA Contact:</b>&nbsp;rahul.s&#64;s7solutions.com
+  </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <b>Component:</b>&nbsp;TradeCompanion
+      </td>
+
+      <td colspan="2">
+          <b>Target Milestone:</b>&nbsp;---
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>URL:</b>&nbsp;
+    </tr>
+
+    <tr>
+      <td colspan="4">
+        <b>Summary:</b>&nbsp;Error messahe on selecting a new sound file
+      </td>
+    </tr>
+
+
+      <tr>
+        <td colspan="4">
+          <b>Status Whiteboard:</b>&nbsp;
+        </td>
+      </tr>
+
+
+    <tr>
+      <td colspan="4">
+        <b>Opened:</b>&nbsp;2007-07-18 17:20
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Description:</b>
+      </td>
+    </tr>
+  </table>
+<div >
+        
+
+
+<pre>Error messahe on selecting a new sound file</pre>
+    </div>
+  <div >
+        <br>
+        <span class="bz_comment">
+          ------- <i>Additional Comment
+          <a name="c1" href="#c1">#1</a> From 
+          <a href="mailto:suniln&#64;s7solutions.com">Sunil Nayak</a>
+          2007-07-18 17:20 
+          </i>
+          -------
+        </span>
+        
+
+
+<pre>Fixed : chnaged directory name in setup</pre>
+    </div>
+
+  <hr>
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<form method="get" action="show_bug.cgi">
+<div id="useful-links">
+  <div id="links-actions">
+    <div class="label">Actions:</div>
+    <div class="links">
+        <a href="http://adam/bugzilla/">Home</a> | 
+        <a href="enter_bug.cgi">New</a> | 
+        <a href="query.cgi">Search</a> |
+        
+        <input class="btn" type="submit" value="Find"> bug # 
+        <input class="txt" name="id" size="6"> | 
+        
+        <a href="report.cgi">Reports</a> 
+        
+          | <a href="request.cgi?requester=suniln%40s7solutions.com&amp;requestee=suniln%40s7solutions.com&amp;do_union=1&amp;group=type">My Requests</a>
+        
+          | <a href="votes.cgi?action=show_user">My&nbsp;Votes</a>      
+         
+            | <a href="relogin.cgi">Log&nbsp;out</a>&nbsp;suniln&#64;s7solutions.com
+    </div>
+  </div>
+       
+  <div id="links-edit">
+    <div class="label">Edit:</div>
+    <div class="links">
+
+        <a href="userprefs.cgi">Prefs</a> | <a href="editusers.cgi">Users</a>
+    </div>
+  </div>
+    
+
+    
+    
+  <div id="links-saved">
+    <div class="label">
+          Saved&nbsp;Searches:
+    </div>
+    <div class="links">
+          <a href="buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=suniln%40s7solutions.com&amp;emailtype1=exact&amp;emailassigned_to1=1&amp;emailreporter1=1">My&nbsp;Bugs</a>
+
+    </div>
+  </div>
+</div>
+</form>
+
+  <div class="outro"></div>
+</div>
+
+</body>
+</html>

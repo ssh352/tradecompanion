@@ -1,0 +1,46 @@
+<settings>
+	<crash> true </crash>
+	<loginid> rahul   </loginid>
+	<password> rahul </password>
+	<server> 1 </server> 
+	<symbolmaping> true </symbolmaping>
+	<filteralerts> true </filteralerts>
+	<defaulttradesize> false </defaulttradesize>
+	<reconnectinterval> 4 </reconnectinterval>
+	
+	
+	<tradesettings>
+		<manual>
+			<defaulttradetype> 1 </defaulttradetype>	
+		</manual>
+		<automatic>
+			<defaulttradetype> 3 </defaulttradetype>	
+			<tradesizeover10m> 3 </tradesizeover10m>
+		</automatic>
+	</tradesettings>
+
+	
+	<connections>
+		<Trade>
+			<connection>
+				<param1> </param1>
+				<param2> </param2>
+				<param3> </param3>
+				<param4> </param4>
+			</connection>
+		</Trade>
+	
+		<marketdata>
+			<connection>
+				<param1> </param1>
+				<param2> </param2>
+				<param3> </param3>
+				<param4> </param4>
+			</connection>
+		
+		</marketdata>
+
+	</connections>
+	<executionmode> 3 </executionmode>	
+
+</settings>

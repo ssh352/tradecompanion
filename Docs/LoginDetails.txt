@@ -1,0 +1,243 @@
+Ariel login details :
+Ariel BGC:
+---------- 
+UserID: 		Test14	
+User name: 	Test14	
+Password: 	MG1014
+
+
+UserID: 		Test15	 (It is not working)
+User name: 	Test15	
+Password: 	MG1015
+
+UserID: 		Ariel	(It is not working)
+User name: 	Ariel
+Password: 	Ariel
+Ariel ODL :
+----------
+Client: DEMOCOMP
+Name: DEMOCOMP
+Password: 3NE63U
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DBFX login details:
+
+User ID: 	    DBD1541420001
+Password:    5203
+
+User ID:	    DBD1543674001
+Password:   4528
+
+User ID: 	    DBD1545338001
+Password:   1054
+
+DBD1554551001
+ 242
+
+User ID: DBD1568878001
+Password: 9490
+
+Login User ID: D3825839001
+Password: 1067
+
+.....................................................
+{Working IDs of DBFX}
+
+User ID: FX893180001
+Password: 6783
+Url: http://www.fxcorporate.com/
+
+User ID: DBD1562714001
+Password: 9548
+Url: http://dbfx.fxcorporate.com/   
+Account Type: Demo
+
+For live account: 
+Account Type: Real             
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+CurrneEx login Details:
+
+Trade login details:
+
+IP Adress: 	64.210.170.136
+Port: 		443
+Sender:		scalpercust1u7trade
+password:	scalper
+Target:		CNX
+
+market data login details:(feed login details)
+
+IP Adress: 	64.210.170.136
+Port: 		442
+Sender:		scalpercust1u7stream
+password:	scalper
+Target:		CNX
+
+
+Trade login details:
+
+IP Adress: 	64.210.170.136
+Port: 		443
+Sender:		scalpercust1u6trade
+password:	test1234
+Target:		CNX
+
+market data login details:(feed login details)
+
+IP Adress: 	64.210.170.136
+Port: 		442
+Sender:		scalpercust1u6stream
+password:	test1234
+Target:		CNX
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Dukascopy
+
+IP: localhost
+Port: 5002
+sendercompID: FRANCO22_DEMOFIX 
+username: franco22 
+password:  s7cap
+TargedcompID: DUKASCOPYFIX
+
+For feed: 
+
+IP: localhost
+Port: 5001
+sendercompID: FEED_FRANCO22_DEMOFIX 
+username: franco22 
+password:  s7cap
+TargedcompID: DUKASCOPYFIX
+
+IP/Port:  demo-api.dukascopy.com/10443/ 9443
+
+Dukascopy login details: For the jave client:
+
+userID: DEMO2SKPjg
+Password: SKPjg
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.....................
+
+Gain login details:
+
+User Name: 	giriscorpio21@aol.com
+Password:	12345
+Brand:		Demo
+Market Data Host:	DemoSecondary.efxnow.com
+Market Data Port:	3020
+
+Login: vsm234@gmail.com
+Password: demogain
+Brand:		Demo
+Market Data Host:	DemoSecondary.efxnow.com
+Market Data Port:	3020
+
+For Live account We need to use following login details[Gain]
+Login: -----------{provided}
+Password: ------------{provided}
+Brand:		--------{provided}
+Market Data Host:	liveprimary.efxnow.com or livesecondary.efxnow.com
+Market Data Port:	3020
+
+
+Data host address for live and demo as below 
+---------------------------------------------
+Demo data feed: demorates.efxnow.com : 443
+Live data feed: liveprimary.efxnow.com; livesecondary.efxnow.com : 3020
+
+Demo Webservice used: http://api.efxnow.com/DEMOWebServices2.8/Service.asmx
+----------------------
+Live Webservice used: http://api.efxnow.com/WebServices2.8/Service.asmx
+---------------------
+ 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Icap Connection Details
+
+10.81.1.155
+port 4040/4340
+Login: TRC
+pwd: trc123
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Fx-integral login details:
+
+LegalEntity (SenderSubId) = LE3
+Username=tjohnson
+Password=Welcome01
+UserOrganization=OBFL
+
+TargetCompID=demo.client.fxgrid.integral.com
+SenderCompID=quote.OBFL.dev.OBFL3.com
+
+TargetCompID=demo.client.fxgrid.integral.com
+SenderCompID=order.OBFL.dev.OBFL3.com
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.....................
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Login Details for the Trade station:
+
+username: 	viola
+password:	hayden69
+
+Ai host name : LONAATI55P-CUST.EU.ICAP.COM
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+New server Login details :
+
+Server name: DSVR006184
+
+Primary IP address: 88.208.222.249
+
+Operating system username: Administrator
+
+Operating system password: y7r7m6f6m
+Matrix control panel address: http://88.208.222.249:5555
+
+Username: Administrator
+
+Password: y7r7m6f6m
+
+
+Remote control URL : http://88.208.196.25
+
+Username: dsuser
+
+Password: p7F4o683W
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+

@@ -1,0 +1,27 @@
+.\bin\Interop.NSTOrdersAPI.dll
+.\bin\Interop.TWSLib.dll
+.\bin\AxInterop.NSTOrdersAPI.dll
+.\bin\AxInterop.TWSLib.dll
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Interop.NSTOrdersAPI.dll
+obj\Release\Interop.TWSLib.dll
+obj\Release\AxInterop.NSTOrdersAPI.dll
+obj\Release\AxInterop.TWSLib.dll
+obj\Release\NST TradePump IB Example.vbproj.ResolveComReference.cache
+obj\Release\Project1.Form1.resources
+obj\Release\NST TradePump IB Example.vbproj.GenerateResource.Cache
+.\bin\NST TradePump IB Example - VB.NET 2005.exe
+.\bin\NST TradePump IB Example - VB.xml
+obj\Release\NST TradePump IB Example - VB.NET 2005.exe
+obj\Release\NST TradePump IB Example - VB.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.NSTOrdersAPI.dll
+obj\Debug\Interop.TWSLib.dll
+obj\Debug\AxInterop.NSTOrdersAPI.dll
+obj\Debug\AxInterop.TWSLib.dll
+obj\Debug\NST TradePump IB Example.vbproj.ResolveComReference.cache
+obj\Debug\Project1.Form1.resources
+obj\Debug\NST TradePump IB Example.vbproj.GenerateResource.Cache
+obj\Debug\NST TradePump IB Example - VB.NET 2005.exe
+obj\Debug\NST TradePump IB Example - VB.xml
+obj\Debug\NST TradePump IB Example - VB.NET 2005.pdb

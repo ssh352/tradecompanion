@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RateService">
+</Property><Property Name="Solution File" Value="D:\ProjectScalper\GAIN CAPITAL\Examples\RateServiceAPI\net\RateService.sln">
+</Property><Property Name="Date" Value="Thursday, January 10, 2008">
+</Property><Property Name="Time" Value="12:01 PM">
+</Property></Properties><Event ErrorLevel="0" Project="RateServiceAPI" Source="RateServiceAPI\RateServiceAPI.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RateServiceAPI" Source="RateServiceAPI\RateServiceAPI.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RateServiceExampleVB" Source="RateServiceExampleVB\RateServiceExampleVB.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RateServiceExampleVB" Source="RateServiceExampleVB\RateServiceExampleVB.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RateServiceExampleCSharp" Source="RateServiceExampleCSharp\RateServiceExampleCSharp.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RateServiceExampleCSharp" Source="RateServiceExampleCSharp\RateServiceExampleCSharp.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RateService.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RateService.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RateServiceAPI" Source="RateServiceAPI\RateServiceAPI.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RateServiceExampleVB" Source="RateServiceExampleVB\RateServiceExampleVB.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RateServiceExampleCSharp" Source="RateServiceExampleCSharp\RateServiceExampleCSharp.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

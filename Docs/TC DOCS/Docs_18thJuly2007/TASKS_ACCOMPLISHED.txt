@@ -1,0 +1,44 @@
+TASKS ACCOMPLISHED
+==================
+
+Multiple Connections for Currenex
+Connection Mapping between Trade Station Workspace ID and Trade companion ID
+Modifications in Market Data History
+Maintaining Connection Status ( Connected : Green and Reconnectiing : orange) and Task bar icon for Trade companion
+Routing Alerts from Trade station through proper trade companion ID
+Export functionality for Alerts and market Data history
+Strategy Performance window 
+	Spot Position : NetCCY1 Amt, NetCCY2 Amt, Avg Buy rate, Avg Sell Rate, Open Rate, 
+			Realized, Unrealized, Realized USD, Unrealized USDMarket Rate
+	Performance Summary
+	Trade List
+	Periodical returns
+
+Updating Strategy Performance Report(Spot Position) on executed orders and market data update
+Set to Zero : All the open positions get set to zero and the corresponding BUY/SELL orders get executed at the current market price.
+
+Design Change to integrate Espeed and Ariel Drivers 
+Build prototype to Develop Espeed Driver : Worked on interoperability between C++ and .Net [Marshalling C++ data]
+Espeed API Implementation
+	Login/Logout to Espeed Server
+	Subscribe/Unsubscribe market data
+	Place BUY/SELL Orders
+	Handle Messages coming from Espeed
+Ariel API Implementation
+	Login to Ariel Server
+	Subscribe/Unsubscribe market data
+	Place BUY/SELL Orders
+	Handle messages coming from Ariel
+Logging for both Ariel and Espeed Drivers
+MD History Support for Ariel and Espeed
+Reconnecting support for Ariel and Espeed
+Synchronization between Market Data and Trade Connection for Ariel and Espeed
+Optimized the code for Strategy performance report which used to get refreshed on each market data update for each symbol. 
+Used disconnected dataset approach wherever possible
+Providing help file in chm format
+Testing Trade Companion : Perparing test cases and Reporting bugs
+Other Bug fixes to make the application stable and robust
+Bugs Fixed : Refer "Bugs Fixed.htm" attached
+	
+
+

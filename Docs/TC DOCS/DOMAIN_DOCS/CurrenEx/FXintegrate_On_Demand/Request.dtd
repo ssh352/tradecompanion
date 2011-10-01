@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The DownloadRequest element is the root node for the XML request. The requester can request all trade information (whether previously download or not) or only new and modified (amended, allocated or rolled) trade information.  A transform element is optional.  If specified, the only supported transform is XSLT, which means the requester can send a separate parameter that contains the XSLT that can be applied to the reply XML. -->
+<!ELEMENT DownloadRequest ((All | NewAndModified), Transform?)>
+<!-- version – DTD version – 1.0 -->
+<!-- type – States whether the requester is expecting trade or settlement details. -->
+<!-- downloadFormat – States whether the requester is expecting the response in XML for CSV (comma separated value) format. -->
+<!ATTLIST DownloadRequest
+	version CDATA #REQUIRED
+	type (Trade | Settlement) #REQUIRED
+	downloadFormat (XML | CSV) #IMPLIED
+>
+<!-- This element contains 1 or more TradeId elements. -->
+<!ELEMENT IdList (TradeId+)>
+<!-- Specifies a Currenex trade ID.  This is used when the requester wants to download information about a specific trade. -->
+<!ELEMENT TradeId (#PCDATA)>
+<!-- The beginning of a DateRange.  Date format should be specified in the Generalized Time format.  The format should be yyyyMMddHHmmssZ, where the Z specifies Zulu time (GMT).  So January 16, 2001 at 00:00:00 GMT should be written as 20010116000000Z. -->
+<!ELEMENT BeginDate (#PCDATA)>
+<!-- The ending of a DateRange -->
+<!ELEMENT EndDate (#PCDATA)>
+<!-- The DateRange element is used by the requester to specify a time period for unconditional downloads.  When used with the "All" elment, the service will retrives all trade or settlement information during this time interval. -->
+<!ELEMENT DateRange (BeginDate, EndDate?)>
+<!-- The All element specifies that the requester is looking for all trade or settlement information, regardless of whether the trades have previsouly been downloaded.  The requester can specify a list of Currenex trade ids to download, or specify a date range. -->
+<!ELEMENT All (IdList | DateRange)>
+<!-- The NewAndModified element indicates that the service should return only new trades or modified trades that have not yet been downloaded since the requester's last download. -->
+<!ELEMENT NewAndModified EMPTY>
+<!-- An optional element that tells the service to perform certain kind of transform of the response data before sending it back to the client.  Currently, the only supported transform is XSLT -->
+<!ELEMENT Transform (XSLT, MimeType?, FileName?)>
+<!-- Custom MimeType for translated XML. -->
+<!ELEMENT MimeType (#PCDATA)>
+<!-- The only supported Transform type.  When specified, a separate request parameter should be included in the HTTP POST request.  This parameter should have the parameter name "xsltStylesheet" and contain an actual XSLT stylesheet as the parameter value. -->
+<!ELEMENT XSLT EMPTY>
+<!-- A file name to suggest to downloading client on what to name the transformed file -->
+<!ELEMENT FileName (#PCDATA)>
+<!-- Tells the server that the download name should be appended with the current date: filenameYYYYMMDD.ext -->
+<!ATTLIST FileName
+	insertDate (True | False) #IMPLIED
+>

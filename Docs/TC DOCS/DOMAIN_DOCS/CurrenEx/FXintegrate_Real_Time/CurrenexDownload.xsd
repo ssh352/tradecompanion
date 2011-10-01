@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 U (http://www.altova.com) by Harsha Bhat (Currenex) -->
+<!-- Copyright 2001-2006 by Currenex, Inc.  All rights reserved. -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xsd:element name="CurrenexDownload">
+		<xsd:annotation>
+			<xsd:documentation>The root node for a currenex download of trades</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:choice>
+				<xsd:element name="Error" type="ErrorType">
+					<xsd:annotation>
+						<xsd:documentation>In the event that a download fails only an error will result</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Trades">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="party" type="Party" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element name="trade" type="Trade" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:element name="tradeError" type="TradeError" minOccurs="0" maxOccurs="unbounded">
+								<xsd:annotation>
+									<xsd:documentation>Signifies that a particular trade ID was unable to be retrieved from the system.</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+			<xsd:attribute name="version" type="xsd:string" use="required" fixed="2.3"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="RealTimeReply">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="trade" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="id" type="xsd:string"/>
+							<xsd:element name="status">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="error"/>
+										<xsd:enumeration value="received"/>
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="Currency">
+		<xsd:annotation>
+			<xsd:documentation>Has value one of the ISO currency codes</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="QuoteBasis">
+		<xsd:annotation>
+			<xsd:documentation>enumeration of possible quotes basis</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="currency1percurrency2"/>
+			<xsd:enumeration value="currency2percurrency1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TenorPeriod">
+		<xsd:annotation>
+			<xsd:documentation>Term of the transaction represented by a two or three letter symbol. Valid values are:    </xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="SELL"/>
+			<xsd:enumeration value="CD"/>
+			<xsd:enumeration value="SD"/>
+			<xsd:enumeration value="TOD"/>
+			<xsd:enumeration value="ND"/>
+			<xsd:enumeration value="TOM"/>
+			<xsd:enumeration value="SP"/>
+			<xsd:enumeration value="SN"/>
+			<xsd:enumeration value="1W"/>
+			<xsd:enumeration value="2W"/>
+			<xsd:enumeration value="3W"/>
+			<xsd:enumeration value="1M"/>
+			<xsd:enumeration value="2M"/>
+			<xsd:enumeration value="3M"/>
+			<xsd:enumeration value="4M"/>
+			<xsd:enumeration value="5M"/>
+			<xsd:enumeration value="6M"/>
+			<xsd:enumeration value="7M"/>
+			<xsd:enumeration value="8M"/>
+			<xsd:enumeration value="9M"/>
+			<xsd:enumeration value="10M"/>
+			<xsd:enumeration value="11M"/>
+			<xsd:enumeration value="1Y"/>
+			<xsd:enumeration value="2Y"/>
+			<xsd:enumeration value="3Y"/>
+			<xsd:enumeration value="4Y"/>
+			<xsd:enumeration value="5Y"/>
+			<xsd:enumeration value="6Y"/>
+			<xsd:enumeration value="7Y"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="Amendment">
+		<xsd:sequence>
+			<xsd:element name="date" type="xsd:dateTime"/>
+			<xsd:element name="amenderComment" type="AttributedComment" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AttributedComment">
+		<xsd:sequence>
+			<xsd:element name="amender" type="User"/>
+			<xsd:element name="comment" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CashFlow">
+		<xsd:annotation>
+			<xsd:documentation>This describes any kind of payment.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="currency" type="Currency"/>
+			<xsd:element name="amount" type="xsd:decimal"/>
+			<xsd:element name="buyerPartyReference" type="Reference"/>
+			<xsd:element name="valueDate" type="xsd:date" minOccurs="0"/>
+			<xsd:element name="settlementInstruction" type="SettlementInstruction" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="DateAdjustments">
+		<xsd:sequence>
+			<xsd:element name="businessDayConvention" type="xsd:string"/>
+			<xsd:choice minOccurs="0">
+				<xsd:element name="businessCentersReference">
+					<xsd:complexType>
+						<xsd:attribute name="href"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="businessCenter">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="businessCenter" type="xsd:string" maxOccurs="unbounded"/>
+						</xsd:sequence>
+						<xsd:attribute name="id"/>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="DefinedField">
+		<xsd:sequence>
+			<xsd:element name="fieldName" type="xsd:normalizedString"/>
+			<xsd:element name="fieldValue" type="xsd:normalizedString"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Deposit">
+		<xsd:sequence>
+			<xsd:element name="initialPrincipalPayment" type="CashFlow">
+				<xsd:annotation>
+					<xsd:documentation>This is the initial principal payment in a  loan/deposit</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="finalPrincipalPayment" type="CashFlow">
+				<xsd:annotation>
+					<xsd:documentation>This is the final principal payment in a loan/deposit</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="dayCountConvention" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>This is an enumeration of the methods for counting days.  e.g. ACT/360 or 30/#^)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="fixedRate" type="xsd:decimal">
+				<xsd:annotation>
+					<xsd:documentation>The fixed interest rate for this deposit.  NOT expressed as a percentage</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="interestPayment" type="CashFlow" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>This is the interest payment on a loan/deposit</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="EffectiveRate">
+		<xsd:sequence>
+			<xsd:element name="rate" type="xsd:decimal"/>
+			<xsd:element name="farRate" type="xsd:decimal" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The exchange rate for the far side of Swap.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ErrorType">
+		<xsd:sequence>
+			<xsd:element name="ErrorCode" type="xsd:normalizedString">
+				<xsd:annotation>
+					<xsd:documentation>The Currenex-defined error  code.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ErrorDescription" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>A description of the cause of the download failure</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Event">
+		<xsd:sequence>
+			<xsd:element name="eventType">
+				<xsd:annotation>
+					<xsd:documentation>An enumeration of possible event types</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="NEWT"/>
+						<xsd:enumeration value="CANC"/>
+						<xsd:enumeration value="AMND"/>
+						<xsd:enumeration value="ALOC"/>
+						<xsd:enumeration value="ROLL"/>
+						<xsd:enumeration value="UDFA"/>
+						<xsd:enumeration value="CNDF"/>
+						<xsd:enumeration value="SETL"/>
+						<xsd:enumeration value="RSND"/>
+						<xsd:enumeration value="RBOK"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="eventDateTime" type="xsd:dateTime">
+				<xsd:annotation>
+					<xsd:documentation>The date time that an event occurred</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="amendment" type="Amendment" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ExchangeRate">
+		<xsd:sequence>
+			<xsd:element name="currency1" type="Currency"/>
+			<xsd:element name="currency2" type="Currency"/>
+			<xsd:element name="quoteBasis" type="QuoteBasis"/>
+			<xsd:element name="rate" type="xsd:decimal"/>
+			<xsd:element name="spotRate" type="xsd:decimal" minOccurs="0"/>
+			<xsd:element name="points" type="xsd:decimal" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="FxLeg">
+		<xsd:sequence>
+			<xsd:element name="cashFlow1" type="CashFlow"/>
+			<xsd:element name="cashFlow2" type="CashFlow"/>
+			<xsd:element name="valueDate" type="xsd:date"/>
+			<xsd:element name="exchangeRate" type="ExchangeRate">
+				<xsd:annotation>
+					<xsd:documentation>Element that shows the rate between two currencies as well as the quote direction.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="LinkId">
+		<xsd:sequence>
+			<xsd:element name="tradeId" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>The identifier assigned to the trade.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="linkIdType">
+				<xsd:annotation>
+					<xsd:documentation>The type of link is enumerated with this element</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="Amendment"/>
+						<xsd:enumeration value="SpotBreakoutParent"/>
+						<xsd:enumeration value="RebookParent"/>
+						<xsd:enumeration value="HubPartner"/>
+						<xsd:enumeration value="PrimeBrokerPartner"/>
+						<xsd:enumeration value="SpreadPartner"/>
+						<xsd:enumeration value="OrderToOrder"/>
+						<xsd:enumeration value="HubGiveup"/>
+						<xsd:enumeration value="PrimeBrokerGiveup"/>
+						<xsd:enumeration value="Parent"/>
+						<xsd:enumeration value="StagedOrderLink"/>
+						<xsd:enumeration value="BackToBack"/>
+						<xsd:enumeration value="AllocateParent"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MarketQuote">
+		<xsd:sequence>
+			<xsd:element name="marketQuotePartyReference" type="Reference">
+				<xsd:annotation>
+					<xsd:documentation>This is the party that issued this market quote.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="quote" type="Quote"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Money">
+		<xsd:sequence>
+			<xsd:element name="currency" type="Currency"/>
+			<xsd:element name="amount" type="xsd:decimal"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="OtherPartyPayment">
+		<xsd:sequence>
+			<xsd:element name="payerPartyReference" type="Reference"/>
+			<xsd:element name="receiverPartyReference" type="Reference"/>
+			<xsd:element name="paymentType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="paymentAmount" type="Money"/>
+			<xsd:element name="paymentDate" type="PaymentDate" minOccurs="0"/>
+			<xsd:element name="adjustedPaymentDate" type="xsd:date" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Party">
+		<xsd:annotation>
+			<xsd:documentation>Represents an entity involved in a transaction.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="typedPartyId" type="TypedPartyId" maxOccurs="unbounded"/>
+			<xsd:element name="partyName" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Name of the party.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="PartyRole">
+		<xsd:sequence>
+			<xsd:element name="partyReference" type="Reference"/>
+			<xsd:element name="role">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:normalizedString">
+						<xsd:enumeration value="Maker"/>
+						<xsd:enumeration value="Taker"/>
+						<xsd:enumeration value="PrimeBroker"/>
+						<xsd:enumeration value="Hub"/>
+						<xsd:enumeration value="DownloadAgent"/>
+						<xsd:enumeration value="Spread_Party"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PartyTradeIdentifier">
+		<xsd:sequence>
+			<xsd:element name="partyReference" type="Reference">
+				<xsd:annotation>
+					<xsd:documentation>Ties a transaction to a particular party. Indicates the party that assigned the trade ID.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="tradeId" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>The identifier assigned to the trade.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="linkId" type="LinkId" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PaymentDate">
+		<xsd:sequence>
+			<xsd:element name="unadjustedDate" type="xsd:date"/>
+			<xsd:element name="dateAdjustments" type="DateAdjustments"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Product">
+		<xsd:sequence>
+			<xsd:element name="productType" minOccurs="0">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="SP"/>
+						<xsd:enumeration value="OR"/>
+						<xsd:enumeration value="SW"/>
+						<xsd:enumeration value="LD"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:choice>
+				<xsd:element name="fxLeg" type="FxLeg" minOccurs="0" maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:documentation>A single FX transaction.  Can be Spot or ForwardOutright, multiple legs should be included for Swaps.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="deposit" type="Deposit">
+					<xsd:annotation>
+						<xsd:documentation>If the buyerPartyReference is not the requesterParty this is a deposit else a loan.</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:choice>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Quote">
+		<xsd:sequence>
+			<xsd:element name="date" type="xsd:dateTime"/>
+			<xsd:element name="effectiveRate" type="EffectiveRate">
+				<xsd:annotation>
+					<xsd:documentation>Based on the quote and the terms of the trade this is the rate that would have been the exchangeRate had it been choosen</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="bid" type="Rate" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The bid rate quoted by the trader.  </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="offer" type="Rate" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The offer rate quoted by the trader.  </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="currency1" type="Currency"/>
+			<xsd:element name="currency2" type="Currency" minOccurs="0"/>
+			<xsd:element name="quoteBasis" type="QuoteBasis" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="QuoteDirection">
+		<xsd:sequence>
+			<xsd:element name="currency1" type="Currency"/>
+			<xsd:element name="currency2" type="Currency"/>
+			<xsd:element name="quoteBasis" type="QuoteBasis">
+				<xsd:annotation>
+					<xsd:documentation>Specifies the direction the rate is quoted. Valid values are:
+currency1percurrency2 currency2percurrency1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Rate">
+		<xsd:sequence>
+			<xsd:element name="spotRate" type="xsd:decimal" minOccurs="0"/>
+			<xsd:element name="points" type="xsd:decimal" minOccurs="0"/>
+			<xsd:element name="farPoints" type="xsd:decimal" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Reference">
+		<xsd:attribute name="href" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="SettlementInstruction">
+		<xsd:sequence>
+			<xsd:element name="beneficiaryName" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The fund receiving party's name.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="beneficiaryBIC" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The fund receiving party's Bank Identifier Code (BIC).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="beneficiaryAccountNumber" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The fund receiving party's account number.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="beneficiaryInformation" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Comments about the fund receiving party.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="field83JSWIFTInformation" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Further beneficiary information such as fund name, short name and/or other information.  Not used for bank SI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="bankName" type="xsd:normalizedString">
+				<xsd:annotation>
+					<xsd:documentation>name of bank</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="bankBIC" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>SWIFT Bank Identifier Code (BIC).</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="bankAccountNumber" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The account number of the bank participating in settlement.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="bankClearingRoutingCode" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The routing code of the bank participating in settlement.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="intermediaryBankName" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Name of intermediary bank if settlement is routed through a third party.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="intermediaryBankBIC" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Bank Identifier Code (BIC) of intermediary bank if settlement is routed through a third party.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="intermediaryBankClearingCode" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Clearing code of intermediary bank if settlement is routed through a third party.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="counterpartySettlementMemo" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The counter party's settlement comments.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="internalSettlementMemo" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Settlement comments.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Tenor">
+		<xsd:choice>
+			<xsd:element name="period" type="TenorPeriod"/>
+			<xsd:element name="valueDate" type="xsd:date"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:complexType name="Trade">
+		<xsd:annotation>
+			<xsd:documentation>Element containing information describing a FX transaction.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="tradeHeader" type="TradeHeader">
+				<xsd:annotation>
+					<xsd:documentation>Element that contains information regarding a trade that is beyond the tradeRequest and product elements.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="tradeRequest" type="TradeRequest" minOccurs="0"/>
+			<xsd:element name="product" type="Product"/>
+			<xsd:element name="definedField" type="DefinedField" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Extra information specified by the customer for a transaction.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="otherPartyPayment" type="OtherPartyPayment" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Used to represent FXOptions information, not currently supported.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="quotes" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>These are the competitive quotes that were presented for this trade and market quotes at the time of the pricing event.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="tradeQuote" type="TradeQuote" minOccurs="0" maxOccurs="unbounded">
+							<xsd:annotation>
+								<xsd:documentation>This is the quote proposed for this trade.  One of the quotes was selected to price the trade.</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element name="marketQuote" type="MarketQuote" minOccurs="0" maxOccurs="unbounded">
+							<xsd:annotation>
+								<xsd:documentation>A quote taken from a market data source. Not currently supported.</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TradeError">
+		<xsd:sequence>
+			<xsd:element name="partyTradeIdentifier" type="PartyTradeIdentifier">
+				<xsd:annotation>
+					<xsd:documentation>Contains information that clearly references a trade in the Currenex system. Allows for trade ID's to be assigned by different parties.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="tradeErrorMessage" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>Description of the error. Indicates why a particular trade could not be retrieved from the system.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TradeHeader">
+		<xsd:sequence>
+			<xsd:element name="partyTradeIdentifier" type="PartyTradeIdentifier" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Contains information that clearly references a trade in the Currenex system. Allows for trade ID's to be assigned by different parties.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="tradeDateTime" type="xsd:dateTime">
+				<xsd:annotation>
+					<xsd:documentation>Time and date that the trade was executed.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="tradeStatus" type="xsd:normalizedString"/>
+			<xsd:element name="trader" type="User" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>The element that describes a person who performed the transaction.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="subFund" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>If the customer is trading for a subsidiary or fund, this field will be populated with this information.  If the customer is trading on their own behalf, this field will repeat the customer name.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="event" type="Event" minOccurs="0"/>
+			<xsd:element name="pendingAction" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates that a future roll or allocation will take place on the transaction. </xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="otherPartyReference" type="Reference" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>In the event that this trade is part of a back to back, this is the other party on the related trade.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="otherTradeRate" type="xsd:decimal" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>In the event that this trade is part of a back to back, this is all in rate on the related trade.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="otherTradeAgainstAmount" type="xsd:decimal" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>In the event tha this trade is part of a back to back, this is the contra amount of the other trade.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="partyRole" type="PartyRole" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TradeQuote">
+		<xsd:sequence>
+			<xsd:element name="trader" type="User"/>
+			<xsd:element name="winningQuote" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates the quote selected by the client. This element exists in a tradeQuote if this was the quote selected for the trade. If the quote was not selected this element is absent.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="quote" type="Quote">
+				<xsd:annotation>
+					<xsd:documentation>This is a quote used in response to a pricing request.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TradeRequest">
+		<xsd:sequence>
+			<xsd:element name="requesterPartyReference" type="Reference">
+				<xsd:annotation>
+					<xsd:documentation>Indicates which party requested the transaction, the href attribute should point to a valid party id.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="buySell">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:normalizedString">
+						<xsd:enumeration value="SELL"/>
+						<xsd:enumeration value="BUY"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="quoteDirection" type="QuoteDirection" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Specifies the currency centricity between currency1 and currency2.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="specifiedMoney" type="Money">
+				<xsd:annotation>
+					<xsd:documentation>Currency and amount that is requested by the customer.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="againstCurrency" type="Currency" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Currency that the customer is trading against. Used only for FX transactions.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="tenor" type="Tenor">
+				<xsd:annotation>
+					<xsd:documentation>Term of this transaction</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="farTenor" type="Tenor" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Term on the far leg of a SWAP trade.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="farAmount" type="xsd:decimal" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Amount on the far leg of a SWAP trade.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="deliveryType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates whether the trade is a non-deliverable forward (NDF) or not. Used for FX trades only. </xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="NDF"/>
+						<xsd:enumeration value="DEL"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="comment" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pricingType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>This is the action required to find a price</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:normalizedString">
+						<xsd:enumeration value="REQUEST"/>
+						<xsd:enumeration value="ORDER"/>
+						<xsd:enumeration value="ESP"/>
+						<xsd:enumeration value="ESP_ORDER"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TypedPartyId">
+		<xsd:annotation>
+			<xsd:documentation>An element that represents a party and a party type. Allows party identifiers from different systems to be added to the download.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="partyId" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>The party's identifier.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="partyIdType">
+				<xsd:annotation>
+					<xsd:documentation>The source of a party identifier.  e.g. DUNS or BIC or Currenex</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="CX"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="User">
+		<xsd:sequence>
+			<xsd:element name="partyReference" type="Reference"/>
+			<xsd:element name="userId" type="xsd:normalizedString">
+				<xsd:annotation>
+					<xsd:documentation>The ID of the trader who performed the transaction.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="userName" type="xsd:normalizedString" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The name of the trader who performed the transaction.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
