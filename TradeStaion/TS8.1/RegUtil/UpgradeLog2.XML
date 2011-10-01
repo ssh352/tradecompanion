@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RegUtil">
+</Property><Property Name="Solution File" Value="F:\Scalper\rina\RegUtil\RegUtil.sln">
+</Property><Property Name="User Options File" Value="F:\Scalper\rina\RegUtil\RegUtil.suo">
+</Property><Property Name="Date" Value="Monday, December 11, 2006">
+</Property><Property Name="Time" Value="12:28 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="RegUtil.sln" Description="File successfully backed up as F:\Scalper\rina\RegUtil\Backup1\RegUtil.sln">
+</Event><Event ErrorLevel="0" Project="" Source="RegUtil.suo" Description="File successfully backed up as F:\Scalper\rina\RegUtil\Backup1\RegUtil.suo">
+</Event><Event ErrorLevel="2" Project="RegUtil" Source="RegUtil.vbproj" Description="Project file is not writable: F:\Scalper\rina\RegUtil\RegUtil.vbproj">
+</Event><Event ErrorLevel="0" Project="RegUtil" Source="RegUtil.vbproj" Description="Project file successfully backed up as F:\Scalper\rina\RegUtil\Backup1\RegUtil.vbproj">
+</Event><Event ErrorLevel="0" Project="RegUtil" Source="RegUtil.vbproj.user" Description="Project user file successfully backed up as F:\Scalper\rina\RegUtil\Backup1\RegUtil.vbproj.user">
+</Event><Event ErrorLevel="0" Project="RegUtil" Source="Abstract.vb" Description="File successfully backed up as F:\Scalper\rina\RegUtil\Backup1\Abstract.vb">
+</Event><Event ErrorLevel="0" Project="RegUtil" Source="AssemblyInfo.vb" Description="File successfully backed up as F:\Scalper\rina\RegUtil\Backup1\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="RegUtil" Source="ExportAttribute.vb" Description="File successfully backed up as F:\Scalper\rina\RegUtil\Backup1\ExportAttribute.vb">
+</Event><Event ErrorLevel="2" Project="RegUtil" Source="RegUtil.vbproj" Description="Unable to save converted project file.">
+</Event><Event ErrorLevel="3" Project="RegUtil" Source="RegUtil.vbproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="" Source="RegUtil.sln" Description="Solution file 'F:\Scalper\rina\RegUtil\RegUtil.sln' cannot be converted because it is read-only on disk. To convert the solution, change the permissions on the solution file to allow modification and re-open it.">
+</Event><Event ErrorLevel="3" Project="" Source="RegUtil.sln" Description="Not Converted">
+</Event></UpgradeLog>

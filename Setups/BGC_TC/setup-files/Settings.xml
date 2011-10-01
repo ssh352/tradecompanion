@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<CrashTest>
+  <settings>
+    <crash>false</crash>
+    <loginid>rahul</loginid>
+    <password>rahul</password>
+    <server>5</server>
+    <symbolmaping>false</symbolmaping>
+    <reconnectinterval>4</reconnectinterval>
+    <executionmode>0</executionmode>
+    <platformforgettingalerts>TradeStation</platformforgettingalerts>
+    <tradesettings>
+      <manual>
+        <defaulttradetype>3</defaulttradetype>
+      </manual>
+      <automatic>
+        <defaulttradetype>1</defaulttradetype>
+        <tradesizeover10m>1</tradesizeover10m>
+        <discardalertInterval>0</discardalertInterval>
+      </automatic>
+    </tradesettings>
+    <connections>
+      <Trade>
+        <connectiontrade>
+        </connectiontrade>
+        <connectiontrade>
+        </connectiontrade>
+      </Trade>
+      <marketdata />
+    </connections>
+  </settings>
+</CrashTest>

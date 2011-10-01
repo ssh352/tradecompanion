@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridEXLayoutFile LayoutType="Janus.Windows.GridEX.GridEX" LayoutVersion="1.1">
+    <RootTable>
+        <Caption>Captured Alerts</Caption>
+        <Columns Collection="true">
+            <Column0 ID="AlertID">
+                <Caption>AlertID</Caption>
+                <DataMember>AlertID</DataMember>
+                <Key>AlertID</Key>
+                <Position>0</Position>
+                <Visible>False</Visible>
+                <Width>77</Width>
+            </Column0>
+            <Column1 ID="AlertDate">
+                <Caption>AlertDate</Caption>
+                <DataMember>AlertDate</DataMember>
+                <Key>AlertDate</Key>
+                <Position>1</Position>
+                <Width>123</Width>
+            </Column1>
+            <Column2 ID="Symbol">
+                <Caption>Symbol</Caption>
+                <DataMember>Symbol</DataMember>
+                <Key>Symbol</Key>
+                <Position>2</Position>
+                <Width>123</Width>
+            </Column2>
+            <Column3 ID="Exchange">
+                <Caption>Exchange</Caption>
+                <DataMember>Exchange</DataMember>
+                <Key>Exchange</Key>
+                <Position>3</Position>
+                <Visible>False</Visible>
+                <Width>77</Width>
+            </Column3>
+            <Column4 ID="SecurityType">
+                <Caption>SecurityType</Caption>
+                <DataMember>SecurityType</DataMember>
+                <Key>SecurityType</Key>
+                <Position>4</Position>
+                <Visible>False</Visible>
+                <Width>77</Width>
+            </Column4>
+            <Column5 ID="MonthYear">
+                <Caption>MonthYear</Caption>
+                <DataMember>MonthYear</DataMember>
+                <Key>MonthYear</Key>
+                <Position>5</Position>
+                <Visible>False</Visible>
+                <Width>77</Width>
+            </Column5>
+            <Column6 ID="Contracts">
+                <Caption>Amount</Caption>
+                <DataMember>Contracts</DataMember>
+                <Key>Contracts</Key>
+                <Position>6</Position>
+                <Width>123</Width>
+            </Column6>
+            <Column7 ID="ActionType">
+                <Caption>ActionType</Caption>
+                <DataMember>ActionType</DataMember>
+                <Key>ActionType</Key>
+                <Position>7</Position>
+                <Width>123</Width>
+            </Column7>
+            <Column8 ID="TradeType">
+                <Caption>TradeType</Caption>
+                <DataMember>TradeType</DataMember>
+                <Key>TradeType</Key>
+                <Position>8</Position>
+                <Width>123</Width>
+            </Column8>
+            <Column9 ID="Status">
+                <Caption>Status</Caption>
+                <DataMember>Status</DataMember>
+                <Key>Status</Key>
+                <Position>9</Position>
+                <Visible>False</Visible>
+                <Width>76</Width>
+            </Column9>
+            <Column10 ID="TimeStamp">
+                <Caption>TimeStamp</Caption>
+                <DataMember>TimeStamp</DataMember>
+                <Key>TimeStamp</Key>
+                <Position>10</Position>
+                <Width>121</Width>
+            </Column10>
+            <Column11 ID="TradeCurrency">
+                <Caption>TradeCurrency</Caption>
+                <DataMember>TradeCurrency</DataMember>
+                <Key>TradeCurrency</Key>
+                <Position>11</Position>
+                <Width>121</Width>
+            </Column11>
+            <Column12 ID="AlertOrderId">
+                <Caption>AlertOrderId</Caption>
+                <DataMember>AlertOrderId</DataMember>
+                <Key>AlertOrderId</Key>
+                <Position>12</Position>
+                <Width>121</Width>
+            </Column12>
+        </Columns>
+        <GroupCondition ID="" />
+        <Groups Collection="true">
+            <Group0 ID="Group0">
+                <ColIndex>1</ColIndex>
+            </Group0>
+        </Groups>
+        <Key>Alerts</Key>
+    </RootTable>
+    <FormatStyles Collection="true">
+        <Style0 ID="Rejected">
+            <ForeColor>LightGray</ForeColor>
+            <Key>Rejected</Key>
+        </Style0>
+        <Style1 ID="Accepted">
+            <ForeColor>Black</ForeColor>
+            <Key>Accepted</Key>
+        </Style1>
+    </FormatStyles>
+    <TableHeaderFormatStyle>
+        <PredefinedStyle>TableHeaderFormatStyle</PredefinedStyle>
+        <TextAlignment>Center</TextAlignment>
+    </TableHeaderFormatStyle>
+    <RowWithErrorsFormatStyle>
+        <PredefinedStyle>RowWithErrorsFormatStyle</PredefinedStyle>
+    </RowWithErrorsFormatStyle>
+    <LinkFormatStyle>
+        <PredefinedStyle>LinkFormatStyle</PredefinedStyle>
+    </LinkFormatStyle>
+    <CardCaptionFormatStyle>
+        <PredefinedStyle>CardCaptionFormatStyle</PredefinedStyle>
+    </CardCaptionFormatStyle>
+    <GroupByBoxInfoFormatStyle>
+        <PredefinedStyle>GroupByBoxInfoFormatStyle</PredefinedStyle>
+    </GroupByBoxInfoFormatStyle>
+    <GroupRowFormatStyle>
+        <PredefinedStyle>GroupRowFormatStyle</PredefinedStyle>
+    </GroupRowFormatStyle>
+    <HeaderFormatStyle>
+        <PredefinedStyle>HeaderFormatStyle</PredefinedStyle>
+    </HeaderFormatStyle>
+    <PreviewRowFormatStyle>
+        <PredefinedStyle>PreviewRowFormatStyle</PredefinedStyle>
+    </PreviewRowFormatStyle>
+    <RowFormatStyle>
+        <PredefinedStyle>RowFormatStyle</PredefinedStyle>
+    </RowFormatStyle>
+    <SelectedFormatStyle>
+        <PredefinedStyle>SelectedFormatStyle</PredefinedStyle>
+    </SelectedFormatStyle>
+    <SelectedInactiveFormatStyle>
+        <PredefinedStyle>SelectedInactiveFormatStyle</PredefinedStyle>
+    </SelectedInactiveFormatStyle>
+    <WatermarkImage />
+    <BackColor>WhiteSmoke</BackColor>
+    <Font>Microsoft Sans Serif, 8.25pt</Font>
+    <ControlStyle />
+    <VisualStyle>Standard</VisualStyle>
+    <AllowEdit>False</AllowEdit>
+    <ColumnAutoResize>True</ColumnAutoResize>
+    <TableHeaders>True</TableHeaders>
+</GridEXLayoutFile>

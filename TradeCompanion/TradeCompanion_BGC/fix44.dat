@@ -1,0 +1,1937 @@
+[Defaults]
+FIXMaxTag=956
+
+[Required_Tags]
+HEADER=8,9,35,49,56,34,52
+FOOTER=10
+A=98,108
+1=112
+2=7,16
+3=45
+4=36
+7=2,5,55,4,53
+6=23,28,55,54,27
+B=148,33,58
+C=164,94,147,33,58
+R=131,146,55
+S=117,55
+i=117,296,302,311,304,295,299
+Z=117,298,295,55
+a=55
+b=297
+V=262,263,264,267,269,146,55
+W=55,268,269,270
+X=268,279
+Y=262,320,321
+d=320,322,393
+e=324,55,263
+f=55
+g=335,263
+h=336,340
+D=11,21,55,54,60,40
+8=37,17,20,150,39,55,54,151,14,6
+Q=37,17,127,55,54
+G=41,11,21,55,54,60,40
+F=41,11,55,54,60
+9=37,11,41,39,434
+H=11,55,54
+J=70,71,54,55,53,6,75,80
+P=70,75,87
+T=162,163,214,160,165,79,60
+k=391,374,393,394,418,419
+l=420,12,13
+E=66,394,68,73,11,67,55,54
+m=66,422,428,55,44
+N=66,429,82,431,83,68,73,11,14,39,151,84,6
+L=66,60
+K=66,60
+M=66
+j=372,380
+
+
+[Valid_Tags]
+HEADER=8,9,35,49,56,115,128,90,91,34,50,142,57,143,116,144,129,145,43,97,52,122,212,213,347,369,370
+FOOTER=93,89,10
+0=112
+A=98,108,95,96,141,383,384,372,385
+1=112
+2=7,16
+3=45,371,372,373,58,354,355
+4=123,36
+5=58,354,355
+7=2,5,3,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,4,53,44,15,75,60,58,354,355,149,30,336
+6=23,28,26,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,54,27,44,15,62,25,130,199,104,58,354,355,60,149,215,216,217,218,219
+B=42,61,148,358,359,215,216,217,146,46,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,33,58,354,355,149,95,96
+C=164,94,42,147,356,357,215,216,217,146,46,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,37,11,33,58,354,355,95,96
+R=131,146,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,140,303,336,54,38,64,40,193,192,126,60,15
+S=131,117,301,336,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,132,133,134,135,62,188,190,189,191,60,64,40,193,192,15
+i=131,117,301,293,294,296,302,311,312,309,305,310,313,314,315,316,317,436,435,308,306,362,363,307,364,365,367,304,295,299,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,132,133,134,135,62,188,190,189,191,60,336,64,40,193,192,15
+Z=131,117,298,301,336,295,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,311
+a=117,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,54,336
+b=131,117,297,300,301,336,58,296,302,311,312,309,305,310,313,314,315,316,317,436,435,308,306,362,363,307,364,365,304,295,299,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,368
+V=262,263,264,265,266,267,269,146,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,336
+W=262,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,291,292,387,268,269,270,15,271,272,273,274,275,336,276,277,282,283,284,286,59,432,126,110,18,287,37,299,288,289,346,290,58,354,355
+X=262,268,279,285,269,278,280,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,291,292,270,15,271,272,273,274,275,336,276,277,282,283,284,286,59,432,126,110,18,287,37,299,288,289,346,290,387,58,354,355
+Y=262,281,58,354,355,320,321,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,15,58,354,355,336,146,311,312,309,305,310,313,314,315,316,317,436,435,308,306,362,363,307,364,365,319,54,318
+d=320,322,323,393,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,15,336,58,354,355,146,311,312,309,305,310,313,314,315,316,317,436,435,308,306,362,363,307,364,365,319,54,318
+e=324,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,15,263,336
+f=324,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,15,336,325,326,291,292,327,328,329,330,331,332,333,31,60,334
+g=335,336,338,339,263
+h=335,336,338,339,325,340,341,342,343,344,345,387,58,354,355
+D=11,109,76,1,78,79,80,63,64,21,18,110,111,100,386,336,81,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,140,54,114,60,38,152,40,44,99,15,376,377,23,117,59,168,432,126,427,12,13,47,121,120,58,354,355,193,192,77,203,204,210,211,388,389,439,440
+8=37,198,11,41,109,76,382,375,337,437,438,66,17,20,19,150,39,103,378,1,63,64,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,54,38,152,40,44,99,211,388,389,15,376,377,59,168,432,126,18,47,32,31,194,195,30,336,29,151,14,6,424,425,426,427,75,60,113,12,13,381,119,120,155,156,21,110,111,77,210,58,354,355,193,192,439,440,442
+Q=37,17,127,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,54,38,152,32,31,58,354,355
+G=37,109,76,41,11,66,1,78,79,80,63,64,21,18,110,111,100,386,336,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,54,60,38,152,40,44,99,211,388,389,376,377,15,59,168,432,126,427,12,13,47,121,120,58,354,355,193,192,77,203,204,210,114,439,440
+F=41,37,11,66,1,109,76,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,54,60,38,152,376,377,58,354,355
+9=37,198,11,41,39,109,76,66,1,60,434,102,58,354,355
+H=37,11,109,1,76,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,54
+J=70,71,72,196,197,37,198,66,105,124,32,17,31,29,54,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,53,30,336,6,15,74,75,60,63,64,381,118,77,58,354,355,157,158,366,80,81,92,208,209,161,360,361,76,109,12,13,153,154,119,120,155,156,159,160,136,137,138,139
+P=109,76,70,75,60,87,88,58,354,355
+T=162,163,214,160,165,79,166,75,70,30,336,54,167,168,60,109,76,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187
+k=390,391,374,392,393,394,395,15,396,397,399,400,401,404,441,402,403,405,406,407,408,420,66,54,336,430,63,64,1,409,410,411,412,413,414,415,416,121,417,75,418,419,443,58,354,355
+l=390,391,420,12,13,66,421,54,44,423,406,430,63,64,336,58,354,355
+E=66,390,391,414,394,415,433,69,352,353,68,73,11,67,160,109,76,1,78,79,80,63,64,21,18,110,111,100,386,336,81,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,140,54,401,114,60,38,152,40,44,99,15,376,377,23,117,59,168,432,126,427,12,13,47,121,120,58,354,355,193,192,77,203,204,210,211,388,389,439,440
+m=66,422,428,55,65,48,22,167,200,205,201,202,206,231,223,207,106,348,349,107,350,351,140,11,54,44,15,58,354,355
+N=66,429,82,431,83,444,445,446,60,68,73,11,14,39,151,84,6,103,58,354,355
+L=66,391,390,60,58,354,355
+K=66,60,58,354,355
+M=66,58,354,355
+j=45,372,379,380,58,354,355
+
+
+#TAG=   TAGNAME , TAG DATA Type, Desctiption
+[Definitions]
+1=Account,String,Account mnemonic as agreed between broker and institution.
+2=AdvId,String,Unique identifier of advertisement message.  	(Prior to FIX 4.1 this field was of type int)
+3=AdvRefID,String,Reference identifier used with CANCEL and REPLACE transaction types.	(Prior to FIX 4.1 this field was of type int)
+4=AdvSide,Char,Broker's side of advertised trade.\nValid values: 	\n  B = Buy\n  S = Sell\n  X = Cross\n  T = Trade
+5=AdvTransType,String,Identifies advertisement message transaction type.\nValid values:  	\n  N = New\n  C = Cancel\n  R = Replace
+6=AvgPx,Price,Calculated average price of all fills on this order.
+7=BeginSeqNo,int,Message sequence number of first message in range to be resent
+8=BeginString,String,Identifies beginning of new message and protocol version.  ALWAYS FIRST FIELD IN MESSAGE. (Always unencrypted)	\nValid values:\nFIX.4.2
+9=BodyLength,int,Message length, in bytes, forward to the CheckSum field.  ALWAYS SECOND FIELD IN MESSAGE. (Always unencrypted)
+10=CheckSum,String,Three byte, simple checksum  (see Appendix B: CheckSum Calculation for description).  ALWAYS LAST FIELD IN MESSAGE; i.e. serves, with the trailing <SOH>, as the end-of-message delimiter.  Always defined as three characters. (Always unencrypted)
+11=ClOrdID,String,Unique identifier for Order as assigned by institution (identified by SenderCompID or OnBehalfOfCompID as appropriate).  Uniqueness must be guaranteed within a single trading day.  Firms, particularly those  which electronically submit multi-day orders, trade globally or throughout market close periods,should ensure  uniqueness across days, for example by embedding a date within the ClOrdID field.
+12=Commission,Amt,Commission.  Note if CommType is percentage, Commission of 5% should be represented as .05.
+13=CommType,char,Commission type	\nValid values:\n  1 = per share\n  2 = percentage\n  3 = absolute
+14=CumQty,Qty,Total number of shares filled.	(Prior to FIX 4.2 this field was of type int)
+15=Currency,Currency,Identifies currency used for price. Absence of this field is interpreted as the default for the security.  It is recommended that systems provide the currency value whenever possible.  See Appendix A: Valid Currency Codes for information on obtaining valid values.
+16=EndSeqNo,int,Message sequence number of last message in range to be resent.  If request is for a single message BeginSeqNo = EndSeqNo.  If request is for all messages subsequent to a particular message, EndSeqNo = "0" (representing infinity).
+17=ExecID,String,Unique identifier of execution message as assigned by broker (will be 0 (zero) for ExecTransType=3 (Status)).  	Uniqueness must be guaranteed within a single trading day or the life of a multi-day order.  Firms which accept multi-day orders should consider embedding a date within the ExecID field to assure uniqueness across days.	(Prior to FIX 4.1 this field was of type int)
+18=ExecInst,MultipleValueString,Instructions for order handling on exchange trading floor.  If more than one instruction is applicable to an order, this field can contain multiple instructions separated by space.\nValid values:\n  1 = Not held\n  2 = Work\n  3 = Go along\n  4 = Over the day\n  5 = Held	\n  6 = Participate don't initiate\n  7 = Strict scale\n  8 = Try to scale\n  9 = Stay on bidside\n  0 = Stay on offerside\n  A = No cross (cross is forbidden)\n  B = OK to cross\n  C = Call first\n  D = Percent of volume "(indicates that the sender does not want to be all of the volume on the floor vs. a specific percentage)"\n  E = Do not increase - DNI\n  F = Do not reduce - DNR\n  G = All or none - AON\n  I = Institutions only\n  L = Last peg (last sale)\n  M = Mid-price peg (midprice of inside quote)\n  N = Non-negotiable\n  O = Opening peg\n  P = Market peg\n  R = Primary peg (primary market - buy at bid/sell at offer)\n  S = Suspend\n  T = Fixed Peg to Local best bid or offer at time of order\n  U = Customer Display Instruction (Rule11Ac1-1/4)\n  V = Netting (for Forex)\n  W = Peg to VWAP
+19=ExecRefID,String,Reference identifier used with Cancel and Correct transaction types.	(Prior to FIX 4.1 this field was of type int)
+20=ExecTransType,char,Identifies transaction type	\nValid values:\n  0 = New\n  1 = Cancel\n  2 = Correct\n  3 = Status
+21=HandlInst,char,Instructions for order handling on Broker trading floor	\nValid values:	\n  1 = Automated execution order, private, no Broker intervention	\n  2 = Automated execution order, public, Broker intervention OK	\n  3 = Manual order, best execution
+22=IDSource,String,Identifies class of alternative SecurityID\nValid values:\n  1 = CUSIP\n  2 = SEDOL\n  3 = QUIK	\n  4 = ISIN number\n  5 = RIC code\n  6 = ISO Currency Code\n  7 = ISO Country Code\n  8 = Exchange Symbol\n  9 = Consolidated Tape Association (CTA) Symbol (SIAC CTS/CQS line format)\n  100+ are reserved for private security identifications
+23=IOIid,String,Unique identifier of IOI message.	(Prior to FIX 4.1 this field was of type int)
+24=IOIOthSvc,char,No longer used as of FIX 4.2.  Included here for reference to prior versions.
+25=IOIQltyInd,char,Relative quality of indication	\nValid values:\n  L = Low\n  M = Medium\n  H = High
+26=IOIRefID,String,Reference identifier used with CANCEL and REPLACE, transaction types.	(Prior to FIX 4.1 this field was of type int)
+27=IOIShares,String,Number of shares in numeric or relative size.	\nValid values:\n  0 - 1000000000\n  S = Small\n  M = Medium\n  L = Large
+28=IOITransType,char,Identifies IOI message transaction type	\nValid values:  	\n  N = New\n  C = Cancel\n  R = Replace
+29=LastCapacity,char,Broker capacity in order execution\n	\nValid values:  	\n  1 = Agent\n  2 = Cross as agent\n  3 = Cross as principal\n  4 = Principal
+30=LastMkt,Exchange,Market of execution for last fill  Valid values:  	\nSee Appendix C
+31=LastPx,Price,Price of this (last) fill.  Field not required for ExecTransType = 3 (Status)
+32=LastShares,Qty,Quantity of shares bought/sold on this (last) fill. Field not required for ExecTransType = 3 (Status) (Prior to FIX 4.2 this field was of type int)
+33=LinesOfText,int,Identifies number of lines of text body
+34=MsgSeqNum,int,Integer message sequence number.
+35=MsgType,String,Defines message type.    ALWAYS THIRD FIELD IN MESSAGE. (Always unencrypted)	Note: A "U" as the first character in the MsgType field (i.e. U1, U2, etc) indicates that the  message format is privately defined between the sender and receiver.	\n\n*** Note the use of lower case letters ***\nValid values:\n  0 = Heartbeat\n  1 = Test Request\n  2 = Resend Request\n  3 = Reject\n  4 = Sequence Reset\n  5 = Logout\n  6 = Indication of Interest\n  7 = Advertisement\n  8 = Execution Report\n  9 = Order Cancel Reject\n  A = Logon\n  B = News\n  C = Email\n  D = Order - Single\n  E = Order - List\n  F = Order Cancel Request\n  G = Order Cancel/Replace Request\n  H = Order Status Request\n  J = Allocation\n  K = List Cancel Request\n  L = List Execute\n  M = List Status Request\n  N = List Status\n  P = Allocation ACK\n  Q = Don't Know Trade (DK)\n  R = Quote Request\n  S = Quote\n  T = Settlement Instructions\n  V = Market Data Request\n  W = Market Data-Snapshot/Full Refresh\n  X = Market Data-Incremental Refresh\n  Y = Market Data Request Reject\n  Z = Quote Cancel\n  a = Quote Status Request\n  b = Quote Acknowledgement\n  c = Security Definition Request\n  d = Security Definition\n  e = Security Status Request\n  f = Security Status\n  g = Trading Session Status Request\n  h = Trading Session Status\n  i = Mass Quote\n  j = Business Message Reject\n  k = Bid Request\n  l = Bid Response (lowercase L)\n  m = List Strike Price
+36=NewSeqNo,int,New sequence number
+37=OrderID,String,Unique identifier for Order as assigned by broker.  Uniqueness must be guaranteed within a single trading day.  Firms which accept multi-day orders should consider embedding a date within the OrderID field to assure uniqueness across days.
+38=OrderQty,Qty,Number of shares ordered.  This represents the number of shares for equities or based on normal convention the number of contracts for options, futures, convertible bonds, etc.	(Prior to FIX 4.2 this field was of type int)
+39=OrdStatus,char,Identifies current status of order.  	\nValid values:\n  0 = New\n  1 = Partially filled\n  2 = Filled\n  3 = Done for day\n  4 = Canceled\n  5 = Replaced\n  6 = Pending Cancel (e.g. result of Order Cancel Request)\n  7 = Stopped\n  8 = Rejected\n  9 = Suspended\n  A = Pending New\n  B = Calculated\n  C = Expired\n  D = Accepted for bidding\n  E = Pending Replace (e.g. result of Order Cancel/Replace Request)
+40=OrdType,char,Order type.	\nValid values:\n  1 = Market\n  2 = Limit\n  3 = Stop\n  4 = Stop limit\n  5 = Market on close\n  6 = With or without\n  7 = Limit or better\n  8 = Limit with or without\n  9 = On basis\n  A = On close\n  B = Limit on close\n  C = Forex - Market\n  D = Previously quoted\n  E = Previously indicated\n  F = Forex - Limit\n  G = Forex - Swap\n  H = Forex - Previously Quoted\n  I = Funari (Limit Day Order with unexecuted portion handled as Market On Close.   e.g. Japan)\n  P = Pegged
+41=OrigClOrdID,String,ClOrdID of the previous order (NOT the initial order of the day) as assigned by the institution, used to identify the previous order in cancel and cancel/replace requests.
+42=OrigTime,UTCTimestamp,Time of message origination (always expressed in UTC (Universal Time Coordinated, also known as "GMT"))
+43=PossDupFlag,Boolean,Indicates possible retransmission of message with this sequence number\nValid values:\n  Y = Possible duplicate\n  N = Original transmission
+44=Price,Price,Price per share
+45=RefSeqNum,int,Reference message sequence number
+46=RelatdSym,String,Symbol of issue related to story.  Can be repeated within message to identify multiple companies.
+47=Rule80A,char,(aka OrderCapacity)	Note that the name of this field is changing to "OrderCapacity" as Rule80A is a very US market-specific term. Other world markets need to convey similar information, however, often a subset of the US values.  .  See the "Rule80A (aka OrderCapacity) Usage by Market" appendix for market-specific usage of this field.\nValid values:\n  A = Agency single order\n  B = Short exempt transaction (refer to A type)\n  C = Program Order, non-index arb, for Member firm/org \n  D = Program Order, index arb, for Member firm/org\n  E = Registered Equity Market Maker trades\n  F = Short exempt transaction (refer to W type)\n  H = Short exempt transaction (refer to I type)\n  I = Individual Investor, single order\n  J = Program Order, index arb, for individual customer\n  K = Program Order, non-index arb, for individual customer\n  L = Short exempt transaction for member competing market-maker affiliated with the firm clearing the trade (refer to P and O types)\n  M = Program Order, index arb, for other member\n  N = Program Order, non-index arb, for other member\n  O = Competing dealer trades\n  P = Principal\n  R = Competing dealer trades\n  S = Specialist trades\n  T = Competing dealer trades\n  U = Program Order, index arb, for other agency\n  W = All other orders as agent for other member\n  X = Short exempt transaction for member competing market-maker not affiliated with the firm clearing the trade (refer to W and T types)\n  Y = Program Order, non-index arb, for other agency\n  Z = Short exempt transaction for non-member competing market-maker (refer to A and R types)
+48=SecurityID,String,CUSIP or other alternate security identifier
+49=SenderCompID,String,Assigned value used to identify firm sending message.
+50=SenderSubID,String,Assigned value used to identify specific message originator (desk, trader, etc.)
+51=SendingDate,LocalMktDate,No longer used.  Included here for reference to prior versions.
+52=SendingTime,UTCTimestamp,Time of message transmission (always expressed in UTC (Universal Time Coordinated, also known as "GMT")
+53=Shares,Qty,Number of shares 	(Prior to FIX 4.2 this field was of type int)
+54=Side,char,Side of order	\nValid values:	\n  1 = Buy\n  2 = Sell\n  3 = Buy minus\n  4 = Sell plus\n  5 = Sell short\n  6 = Sell short exempt\n  7  = Undisclosed (valid for IOI and List Order messages only)	\n  8 = Cross (orders where counterparty is an exchange, valid for all messages except IOIs)\n  9 = Cross short
+55=Symbol,String,Ticker symbol
+56=TargetCompID,String,Assigned value used to identify receiving firm.
+57=TargetSubID,String,Assigned value used to identify specific individual or unit intended to receive message.  "ADMIN" reserved for administrative messages not intended for a specific user.
+58=Text,String,Free format text string	(Note: this field does not have a specified maximum length)
+59=TimeInForce,char,Specifies how long the order remains in effect.  Absence of this field is interpreted as DAY.	\nValid values:\n  0 = Day\n  1 = Good Till Cancel  (GTC)	 \n  2 = At the Opening  (OPG)	\n  3 = Immediate or Cancel(IOC)\n  4 = Fill or Kill  (FOK)\n  5 = Good Till Crossing (GTX)\n  6 = Good Till Date
+60=TransactTime,UTCTimestamp,Time of execution/order creation (expressed in UTC (Universal Time Coordinated, also known as "GMT")
+61=Urgency,char,Urgency flag	\nValid values:\n  0 = Normal\n  1 = Flash\n  2 = Background
+62=ValidUntilTime,UTCTimestamp,Indicates expiration time of indication message (always expressed in UTC (Universal Time Coordinated, also known as "GMT")
+63=SettlmntTyp,char,Indicates order settlement period.  Absence of this field is interpreted as Regular.  Regular is defined as the default settlement period for the particular security on the exchange of execution.	Valid values:\n  0 = Regular\n  1 = Cash	\n  2 = Next Day\n  3 = T+2\n  4 = T+3\n  5 = T+4\n  6 = Future\n  7 = When Issued\n  8 = Sellers Option	\n  9 = T+5
+64=FutSettDate,LocalMktDate,Specific date of trade settlement (SettlementDate) in YYYYMMDD format.  Required when SettlmntTyp = 6 (Future) or SettlmntTyp = 8 (Sellers Option).  (expressed in local time at place of settlement)
+65=SymbolSfx,String,Additional information about the security (e.g. preferred, warrants, etc.).   Note also see SecurityType.	\nValid values:\nAs defined in the NYSE Stock and bond Symbol Directory and in the AMEX Fitch Directory
+66=ListID,String,Unique identifier for list as assigned by institution, used to associate multiple individual orders.  Uniqueness must be guaranteed within a single trading day.  Firms which generate multi-day orders should consider embedding a date within the ListID field to assure uniqueness across days.
+67=ListSeqNo,int,Sequence of individual order within list (i.e. ListSeqNo of ListNoOrds, 2 of 25, 3 of 25,   . . . )
+68=TotNoOrders,int,(formerly named: ListNoOrds) Total number of list order entries across all messages. Should be the sum of all NoOrders in each message that has repeating list order entries related to the same ListID. Used to support fragmentation.	(Prior to FIX 4.2 this field was named "ListNoOrds")
+69=ListExecInst,String,Free format text message containing list handling and execution instructions.
+70=AllocID,String,Unique identifier for allocation message.	(Prior to FIX 4.1 this field was of type int)
+71=AllocTransType,char,Identifies allocation transaction type	\nValid values:\n  0 = New\n  1 = Replace\n  2 = Cancel\n  3 = Preliminary (without MiscFees and NetMoney)\n  4 = Calculated (includes MiscFees and NetMoney)\n  5 = Calculated without Preliminary (sent unsolicited by broker, includes MiscFees and NetMoney)
+72=RefAllocID,String,Reference identifier to be used with Replace, Cancel, and Calculated AllocTransType messages.	(Prior to FIX 4.1 this field was of type int)
+73=NoOrders,int,Indicates number of orders to be combined for average pricing and allocation.
+74=AvgPrxPrecision,int,Indicates number of decimal places to be used for average pricing.  Absence of this field indicates that default precision arranged by the broker/institution is to be used.
+75=TradeDate,LocalMktDate,Indicates date of trade referenced in this message in YYYYMMDD format.  Absence of this field indicates current day (expressed in local time at place of trade).
+76=ExecBroker,String,Identifies executing / give-up broker.  Standard NASD market-maker mnemonic is preferred.
+77=OpenClose,char,Indicates whether the resulting position after a  trade should be an opening position or closing position. Used for omnibus accounting - where accounts are held on a gross basis instead of being netted together.\nValid Values:\n  O = Open\n  C = Close
+78=NoAllocs,int,Number of  repeating AllocAccount/AllocPrice entries.
+79=AllocAccount,String,Sub-account mnemonic
+80=AllocShares,Qty,Number of shares to be allocated to specific sub-account 	(Prior to FIX 4.2 this field was of type int)
+81=ProcessCode,char,Processing code for sub-account.  Absence of this field in AllocAccount / AllocPrice/AllocShares / ProcessCode instance indicates regular trade.\nValid values:\n  0 = regular\n  1 = soft dollar\n  2 = step-in\n  3 = step-out\n  4 = soft-dollar step-in\n  5 = soft-dollar step-out\n  6 = plan sponsor
+82=NoRpts,int,Total number of reports within series.
+83=RptSeq,int,Sequence number of message within report series.
+84=CxlQty,Qty,Total number of shares canceled for this order. 	(Prior to FIX 4.2 this field was of type int)
+85=NoDlvyInst,int,(no longer used) Number of delivery instruction fields to follow	No longer used.  Included here for reference to prior versions.
+86=DlvyInst,String,(no longer used)Free format text field to indicate delivery instructions	No longer used.  Included here for reference to prior versions.
+87=AllocStatus,int,Identifies status of allocation.\nValid values:\n  0 = accepted (successfully processed)\n  1 = rejected\n  2 = partial accept\n  3 = received (received, not yet processed)
+88=AllocRejCode,int,Identifies reason for rejection.	\nValid values:\n  0 = unknown account(s)\n  1 = incorrect quantity\n  2 = incorrect average price\n  3 = unknown executing broker mnemonic\n  4 = commission difference\n  5 = unknown OrderID\n  6 = unknown ListID\n  7 = other
+89=Signature,data,Electronic signature
+90=SecureDataLen,int,Length of encrypted message
+91=SecureData,data,Actual encrypted data stream
+92=BrokerOfCredit,String,Broker to receive trade credit.
+93=SignatureLength,int,Number of bytes in signature field.
+94=EmailType,char,Email message type.	\nValid values:\n  0 = New\n  1 = Reply\n  2 = Admin Reply
+95=RawDataLength,int,Number of bytes in raw data field.
+96=RawData,data,Unformatted raw data, can include bitmaps, word processor documents, etc.
+97=PossResend,Boolean,Indicates that message may contain information that has been sent under another sequence number.	\nValid Values:\n  Y = Possible resend\n  N = Original transmission
+98=EncryptMethod,int,Method of encryption.	Valid values:\n  0 = None / other	\n  1 = PKCS (proprietary)\n  2 = DES (ECB mode)\n  3 = PKCS/DES (proprietary)\n  4 = PGP/DES (defunct)\n  5 = PGP/DES-MD5  (see app note on FIX web site)\n  6 = PEM/DES-MD5  (see app note on FIX web site)
+99=StopPx,Price,Price per share
+100=ExDestination,Exchange,Execution destination as defined by institution when order is entered.	\nValid values:	\nSee Appendix C
+102=CxlRejReason,int,Code to identify reason for cancel rejection.	\nValid values:\n  0 = Too late to cancel\n  1 = Unknown order\n  2 = Broker Option\n  3 = Order already in Pending Cancel or Pending Replace status
+103=OrdRejReason,int,Code to identify reason for order rejection.	\nValid values:\n  0 = Broker option\n  1 = Unknown symbol\n  2 = Exchange closed\n  3 = Order exceeds limit\n  4 = Too late to enter\n  5 = Unknown Order\n  6 = Duplicate Order (e.g. dupe ClOrdID)\n  7 = Duplicate of a verbally communicated order\n  8 = Stale Order
+104=IOIQualifier,char,Code to qualify IOI use.	Valid values:	\n  A = All or none\n  C = At the close\n  I = In touch with\n  L = Limit\n  M = More behind\n  O = At the open\n  P = Taking a position\n  Q = At the Market (previously called Current Quote)\n  R = Ready to trade\n  S = Portfolio show-n\n  T = Through the day\n  V = Versus\n  W = Indication - Working away\n  X = Crossing opportunity\n  Y = At the Midpoint\n  Z = Pre-open
+105=WaveNo,String,Identifier to aid in the management of multiple lists derived from a single, master list.
+106=Issuer,String,Company name of security issuer (e.g. International Business Machines)
+107=SecurityDesc,String,Security description.
+108=HeartBtInt,int,Heartbeat interval (seconds)
+109=ClientID,String,Firm identifier used in third party-transactions (should not be a substitute for OnBehalfOfCompID/DeliverToCompID).
+110=MinQty,Qty,Minimum quantity of an order to be executed. 	(Prior to FIX 4.2 this field was of type int)
+111=MaxFloor,Qty,Maximum number of shares within an order to be shown on the exchange floor at any given time. 	(Prior to FIX 4.2 this field was of type int)
+112=TestReqID,String,Identifier included in Test Request message to be returned in resulting Heartbeat
+113=ReportToExch,Boolean,Identifies party of trade responsible for exchange reporting.\nValid values:\n  Y = Indicates that party receiving message must report trade\n  N = Indicates that party sending message will report trade
+114=LocateReqd,Boolean,Indicates whether the broker is to locate the stock in conjunction with a short sell order.\nValid values:\n  Y = Indicates the broker is responsible for locating the stock\n  N = Indicates the broker is not required to locate
+115=OnBehalfOfCompID,String,Assigned value used to identify firm originating message if the message was delivered by a third party  i.e.   the third party firm identifier would be delivered in the SenderCompID field and the firm originating the message in this field.
+116=OnBehalfOfSubID,String,Assigned value used to identify specific message originator (i.e. trader) if the message was delivered by a third party
+117=QuoteID,String,Unique identifier for quote
+118=NetMoney,Amt,Total amount due as the result of the transaction (e.g. for Buy order - principal + commission + fees) reported in currency of execution.
+119=SettlCurrAmt,Amt,Total amount due expressed in settlement currency (includes the effect of the forex transaction)
+120=SettlCurrency,Currency,Currency code of settlement denomination.
+121=ForexReq,Boolean,Indicates request for forex accommodation trade to be executed along with security transaction.	\nValid values:\n  Y = Execute Forex after security trade\n  N = Do not execute Forex after security trade
+122=OrigSendingTime,UTCTimestamp,Original time of message transmission (always expressed in UTC (Universal Time Coordinated, also known as "GMT") when transmitting orders as the result of a resend request.
+123=GapFillFlag,Boolean,Indicates that the Sequence Reset message is replacing administrative or application messages which will not be resent.	\nValid values:\n  Y = Gap Fill message, MsgSeqNum field valid\n  N = Sequence Reset, ignore MsgSeqNum
+124=NoExecs,int,No of execution repeating group entries to follow.
+125=CxlType,char,No longer used.  Included here for reference to prior versions.
+126=ExpireTime,UTCTimestamp,Time/Date of order expiration (always expressed in UTC (Universal Time Coordinated, also known as "GMT")
+127=DKReason,char,Reason for execution rejection.	\nValid values:\n  A = Unknown symbol\n  B = Wrong side\n  C = Quantity exceeds order\n  D = No matching order\n  E = Price exceeds limit\n  Z = Other
+128=DeliverToCompID,String,Assigned value used to identify the firm targeted to receive the message if the message is delivered by a third party   i.e.  the third party firm identifier would be delivered in the TargetCompID field and the ultimate receiver firm ID in this field.
+129=DeliverToSubID,String,Assigned value used to identify specific message recipient (i.e. trader) if the message is delivered by a third party
+130=IOINaturalFlag,Boolean,Indicates that IOI is the result of an existing agency order or a facilitation position resulting from an agency order, not from principal trading or order solicitation activity.	Valid values:\n  Y = Natural\n  N = Not natural
+131=QuoteReqID,String,Unique identifier for quote request
+132=BidPx,Price,Bid price/rate
+133=OfferPx,Price,Offer price/rate
+134=BidSize,Qty,Quantity of bid	(Prior to FIX 4.2 this field was of type int)
+135=OfferSize,Qty,Quantity of offer	(Prior to FIX 4.2 this field was of type int)
+136=NoMiscFees,int,Number of repeating groups of miscellaneous fees
+137=MiscFeeAmt,Amt,Miscellaneous fee value
+138=MiscFeeCurr,Currency,Currency of miscellaneous fee
+139=MiscFeeType,char,Indicates type of miscellaneous fee.	\nValid values:\n  1 = Regulatory (e.g. SEC)\n  2 = Tax\n  3 = Local Commission\n  4 = Exchange Fees\n  5 = Stamp\n  6 = Levy\n  7 = Other\n  8 = Markup\n  9 = Consumption Tax
+140=PrevClosePx,Price,Previous closing price of security.
+141=ResetSeqNumFlag,Boolean,Indicates that the both sides of the FIX session should reset sequence numbers.	\nValid values:	\n  Y = Yes, reset sequence numbers\n  N = No
+142=SenderLocationID,String,Assigned value used to identify specific message originator's location (i.e. geographic location and/or desk, trader)
+143=TargetLocationID,String,Assigned value used to identify specific message destination's location (i.e. geographic location and/or desk, trader)
+144=OnBehalfOfLocationID,String,Assigned value used to identify specific message originator's location (i.e. geographic location and/or desk, trader) if the message was delivered by a third party
+145=DeliverToLocationID,String,Assigned value used to identify specific message recipient's location (i.e. geographic location and/or desk, trader) if the message was delivered by a third party
+146=NoRelatedSym,int,Specifies the number of repeating symbols specified.
+147=Subject,String,The subject of an Email message
+148=Headline,String,The headline of a News message
+149=URLLink,String,A URL (Uniform Resource Locator) link to additional information (i.e. http://www.XYZ.com/research.html)
+150=ExecType,char,Describes the specific ExecutionRpt (i.e. Pending Cancel) while OrdStatus will always identify the current order status (i.e. Partially Filled) 	Valid values:\n  0 = New\n  1 = Partial fill\n  2 = Fill\n  3 = Done for day\n  4 = Canceled\n  5 = Replace\n  6 = Pending Cancel  (e.g. result of Order Cancel Request)\n  7 = Stopped\n  8 = Rejected\n  9 = Suspended\n  A = Pending New\n  B = Calculated\n  C = Expired\n  D = Restated (ExecutionRpt sent unsolicited by sellside, with ExecRestatementReason set)\n  E = Pending Replace (e.g. result of Order Cancel/Replace Request)
+151=LeavesQty,Qty,Amount of shares open for further execution. If the OrdStatus is Canceled, DoneForTheDay, Expired, Calculated, or Rejected (in which case the order is no longer active) then LeavesQty could be 0, otherwise LeavesQty = OrderQty - CumQty.	(Prior to FIX 4.2 this field was of type int)
+152=CashOrderQty,Qty,Specifies the approximate  order quantity desired in total monetary units vs. as a number of shares.  The broker would be responsible for converting and calculating a share quantity (OrderQty) based upon this amount to be used for the actual order and subsequent messages.
+153=AllocAvgPx,Price,AvgPx for a specific AllocAccount
+154=AllocNetMoney,Amt,NetMoney for a specific AllocAccount
+155=SettlCurrFxRate,float,Foreign exchange rate used to compute SettlCurrAmt from Currency to SettlCurrency
+156=SettlCurrFxRateCalc,char,Specifies whether or not SettlCurrFxRate should be multiplied or divided.\n  M = Multiply\n  D = Divide
+157=NumDaysInterest,int,Number of Days of Interest for convertible bonds and fixed income
+158=AccruedInterestRate,float,Accrued Interest Rate for convertible bonds and fixed income
+159=AccruedInterestAmt,Amt,Amount of Accrued Interest for convertible bonds and fixed income
+160=SettlInstMode,char,Indicates mode used for Settlement Instructions\nValid values:\n  0 = Default\n  1 = Standing Instructions Provided\n  2 = Specific Allocation Account Overriding\n  3 = Specific Allocation Account Standing
+161=AllocText,String,Free format text related to a specific AllocAccount.
+162=SettlInstID,String,Unique identifier for Settlement Instructions message.
+163=SettlInstTransType,char,Settlement Instructions message transaction type	\nValid values:\n  N = New\n  C = Cancel\n  R = Replace
+164=EmailThreadID,String,Unique identifier for an email thread (new and chain of replies)
+165=SettlInstSource,char,Indicates source of Settlement Instructions	\nValid values:\n  1 = Broker's Instructions\n  2 = Institution's Instructions
+166=SettlLocation,String,Identifies Settlement Depository or Country Code (ISITC spec)	Valid values:\n  CED = CEDEL\n  DTC = Depository Trust Company\n  EUR = Euroclear\n  FED = Federal Book Entry\n  PNY = Physical\n  PTC = Participant Trust Company\n  ISO Country Code = Local Market Settle Location
+167=SecurityType,String,Indicates type of security (ISITC spec)	\nValid values:\n  BA = Bankers Acceptance\n  CB = Convertible Bond (Note not part of ISITC spec)\n  CD = Certificate Of Deposit\n  CMO = Collateralize Mortgage Obligation	\n  CORP = Corporate Bond\n  CP = Commercial Paper\n  CPP = Corporate Private Placement\n  CS = Common Stock\n  FHA = Federal Housing Authority\n  FHL = Federal Home Loan\n  FN = Federal National Mortgage Association\n  FOR = Foreign Exchange Contract\n  FUT = Future\n  GN =  Government National Mortgage Association\n  GOVT = Treasuries + Agency Debenture IET Mortgage IOETTE\n  MF =  Mutual Fund\n  MIO = Mortgage Interest Only\n  MPO = Mortgage Principal Only\n  MPP = Mortgage Private Placement\n  MPT = Miscellaneous Pass-Thru\n  MUNI = Municipal Bond\n  NONE = No ISITC Security Type\n  OPT = Option\n  PS = Preferred Stock\n  RP = Repurchase Agreement\n  RVRP =  Reverse Repurchase Agreement\n  SL = Student Loan Marketing Association\n  TD = Time Deposit\n  USTB = US Treasury Bill\n  WAR = Warrant\n  ZOO = Cats, Tigers & Lions (a real code: US Treasury Receipts) ? = "Wildcard" entry (used on Security Definition Request message)
+168=EffectiveTime,UTCTimestamp,Time the details within the message should take effect (always expressed in UTC (Universal Time Coordinated, also known as "GMT")
+169=StandInstDbType,int,Identifies the Standing Instruction database used	\nValid values:\n  0 = Other\n  1 = DTC SID\n  2 = Thomson ALERT\n  3 = A Global Custodian (StandInstDbName must be provided)
+170=StandInstDbName,String,Name of the Standing Instruction database represented with StandInstDbType (i.e. the Global Custodian's name).
+171=StandInstDbID,String,Unique identifier used on the Standing Instructions database for the Standing Instructions to be referenced.
+172=SettlDeliveryType,int,Identifies type of settlement\n0 = "Versus. Payment": Deliver (if  Sell) or Receive (if Buy) vs. (Against) Payment \n1 = "Free": Deliver (if Sell) or Receive (if Buy) Free
+173=SettlDepositoryCode,String,Broker's account code at the depository (i.e. CEDEL ID  for CEDEL, FINS for DTC, or Euroclear ID for Euroclear) if SettlLocation is a depository
+174=SettlBrkrCode,String,BIC (Bank Identification Code-Swift managed) code of  the broker involved (i.e. for multi-company brokerage firms)
+175=SettlInstCode,String,BIC (Bank Identification Code-Swift managed) code of  the institution involved (i.e. for multi-company institution firms)
+176=SecuritySettlAgentName,String,Name of SettlInstSource's local agent bank if SettlLocation is  not a depository
+177=SecuritySettlAgentCode,String,BIC (Bank Identification Code--Swift managed) code of  the SettlInstSource's local agent bank if SettlLocation  is not a depository
+178=SecuritySettlAgentAcctNum,String,SettlInstSource's account number at local agent bank if  SettlLocation is not a depository
+179=SecuritySettlAgentAcctName,String,Name of SettlInstSource's account at local agent bank if  SettlLocation is not a depository
+180=SecuritySettlAgentContactName,String,Name of contact at local agent bank for SettlInstSource's account if SettlLocation is not a depository
+181=SecuritySettlAgentContactPhone,String,Phone number for contact at local agent bank if  SettlLocation is not a depository
+182=CashSettlAgentName,String,Name of SettlInstSource's local agent bank if SettlDeliveryType=Free
+183=CashSettlAgentCode,String,BIC (Bank Identification Code--Swift managed) code of  the SettlInstSource's local agent bank if SettlDeliveryType=Free
+184=CashSettlAgentAcctNum,String,SettlInstSource's account number at local agent bank if SettlDeliveryType=Free
+185=CashSettlAgentAcctName,String,Name of SettlInstSource's account at local agent bank if SettlDeliveryType=Free
+186=CashSettlAgentContactName,String,Name of contact at local agent bank for SettlInstSource's account  if SettlDeliveryType=Free
+187=CashSettlAgentContactPhone,String,Phone number for contact at local agent bank for SettlInstSource's account  if SettlDeliveryType=Free
+188=BidSpotRate,Price,Bid F/X spot rate.y vary and not limited to four)
+189=BidForwardPoints,PriceOffset,Bid F/X forward points added to spot rate. May be a negative value.
+190=OfferSpotRate,Price,Offer F/X spot rate.
+191=OfferForwardPoints,PriceOffset,Offer F/X forward points added to spot rate. May be a negative value.
+192=OrderQty2,Qty,OrderQty of the future part of a F/X swap order.
+193=FutSettDate2,LocalMktDate,FutSettDate of the future part of a F/X swap order.
+194=LastSpotRate,Price,F/X spot rate.
+195=LastForwardPoints,PriceOffset,F/X forward points added to LastSpotRate.  May be a negative value.
+196=AllocLinkID,String,Can be used to link two different Allocation messages (each with unique AllocID) together, i.e. for F/X "Netting" or "Swaps".  Should be unique.
+197=AllocLinkType,int,Identifies the type of Allocation linkage when AllocLinkID is used.	\nValid values:\n  0 = F/X Netting\n  1 = F/X Swap
+198=SecondaryOrderID,String,Assigned by the party which accepts the order.  Can be used to provide the OrderID used by an exchange or executing system.
+199=NoIOIQualifiers,int,Number of repeating groups of IOIQualifiers.
+200=MaturityMonthYear,month-year,Month and Year of the maturity for SecurityType=FUT or SecurityType=OPT. Required if MaturityDay is specified.	Format:  YYYYMM    	   (i.e. 199903)
+201=PutOrCall,int,Indicates whether an Option is for a put or call.\nValid values:\n  0 = Put\n  1 = Call
+202=StrikePrice,Price,Strike Price for an Option.
+203=CoveredOrUncovered,int,Used for options\nValid values:  \n  0 = Covered\n  1 = Uncovered
+204=CustomerOrFirm,int,Used for options when delivering the order to an execution system/exchange to specify if the order is for a customer or the firm placing the order itself.	Valid values:\n  0 = Customer\n  1 = Firm
+205=MaturityDay,day-of-month,Day of month used in conjunction with MaturityMonthYear to specify the maturity date for SecurityType=FUT or SecurityType=OPT.	\nValid values:    1-31
+206=OptAttribute,char,Can be used for SecurityType=OPT to identify a particular security.	\nValid values vary by SecurityExchange:  	    \nFor Exchange: MONEP (Paris)       \n  L = Long (a.k.a. "American")\n  S = Short (a.k.a. "European")\n\nFor Exchanges: DTB (Frankfurt), HKSE (Hong Kong), and SOFFEX (Zurich)      \n  0-9 = single digit "version" number assigned by exchange following capital adjustments (0=current, 1=prior, 2=prior to 1, etc).
+207=SecurityExchange,Exchange,Market used to help identify a security.	Valid values:  	    See Appendix C
+208=NotifyBrokerOfCredit,Boolean,Indicates whether or not details should be communicated to BrokerOfCredit (i.e. step-in broker).\nValid values:\n  Y = Details should be communicated\n  N = Details should not be communicated
+209=AllocHandlInst,int,Indicates how the receiver (i.e. third party) of Allocation message should handle/process the account details.	\nValid values:\n  1 = Match\n  2 = Forward\n  3 = Forward and Match
+210=MaxShow,Qty,Maximum number of shares within an order to be shown  to other customers (i.e. sent via an IOI).	(Prior to FIX 4.2 this field was of type int)
+211=PegDifference,PriceOffset,Amount (signed) added to the price of the peg  for a pegged order.
+212=XmlDataLen,int,Length of the XmlData data block.
+213=XmlData,data,Actual XML data stream (e.g. FIXML). See approriate XML reference (e.g. FIXML).  Note: may contain embedded SOH characters.
+214=SettlInstRefID,String,Reference identifier for the SettlInstID with Cancel and Replace SettlInstTransType transaction types.
+215=NoRoutingIDs,int,Number of repeating groups of RoutingID and RoutingType values.		See Appendix L - Pre-Trade Message Targeting/Routing
+216=RoutingType,int,Indicates the type of RoutingID specified.	\nValid values:\n  1 = Target Firm\n  2 = Target List\n  3 = Block Firm\n  4 = Block List
+217=RoutingID,String,Assigned value used to identify a specific routing destination.
+218=SpreadToBenchmark,PriceOffset,For Fixed Income.  Basis points relative to a benchmark.  To be expressed as "count of basis points" (vs. an absolute value).  E.g. High Grade Corporate Bonds may express price as basis points relative to benchmark (the Benchmark field).  Note: Basis points can be negative.
+219=Benchmark,char,For Fixed Income.  Identifies the benchmark (e.g. used in conjunction with the SpreadToBenchmark field).	Valid values:\n  1 = CURVE\n  2 = 5-YR\n  3 = OLD-5\n  4 = 10-YR\n  5 = OLD-10\n  6 = 30-YR\n  7 = OLD-30\n  8 = 3-MO-LIBOR\n  9 = 6-MO-LIBOR
+223=CouponRate,float,For Fixed Income.  Coupon rate of the bond.  Will be zero for step-up bonds.
+231=ContractMultiplier,float,Specifies the ratio or multiply factor to convert from contracts to shares (e.g. 1.0, 100, 1000, etc).  Applicable For Fixed Income, Convertible Bonds, Derivatives, etc.  Note: If used, quantities should be expressed in the "nominal" (e.g. contracts vs. shares) amount.
+262=MDReqID,String,Unique identifier for Market Data Request
+263=SubscriptionRequestType,char,Subscription Request Type	\nValid values:\n  0 = Snapshot\n  1 = Snapshot + Updates (Subscribe)\n  2 = Disable previous Snapshot + Update Request (Unsubscribe)
+264=MarketDepth,int,Depth of market for Book Snapshot	\nValid values:\n  0 = Full Book\n  1 = Top of Book\n  N>1 = Report best N price tiers of data
+265=MDUpdateType,int,Specifies the type of Market Data update.	\nValid values:\n  0 = Full Refresh\n  1 = Incremental Refresh
+266=AggregatedBook,Boolean,Specifies whether or not book entries should be aggregated.	Valid values:\n  Y = one book entry per side per price\n  N = Multiple entries per side per price allowed(Not specified) = broker option
+267=NoMDEntryTypes,int,Number of MDEntryType fields requested.
+268=NoMDEntries,int,Number of entries in Market Data message.
+269=MDEntryType,char,Type  Market Data entry.	Valid values:\n  0 = Bid\n  1 = Offer\n  2 = Trade\n  3 = Index Value\n  4 = Opening Price\n  5 = Closing Price\n  6 = Settlement Price\n  7 = Trading Session High Price\n  8 = Trading Session Low Price\n  9 = Trading Session VWAP Price
+270=MDEntryPx,Price,Price of the Market Data Entry.
+271=MDEntrySize,Qty,Number of shares represented by the Market Data Entry.
+272=MDEntryDate,UTCDate,Date of Market Data Entry.
+273=MDEntryTime,UTCTimeOnly,Time of Market Data Entry.
+274=TickDirection,char,Direction of the "tick".	\nValid values:\n  0 = Plus Tick\n  1 = Zero-Plus Tick\n  2 = Minus Tick\n  3 = Zero-Minus Tick
+275=MDMkt,Exchange,Market posting quote / trade.  \nValid values:	See Appendix C
+276=QuoteCondition,MultipleValueString,Space-delimited list of conditions describing a quote.	\nValid values:\n  A = Open / Active\n  B = Closed / Inactive\n  C = Exchange Best\n  D = Consolidated Best\n  E = Locked\n  F = Crossed\n  G = Depth\n  H = Fast Trading\n  I = Non-Firm
+277=TradeCondition,MultipleValueString,Space-delimited list of conditions describing a trade\nValid values:\n  A = Cash (only) Market\n  B = Average Price Trade\n  C = Cash Trade (same day clearing)\n  D = Next Day (only) Market\n  E = Opening / Reopening Trade Detail\n  F = Intraday Trade Detail\n  G = Rule 127 Trade (NYSE)\n  H = Rule 155 Trade (Amex)\n  I = Sold Last (late reporting)\n  J = Next Day Trade (next day clearing)\n  K = Opened (late report of opened trade)\n  L = Seller\n  M = Sold (out of sequence)\n  N = Stopped Stock (guarantee of price but does not execute the order)
+278=MDEntryID,String,Unique Market Data Entry identifier.
+279=MDUpdateAction,char,Type of Market Data update action.	\nValid values:\n  0 = New\n  1 = Change\n  2 = Delete
+280=MDEntryRefID,String,Refers to a previous MDEntryID.
+281=MDReqRejReason,char,Reason for the rejection of a Market Data request.\nValid values:\n  0 = Unknown symbol\n  1 = Duplicate MDReqID\n  2 = Insufficient Bandwidth\n  3 = Insufficient Permissions\n  4 = Unsupported SubscriptionRequestType\n  5 = Unsupported MarketDepth\n  6 = Unsupported MDUpdateType\n  7 = Unsupported AggregatedBook\n  8 = Unsupported MDEntryType
+282=MDEntryOriginator,String,Originator of a Market Data Entry
+283=LocationID,String,Identification of a Market Maker's location
+284=DeskID,String,Identification of a Market Maker's desk
+285=DeleteReason,char,Reason for deletion.	\nValid values:\n  0 = Cancelation / Trade Bust\n  1 = Error
+286=OpenCloseSettleFlag,char,Flag that identifies a price.	\nValid values:\n  0 = Daily Open / Close / Settlement price\n  1 = Session Open / Close / Settlement price\n  2 = Delivery Settlement price
+287=SellerDays,int,Specifies the number of days that may elapse before delivery of the security
+288=MDEntryBuyer,String,Buying party in a trade
+289=MDEntrySeller,String,Selling party in a trade
+290=MDEntryPositionNo,int,Display position of a bid or offer, numbered from most competitive to least competitive, per market side, beginning with 1.
+291=FinancialStatus,char,Identifies a firm's financial status.	\nValid values:  \n1 = Bankrupt
+292=CorporateAction,char,Identifies the type of Corporate Action.	\nValid values:  \n  A = Ex-Dividend  \n  B = Ex-Distribution\n  C = Ex-Rights\n  D = New\n  E = Ex-Interest
+293=DefBidSize,Qty,Default Bid Size.
+294=DefOfferSize,Qty,Default Offer Size.
+295=NoQuoteEntries,int,The number of quote entries for a QuoteSet.
+296=NoQuoteSets,int,The number of sets of quotes in the message.
+297=QuoteAckStatus,int,Identifies the status of the quote acknowledgement.\nValid values:\n  0-Accepted\n  1-Canceled for Symbol(s)\n  2-Canceled  for Security Type(s) \n  3-Canceled for Underlying  \n  4-Canceled All  \n  5-Rejected
+298=QuoteCancelType,int,Identifies the type of  quote cancel.	\nValid Values:\n  1 - Cancel for Symbol(s)  \n  2 - Cancel for Security Type(s)  \n  3 - Cancel for Underlying Symbol\n  4 - Cancel All Quotes
+299=QuoteEntryID,String,Uniquely identifies the quote as part of a QuoteSet.
+300=QuoteRejectReason,int,Reason Quote was rejected:	Valid Values:\n  1 = Unknown symbol (Security)  \n  2 = Exchange(Security) closed\n  3 = Quote Request exceeds limit  \n  4 = Too late to enter\n  5 = Unknown Quote\n  6 = Duplicate Quote\n  7 = Invalid bid/ask spread\n  8 = Invalid price\n  9 = Not authorized to quote security
+301=QuoteResponseLevel,int,Level of Response requested from receiver of quote messages.	Valid Values:\n  0 - No Acknowledgement (Default)\n  1 - Acknowledge only negative or erroneous quotes\n  2 - Acknowledge each quote messages
+302=QuoteSetID,String,Unique id for the Quote Set.
+303=QuoteRequestType,int,Indicates the type of Quote Request being generated\nValid values:\n  1 - Manual\n  2 - Automatic
+304=TotQuoteEntries,int,Total number of quotes for the quote set across all messages. Should be the sum of all NoQuoteEntries in each message that has repeating quotes that are part of the same quote set.
+305=UnderlyingIDSource,String,Underlying security's IDSource.	  \nValid values:   see IDSource field
+306=UnderlyingIssuer,String,Underlying security's Issuer.	  See Issuer field for description
+307=UnderlyingSecurityDesc,String,Underlying security's SecurityDesc.	  See SecurityDesc field for description
+308=UnderlyingSecurityExchange,Exchange,Underlying security's SecurityExchange.  Can be used to identify the underlying security.	  Valid values:  see SecurityExchange
+309=UnderlyingSecurityID,String,Underlying security's SecurityID.	  \nSee SecurityID field for description
+310=UnderlyingSecurityType,String,Underlying security's SecurityType.	 \nValid values:   see SecurityType field
+311=UnderlyingSymbol,String,Underlying security's Symbol.	  See Symbol field for description
+312=UnderlyingSymbolSfx,String,Underlying security's SymbolSfx.	  See SymbolSfx field for description
+313=UnderlyingMaturityMonthYear,month-year,Underlying security's MaturityMonthYear. Required if UnderlyingMaturityDay is specified.	  See MaturityMonthYear field for description
+314=UnderlyingMaturityDay,day-of-month,Underlying security's MaturityDay.	  See MaturityDay field for description
+315=UnderlyingPutOrCall,int,Underlying security's PutOrCall.	  See PutOrCall field for description
+316=UnderlyingStrikePrice,Price,Underlying security's StrikePrice.	  See StrikePrice field for description
+317=UnderlyingOptAttribute,char,Underlying security's OptAttribute.	  See OptAttribute field for description
+318=Underlying Currency,Currency,Underlying security's Currency.	  See Currency field for description and valid values
+319=RatioQty,Quantity,Quantity of a particular leg in the security.
+320=SecurityReqID,String,Unique ID of a Security Definition Request.
+321=SecurityRequestType,int,Type of Security Definition Request.	Valid values:  0 = Request Security identity and specifications  1 = Request Security identity for the specifications provided (Name of the security is not supplied)  2 = Request List Security Types  3 = Request List Securities (Can be qualified with Symbol, SecurityType, TradingSessionID, SecurityExchange is provided then only list Securities for the specific type)
+322=SecurityResponseID,String,Unique ID of a Security Definition message.
+323=SecurityResponseType,int,Type of Security Definition message response.	\nValid values:\n  1 = Accept security proposal as is\n  2 = Accept security proposal with revisions as indicated in the message\n  3 = List of security types returned per request\n  4 = List of securities returned per request\n  5 = Reject security proposal\n  6 = Can not match selection criteria
+324=SecurityStatusReqID,String,Unique ID of a Security Status Request message.
+325=UnsolicitedIndicator,Boolean,Indicates whether or not message is being sent as a result of a subscription request or not.	Valid values:\n  Y = Message is being sent unsolicited\n  N = Message is being sent as a result of a prior request
+326=SecurityTradingStatus,int,Identifies the trading status applicable to the transaction.	Valid values:\n  1 = Opening Delay\n  2 = Trading Halt\n  3 = Resume\n  4 = No Open/No Resume\n  5 = Price Indication\n  6 = Trading Range Indication\n  7 = Market Imbalance Buy\n  8 = Market Imbalance Sell\n  9 = Market On Close Imbalance Buy\n  10 = Market On Close Imbalance Sell\n  11 = (not assigned)\n  12 = No Market Imbalance\n  13 = No Market On Close Imbalance\n  14 = ITS Pre-Opening\n  15 = New Price Indication\n  16 = Trade Dissemination Time \n  17 = Ready to trade (start of session)\n  18 = Not Available for trading (end of session)\n  19 = Not Traded on this Market \n  20 = Unknown or Invalid
+327=HaltReason,char,Denotes the reason for the Opening Delay or Trading Halt.	Valid values:\n  I = Order Imbalance\n  X = Equipment Changeover\n  P = News Pending\n  D = News Dissemination\n  E = Order Influx\n  M = Additional Information
+328=InViewOfCommon,Boolean,Indicates whether or not the halt was due to Common Stock trading being halted.\nValid values:\n  Y = Halt was due to common stock being halted\n  N = Halt was not related to a halt of the common stock
+329=DueToRelated,Boolean,Indicates whether or not the halt was due to the Related Security being halted.	\nValid values:\n  Y = Halt was due to related security being halted\n  N = Halt was not related to a halt of the related security
+330=BuyVolume,Qty,Number of shares bought.
+331=SellVolume,Qty,Number of shares sold.
+332=HighPx,Price,Represents an indication of the high end of the price range for a security prior to the open or reopen
+333=LowPx,Price,Represents an indication of the low end of the price range for a security prior to the open or reopen
+334=Adjustment,int,Identifies the type of adjustment.	\nValid values:  \n  1 = Cancel\n  2 = Error\n  3 = Correction
+335=TradSesReqID,String,Unique ID of a Trading Session Status message.
+336=TradingSessionID,String,Identifier for Trading Session	Can be used to represent a specific market trading session (e.g. "PRE-OPEN", "CROSS_2", "AFTER-HOURS", "TOSTNET1", "TOSTNET2", etc). 	Values should be bi-laterally agreed to between counterparties.
+337=ContraTrader,String,Identifies the trader (e.g. "badge number") of the ContraBroker.
+338=TradSesMethod,int,Method of trading\nValid values:\n  1 = Electronic\n  2 = Open Outcry\n  3 = Two Party
+339=TradSesMode,int,Trading Session Mode\nValid values:\n  1 = Testing\n  2 = Simulated\n  3 = Production
+340=TradSesStatus,int,State of the trading session.	 Valid values:\n  1 = Halted\n  2 = Open\n  3 = Closed\n  4 = Pre-Open\n  5 = Pre-Close
+341=TradSesStartTime,UTCTimestamp,Starting time of the trading session
+342=TradSesOpenTime,UTCTimestamp,Time of the opening of the trading session
+343=TradSesPreCloseTime,UTCTimestamp,Time of the pre-closed of the trading session
+344=TradSesCloseTime,UTCTimestamp,Closing time of the trading session
+345=TradSesEndTime,UTCTimestamp,End time of the trading session
+346=NumberOfOrders,int,Number of orders in the market.
+347=MessageEncoding,String,Type of message encoding (non-ASCII (non-English) characters) used in a message's "Encoded" fields.	\nValid values:  \n  ISO-2022-JP   (for using JIS)   \n  EUC-JP        (for using EUC) \n  Shift_JIS     (for using SJIS)  \n  UTF-8         (for using Unicode)
+348=EncodedIssuerLen,int,Byte length of encoded (non-ASCII characters) EncodedIssuer field.
+349=EncodedIssuer,data,Encoded (non-ASCII characters) representation of the Issuer field in the encoded format specified via the MessageEncoding field.  If used, the ASCII (English) representation should also be specified in the Issuer field.
+350=EncodedSecurityDescLen,int,Byte length of encoded (non-ASCII characters) EncodedSecurityDesc field.
+351=EncodedSecurityDesc,data,Encoded (non-ASCII characters) representation of the SecurityDesc field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the SecurityDesc field.
+352=EncodedListExecInstLen,int,Byte length of encoded (non-ASCII characters) EncodedListExecInst field.
+353=EncodedListExecInst,data,Encoded (non-ASCII characters) representation of the ListExecInst field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the ListExecInst field.
+354=EncodedTextLen,int,Byte length of encoded (non-ASCII characters) EncodedText field.
+355=EncodedText,data,Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the Text field.
+356=EncodedSubjectLen,int,Byte length of encoded (non-ASCII characters) EncodedSubject field.
+357=EncodedSubject,data,Encoded (non-ASCII characters) representation of the Subject field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the Subject field.
+358=EncodedHeadlineLen,int,Byte length of encoded (non-ASCII characters) EncodedHeadline field.
+359=EncodedHeadline,data,Encoded (non-ASCII characters) representation of the Headline field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the Headline field.
+360=EncodedAllocTextLen,int,Byte length of encoded (non-ASCII characters) EncodedAllocText field.
+361=EncodedAllocText,data,Encoded (non-ASCII characters) representation of the AllocText field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the AllocText field.
+362=EncodedUnderlyingIssuerLen,int,Byte length of encoded (non-ASCII characters) EncodedUnderlyingIssuer field.
+363=EncodedUnderlyingIssuer,data,Encoded (non-ASCII characters) representation of the UnderlyingIssuer field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the UnderlyingIssuer field.
+364=EncodedUnderlyingSecurityDescLen,int,Byte length of encoded (non-ASCII characters) EncodedUnderlyingSecurityDesc field.
+365=EncodedUnderlyingSecurityDesc,data,Encoded (non-ASCII characters) representation of the UnderlyingSecurityDesc field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the UnderlyingSecurityeDesc  field.
+366=AllocPrice,Price,Executed price for an AllocAccount entry used when using "executed price" vs. "average price" allocations (e.g. Japan).
+367=QuoteSetValidUntilTime,UTCTimestamp,Indicates expiration time of this particular QuoteSet (always expressed in UTC (Universal Time Coordinated, also known as "GMT")
+368=QuoteEntryRejectReason,int,Reason Quote Entry was rejected:	\nValid values:\n  1 = Unknown symbol (Security)\n  2 = Exchange(Security) closed\n  3 = Quote exceeds limit\n  4 = Too late to enter\n  5 = Unknown Quote\n  6 = Duplicate Quote\n  7 = Invalid bid/ask spread\n  8 = Invalid price\n  9 = Not authorized to quote security
+369=LastMsgSeqNumProcessed,int,The last MsgSeqNum value received and processed.  Can be specified on every message sent.  Useful for detecting a backlog with a counterparty.
+370=OnBehalfOfSendingTime,UTCTimestamp,Used when a message is sent via a "hub" or "service bureau".  If A sends to Q (the hub) who then sends to B via a separate FIX session, then when Q sends to B the value of this field should represent the SendingTime on the message A sent to Q.   (always expressed in UTC (Universal Time Coordinated, also known as "GMT")
+371=RefTagID,int,The tag number of the FIX field being referenced.
+372=RefMsgType,String,The MsgType of the FIX message being referenced.
+373=SessionRejectReason,int,Code to identify reason for a session-level Reject message.	Valid values:\n  0 = Invalid tag number\n  1 = Required tag missing\n  2 = Tag not defined for this message type\n  3 = Undefined Tag\n  4 = Tag specified without a value\n  5 = Value is incorrect (out of range) for this tag\n  6 = Incorrect data format for value\n  7 = Decryption problem\n  8 = Signature problem\n  9 = CompID problem\n  10 = SendingTime accuracy problem\n  11  = Invalid MsgType
+374=BidRequestTransType,char,Identifies the Bid Request message type.\nValid values:\n  N = New\n  C = Cancel
+375=ContraBroker,String,Identifies contra broker.  Standard NASD market-maker mnemonic is preferred.
+376=ComplianceID,String,ID used to represent this transaction for compliance purposes (e.g. OATS reporting).
+377=SolicitedFlag,Boolean,Indicates whether or not the order was solicited.	\nValid values:\n  Y = Was solcitied\n  N = Was not solicited
+378=ExecRestatementReason,int,Code to identify reason for an ExecutionRpt message sent with ExecType=Restated or used when communicating an unsolicited cancel.	 \nValid values:\n  0 = GT Corporate action\n  1 = GT renewal / restatement (no corporate action)\n  2 = Verbal change\n  3 = Repricing of order\n  4 = Broker option\n  5 = Partial decline of OrderQty (e.g. exchange-initiated partial cancel)
+379=BusinessRejectRefID,String,The value of the business-level "ID" field on the message being referenced.
+380=BusinessRejectReason,int,Code to identify reason for a Business Message Reject message.	\nValid values:\n  0 = Other\n  1 = Unkown ID\n  2 = Unknown Security\n  3 = Unsupported Message Type\n  4 = Application not available\n  5 = Conditionally Required Field Missing
+381=GrossTradeAmt,Amt,Total amount traded (e.g. CumQty * AvgPx) expressed in units of currency.
+382=NoContraBrokers,int,The number of ContraBroker entries.
+383=MaxMessageSize,int,Maximum number of bytes supported for a single message.
+384=NoMsgTypes,int,Number of MsgTypes in repeating group.
+385=MsgDirection,char,Specifies the direction of the messsage.	\nValid values:\n  S = Send\n  R = Receive
+386=NoTradingSessions,int,Number of TradingSessionIDs in repeating group.
+387=TotalVolumeTraded,Qty,Total volume (quantity) traded.
+388=DiscretionInst,char,Code to identify the price a DiscretionOffset is related to and should be mathematically added to.	\nValid values:\n  0 = Related to displayed price\n  1 = Related to market price	\n  2 = Related to primary price	\n  3 = Related to local primary price\n  4 = Related to midpoint price\n  5 = Related to last trade price
+389=DiscretionOffset,PriceOffset,Amount (signed) added to the "related to" price specified via DiscretionInst.
+390=BidID,String,Unique identifier for Bid Response as assigned by broker.  Uniqueness must be guaranteed within a single trading day.
+391=ClientBidID,String,Unique identifier for a Bid Request as assigned by institution.  Uniqueness must be guaranteed within a single trading day.
+392=ListName,String,Descriptive name for list order.
+393=TotalNumSecurities,int,Total number of securities.
+394=BidType,int,Code to identify the type of Bid Request.\nValid values:\n  1 - "Non Disclosed" Style (e.g. US/European)\n  2 - "Disclosed"  Style (e.g. Japanese)\n  3 - No Bidding Process
+395=NumTickets,int,Total number of tickets.
+396=SideValue1,Amt,Amounts in currency
+397=SideValue2,Amt,Amounts in currency
+398=NoBidDescriptors,int,Number of BidDescriptor entries.
+399=BidDescriptorType,int,Code to identify the type of BidDescriptor.	\nValid values:\n  1 - Sector\n  2 - Country\n  3 - Index
+400=BidDescriptor,String,BidDescriptor value.  Usage depends upon BidDescriptorType.If BidDescriptorType =1 Industrials etc - Free textIf BidDescriptorType =2"FR" etc - ISO Country CodesIf BidDescriptorType =3FT100, FT250, STOX - Free text
+401=SideValueInd,int,Code to identify which "SideValue" the value refers to.  SideValue1 and SideValue2 are used as opposed to Buy or Sell so that the basket can be quoted either way as Buy or Sell.	\nValid values:\n  1 - SideValue1\n  2 - SideValue2
+402=LiquidityPctLow,float,Liquidity indicator or lower limit if TotalNumSecurities > 1.  Represented as a percentage.
+403=LiquidityPctHigh,float,Upper liquidity indicator if TotalNumSecurities > 1.  Represented as a percentage.
+404=LiquidityValue,Amt,Value between LiquidityPctLow and LiquidityPctHigh in Currency
+405=EFPTrackingError,float,Eg Used in EFP trades 12% (EFP - Exchange for Physical ).  Represented as a percentage.
+406=FairValue,Amt,Used in EFP trades
+407=OutsideIndexPct,float,Used in EFP trades.  Represented as a percentage.
+408=ValueOfFutures,Amt,Used in EFP trades
+409=LiquidityIndType,int,Code to identify the type of liquidity indicator.	\nValid values:\n  1 - 5day moving average\n  2 - 20 day moving average\n  3 - Normal Market Size \n  4 - Other
+410=WtAverageLiquidity,float,Overall weighted average liquidity expressed as a % of average daily volume.  Represented as a percentage.
+411=ExchangeForPhysical,Boolean,Indicates whether or not to exchange for phsyical.	\nValid values:   \n  Y = True   \n  N = False
+412=OutMainCntryUIndex,Amt,Value of stocks in Currency
+413=CrossPercent,float,Percentage of program that crosses in Currency.  Represented as a percentage.
+414=ProgRptReqs,int,Code to identify the desired frequency of progress reports.	Valid values:\n  1 - BuySide explicitly requests status using StatusRequest (Default) The sell-side firm can however, send a DONE status List Status Response in an unsolicited fashion\n  2 - SellSide periodically sends status using ListStatus. Period optionally specified in ProgressPeriod\n  3 - Real-time execution reports (to be discouraged)
+415=ProgPeriodInterval,int,Time in minutes between each ListStatus report sent by SellSide. Zero means don't send status.
+416=IncTaxInd,int,Code to represent whether value is net (inclusive of tax) or gross.	\nValid values:\n  1 - Net\n  2 - Gross
+417=NumBidders,int,Indicates the total number of bidders on the list
+418=TradeType,char,Code to represent the type of trade.\nValid values:\n  R: Risk Trade\n  G: VWAP Guarantee\n  A: Agency\n  J: Guaranteed Close
+419=BasisPxType,char,Code to represent the basis price type.\nValid values:\n  2: Closing Price at morning session\n  3: Closing Price\n  4: Current price \n  5: SQ\n  6: VWAP through a day\n  7: VWAP through a morning session\n  8: VWAP through an afternoon session\n  9: VWAP through a day except YORI\n  A: VWAP through a morning session except YORI\n  B: VWAP through an afternoon session except YORI\n  C: Strike\n  D: Open\n  Z: Others
+420=NoBidComponents,int,Indicates the number of list entries.
+421=Country,String,ISO Country Code in field
+422=TotNoStrikes,int,Total number of strike price entries across all messages. Should be the sum of all NoStrikes in each message that has repeating strike price entries related to the same ListID.  Used to support fragmentation.
+423=PriceType,int,Code to represent the price type.\nValid values:\n  1 - Percentage\n  2 - per share (e.g. cents per share)\n  3 - Fixed Amount (absolute value)
+424=DayOrderQty,Qty,For GT orders, the OrderQty less all shares (adjusted for stock splits) that traded on previous days.  DayOrderQty = OrderQty - (CumQty - DayCumQty)
+425=DayCumQty,Qty,The number of shares on a GT order that have traded today.
+426=DayAvgPx,Price,The average price of shares on a GT order that have traded today.
+427=GTBookingInst,int,Code to identify whether to book out executions on a part-filled GT order on the day of execution or to accumulate.	\nValid values:\n  0 = book out all trades on day of execution\n  1 = accumulate executions until order is filled or expires\n  2 = accumulate until verbally notified otherwise
+428=NoStrikes,int,Number of list strike price entries.
+429=ListStatusType,int,Code to represent the price type.\nValid values:\n  1 - Ack\n  2 - Response\n  3 - Timed\n  4 - ExecStarted\n  5 - AllDone\n  6 - Alert
+430=NetGrossInd,int,Code to represent whether value is net (inclusive of tax) or gross.	\nValid values:\n  1 - Net\n  2 - Gross
+431=ListOrderStatus,int,Code to represent the status of a list order.\nValid values:\n  1 - InBiddingProcess\n  2 - ReceivedForExecution\n  3 - Executing\n  4 - Canceling\n  5 - Alert\n  6 - All Done\n  7 - Reject
+432=ExpireDate,LocalMktDate,Date of order expiration (last day the order can trade), always expressed in terms of the local market date.  The time at which the order expires is determined by the local market's business practices
+433=ListExecInstType,char,Identifies the type of ListExecInst.\nValid values:\n  1 - Immediate\n  2 - Wait for Execute Instruction (e.g. a List Execute message or phone call before proceeding with execution of the list)
+434=CxlRejResponseTo,char,Identifies the type of request that a Cancel Reject is in response to.\nValid values:\n  1 - Order Cancel Request\n  2 - Order Cancel/Replace Request
+435=UnderlyingCouponRate,float,Underlying security's CouponRate.  See CouponRate field for description
+436=UnderlyingContractMultiplier,float,Underlying security's ContractMultiplier.  See ContractMultiplier field for description
+437=ContraTradeQty,Qty,Quantity traded with the ContraBroker.
+438=ContraTradeTime,UTCTimestamp,Identifes the time of the trade with the ContraBroker.   (always expressed in UTC (Universal Time Coordinated, also known as "GMT")
+439=ClearingFirm,String,Firm that will clear the trade.  Used if different from the executing firm.
+440=ClearingAccount,String,Supplemental accounting information forwared to clearing house/firm.
+441=LiquidityNumSecurities,int,Number of Securites between LiquidityPctLow and LiquidityPctHigh in Currency.
+442=MultiLegReportingType,char,Used to indicate what an Execution Report represents (e.g. used with multi-leg securiteis, such as option strategies, spreads, etc.).\nValid Values:\n  1 - Single Security (default if not specified)\n  2 - Individual leg of a multi-leg security\n  3 - Multi-leg security
+443=StrikeTime,UTCTimestamp,The time at which current market prices are used to determine the value of a basket.
+444=ListStatusText,String,Free format text string related to List Status.
+445=EncodedListStatusTextLen,int,Byte length of encoded (non-ASCII characters) EncodedListStatusText field.
+446=EncodedListStatusText,data,Encoded (non-ASCII characters) representation of the ListStatusText field in the encoded format specified via the MessageEncoding field. If used, the ASCII (English) representation should also be specified in the ListStatusText field.
+447=PartyIDSource,Char,Identifies class or source of the PartyID value. Required if PartyID is specified. Note: applicable values depend upon PartyRole specified.
+448=PartyID,String,Party identifier/code.
+451=NetChgPrevDay,PriceOffset,Net change from previous day's closing price vs. last traded price.
+452=PartyRole,int,Identifies the type or role of the PartyID specified
+453=NoPartyIDs,NumInGroup,Number of PartyID, PartyIDSource, and PartyRole entries
+454=NoSecurityAltID,NumInGroup,Number of SecurityAltID entries.
+455=SecurityAltID,String,Alternate Security identifier value for this security of SecurityAltIDSource type (e.g. CUSIP, SEDOL, ISIN, etc). Requires SecurityAltIDSource
+456=SecurityAltIDSource,String,Identifies class or source of the SecurityAltID value. Required if SecurityAltID is specified
+457=NoUnderlyingSecurityAltID,NumInGroup,Number of UnderlyingSecurityAltID entries
+458=UnderlyingSecurityAltID,String,Alternate Security identifier value for this underlying security of UnderlyingSecurityAltIDSource type (e.g. CUSIP, SEDOL, ISIN, etc). Requires UnderlyingSecurityAltIDSource
+553=Username,String,Userid or username.
+554=Password,String,Password or passphrase
+
+
+#Aegis Tags
+9701=OrderSenderSubID,,This is a custom field not found in the FIX spec.  
+9702=OrderSenderCompID,,This is a custom field not found in the FIX spec.  
+9704=ExchangeMode,int,This is a custom field not found in the FIX spec.  Valid values: \n  1 = AutoExec\n   2 = NoExec\n 3  = Both
+9708=AutoAccept,boolean,This is a custom field not found in the FIX spec.  When in manual mode, place inbound messages on a wait q 
+9709=PendingRequestID,char,This is a custom field not found in the FIX spec.  Tag of pended message, such as "Pend4", as set when the message was received.
+9714=RawData,String,This is a custom field not found in the FIX spec.  Raw CMS Message 
+9715=ProtocolType,int,This is a custom field not found in the FIX spec.  Determine wether this is a FIX or CMS message
+9717=OrigMsg,String,This is a custom field not found in the FIX spec.  Original CMS Message 
+9718=FractionFill,float,This is a custom field not found in the FIX spec.  It is a percentage to say how much of an order should be filled.  For example 9718=.25 means hit 25% of the order.  9718=1 means fill the order.   If not present, the exact OrderQty will be used.
+9724=URStopPx,float,This is a custom field not found in the FIX spec.  Price to stop the order at.
+9737=PendOrdStatus,int,This is a custom field not found in the FIX spec.  Price to stop the order at.
+18048=RejectText,String,This is a custom field not found in the FIX spec.  It is the reject line of a status message.
+18068=SleepLength,int,This is a custom field not found in the FIX spec.  Number of milliseconds to sleep.
+
+
+[4_VALUES]
+B=Buy
+S=Sell
+X=Cross
+T=Trade
+
+[5_VALUES]
+N=New
+C=Cancel
+R=Replace
+
+[8_VALUES]
+FIX.4.4=FIX.4.4
+
+[13_VALUES]
+1=per share
+2=percentage
+3=absolute
+
+[18_VALUES]
+1=Not held
+2=Work
+3=Go along
+4=Over the day
+5=Held
+6=Participate don't initiate
+7=Strict scale
+8=Try to scale
+9=Stay on bidside
+0=Stay on offerside
+A=No cross (cross is forbidden)
+B=OK to cross
+C=Call first
+D=Percent of volume
+E=Do not increase - DNI
+F=Do not reduce - DNR
+G=All or none - AON
+I=Institutions only
+L=Last peg (last sale)
+M=Mid-price peg (midprice of inside quote)
+N=Non-negotiable
+O=Opening peg
+P=Market peg
+R=Primary peg (primary market - buy at bid/sell at offer)
+S=Suspend
+T=Fixed Peg to Local best bid or offer at time of order
+U=Customer Display Instruction (Rule11Ac1-1/4)
+V=Netting (for Forex)
+W=Peg to VWAP
+
+[20_VALUES]
+0=New
+1=Cancel
+2=Correct
+3=Status
+
+[21_VALUES]
+1=Automated execution order - private - no Broker intervention
+2=Automated execution order - public - Broker intervention OK
+3=Manual order - best execution
+
+[22_VALUES]
+1=CUSIP
+2=SEDOL
+3=QUIK
+4=ISIN number
+5=RIC code
+6=ISO Currency Code
+7=ISO Country Code
+8=Exchange Symbol
+9=Consolidated Tape Association (CTA) Symbol (SIAC CTS/CQS line format)
+
+[25_VALUES]
+L=Low
+M=Medium
+H=High
+
+[28_VALUES]
+N=New
+C=Cancel
+R=Replace
+
+[29_VALUES]
+1=Agent
+2=Cross as agent
+3=Cross as principal
+4=Principal
+
+[35_VALUES]
+0=Heartbeat
+1=Test Request
+2=Resend Request
+3=Reject
+4=Sequence Reset
+5=Logout
+6=Indication of Interest
+7=Advertisement
+8=Execution Report
+9=Order Cancel Reject
+A=Logon
+B=News
+C=Email
+D=Order - Single
+E=Order - List
+F=Order Cancel Request
+G=Order Cancel/Replace Request
+H=Order Status Request
+J=Allocation
+K=List Cancel Request
+L=List Execute
+M=List Status Request
+N=List Status
+P=Allocation ACK
+Q=Don't Know Trade (DK)
+R=Quote Request
+S=Quote
+T=Settlement Instructions
+V=Market Data Request
+W=Market Data-Snapshot/Full Refresh
+X=Market Data-Incremental Refresh
+Y=Market Data Request Reject
+Z=Quote Cancel
+a=Quote Status Request
+b=Quote Acknowledgement
+c=Security Definition Request
+d=Security Definition
+e=Security Status Request
+f=Security Status
+g=Trading Session Status Request
+h=Trading Session Status
+i=Mass Quote
+j=Business Message Reject
+k=Bid Request
+l=Bid Response (lowercase L)
+m=List Strike Price
+
+[39_VALUES]
+0=New
+1=Partially filled
+2=Filled
+3=Done for day
+4=Canceled
+5=Replaced
+6=Pending Cancel (e.g. result of Order Cancel Request)
+7=Stopped
+8=Rejected
+9=Suspended
+A=Pending New
+B=Calculated
+C=Expired
+D=Accepted for bidding
+E=Pending Replace (e.g. result of Order Cancel/Replace Request)
+
+[40_VALUES]
+1=Market
+2=Limit
+3=Stop
+4=Stop limit
+5=Market on close
+6=With or without
+7=Limit or better
+8=Limit with or without
+9=On basis
+A=On close
+B=Limit on close
+C=Forex - Market
+D=Previously quoted
+E=Previously indicated
+F=Forex - Limit
+G=Forex - Swap
+H=Forex - Previously Quoted
+I=Funari (Limit Day Order with unexecuted portion handled as Market On Close.   e.g. Japan)
+P=Pegged
+
+[43_VALUES]
+Y=Possible duplicate
+N=Original transmission
+
+[47_VALUES]
+A=Agency single order
+B=Short exempt transaction (refer to A type)
+C=Program Order, non-index arb, for Member firm/org
+D=Program Order, index arb, for Member firm/org
+E=Registered Equity Market Maker trades
+F=Short exempt transaction (refer to W type)
+H=Short exempt transaction (refer to I type)
+I=Individual Investor, single order
+J=Program Order, index arb, for individual customer
+K=Program Order, non-index arb, for individual customer
+L=Short exempt transaction for member competing market-maker affiliated with the firm clearing the trade (refer to P and O types)
+M=Program Order, index arb, for other member
+N=Program Order, non-index arb, for other member
+O=Competing dealer trades
+P=Principal
+R=Competing dealer trades
+S=Specialist trades
+T=Competing dealer trades
+U=Program Order, index arb, for other agency
+W=All other orders as agent for other member
+X=Short exempt transaction for member competing market-maker not affiliated with the firm clearing the trade (refer to W and T types)
+Y=Program Order, non-index arb, for other agency
+Z=Short exempt transaction for non-member competing market-maker (refer to A and R types)
+
+[54_VALUES]
+1=Buy
+2=Sell
+3=Buy minus
+4=Sell plus
+5=Sell short
+6=Sell short exempt
+7=Undisclosed (valid for IOI and List Order messages only)
+8=Cross (orders where counterparty is an exchange, valid for all messages except IOIs)
+9=Cross short
+
+[59_VALUES]
+0=Day
+1=Good Till Cancel - GTC
+2=At the Opening - OPG
+3=Immediate or Cancel - IOC
+4=Fill or Kill - FOK
+5=Good Till Crossing - GTX
+6=Good Till Date
+100=XPress - XPR
+
+[61_VALUES]
+0=Normal
+1=Flash
+2=Background
+
+[63_VALUES]
+0=Regular
+1=Cash
+2=Next Day
+3=T+2
+4=T+3
+5=T+4
+6=Future
+7=When Issued
+8=Sellers Option
+9=T+ 5
+
+[71_VALUES]
+0=New
+1=Replace
+2=Cancel
+3=Preliminary (without MiscFees and NetMoney)
+4=Calculated (includes MiscFees and NetMoney)
+5=Calculated without Preliminary (sent unsolicited by broker, includes MiscFees and NetMoney)
+
+[77_VALUES]
+O=Open
+C=Close
+
+[81_VALUES]
+0=regular
+1=soft dollar
+2=step-in
+3=step-out
+4=soft-dollar step-in
+5=soft-dollar step-out
+6=plan sponsor
+
+[87_VALUES]
+0=accepted (successfully processed)
+1=rejected
+2=partial accept
+3=received (received, not yet processed)
+
+[88_VALUES]
+0=unknown account(s)
+1=incorrect quantity
+2=incorrect average price
+3=unknown executing broker mnemonic
+4=commission difference
+5=unknown OrderID
+6=unknown ListID
+7=other
+
+[94_VALUES]
+0=New
+1=Reply
+2=Admin Reply
+
+[97_VALUES]
+Y=Possible resend
+N=Original transmission
+
+[98_VALUES]
+0=None / other
+1=PKCS (proprietary)
+2=DES (ECB mode)
+3=PKCS/DES (proprietary)
+4=PGP/DES (defunct)
+5=PGP/DES-MD5  (see app note on FIX web site)
+6=PEM/DES-MD5  (see app note on FIX web site)
+
+[102_VALUES]
+0=Too late to cancel
+1=Unknown order
+2=Broker Option
+3=Order already in Pending Cancel or Pending Replace status
+
+[103_VALUES]
+0=Broker option
+1=Unknown symbol
+2=Exchange closed
+3=Order exceeds limit
+4=Too late to enter
+5=Unknown Order
+6=Duplicate Order (e.g. dupe ClOrdID)
+7=Duplicate of a verbally communicated order
+8=Stale Order
+
+[104_VALUES]
+A=All or none
+C=At the close
+I=In touch with
+L=Limit
+M=More behind
+O=At the open
+P=Taking a position
+Q=At the Market (previously called Current Quote)
+R=Ready to trade
+S=Portfolio show-n
+T=Through the day
+V=Versus
+W=Indication - Working away
+X=Crossing opportunity
+Y=At the Midpoint
+Z=Pre-open
+
+[113_VALUES]
+Y=Indicates that party receiving message must report trade
+N=Indicates that party sending message will report trade
+
+[114_VALUES]
+Y=Indicates the broker is responsible for locating the stock
+N=Indicates the broker is not required to locate
+
+[121_VALUES]
+Y=Execute Forex after security trade
+N=Do not execute Forex after security trade
+
+[123_VALUES]
+Y=Gap Fill message, MsgSeqNum field valid
+N=Sequence Reset, ignore MsgSeqNum
+
+[127_VALUES]
+A=Unknown symbol
+B=Wrong side
+C=Quantity exceeds order
+D=No matching order
+E=Price exceeds limit
+Z=Other
+
+[130_VALUES]
+Y=Natural
+N=Not natural
+
+[141_VALUES]
+Y=Yes, reset sequence numbers
+N=No
+
+[150_VALUES]
+0=New
+1=Partial fill
+2=Fill
+3=Done for day
+4=Canceled
+5=Replace
+6=Pending Cancel
+7=Stopped
+8=Rejected
+9=Suspended
+A=Pending New
+B=Calculated
+C=Expired
+D=Restated
+E=Pending Replace
+
+[156_VALUES]
+M=Multiply
+D=Divide
+
+[160_VALUES]
+0=Default
+1=Standing Instructions Provided
+2=Specific Allocation Account Overriding
+3=Specific Allocation Account Standing
+
+[163_VALUES]
+N=New
+C=Cancel
+R=Replace
+
+[165_VALUES]
+1=Broker's Instructions
+2=Institution's Instructions
+
+[166_VALUES]
+CED=CEDEL
+DTC=Depository Trust Company
+EUR=Euroclear
+FED=Federal Book Entry
+PNY=Physical
+PTC=Participant Trust Company
+ISO Country Code=Local Market Settle Location
+
+[167_VALUES]
+BA=Bankers Acceptance
+CB=Convertible Bond (Note not part of ISITC spec)
+CD=Certificate Of Deposit
+CMO=Collateralize Mortgage Obligation
+CORP=Corporate Bond
+CP=Commercial Paper
+CPP=Corporate Private Placement
+CS=Common Stock
+FHA=Federal Housing Authority
+FHL=Federal Home Loan
+FN=Federal National Mortgage Association
+FOR=Foreign Exchange Contract
+FUT=Future
+GN=Government National Mortgage Association
+GOVT=Treasuries + Agency Debenture
+IET=Mortgage IOETTE
+MF= Mutual Fund
+MIO=Mortgage Interest Only
+MPO=Mortgage Principal Only
+MPP=Mortgage Private Placement
+MPT=Miscellaneous Pass-Thru
+MUNI=Municipal Bond
+NONE=No ISITC Security Type
+OPT=Option
+PS=Preferred Stock
+RP=Repurchase Agreement
+RVRP= Reverse Repurchase Agreement
+SL=Student Loan Marketing Association
+TD=Time Deposit
+USTB=US Treasury Bill
+WAR=Warrant
+ZOO=Cats, Tigers & Lions (a real code: US Treasury Receipts)
+? = "Wildcard" entry (used on Security Definition Request message)
+
+[169_VALUES]
+0=Other
+1=DTC SID
+2=Thomson ALERT
+3=A Global Custodian (StandInstDbName must be provided)
+
+[197_VALUES]
+0=F/X Netting
+1=F/X Swap
+
+[201_VALUES]
+0=Put
+1=Call
+
+[203_VALUES]
+0=Covered
+1=Uncovered
+
+[204_VALUES]
+0=Customer
+1=Firm
+
+[208_VALUES]
+Y=Details should be communicated
+N=Details should not be communicated
+
+[209_VALUES]
+1=Match
+2=Forward
+3=Forward and Match
+
+[216_VALUES]
+1=Target Firm
+2=Target List
+3=Block Firm
+4=Block List
+
+[219_VALUES]
+1=CURVE
+2=5-YR
+3=OLD-5
+4=10-YR
+5=OLD-10
+6=30-YR
+7=OLD-30
+8=3-MO-LIBOR
+9=6-MO-LIBOR
+
+[263_VALUES]
+0=Snapshot
+1=Snapshot + Updates (Subscribe)
+2=Disable previous Snapshot + Update Request (Unsubscribe)
+
+[264_VALUES]
+0=Full Book
+1=Top of Book
+N>1=Report best N price tiers of data
+
+[265_VALUES]
+0=Full Refresh
+1=Incremental Refresh
+
+[266_VALUES]
+Y=one book entry per side per price
+N=Multiple entries per side per price allowed
+(Not specified)=broker option
+
+[269_VALUES]
+0=Bid
+1=Offer
+2=Trade
+3=Index Value
+4=Opening Price
+5=Closing Price
+6=Settlement Price
+7=Trading Session High Price
+8=Trading Session Low Price
+9=Trading Session VWAP Price
+
+[274_VALUES]
+0=Plus Tick
+1=Zero-Plus Tick
+2=Minus Tick
+3=Zero-Minus Tick
+
+[276_VALUES]
+A=Open / Active
+B=Closed / Inactive
+C=Exchange Best
+D=Consolidated Best
+E=Locked
+F=Crossed
+G=Depth
+H=Fast Trading
+I=Non-Firm
+
+[277_VALUES]
+A=Cash (only) Market
+B=Average Price Trade
+C=Cash Trade (same day clearing)
+D=Next Day (only) Market
+E=Opening / Reopening Trade Detail
+F=Intraday Trade Detail
+G=Rule 127 Trade (NYSE)
+H=Rule 155 Trade (Amex)
+I=Sold Last (late reporting)
+J=Next Day Trade (next day clearing)
+K=Opened (late report of opened trade)
+L=Seller
+M=Sold (out of sequence)
+N=Stopped Stock (guarantee of price but does not execute the order)
+
+[279_VALUES]
+0=New
+1=Change
+2=Delete
+
+[281_VALUES]
+0=Unknown symbol
+1=Duplicate MDReqID
+2=Insufficient Bandwidth
+3=Insufficient Permissions
+4=Unsupported SubscriptionRequestType
+5=Unsupported MarketDepth
+6=Unsupported MDUpdateType
+7=Unsupported AggregatedBook
+8=Unsupported MDEntryType
+
+[285_VALUES]
+0=Cancelation / Trade Bust
+1=Error
+
+[286_VALUES]
+0=Daily Open / Close / Settlement price
+1=Session Open / Close / Settlement price
+2=Delivery Settlement price
+
+[291_VALUES]
+1=Bankrupt
+
+[292_VALUES]
+A=Ex-Dividend
+B=Ex-Distribution
+C=Ex-Rights
+D=New
+E=Ex-Interest
+
+[297_VALUES]
+
+
+
+
+
+
+
+[298_VALUES]
+1=Cancel for Symbol(s)
+2=Cancel for Security Type(s)
+3=Cancel for Underlying Symbol
+4=Cancel All Quotes
+
+[300_VALUES]
+1=Unknown symbol (Security)
+2=Exchange(Security) closed
+3=Quote Request exceeds limit
+4=Too late to enter
+5=Unknown Quote
+6=Duplicate Quote
+7=Invalid bid/ask spread
+8=Invalid price
+9=Not authorized to quote security
+
+[301_VALUES]
+0=No Acknowledgement (Default)
+1=Acknowledge only negative or erroneous quotes
+2=Acknowledge each quote messages
+
+[303_VALUES]
+
+
+
+[310_VALUES]
+BA=Bankers Acceptance
+CB=Convertible Bond (Note not part of ISITC spec)
+CD=Certificate Of Deposit
+CMO=Collateralize Mortgage Obligation
+CORP=Corporate Bond
+CP=Commercial Paper
+CPP=Corporate Private Placement
+CS=Common Stock
+FHA=Federal Housing Authority
+FHL=Federal Home Loan
+FN=Federal National Mortgage Association
+FOR=Foreign Exchange Contract
+FUT=Future
+GN=Government National Mortgage Association
+GOVT=Treasuries + Agency Debenture
+IET=Mortgage IOETTE
+MF= Mutual Fund
+MIO=Mortgage Interest Only
+MPO=Mortgage Principal Only
+MPP=Mortgage Private Placement
+MPT=Miscellaneous Pass-Thru
+MUNI=Municipal Bond
+NONE=No ISITC Security Type
+OPT=Option
+PS=Preferred Stock
+RP=Repurchase Agreement
+RVRP= Reverse Repurchase Agreement
+SL=Student Loan Marketing Association
+TD=Time Deposit
+USTB=US Treasury Bill
+WAR=Warrant
+ZOO=Cats, Tigers & Lions (a real code: US Treasury Receipts)
+? = "Wildcard" entry (used on Security Definition Request message)
+
+
+[321_VALUES]
+0=Request Security identity and specifications
+1=Request Security identity for the specifications provided (Name of the security is not supplied)
+2=Request List Security Types
+3=Request List Securities (Can be qualified with Symbol, SecurityType, TradingSessionID, SecurityExchange is provided then only list Securities for the specific type)
+
+[323_VALUES]
+1=Accept security proposal as is
+2=Accept security proposal with revisions as indicated in the message
+3=List of security types returned per request
+4=List of securities returned per request
+5=Reject security proposal
+6=Can not match selection criteria
+
+[325_VALUES]
+Y=Message is being sent unsolicited
+N=Message is being sent as a result of a prior request
+
+[326_VALUES]
+1=Opening Delay
+2=Trading Halt
+3=Resume
+4=No Open/No Resume
+5=Price Indication
+6=Trading Range Indication
+7=Market Imbalance Buy
+8=Market Imbalance Sell
+9=Market On Close Imbalance Buy
+10=Market On Close Imbalance Sell
+11=(not assigned)
+12=No Market Imbalance
+13=No Market On Close Imbalance
+14=ITS Pre-Opening
+15=New Price Indication
+16=Trade Dissemination Time
+17=Ready to trade (start of session)
+18=Not Available for trading (end of session)
+19=Not Traded on this Market
+20=Unknown or Invalid
+
+[327_VALUES]
+I=Order Imbalance
+X=Equipment Changeover
+P=News Pending
+D=News Dissemination
+E=Order Influx
+M=Additional Information
+
+[328_VALUES]
+Y=Halt was due to common stock being halted
+N=Halt was not related to a halt of the common stock
+
+[329_VALUES]
+Y=Halt was due to related security being halted
+N=Halt was not related to a halt of the related security
+
+[334_VALUES]
+1=Cancel
+2=Error
+3=Correction
+
+[338_VALUES]
+1=Electronic
+2=Open Outcry
+3=Two Party
+
+[339_VALUES]
+1=Testing
+2=Simulated
+3=Production
+
+[340_VALUES]
+1=Halted
+2=Open
+3=Closed
+4=Pre-Open
+5=Pre-Close
+
+[347_VALUES]
+ISO-2022-JP=for using JIS
+EUC-JP=for using EUC
+Shift_JIS=for using SJIS
+UTF-8=for using Unicode
+
+[368_VALUES]
+1=Unknown symbol (Security)
+2=Exchange(Security) closed
+3=Quote exceeds limit
+4=Too late to enter
+5=Unknown Quote
+6=Duplicate Quote
+7=Invalid bid/ask spread
+8=Invalid price
+9=Not authorized to quote security
+
+[373_VALUES]
+0=Invalid tag number
+1=Required tag missing
+2=Tag not defined for this message type
+3=Undefined Tag
+4=Tag specified without a value
+5=Value is incorrect (out of range) for this tag
+6=Incorrect data format for value
+7=Decryption problem
+8=Signature problem
+9=CompID problem
+10=SendingTime accuracy problem
+11=Invalid MsgType
+
+[374_VALUES]
+N=New
+C=Cancel
+
+[377_VALUES]
+Y=Was solcitied
+N=Was not solicited
+
+[378_VALUES]
+0=GT Corporate action
+1=GT renewal / restatement (no corporate action)
+2=Verbal change
+3=Repricing of order
+4=Broker option
+5=Partial decline of OrderQty (e.g. exchange-initiated partial cancel)
+
+[380_VALUES]
+0=Other
+1=Unkown ID
+2=Unknown Security
+3=Unsupported Message Type
+4=Application not available
+5=Conditionally Required Field Missing
+
+[385_VALUES]
+S=Send
+R=Receive
+
+[388_VALUES]
+0=Related to displayed price
+1=Related to market price
+2=Related to primary price
+3=Related to local primary price
+4=Related to midpoint price
+5=Related to last trade price
+
+[394_VALUES]
+1="Non Disclosed" Style (e.g. US/European)
+2="Disclosed"  Style (e.g. Japanese)
+3=No Bidding Process
+
+[399_VALUES]
+1=Sector
+2=Country
+3=Index
+
+[401_VALUES]
+1=SideValue1
+2=SideValue2
+
+[409_VALUES]
+1=5day moving average
+2=20 day moving average
+3=Normal Market Size
+4=Other
+
+[411_VALUES]
+Y=True
+N=False
+
+[414_VALUES]
+1=BuySide explicitly requests status using StatusRequest (Default) The sell-side firm can however, send a DONE status List Status Response in an unsolicited fashion
+2=SellSide periodically sends status using ListStatus. Period optionally specified in ProgressPeriod
+3=Real-time execution reports (to be discouraged)
+
+[416_VALUES]
+1=Net
+2=Gross
+
+[418_VALUES]
+R=Risk Trade
+G=VWAP Guarantee
+A=Agency
+J=Guaranteed Close
+
+[419_VALUES]
+2=Closing Price at morning session
+3=Closing Price
+4=Current price
+5=SQ
+6=VWAP through a day
+7=VWAP through a morning session
+8=VWAP through an afternoon session
+9=VWAP through a day except YORI
+A=VWAP through a morning session except YORI
+B=VWAP through an afternoon session except YORI
+C=Strike
+D=Open
+Z=Others
+
+[423_VALUES]
+1=Percentage
+2=per share (e.g. cents per share)
+3=Fixed Amount (absolute value)
+
+[427_VALUES]
+0=book out all trades on day of execution
+1=accumulate executions until order is filled or expires
+2=accumulate until verbally notified otherwise
+
+[429_VALUES]
+1=Ack
+2=Response
+3=Timed
+4=ExecStarted
+5=AllDone
+6=Alert
+
+[430_VALUES]
+1=Net
+2=Gross
+
+[431_VALUES]
+1=InBiddingProcess
+2=ReceivedForExecution
+3=Executing
+4=Canceling
+5=Alert
+6=All Done
+7=Reject
+
+[433_VALUES]
+1=Immediate
+2=Wait for Execute Instruction (e.g. a List Execute message or phone call before proceeding with execution of the list)
+
+[434_VALUES]
+1=Order Cancel Request
+2=Order Cancel/Replace Request
+
+[442_VALUES]
+1=Single Security (default if not specified)
+2=Individual leg of a multi-leg security
+3=Multi-leg security
+
+[9737_VALUES]
+1=PendingAccepted
+2=PendingRejected
+3=PendingDiscarded
+4=PendingUnknown
+
+
+[Currency]
+AFA=Afghanistan, Afghanis 
+ALL=Albania, Leke 
+DZD=Algeria, Dinars 
+USD=America (United States of America), Dollars 
+USD=American Samoa, United States Dollars 
+USD=American Virgin Islands, United States Dollars 
+EUR=Andorra, Euro 
+AOA=Angola, Kwanza 
+XCD=Anguilla, East Caribbean Dollars 
+XCD=Antigua and Barbuda, East Caribbean Dollars 
+ARS=Argentina, Pesos 
+AMD=Armenia, Drams 
+AWG=Aruba, Guilders 
+ANG=Aruba, Netherlands Antilles Guilders 
+AUD=Australia, Dollars 
+EUR=Austria, Euro 
+AZM=Azerbaijan, Manats 
+EUR=Azores, Euro 
+BSD=Bahamas, Dollars 
+BHD=Bahrain, Dinars 
+EUR=Baleares (Balearic Islands), Euro 
+BDT=Bangladesh, Taka 
+BBD=Barbados, Dollars 
+XCD=Barbuda and Antigua, East Caribbean Dollars 
+BYR=Belarus, Rubles 
+EUR=Belgium, Euro 
+BZD=Belize, Dollars 
+XOF=Benin, Communauté Financière Africaine Francs (BCEAO) 
+BMD=Bermuda, Dollars 
+BTN=Bhutan, Ngultrum 
+INR=Bhutan, India Rupeess 
+BOB=Bolivia, Bolivianos 
+ANG=Bonaire, Netherlands Antilles Guilders 
+BAM=Bosnia and Herzegovina, Convertible Marka 
+BWP=Botswana, Pulas 
+NOK=Bouvet Island, Norway Kroner 
+BRL=Brazil, Real 
+GBP=Britain (United Kingdom), Pounds 
+USD=British Indian Ocean Territory, United States Dollars 
+USD=British Virgin Islands, United States Dollars 
+BND=Brunei Darussalam, Dollars 
+BGL=Bulgaria, Leva 
+XOF=Burkina Faso, Communauté Financière Africaine Francs (BCEAO) 
+MMK=Burma (Myanmar), Kyats 
+BIF=Burundi, Francs 
+XOF=Côte D'Ivoire, Communauté Financière Africaine Francs (BCEAO) 
+USD=Caicos and Turks Islands, United States Dollars 
+KHR=Cambodia, Riels 
+XAF=Cameroon, Communauté Financière Africaine Francs (BEAC) 
+CAD=Canada, Dollars 
+EUR=Canary Islands, Euro 
+CVE=Cape Verde, Escudos 
+KYD=Cayman Islands, Dollars 
+XAF=Central African Republic, Communauté Financière Africaine Francs (BEAC) 
+XAF=Chad, Communauté Financière Africaine Francs (BEAC) 
+CLP=Chile, Pesos 
+CNY=China, Yuan Renminbi 
+AUD=Christmas Island, Australia Dollars 
+AUD=Cocos (Keeling) Islands, Australia Dollars 
+COP=Colombia, Pesos 
+XAF=Communauté Financière Africaine (CFA), Francs 
+KMF=Comoros, Francs 
+XPF=Comptoirs Français du Pacifique (CFP), Francs 
+XAF=Congo/Brazzaville, Communauté Financière Africaine Francs (BEAC) 
+CDF=Congo/Kinshasa, Francs 
+NZD=Cook Islands, New Zealand Dollars 
+CRC=Costa Rica, Colones 
+HRK=Croatia, Kuna 
+CUP=Cuba, Pesos 
+ANG=Curaço, Netherlands Antilles Guilders 
+CYP=Cyprus, Pounds 
+CZK=Czech Republic, Koruny 
+DKK=Denmark, Kroner 
+DJF=Djibouti, Francs 
+XCD=Dominica, East Caribbean Dollars 
+DOP=Dominican Republic, Pesos 
+EUR=Dutch (Netherlands) Euro 
+XCD=East Caribbean Dollars 
+IDR=East Timor, Indonesia Rupiahs 
+USD=Ecuador, United States Dollars 
+EGP=Egypt, Pounds 
+EUR=Eire (Ireland), Euro 
+SVC=El Salvador, Colones 
+GBP=England (United Kingdom), Pounds 
+XAF=Equatorial Guinea, Communauté Financière Africaine Francs (BEAC) 
+ETB=Eritrea, Ethiopia Birr 
+ERN=Eritrea, Nakfa 
+EEK=Estonia, Krooni 
+ETB=Ethiopia, Birr 
+EUR=Euro Member Countries, Euro 
+FKP=Falkland Islands (Malvinas), Pounds 
+DKK=Faroe Islands, Denmark Kroner 
+FJD=Fiji, Dollars 
+EUR=Finland, Euro 
+EUR=France, Euro 
+EUR=French Guiana, Euro 
+XPF=French Pacific Islands (French Polynesia), Comptoirs Français du Pacifique Francs 
+XPF=French Polynesia (French Pacific Islands), Comptoirs Français du Pacifique Francs 
+EUR=French Southern Territories, Euro 
+XPF=Futuna and Wallis Islands, Comptoirs Français du Pacifique Francs 
+XAF=Gabon, Communauté Financière Africaine Francs (BEAC) 
+GMD=Gambia, Dalasi 
+GEL=Georgia, Lari 
+EUR=Germany, Euro 
+GHC=Ghana, Cedis 
+GIP=Gibraltar, Pounds 
+XAU=Gold, Ounces 
+GBP=Great Britain (United Kingdom), Pounds 
+EUR=Greece, Euro 
+DKK=Greenland, Denmark Kroner 
+XCD=Grenada, East Caribbean Dollars 
+XCD=Grenadines (The) and Saint Vincent, East Caribbean Dollars 
+EUR=Guadeloupe, Euro 
+USD=Guam, United States Dollars 
+GTQ=Guatemala, Quetzales 
+GGP=Guernsey, Pounds 
+GNF=Guinea, Francs 
+XOF=Guinea-Bissau, Communauté Financière Africaine Francs (BCEAO) 
+GYD=Guyana, Dollars 
+HTG=Haiti, Gourdes 
+USD=Haiti, United States Dollars 
+AUD=Heard Island and McDonald Islands, Australia Dollars 
+BAM=Herzegovina and Bosnia, Convertible Marka 
+EUR=Holland (Netherlands), Euro 
+EUR=Holy See, (Vatican City), Euro 
+HNL=Honduras, Lempiras 
+HKD=Hong Kong, Dollars 
+HUF=Hungary, Forint 
+ISK=Iceland, Kronur 
+INR=India, Rupees 
+IDR=Indonesia, Rupiahs 
+XDR=International Monetary Fund (IMF), Special Drawing Rights 
+IRR=Iran, Rials 
+IQD=Iraq, Dinars 
+EUR=Ireland (Eire), Euro 
+IMP=Isle of Man, Pounds 
+ILS=Israel, New Shekels 
+EUR=Italy, Euro 
+JMD=Jamaica, Dollars 
+NOK=Jan Mayen and Svalbard, Norway Kroner 
+JPY=Japan, Yen 
+JEP=Jersey, Pounds 
+JOD=Jordan, Dinars 
+KZT=Kazakstan, Tenge 
+AUD=Keeling (Cocos) Islands, Australia Dollars 
+KES=Kenya, Shillings 
+AUD=Kiribati, Australia Dollars 
+KPW=Korea (North), Won 
+KRW=Korea (South), Won 
+KWD=Kuwait, Dinars 
+KGS=Kyrgyzstan, Soms 
+LAK=Laos, Kips 
+LVL=Latvia, Lati 
+LBP=Lebanon, Pounds 
+LSL=Lesotho, Maloti 
+ZAR=Lesotho, South Africa Rand 
+LRD=Liberia, Dollars 
+LYD=Libya, Dinars 
+CHF=Liechtenstein, Switzerland Francs 
+LTL=Lithuania, Litai 
+EUR=Luxembourg, Euro 
+MOP=Macau, Patacas 
+MKD=Macedonia, Denars 
+MGF=Madagascar, Malagasy Francs 
+EUR=Madeira Islands, Euro 
+MWK=Malawi, Kwachas 
+MYR=Malaysia, Ringgits 
+MVR=Maldives (Maldive Islands), Rufiyaa 
+XOF=Mali, Communauté Financière Africaine Francs (BCEAO) 
+MTL=Malta, Liri 
+FKP=Malvinas (Falkland Islands), Pounds 
+USD=Mariana Islands (Northern), United States Dollars 
+USD=Marshall Islands, United States Dollars 
+EUR=Martinique, Euro 
+MRO=Mauritania, Ouguiyas 
+MUR=Mauritius, Rupees 
+EUR=Mayotte, Euro 
+AUD=McDonald Islands and Heard Island, Australia Dollars 
+MXN=Mexico, Pesos 
+USD=Micronesia (Federated States of), United States Dollars 
+USD=Midway Islands, United States Dollars 
+EUR=Miquelon and Saint Pierre, Euro 
+MDL=Moldova, Lei 
+EUR=Monaco, Euro 
+MNT=Mongolia, Tugriks 
+YUM=Montenegro and Serbia, Yugoslavia New Dinars 
+XCD=Montserrat, East Caribbean Dollars 
+MAD=Morocco, Dirhams 
+MZM=Mozambique, Meticais 
+MMK=Myanmar (Burma), Kyats 
+NAD=Namibia, Dollars 
+ZAR=Namibia, South Africa Rand 
+AUD=Nauru, Australia Dollars 
+NPR=Nepal, Rupees 
+ANG=Netherlands Antilles, Guilders 
+EUR=Netherlands, Euro 
+XCD=Nevis and Saint Kitts, East Caribbean Dollars 
+XPF=New Caledonia, Comptoirs Français du Pacifique Francs 
+NZD=New Zealand, Dollars 
+NIO=Nicaragua, Gold Cordobas 
+XOF=Niger, Communauté Financière Africaine Francs (BCEAO) 
+NGN=Nigeria, Nairas 
+NZD=Niue, New Zealand Dollars 
+AUD=Norfolk Island, Australia Dollars 
+USD=Northern Mariana Islands, United States Dollars 
+NOK=Norway, Kroner 
+OMR=Oman, Rials 
+PKR=Pakistan, Rupees 
+USD=Palau, United States Dollars 
+XPD=Palladium, Ounces 
+PAB=Panama, Balboa 
+USD=Panama, United States Dollars 
+PGK=Papua New Guinea, Kina 
+PYG=Paraguay, Guarani 
+PEN=Peru, Nuevos Soles 
+PHP=Philippines, Pesos 
+NZD=Pitcairn Islands, New Zealand Dollars 
+XPT=Platinum, Ounces 
+PLN=Poland, Zlotych 
+EUR=Portugal, Euro 
+STD=Principe and São Tome, Dobras 
+USD=Puerto Rico, United States Dollars 
+QAR=Qatar, Rials 
+EUR=Réunion, Euro 
+ROL=Romania, Lei 
+RUR=Russia, Rubles 
+RWF=Rwanda, Francs 
+STD=São Tome and Principe, Dobras 
+ANG=Saba, Netherlands Antilles Guilders 
+MAD=Sahara (Western), Morocco Dirhams 
+XCD=Saint Christopher, East Caribbean Dollars 
+SHP=Saint Helena, Pounds 
+XCD=Saint Kitts and Nevis, East Caribbean Dollars 
+XCD=Saint Lucia, East Caribbean Dollars 
+EUR=Saint Pierre and Miquelon, Euro 
+XCD=Saint Vincent and The Grenadines, East Caribbean Dollars 
+EUR=Saint-Martin, Euro 
+USD=Samoa (American), United States Dollars 
+WST=Samoa, Tala 
+EUR=San Marino, Euro 
+SAR=Saudi Arabia, Riyals 
+SPL=Seborga, Luigini 
+XOF=Senegal, Communauté Financière Africaine Francs (BCEAO) 
+YUM=Serbia and Montenegro, Yugoslavia New Dinars 
+SCR=Seychelles, Rupees 
+SLL=Sierra Leone, Leones 
+XAG=Silver, Ounces 
+SGD=Singapore, Dollars 
+ANG=Sint Eustatius, Netherlands Antilles Guilders 
+ANG=Sint Maarten, Netherlands Antilles Guilders 
+SKK=Slovakia, Koruny 
+SIT=Slovenia, Tolars 
+SBD=Solomon Islands, Dollars 
+SOS=Somalia, Shillings 
+ZAR=South Africa, Rand 
+GBP=South Georgia, United Kingdom Pounds 
+GBP=South Sandwich Islands, United Kingdom Pounds 
+EUR=Spain, Euro 
+XDR=Special Drawing Rights 
+LKR=Sri Lanka, Rupees 
+SDD=Sudan, Dinars 
+SRG=Suriname, Guilders 
+NOK=Svalbard and Jan Mayen, Norway Kroner 
+SZL=Swaziland, Emalangeni 
+SEK=Sweden, Kronor 
+CHF=Switzerland, Francs 
+SYP=Syria, Pounds 
+TWD=Taiwan, New Dollars 
+RUR=Tajikistan, Russia Rubles 
+TJS=Tajikistan, Somoni 
+TZS=Tanzania, Shillings 
+THB=Thailand, Baht 
+IDR=Timor (East), Indonesia Rupiahs 
+TTD=Tobago and Trinidad, Dollars 
+XOF=Togo, Communauté Financière Africaine Francs (BCEAO) 
+NZD=Tokelau, New Zealand Dollars 
+TOP=Tonga, Pa'anga 
+TTD=Trinidad and Tobago, Dollars 
+TND=Tunisia, Dinars 
+TRL=Turkey, Liras 
+TMM=Turkmenistan, Manats 
+USD=Turks and Caicos Islands, United States Dollars 
+TVD=Tuvalu, Tuvalu Dollars 
+UGX=Uganda, Shillings 
+UAH=Ukraine, Hryvnia 
+AED=United Arab Emirates, Dirhams 
+GBP=United Kingdom, Pounds 
+USD=United States Minor Outlying Islands, United States Dollars 
+USD=United States of America, Dollars 
+UYU=Uruguay, Pesos 
+USD=US Virgin Islands, United States Dollars 
+UZS=Uzbekistan, Sums 
+VUV=Vanuatu, Vatu 
+EUR=Vatican City (The Holy See), Euro 
+VEB=Venezuela, Bolivares 
+VND=Viet Nam, Dong 
+USD=Virgin Islands (American), United States Dollars 
+USD=Virgin Islands (British), United States Dollars 
+USD=Wake Island, United States Dollars 
+XPF=Wallis and Futuna Islands, Comptoirs Français du Pacifique Francs 
+WST=West Samoa (Samoa), Tala 
+MAD=Western Sahara, Morocco Dirhams 
+WST=Western Samoa (Samoa), Tala 
+YER=Yemen, Rials 
+YUM=Yugoslavia, New Dinars 
+ZMK=Zambia, Kwacha 
+ZWD=Zimbabwe, Zimbabwe Dollars 
+
+[ExDestination]
+CI=Abidjan Stock Exchange
+A=American Stock Exchange
+AM=Amman Stock Exchange
+E=AEX Options and Futures Exchange
+AS=AEX Stock Exchange
+AX=Australian Stock Exchange
+BH=Bahrain Stock Exchange
+BC=Barcelona Stock Exchange - Floor Trading
+MC=Barcelona Stock Exchange - CATS Feed
+BY=Beirut Stock Exchange
+b=Belfox
+BE=Berlin Stock Exchange
+BN=Berne Stock Exchange
+BI=Bilbao Stock Exchange
+BO=Bombay Stock Exchange
+B=Boston Stock Exchange
+BT=Botswana Share Market
+BM=Bremen Stock Exchange
+BR=Brussels Stock Exchange
+CL=Calcutta Stock Exchange
+V=Canadian Ventures Exchange
+CH=Channel Islands
+W=Chicago Board Options Exchange
+MW=Chicago Stock Exchange
+CE=Chile Electronic Exchange
+C=Cincinnati Stock Exchange
+CM=Colombo Stock Exchange
+CO=Copenhagen Stock Exchange
+DL=Dehli Stock Exchange
+QA=Doha Securities Market
+DU=Dubai Financial Market
+D=Dusseldorf Stock Exchange
+EB=Electronic Stock Exchange of Venezuela
+d=Eurex Germany (DTB)
+Z=Eurex Switzerland (SFF)
+F=Frankfurt Stock Exchange
+FU=Fukuoka Stock Exchange
+GH=Ghana Stock Exchange
+H=Hamburg Stock Exchange
+HA=Hanover Stock Exchange
+HE=Helsinki Stock Exchange
+HK=Hong Kong Stock Exchange
+IC=Iceland Stock Exchange
+IN=Interbolsa (Portugal)
+I=Irish Stock Exchange
+IS=Istanbul Stock Exchange
+JK=Jakarta Stock Exchange
+Q=Japanese Securities Dealers Association (JASDAQ)
+J=Johannesburg Stock Exchange
+KA=Karachi Stock Exchange
+KQ=KASDAQ (Korea)
+KZ=Kazakhstan Stock Exchange
+KS=Korea Stock Exchange
+KL=Kuala Lumpur Stock Exchange
+KW=Kuwait Stock Exchange
+KY=Kyoto Stock Exchange
+LG=Lagos Stock Exchange
+LA=Latin American Market in Spain (LATIBEX)
+LN=Le Nouveau Marche
+LM=Lima Stock Exchange
+LS=Lisbon Stock Exchange (Portugal)
+L=London Stock Exchange
+LZ=Lusaka Stock Exchange
+LU=Luxembourg Stock Exchange
+MD=Madras Stock Exchange
+MA=Madrid Stock Exchange - Floor Trading 
+MC=Madrid Stock Exchange - CATS Feed 
+MT=Malta Stock Exchange
+MZ=Mauritius Stock Exchange
+ML=Medellin Stock Excahnge
+MX=Mexican Stock Exchange
+MI=Milan Stock Exchange
+p=MONEP Paris Stock Options
+M=Montreal Exchange
+MM=Moscow Inter Bank Currency Exchange
+MO=Moscow Stock Exchange
+MU=Munich Stock Exchange
+OM=Muscat Stock Exchange
+NM=Namibia Stock Exchange
+NG=Nagoya Stock Exchange
+NR=Nairobi Stock Exchange
+O=NASDAQ
+OB=NASDAQ Dealers - Bulletin Board
+OJ=NASDAQ Japan
+NS=National Stock Exchange of India
+N=New York Stock Exchange
+NZ=New Zealand Stock Exchange
+NW=NewEx (Austria)
+OD=Occidente Stock Exchange
+OS=Osaka Stock Exchange
+OL=Oslo Stock Exchange
+P=Pacific Stock Exchange
+PA=Paris Stock Exchange
+PH=Philadelphia Stock Exchange
+X=Philadelphia Stock Exchange Options
+PS=Philippine Stock Exchange
+PR=Prague Stock Exchange
+PNK=Pink Sheets (National Quotation Bureau)
+RQ=RASDAQ (Romania)
+RI=Riga Stock Exchange
+SO=Rio de Janeiro OTC Stock Exchange (SOMA)
+RTS=Russian Trading System
+SN=Santiago Stock Exchange
+SA=Sao Paulo Stock Exchange
+SP=Sapporo Stock Exchange
+SE=Saudi Stock Exchange
+SBI=SBI Stock Exchange (Sweden)
+SI=Singapore Stock Exchange
+SS=Shanghai Stock Exchange
+SZ=Shenzhen Stock Exchange
+ST=Stockholm Stock Exchange
+SG=Stuttgart Stock Exchange
+PE=St. Petersburg Stock Exchange
+SU=Surabaya Stock Exchange
+S=SWX Swiss Exchange
+TWO=Taiwan OTC Securities Exchange
+TW=Taiwan Stock Exchange
+TL=Tallinn Stock Exchange
+TA=Tel Aviv Stock Exchange
+BK=Thailand Stock Exchange
+TH=Third Market
+T=Tokyo Stock Exchange
+K=Toronto Options Exchange
+TO=Toronto Stock Exchange
+TP=Tradepoint Stock Exchange
+TN=Tunis Stock Exchange
+PFT=Ukraine PFTS
+VA=Valencia Stock Exchange
+VL=Vilnus Stock Exchange
+VX=virt-x
+VI=Vienna Stock Exchange
+ZI=Zimbabwe Stock Exchange
+1=American Stock Exchange Options
+2=Chicago Mercantile Exchange (CME) Futures Exchange (LIFFE)
+14=Jiway
+15=International Securities Market Association(ISMA)
+3=London International Financial 
+5=London Traded  Options Market
+16=MEFF Renta Variable
+6=Montreal Exchange Options (MOE)
+12=New York Mercantile Exchange (NYMEX)
+0=None
+11=Non-exchange-based Over The Counter Market
+13=NYFIX Millennium
+10=NYSE BBSS (broker booth system)
+8=Pacific Stock Exchange Options (PAO)
+4=POSIT
+17=Stockholm Options Market
+9=Vancouver Options Exchange (VAO)
+
+
+[GROUPS]
+E=11,67,160,109,76,1,78,79,80,63,64,21,18,110,111,100,386,336,81,55,65,48,22,167,200,205,201,202,206,231,223,207,106,354,355,107,350,351,140,54,401,114,60,38,152,40,44,99,15,376,377,23,117,59,168,432,126,12,13,47,121,120,58,354,355,193,192,77,203,204,210,211,388,389,439,440
+
+[Capacity]
+A=Agency single order
+B=Short exempt transaction (refer to A type)
+C=Program Order, non-index arb, for Member firm/org
+D=Program Order, index arb, for Member firm/org
+E=Registered Equity Market Maker trades
+F=Short exempt transaction (refer to W type)
+H=Short exempt transaction (refer to I type)
+I=Individual Investor, single order
+J=Program Order, index arb, for individual customer
+K=Program Order, non-index arb, for individual customer
+L=Short exempt transaction for member competing market-maker affiliated with the firm clearing the trade (refer to P and O types)
+M=Program Order, index arb, for other member
+N=Program Order, non-index arb, for other member
+O=Competing dealer trades
+P=Principal
+R=Competing dealer trades
+S=Specialist trades
+T=Competing dealer trades
+U=Program Order, index arb, for other agency
+W=All other orders as agent for other member
+X=Short exempt transaction for member competing market-maker not affiliated with the firm clearing the trade (refer to W and T types)
+Y=Program Order, non-index arb, for other agency
+Z=Short exempt transaction for non-member competing market-maker (refer to A and R types)
+

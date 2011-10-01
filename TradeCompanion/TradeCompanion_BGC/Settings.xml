@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<CrashTest>
+  <settings>
+    <crash>true</crash>
+    <loginid>rahul</loginid>
+    <password>rahul</password>
+    <server>1</server>
+    <symbolmaping>true</symbolmaping>
+    <filteralerts>false</filteralerts>
+    <defaulttradesize>true</defaulttradesize>
+    <reconnectinterval>3</reconnectinterval>
+    <executionmode>0</executionmode>
+    <platformforgettingalerts>NeuroShell</platformforgettingalerts>
+    <connections>
+      <Trade />
+      <marketdata />
+    </connections>
+  </settings>
+</CrashTest>

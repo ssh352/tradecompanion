@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E311E92-3EEA-44A7-A5FC-CC7AE876BFBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FxIntegral</RootNamespace>
+    <AssemblyName>FxIntegral</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=4bfb6c359c82a919, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonResources\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\com\scalper\fix\BasicFixUtilities.cs" />
+    <Compile Include="src\com\scalper\fix\Constants.cs" />
+    <Compile Include="src\com\scalper\fix\driver\AbstractMessageConnection.cs" />
+    <Compile Include="src\com\scalper\fix\driver\ClientSessionCustomizer.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\AbstractClient.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\Client.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\CommonTest.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\DefaultClient.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\FxIntegralClient.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\FxIntegralMarketDataStatusEventArgs.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\FxIntegralOrderStatusEventArgs.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\EncDec.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\MarketData.cs" />
+    <Compile Include="src\com\scalper\fix\driver\client\TestClientSessionCustomizer.cs" />
+    <Compile Include="src\com\scalper\fix\driver\ConnectionListener.cs" />
+    <Compile Include="src\com\scalper\fix\driver\DefaultMessageConnection.cs" />
+    <Compile Include="src\com\scalper\fix\driver\DenialOfServiceException.cs" />
+    <Compile Include="src\com\scalper\fix\driver\DisconnectInfo.cs" />
+    <Compile Include="src\com\scalper\fix\driver\DisconnectListener.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXAcceptor.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXConnection.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXInitiator.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXListenRegistry.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXMessageListener.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXNotice.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXNoticeListener.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXPersister.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXResponseEventArgs.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXSessionListenerHelper.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXSessionTimer.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXSocketAcceptor.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXSocketConnection.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXSocketInitiator.cs" />
+    <Compile Include="src\com\scalper\fix\driver\FIXVolatilePersister.cs" />
+    <Compile Include="src\com\scalper\fix\driver\MessageConnection.cs" />
+    <Compile Include="src\com\scalper\fix\driver\MessageModifier.cs" />
+    <Compile Include="src\com\scalper\fix\driver\MessageTypeInfo.cs" />
+    <Compile Include="src\com\scalper\fix\driver\MessageTypeTable.cs" />
+    <Compile Include="src\com\scalper\fix\driver\ScalperFixServer.cs" />
+    <Compile Include="src\com\scalper\fix\driver\ScalperFixSession.cs" />
+    <Compile Include="src\com\scalper\fix\driver\ServerLogonInfo.cs" />
+    <Compile Include="src\com\scalper\fix\driver\ServerSessionCustomizer.cs" />
+    <Compile Include="src\com\scalper\fix\driver\SessionCustomizer.cs" />
+    <Compile Include="src\com\scalper\fix\driver\SessionProperties.cs" />
+    <Compile Include="src\com\scalper\fix\driver\SessionState.cs" />
+    <Compile Include="src\com\scalper\fix\driver\UncompletedMessageStore.cs" />
+    <Compile Include="src\com\scalper\fix\FieldInfo.cs" />
+    <Compile Include="src\com\scalper\fix\FIXByteBuffer.cs" />
+    <Compile Include="src\com\scalper\fix\FixConstants.cs" />
+    <Compile Include="src\com\scalper\fix\FixDefinitions.cs" />
+    <Compile Include="src\com\scalper\fix\FixException.cs" />
+    <Compile Include="src\com\scalper\fix\FIXGroup.cs" />
+    <Compile Include="src\com\scalper\fix\FIXMessage.cs" />
+    <Compile Include="src\com\scalper\fix\FixMessageContentException.cs" />
+    <Compile Include="src\com\scalper\fix\FixMessageFormatException.cs" />
+    <Compile Include="src\com\scalper\fix\IFIXSession.cs" />
+    <Compile Include="src\com\scalper\fix\Message.cs" />
+    <Compile Include="src\com\scalper\fix\MessageEventInfo.cs" />
+    <Compile Include="src\com\scalper\fix\MessageInfo.cs" />
+    <Compile Include="src\com\scalper\fix\MessageListener.cs" />
+    <Compile Include="src\com\scalper\fix\TagHelper.cs" />
+    <Compile Include="src\com\scalper\util\BasicUtilities.cs" />
+    <Compile Include="src\com\scalper\util\BoundedQueue.cs" />
+    <Compile Include="src\com\scalper\util\ByteBuffer.cs" />
+    <Compile Include="src\com\scalper\util\CfgReader.cs" />
+    <Compile Include="src\com\scalper\util\ConfigurationProperties.cs" />
+    <Compile Include="src\com\scalper\util\FFillFixGlobals.cs" />
+    <Compile Include="src\SupportClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

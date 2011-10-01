@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{292AE349-F237-4A37-8276-0C16626D764F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TradeCompanion</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>TradeCompanion</RootNamespace>
+    <StartupObject>TradeCompanion.SubMain</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ManifestCertificateThumbprint>029250BDCC9E170F817CEB0FEB8DA9D668C7A725</ManifestCertificateThumbprint>
+    <ManifestKeyFile>TradeCompanion_BGC_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/TradeCompanion/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TradeCompanion.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TradeCompanion.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>TradeCompanion.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>TradeCompanion.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Data.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.Common.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=4bfb6c359c82a919, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonResources\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonResources\MagicLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TimeSync, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonResources\TimeSync.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutTradeCompanion.Designer.vb">
+      <DependentUpon>AboutTradeCompanion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutTradeCompanion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArielClient.Designer.vb">
+      <DependentUpon>ArielClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArielClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\AlertExecution.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\AlertsHome.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\AlertsManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\AlertWatcher.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\DiconnectedDatasets.vb" />
+    <Compile Include="Components\HeartBeatThread.vb" />
+    <Compile Include="Components\MarketDataExecution.vb" />
+    <Compile Include="Components\MDHistory.vb" />
+    <Compile Include="Components\NSTfeed.vb" />
+    <Compile Include="Components\PopupMsgBox.Designer.vb">
+      <DependentUpon>PopupMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\PopupMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\SettingsHome.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IndSysPL.vb" />
+    <Compile Include="LoginDukascopy.Designer.vb">
+      <DependentUpon>LoginDukascopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDukascopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDBFX.Designer.vb">
+      <DependentUpon>LoginDBFX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDBFX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginEspeed.Designer.vb">
+      <DependentUpon>LoginEspeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginEspeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAriel.Designer.vb">
+      <DependentUpon>LoginAriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAriel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisconnectForm.designer.vb">
+      <DependentUpon>DisconnectForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DisconnectForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpScalper.Designer.vb">
+      <DependentUpon>HelpScalper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpScalper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDMappingTable.Designer.vb">
+      <DependentUpon>IDMappingTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IDMappingTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCurrenEX.Designer.vb">
+      <DependentUpon>LoginCurrenEX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCurrenEX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFxIntegral.Designer.vb">
+      <DependentUpon>LoginFxIntegral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFxIntegral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginGain.Designer.vb">
+      <DependentUpon>LoginGain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginGain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginIcap.Designer.vb">
+      <DependentUpon>LoginIcap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginIcap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMarketData.Designer.vb">
+      <DependentUpon>LoginMarketData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMarketData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSettingsScalper.Designer.vb">
+      <DependentUpon>LoginSettingsScalper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSettingsScalper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManualAlert.Designer.vb">
+      <DependentUpon>ManualAlert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManualAlert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MappingTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="MyMessageBox.Designer.vb">
+      <DependentUpon>MyMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordReset.Designer.vb">
+      <DependentUpon>PasswordReset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordReset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLCal.vb" />
+    <Compile Include="ResetPassword.Designer.vb">
+      <DependentUpon>ResetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUP.Designer.vb">
+      <DependentUpon>SignUP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundSettings.Designer.vb">
+      <DependentUpon>SoundSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SoundSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StrategyPerformanceReport.Designer.vb">
+      <DependentUpon>StrategyPerformanceReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StrategyPerformanceReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMain.vb" />
+    <Compile Include="TradeHistory.Designer.vb">
+      <DependentUpon>TradeHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TradeHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trader.vb" />
+    <Compile Include="TradeSettings.Designer.vb">
+      <DependentUpon>TradeSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TradeSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdataUI.vb" />
+    <Compile Include="WarningDuplicateAlerts.Designer.vb">
+      <DependentUpon>WarningDuplicateAlerts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WarningDuplicateAlerts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\WSScalper\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="XmlRead.vb" />
+    <EmbeddedResource Include="AboutTradeCompanion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutTradeCompanion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alert.resx">
+      <DependentUpon>Alert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArielClient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ArielClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\PopupMsgBox.resx">
+      <DependentUpon>PopupMsgBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDukascopy.resx">
+      <DependentUpon>LoginDukascopy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDBFX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginDBFX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginEspeed.resx">
+      <DependentUpon>LoginEspeed.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAriel.resx">
+      <DependentUpon>LoginAriel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisconnectForm.resx">
+      <DependentUpon>DisconnectForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpScalper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HelpScalper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDMappingTable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IDMappingTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCurrenEX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginCurrenEX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFxIntegral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginFxIntegral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginGain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginGain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginIcap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginIcap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMarketData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginMarketData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSettingsScalper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginSettingsScalper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualAlert.resx">
+      <DependentUpon>ManualAlert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappingTable.resx">
+      <DependentUpon>MappingTable.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyMessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordReset.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordReset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUP.resx">
+      <DependentUpon>SignUP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoundSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SoundSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StrategyPerformanceReport.resx">
+      <DependentUpon>StrategyPerformanceReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TradeHistory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TradeHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TradeSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TradeSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarningDuplicateAlerts.resx">
+      <DependentUpon>WarningDuplicateAlerts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="trade companion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="EURGBP,39415,71475,-10">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="EURGBP,39415,71485,-20">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="fix42.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="fix44.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="help.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\Ariel.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\BGC.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\Currenex.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\DBFX.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\Espeed.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\Gain.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\Icap.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\MetaServer.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\DataSources\AlertsHome.datasource" />
+    <None Include="readme.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="settings.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Sound">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wrsthnk.exp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wrsthnk.lib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TradingInterface\TradingInterface.vbproj">
+      <Project>{668DB50E-8FF5-49AF-8AA0-F32EC6067E82}</Project>
+      <Name>TradingInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\CommonResources\ArielDriver.XmlSerializers.dll">
+      <Link>ArielDriver.XmlSerializers.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\fxcore.dll">
+      <Link>fxcore.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Gain.XmlSerializers.dll">
+      <Link>Gain.XmlSerializers.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\Avg.jpg">
+      <Link>Avg.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\Heart.gif">
+      <Link>Heart.gif</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\Loss.jpg">
+      <Link>Loss.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\NetProfit.jpg">
+      <Link>NetProfit.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\Profit.JPG">
+      <Link>Profit.JPG</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\ProfitFactor.jpg">
+      <Link>ProfitFactor.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\TCGreen.ico">
+      <Link>TCGreen.ico</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\TCOrange.ico">
+      <Link>TCOrange.ico</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\TCRed.ico">
+      <Link>TCRed.ico</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Images\Total.jpg">
+      <Link>Total.jpg</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Janus.Windows.Common.v2.dll">
+      <Link>Janus.Windows.Common.v2.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Janus.Windows.Schedule.v3.dll">
+      <Link>Janus.Windows.Schedule.v3.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\Janus.Windows.UI.v2.dll">
+      <Link>Janus.Windows.UI.v2.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\RegUtil.dll">
+      <Link>RegUtil.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\RegUtilLnk.dll">
+      <Link>RegUtilLnk.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\TestInterop.dll">
+      <Link>TestInterop.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\TradeCompanion.XmlSerializers.dll">
+      <Link>TradeCompanion.XmlSerializers.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\wrsifc.dll">
+      <Link>wrsifc.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\CommonResources\wrsthnk.dll">
+      <Link>wrsthnk.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bgcclient\ClientAPI.ocx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DBFX.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gain.xml" />
+    <Content Include="Janus.Windows.GridEX.v3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logging.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="NET09B.ICO">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Odlclient\ClientAPI.ocx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RepeatCount.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scalper_pip.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Settings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\Desynchronised.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\Error.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\NewOrder.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\PartSynchronized.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\shutdown_1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanion.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionArielBGC.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionArielODL.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionCurrenEx.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionDBFX.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionDukascopy.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionEspeed.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionFxIntegral.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionGain.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradeCompanionIcap.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TradingInterface.xml" />
+    <None Include="fix43.dat" />
+    <None Include="LOG\FxIntegral.log">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\WSScalper\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSScalper\WSScalper.disco" />
+    <None Include="Bgcclient\ClientAPI.ppc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="LOG\Dukascopy.log">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Odlclient\ClientAPI.ppc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Web References\WSScalper\WSScalper.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.tradecompanion.co.uk/WSScalper/WSScalper.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSScalper\</RelPath>
+      <UpdateFromURL>http://www.tradecompanion.co.uk/WSScalper/WSScalper.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>TradeCompanion_WSScalper_WebServicesScalper</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

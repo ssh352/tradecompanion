@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="CrashTest" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="crash" type="xs:string" minOccurs="0" />
+        <xs:element name="loginid" type="xs:string" minOccurs="0" />
+        <xs:element name="password" type="xs:string" minOccurs="0" />
+        <xs:element name="server" type="xs:string" minOccurs="0" />
+        <xs:element name="symbolmaping" type="xs:string" minOccurs="0" />
+        <xs:element name="filteralerts" type="xs:string" minOccurs="0" />
+        <xs:element name="defaulttradesize" type="xs:string" minOccurs="0" />
+        <xs:element name="reconnectinterval" type="xs:string" minOccurs="0" />
+        <xs:element name="executionmode" type="xs:string" minOccurs="0" />
+        <xs:element name="platformforgettingalerts" type="xs:string" minOccurs="0" />
+        <xs:element name="tradesettings" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="manual" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="defaulttradetype" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="automatic" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="defaulttradetype" type="xs:string" minOccurs="0" />
+                    <xs:element name="tradesizeover10m" type="xs:string" minOccurs="0" />
+                    <xs:element name="discardalertInterval" type="xs:int" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="connections" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Trade" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="connectiontrade" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="param1" type="xs:string" minOccurs="0" />
+                          <xs:element name="param2" type="xs:string" minOccurs="0" />
+                          <xs:element name="param3" type="xs:string" minOccurs="0" />
+                          <xs:element name="param4" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="marketdata" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="connectionmarket" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="param1" type="xs:string" minOccurs="0" />
+                          <xs:element name="param2" type="xs:string" minOccurs="0" />
+                          <xs:element name="param3" type="xs:string" minOccurs="0" />
+                          <xs:element name="param4" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrashTest" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="settings" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

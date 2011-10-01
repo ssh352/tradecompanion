@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridEXLayoutFile LayoutType="Janus.Windows.GridEX.GridEX" LayoutVersion="1.1">
+    <FormatStyles Collection="true">
+        <Style0 ID="Rejected">
+            <ForeColor>LightGray</ForeColor>
+            <Key>Rejected</Key>
+        </Style0>
+        <Style1 ID="Accepted">
+            <ForeColor>Black</ForeColor>
+            <Key>Accepted</Key>
+        </Style1>
+    </FormatStyles>
+    <TableHeaderFormatStyle>
+        <PredefinedStyle>TableHeaderFormatStyle</PredefinedStyle>
+        <TextAlignment>Center</TextAlignment>
+    </TableHeaderFormatStyle>
+    <RowWithErrorsFormatStyle>
+        <PredefinedStyle>RowWithErrorsFormatStyle</PredefinedStyle>
+    </RowWithErrorsFormatStyle>
+    <LinkFormatStyle>
+        <PredefinedStyle>LinkFormatStyle</PredefinedStyle>
+    </LinkFormatStyle>
+    <CardCaptionFormatStyle>
+        <PredefinedStyle>CardCaptionFormatStyle</PredefinedStyle>
+    </CardCaptionFormatStyle>
+    <GroupByBoxInfoFormatStyle>
+        <PredefinedStyle>GroupByBoxInfoFormatStyle</PredefinedStyle>
+    </GroupByBoxInfoFormatStyle>
+    <GroupRowFormatStyle>
+        <PredefinedStyle>GroupRowFormatStyle</PredefinedStyle>
+    </GroupRowFormatStyle>
+    <HeaderFormatStyle>
+        <PredefinedStyle>HeaderFormatStyle</PredefinedStyle>
+    </HeaderFormatStyle>
+    <PreviewRowFormatStyle>
+        <PredefinedStyle>PreviewRowFormatStyle</PredefinedStyle>
+    </PreviewRowFormatStyle>
+    <RowFormatStyle>
+        <PredefinedStyle>RowFormatStyle</PredefinedStyle>
+    </RowFormatStyle>
+    <SelectedFormatStyle>
+        <PredefinedStyle>SelectedFormatStyle</PredefinedStyle>
+    </SelectedFormatStyle>
+    <SelectedInactiveFormatStyle>
+        <PredefinedStyle>SelectedInactiveFormatStyle</PredefinedStyle>
+    </SelectedInactiveFormatStyle>
+    <WatermarkImage />
+    <BackColor>WhiteSmoke</BackColor>
+    <Font>Microsoft Sans Serif, 8.25pt</Font>
+    <ControlStyle />
+    <VisualStyle>Standard</VisualStyle>
+    <ColumnAutoResize>True</ColumnAutoResize>
+</GridEXLayoutFile>

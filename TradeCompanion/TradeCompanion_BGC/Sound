@@ -1,0 +1,683 @@
+ab8 bf8 WinMain
+ab8 bf8    lpCmdLine: '-Embedding'
+ab8 bf8 Run
+ab8 bf8    lpCmdLine: '-Embedding'
+ab8 bf8    nCmdShow: 10
+ab8 bf8 ServerInit 0
+ab8 bf8 VerifyRegistry
+ab8 bf8 GetRegistryString 'Software\Yahoo\YServer' 'HomeDir'
+ab8 bf8 Failed to open 'Software\Yahoo\YServer' key 2
+ab8 bf8 SaveRegistryString: Failed to open registry key for szKey 'Software\Yahoo\YServer'
+ab8 bf8 GetRegistryString 'Software\Yahoo\YServer' 'HomeDir'
+ab8 bf8    returning 'C:\PROGRA~1\Yahoo!\MESSEN~1\data'
+ab8 bf8 GetRegistryDWORD 'Software\Yahoo\YServer' 'Use Logfile'
+ab8 bf8    RegQueryValueExt failed 2 for 'Use Logfile'
+ab8 bf8 GetRegistryDWORD 'Software\Yahoo\Pager' 'Use Logfile'
+ab8 bf8    RegQueryValueExt failed 2 for 'Use Logfile'
+ab8 934 CountdownThread
+ab8 bf8 leaving ServerInit
+ab8 bf8 entering message loop
+ab8 bf8 CYServerComponent::CreateInstance
+ab8 bf8 Not aggregating; delegate to nondelegating IUnknown
+ab8 bf8 CYServerComponent::CYServerComponent
+ab8 bf8    the COM library asked for IMarshal
+ab8 bf8 CYServerComponent::SetMaxConnections 3
+ab8 bf8 CYServerComponent::IsServerRunning
+ab8 bf8 CYServerComponent::StartServer
+ab8 bf8 set gwGlobalErrorNumber to 0
+ab8 bf8    server not running: starting server
+ab8 bf8 StartWebServerThread
+ab8 bf8 GetRegistryString 'Software\Yahoo\YServer' 'HomeDir'
+ab8 bf8    returning 'C:\PROGRA~1\Yahoo!\MESSEN~1\data'
+ab8 bf8    set gszHomeDir to C:\PROGRA~1\Yahoo!\MESSEN~1\data
+ab8 bf8 CleanupShortcutFiles
+ab8 bf8 GetRegistryInt 'Software\Yahoo\YServer' 'KeepShortcuts' 0
+ab8 bf8 GetRegistryString 'Software\Yahoo\YServer' 'KeepShortcuts'
+ab8 bf8    RegQueryValueExt failed 2 for 'KeepShortcuts'
+ab8 bf8 ReadIniFileString
+ab8 bf8    section: [Info]  key: 'Timestamp'  default: ''
+ab8 bf8    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\.
+ab8 bf8    no chars read
+ab8 bf8 ReadIniFileString
+ab8 bf8    section: [Info]  key: 'Timestamp'  default: ''
+ab8 bf8    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\..
+ab8 bf8    no chars read
+ab8 bf8 leaving CleanupShortcutFiles
+ab8 ba0 ServerThread
+ab8 ba0 GetRegistryInt 'Software\Yahoo\YServer' 'IPPort' 80
+ab8 ba0 GetRegistryString 'Software\Yahoo\YServer' 'IPPort'
+ab8 ba0    RegQueryValueExt failed 2 for 'IPPort'
+ab8 ba0 set gnPort to 80
+ab8 ba0 calling CreateThread for ListenerThread
+ab8 ba0    ListenerThread ID: 0x56c
+ab8 56c ListenerThread
+ab8 56c    portno: 80
+ab8 56c    binding ip: 385984704
+ab8 56c    lcl_ListenSocket: 0x16c
+ab8 56c    local IP addr: 192.168.1.23
+ab8 56c    local port: 80
+ab8 56c    calling bind
+ab8 56c Binding failed for the first time.ab8 56c  Trying to bind for the 0 time, port = 80.
+ab8 56c  Trying to bind for the 1 time, port = 8080.
+ab8 56c    listen socket:
+ab8 56c    IP addr: 192.168.1.23
+ab8 56c    port: 8080
+ab8 56c    calling listen
+ab8 56c    back from listen
+ab8 56c    listen socket:
+ab8 56c    IP addr: 192.168.1.23
+ab8 56c    port: 8080
+ab8 56c    allocated a pool of 3 handles
+ab8 56c AcceptAndHandleRequests
+ab8 56c IsFreeEntryInThreadArray
+ab8 ba0 ReportInitProgress
+ab8 bf8 leaving StartWebServerThread
+ab8 bf8 returned from StartWebServerThread, the return code is 1.
+ab8 bf8 CYServerComponent::IsServerRunning
+ab8 bf8 CYServerComponent::SubmitFile
+ab8 bf8 	CreateShortcutFileForRequestab8 bf8    szFullPathName: C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 bf8    szAppID: Messenger
+ab8 bf8    szUserID: rajesh_az09
+ab8 bf8    szVersion: MSG1.0
+ab8 bf8    nhWnd: 2820144
+ab8 bf8    nMsgNumber: 1
+ab8 bf8 CreateShortcutFile
+ab8 bf8    szVersion: 'MSG1.0'
+ab8 bf8    szOriginalFile: 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp'
+ab8 bf8    szAppID: 'Messenger'
+ab8 bf8    szUserID: 'rajesh_az09'
+ab8 bf8    bIsDir: 0
+ab8 bf8    bIsPost: 0
+ab8 bf8 CreateShortcutFileName
+ab8 bf8    shortcut file name: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 bf8 CSecretKey::CSecretKey
+ab8 bf8    szApp: Messenger
+ab8 bf8    szUser: rajesh_az09
+ab8 bf8 	CSecretKey::Init().
+ab8 bf8    m_szAppID: Messenger
+ab8 bf8    m_szUserID: rajesh_az09
+ab8 bf8 CreateURL
+ab8 bf8 GetBaseURL
+ab8 bf8    bAddrContainsPort: 0
+ab8 bf8    base URL: http://192.168.1.23:8080
+ab8 bf8 CreateURL returned:
+ab8 bf8    http://192.168.1.23:8080/Messenger.rajesh_az09.1164718208156SaveFollowup.asp?AppID=Messenger&UserID=rajesh_az09&K=lc9lupexotjvyo5ir1se9xh
+ab8 bf8 WriteShortcutFile
+ab8 bf8    writing to ini file:
+ab8 bf8 
+
+[Info]
+Name=C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+Version=MSG1.0
+
+ab8 bf8    wrote Name=C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 bf8    wrote Version=MSG1.0
+ab8 bf8    writing to ini file:
+ab8 bf8 
+
+App=Messenger
+User=rajesh_az09
+
+ab8 bf8    wrote App=Messenger
+ab8 bf8    wrote User=rajesh_az09
+ab8 bf8    writing to ini file:
+ab8 bf8 
+
+Timestamp=7178CC76663BF787F86FA89F5D75FCCA
+
+ab8 bf8    wrote Timestamp=7178CC76663BF787F86FA89F5D75FCCA
+ab8 bf8    writing to ini file:
+ab8 bf8 
+
+W=2820144
+M=1
+
+ab8 bf8    wrote W=2820144
+ab8 bf8    wrote M=1
+ab8 bf8 exit CreateShortcutFile
+ab8 bf8 	CreateShortcutFile succeeded.
+ab8 bf8 	Entering AllocateAndCopyToWideString
+ab8 bf8  Leaving AllocateAndCopyToWideStrign
+ab8 bf8 	Entering AllocateAndCopyToWideString
+ab8 bf8  Leaving AllocateAndCopyToWideStrign
+ab8 bf8 	Entering AllocateAndCopyToWideString
+ab8 bf8  Leaving AllocateAndCopyToWideStrign
+ab8 bf8    output:
+ab8 bf8    szURL: http://192.168.1.23:8080/Messenger.rajesh_az09.1164718208156SaveFollowup.asp?AppID=Messenger&UserID=rajesh_az09&K=lc9lupexotjvyo5ir1se9xh
+ab8 bf8    szKey: lc9lupexotjvyo5ir1se9xh
+ab8 bf8    szShortcutFileName: Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 bf8 leaving SubmitFile
+ab8 56c accept connection from:
+ab8 56c    IP addr: 192.168.1.46
+ab8 56c    port: 4775
+ab8 56c       accept socket:
+ab8 56c    IP addr: 192.168.1.23
+ab8 56c    port: 8080
+ab8 56c spawning new Handler thread
+ab8 56c ReportInitProgress
+ab8 95c HandlerThread 0x174
+ab8 56c AddHandlerThreadToThreadArray
+ab8 56c IsFreeEntryInThreadArray
+ab8 95c HTTPLog::HTTPLog
+ab8 95c HTTPRequestHandler::HTTPRequestHandler  (max incoming = 1024)
+ab8 95c    home directory is C:\PROGRA~1\Yahoo!\MESSEN~1\data
+ab8 95c    m_szHomeDir: 'C:\PROGRA~1\Yahoo!\MESSEN~1\data'
+ab8 95c    about to m_HTTPLog.SetSocket(m_sock)
+ab8 95c HTTPLog::SetSocket starting...  socket=372
+ab8 95c HTTPLog::SetSocket exiting
+ab8 95c    about to g_RQT.AddHTTPRQH(this), this = 8011304
+ab8 95c 	after calling g_RQT.AddHTTPRQH(this). total count = 1.
+ab8 95c    about to create Kill Comm Event
+ab8 95c leaving HTTPRequestHandler::HTTPRequestHandler
+ab8 95c HTTPRequestHandler::ReadRequest
+ab8 95c HTTPRequestHandler::ReadRequest
+ab8 95c    received 261 bytes
+ab8 95c    Found '\r\n\r\n'
+ab8 95c    0 ms elapsed
+ab8 95c    header is:
+ab8 95c    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ab8 95c 
+
+HEAD /Messenger.rajesh_az09.1164718208156SaveFollowup.asp?AppID=Messenger&UserID=rajesh_az09&K=lc9lupexotjvyo5ir1se9xh HTTP/1.1
+Accept: */*
+User-Agent: Mozilla/4.0 (compatible; MSIE 5.5)
+Host: 192.168.1.23:8080
+Content-Length: 0
+Cache-Control: no-cache
+
+
+ab8 95c    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ab8 95c    m_pEntityBodyBuffer: 0x0
+ab8 95c    m_dwEntityBodyBufferSize: 0
+ab8 95c    m_dwNumBytesInEntityBody: 0
+ab8 95c HTTPRequestHandler::ParseRequest
+ab8 95c    m_cRequest: HEAD
+ab8 95c UnescapeName
+ab8 95c DecodeURL
+ab8 95c    before: Messenger
+ab8 95c    before: Messenger
+ab8 95c    after: Messenger
+ab8 95c UnescapeName
+ab8 95c DecodeURL
+ab8 95c    before: rajesh_az09
+ab8 95c    before: rajesh_az09
+ab8 95c    after: rajesh_az09
+ab8 95c UnescapeName
+ab8 95c DecodeURL
+ab8 95c    before: lc9lupexotjvyo5ir1se9xh
+ab8 95c    before: lc9lupexotjvyo5ir1se9xh
+ab8 95c    after: lc9lupexotjvyo5ir1se9xh
+ab8 95c    extracted the filename from the URL.  saving to m_cFileName:
+ab8 95c       '/Messenger.rajesh_az09.1164718208156SaveFollowup.asp'
+ab8 95c    m_cFileName: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c ProcessYahooRequestParams
+ab8 95c DecodeURL
+ab8 95c    before: Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c ValidateRequest
+ab8 95c    C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c ReadIniFileString
+ab8 95c    section: [Info]  key: 'App'  default: ''
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 'Messenger'
+ab8 95c ReadIniFileString
+ab8 95c    section: [Info]  key: 'User'  default: ''
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 'rajesh_az09'
+ab8 95c ReadIniFileInt
+ab8 95c    section: [Info]  key: 'Post'  default: 0
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 0
+ab8 95c ValidateRequest: true
+ab8 95c request is a Yahoo request
+ab8 95c FigureFileExtension
+ab8 95c    setting file extension: .asp
+ab8 95c FigureMimeType
+ab8 95c LookupMimeType .asp
+ab8 95c GetRegistryString '.asp' 'Content Type'
+ab8 95c    returning 'text/asp'
+ab8 95c    set m_szMimeType to text/asp
+ab8 95c leaving ParseRequest
+ab8 95c HTTPRequestHandler::HandleFileSend ''
+ab8 95c    file name: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c UnescapeName
+ab8 95c DecodeURL
+ab8 95c    before: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    before: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    after: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    unescaped file name: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    full file path: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c HTTPRequestHandler::SendRedirectedFile
+ab8 95c HTTPRedirectHandler::HTTPRedirectHandler
+ab8 95c GetBaseURL
+ab8 95c GetMyOwnIPAddress
+ab8 95c GetRegistryString 'Software\Yahoo\YServer' 'IdentityOverride'
+ab8 95c    RegQueryValueExt failed 2 for 'IdentityOverride'
+ab8 95c GetRASIP
+ab8 95c GetRASIP returning failure
+ab8 95c GetRASIP failed
+ab8 95c GetHostIP
+ab8 95c    gethostname: classic
+ab8 95c    192.168.1.23
+ab8 95c    IP address found
+ab8 95c leaving GetHostIP
+ab8 95c    set my IP address to GetHostIP: 192.168.1.23
+ab8 95c    bAddrContainsPort: 0
+ab8 95c    set m_szRawURL to http://192.168.1.23:8080//Messenger.rajesh_az09.1164718208156SaveFollowup.asp?AppID=Messenger&UserID=rajesh_az09&K=lc9lupexotjvyo5ir1se9xh
+ab8 95c HTTPRedirectHandler::Process
+ab8 95c ValidateKeys
+ab8 95c ReadIniFileString
+ab8 95c    section: [Info]  key: 'Timestamp'  default: ''
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning '7178CC76663BF787F86FA89F5D75FCCA'
+ab8 95c    szTimeStamp: '7178CC76663BF787F86FA89F5D75FCCA'
+ab8 95c CSecretKey::CSecretKey
+ab8 95c    szApp: Messenger
+ab8 95c    szUser: rajesh_az09
+ab8 95c    szTimeStamp: 7178CC76663BF787F86FA89F5D75FCCA
+ab8 95c 	CSecretKey::Init().
+ab8 95c    m_szAppID: Messenger
+ab8 95c    m_szUserID: rajesh_az09
+ab8 95c KeyMatches 'lc9lupexotjvyo5ir1se9xh'
+ab8 95c    key comparison test passed... continuing
+ab8 95c HTTPRedirectHandler::CheckRedirectFile
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c ReadIniFileInt
+ab8 95c    section: [Info]  key: 'Dir'  default: 0
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 0
+ab8 95c    set m_RType to RedirectTypeSingleFile
+ab8 95c ReadIniFileString
+ab8 95c    section: [Info]  key: 'App'  default: ''
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 'Messenger'
+ab8 95c ReadIniFileString
+ab8 95c    section: [Info]  key: 'User'  default: ''
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 'rajesh_az09'
+ab8 95c ReadIniFileString
+ab8 95c    section: [Info]  key: 'Version'  default: ''
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 'MSG1.0'
+ab8 95c ReadIniFileInt
+ab8 95c    section: [Info]  key: 'Post'  default: 0
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 0
+ab8 95c    m_szINIApp: 'Messenger'
+ab8 95c    m_szINIUser: 'rajesh_az09'
+ab8 95c    m_szINIVersionString: 'MSG1.0'
+ab8 95c    m_iIsPost: 0
+ab8 95c ReadIniFileInt
+ab8 95c    section: [Info]  key: 'W'  default: 0
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 2820144
+ab8 95c    m_hWnd: 0x2b0830
+ab8 95c ReadIniFileInt
+ab8 95c    section: [Info]  key: 'M'  default: 0
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 1
+ab8 95c    m_nMsgNumber: 1
+ab8 95c exit HTTPRedirectHandler::CheckRedirectFile
+ab8 95c HTTPRedirectHandler::HandleRedirectSingleFile
+ab8 95c ReadIniFileString
+ab8 95c    section: [Info]  key: 'Name'  default: ''
+ab8 95c    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 95c    returning 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp'
+ab8 95c    set m_szFileToTransfer to C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 95c    m_bProcessed: 1 [success]
+ab8 95c exit HTTPRedirectHandler::Process
+ab8 95c HTTPRedirectHandler::~HTTPRedirectHandler
+ab8 95c    m_cFileName: C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 95c    m_hWndReporting: 0x2b0830
+ab8 95c    m_nMsgNumber: 1
+ab8 95c    RedirectType: 1 RedirectTypeSingleFile
+ab8 95c    bIsPost: 0
+ab8 95c    m_cFileName: C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 95c    m_hWndReporting: 0x2b0830
+ab8 95c    m_nMsgNumber: 1
+ab8 95c    RedirectType: 1 RedirectTypeSingleFile
+ab8 95c    calling SendFile C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 95c HTTPRequestHandler::SendFile 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp'
+ab8 95c GetRegistryInt 'Software\Yahoo\YServer' 'InterimSleep' 0
+ab8 95c GetRegistryString 'Software\Yahoo\YServer' 'InterimSleep'
+ab8 95c    RegQueryValueExt failed 2 for 'InterimSleep'
+ab8 95c GetRegistryInt 'Software\Yahoo\YServer' 'ReportingInterval' 0
+ab8 95c GetRegistryString 'Software\Yahoo\YServer' 'ReportingInterval'
+ab8 95c    RegQueryValueExt failed 2 for 'ReportingInterval'
+ab8 95c GetRegistryInt 'Software\Yahoo\YServer' 'DontReportByPercent' 0
+ab8 95c GetRegistryString 'Software\Yahoo\YServer' 'DontReportByPercent'
+ab8 95c    RegQueryValueExt failed 2 for 'DontReportByPercent'
+ab8 95c    SendFile - About to read file C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 95c    Opened 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp' OK
+ab8 95c set m_lFileLen to 19791
+ab8 95c HTTPRequestHandler::FormatHeader
+ab8 95c    200
+ab8 95c    OK
+ab8 95c    19791
+ab8 95c send header:
+ab8 95c <<<<<
+ab8 95c 
+
+HTTP/1.0 200 OK
+Date: Tue Nov 28 18:20:08 2006 GMT
+Server: Y!/1.0
+MIME-version: 1.0
+Content-type: text/asp
+Last-modified: Tue Nov 28 18:20:08 2006 GMT
+Content-length: 19791
+
+
+ab8 95c >>>>>
+ab8 95c    calling send on 174: header 182 bytes
+ab8 95c    send returned 182
+ab8 95c sent HEAD response
+ab8 95c leaving HTTPRequestHandler::SendFile
+ab8 95c exit HTTPRequestHandler::SendRedirectedFile
+ab8 95c leaving HandleFileSend
+ab8 95c GetRegistryDWORD 'Software\Yahoo\YServer' 'Use Logfile'
+ab8 95c    RegQueryValueExt failed 2 for 'Use Logfile'
+ab8 95c GetRegistryDWORD 'Software\Yahoo\Pager' 'Use Logfile'
+ab8 95c    RegQueryValueExt failed 2 for 'Use Logfile'
+ab8 95c HTTPRequestHandler::~HTTPRequestHandler
+ab8 95c    calling g_RQT.RemoveHTTPRQH, this = 8011304.
+ab8 95c 	after calling RemoveHTTPRQH, count = 0.
+ab8 95c    closesocket: 0x174
+ab8 95c HTTPLog::~HTTPLog
+ab8 95c leaving HandlerThread
+ab8 56c accept connection from:
+ab8 56c    IP addr: 192.168.1.46
+ab8 56c    port: 4776
+ab8 56c       accept socket:
+ab8 56c    IP addr: 192.168.1.23
+ab8 56c    port: 8080
+ab8 56c spawning new Handler thread
+ab8 56c ReportInitProgress
+ab8 a18 HandlerThread 0x1a0
+ab8 56c AddHandlerThreadToThreadArray
+ab8 a18 HTTPLog::HTTPLog
+ab8 a18 HTTPRequestHandler::HTTPRequestHandler  (max incoming = 1024)
+ab8 56c CloseHandle thread 0x188
+ab8 a18    home directory is C:\PROGRA~1\Yahoo!\MESSEN~1\data
+ab8 a18    m_szHomeDir: 'C:\PROGRA~1\Yahoo!\MESSEN~1\data'
+ab8 a18    about to m_HTTPLog.SetSocket(m_sock)
+ab8 a18 HTTPLog::SetSocket starting...  socket=416
+ab8 a18 HTTPLog::SetSocket exiting
+ab8 a18    about to g_RQT.AddHTTPRQH(this), this = 8011304
+ab8 a18 	after calling g_RQT.AddHTTPRQH(this). total count = 1.
+ab8 a18    about to create Kill Comm Event
+ab8 a18 leaving HTTPRequestHandler::HTTPRequestHandler
+ab8 a18 HTTPRequestHandler::ReadRequest
+ab8 a18 HTTPRequestHandler::ReadRequest
+ab8 a18    received 227 bytes
+ab8 a18    Found '\r\n\r\n'
+ab8 a18    0 ms elapsed
+ab8 a18    header is:
+ab8 a18    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ab8 a18 
+
+GET /Messenger.rajesh_az09.1164718208156SaveFollowup.asp?AppID=Messenger&UserID=rajesh_az09&K=lc9lupexotjvyo5ir1se9xh HTTP/1.1
+User-Agent: Mozilla/4.0 (compatible; MSIE 5.5)
+Host: 192.168.1.23:8080
+Connection: Keep-Alive
+
+
+ab8 a18    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ab8 a18    m_pEntityBodyBuffer: 0x0
+ab8 a18    m_dwEntityBodyBufferSize: 0
+ab8 a18    m_dwNumBytesInEntityBody: 0
+ab8 a18 HTTPRequestHandler::ParseRequest
+ab8 a18    m_cRequest: GET
+ab8 a18 UnescapeName
+ab8 a18 DecodeURL
+ab8 a18    before: Messenger
+ab8 a18    before: Messenger
+ab8 a18    after: Messenger
+ab8 a18 UnescapeName
+ab8 a18 DecodeURL
+ab8 a18    before: rajesh_az09
+ab8 a18    before: rajesh_az09
+ab8 a18    after: rajesh_az09
+ab8 a18 UnescapeName
+ab8 a18 DecodeURL
+ab8 a18    before: lc9lupexotjvyo5ir1se9xh
+ab8 a18    before: lc9lupexotjvyo5ir1se9xh
+ab8 a18    after: lc9lupexotjvyo5ir1se9xh
+ab8 a18    extracted the filename from the URL.  saving to m_cFileName:
+ab8 a18       '/Messenger.rajesh_az09.1164718208156SaveFollowup.asp'
+ab8 a18    m_cFileName: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18 ProcessYahooRequestParams
+ab8 a18 DecodeURL
+ab8 a18    before: Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18 ValidateRequest
+ab8 a18    C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18 ReadIniFileString
+ab8 a18    section: [Info]  key: 'App'  default: ''
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 'Messenger'
+ab8 a18 ReadIniFileString
+ab8 a18    section: [Info]  key: 'User'  default: ''
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 'rajesh_az09'
+ab8 a18 ReadIniFileInt
+ab8 a18    section: [Info]  key: 'Post'  default: 0
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 0
+ab8 a18 ValidateRequest: true
+ab8 a18 request is a Yahoo request
+ab8 a18 FigureFileExtension
+ab8 a18    setting file extension: .asp
+ab8 a18 FigureMimeType
+ab8 a18 LookupMimeType .asp
+ab8 a18 GetRegistryString '.asp' 'Content Type'
+ab8 a18    returning 'text/asp'
+ab8 a18    set m_szMimeType to text/asp
+ab8 a18 leaving ParseRequest
+ab8 a18 HTTPRequestHandler::HandleFileSend ''
+ab8 a18    file name: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18 UnescapeName
+ab8 a18 DecodeURL
+ab8 a18    before: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    before: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    after: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    unescaped file name: /Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    full file path: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18 HTTPRequestHandler::SendRedirectedFile
+ab8 a18 HTTPRedirectHandler::HTTPRedirectHandler
+ab8 a18 GetBaseURL
+ab8 a18 GetMyOwnIPAddress
+ab8 a18    bAddrContainsPort: 0
+ab8 a18    set m_szRawURL to http://192.168.1.23:8080//Messenger.rajesh_az09.1164718208156SaveFollowup.asp?AppID=Messenger&UserID=rajesh_az09&K=lc9lupexotjvyo5ir1se9xh
+ab8 a18 HTTPRedirectHandler::Process
+ab8 a18 ValidateKeys
+ab8 a18 ReadIniFileString
+ab8 a18    section: [Info]  key: 'Timestamp'  default: ''
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning '7178CC76663BF787F86FA89F5D75FCCA'
+ab8 a18    szTimeStamp: '7178CC76663BF787F86FA89F5D75FCCA'
+ab8 a18 CSecretKey::CSecretKey
+ab8 a18    szApp: Messenger
+ab8 a18    szUser: rajesh_az09
+ab8 a18    szTimeStamp: 7178CC76663BF787F86FA89F5D75FCCA
+ab8 a18 	CSecretKey::Init().
+ab8 a18    m_szAppID: Messenger
+ab8 a18    m_szUserID: rajesh_az09
+ab8 a18 KeyMatches 'lc9lupexotjvyo5ir1se9xh'
+ab8 a18    key comparison test passed... continuing
+ab8 a18 HTTPRedirectHandler::CheckRedirectFile
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18 ReadIniFileInt
+ab8 a18    section: [Info]  key: 'Dir'  default: 0
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 0
+ab8 a18    set m_RType to RedirectTypeSingleFile
+ab8 a18 ReadIniFileString
+ab8 a18    section: [Info]  key: 'App'  default: ''
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 'Messenger'
+ab8 a18 ReadIniFileString
+ab8 a18    section: [Info]  key: 'User'  default: ''
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 'rajesh_az09'
+ab8 a18 ReadIniFileString
+ab8 a18    section: [Info]  key: 'Version'  default: ''
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 'MSG1.0'
+ab8 a18 ReadIniFileInt
+ab8 a18    section: [Info]  key: 'Post'  default: 0
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 0
+ab8 a18    m_szINIApp: 'Messenger'
+ab8 a18    m_szINIUser: 'rajesh_az09'
+ab8 a18    m_szINIVersionString: 'MSG1.0'
+ab8 a18    m_iIsPost: 0
+ab8 a18 ReadIniFileInt
+ab8 a18    section: [Info]  key: 'W'  default: 0
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 2820144
+ab8 a18    m_hWnd: 0x2b0830
+ab8 a18 ReadIniFileInt
+ab8 a18    section: [Info]  key: 'M'  default: 0
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 1
+ab8 a18    m_nMsgNumber: 1
+ab8 a18 exit HTTPRedirectHandler::CheckRedirectFile
+ab8 a18 HTTPRedirectHandler::HandleRedirectSingleFile
+ab8 a18 ReadIniFileString
+ab8 a18    section: [Info]  key: 'Name'  default: ''
+ab8 a18    file: C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18    returning 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp'
+ab8 a18    set m_szFileToTransfer to C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 a18    m_bProcessed: 1 [success]
+ab8 a18 exit HTTPRedirectHandler::Process
+ab8 a18 HTTPRedirectHandler::~HTTPRedirectHandler
+ab8 a18    m_cFileName: C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 a18    m_hWndReporting: 0x2b0830
+ab8 a18    m_nMsgNumber: 1
+ab8 a18    RedirectType: 1 RedirectTypeSingleFile
+ab8 a18    bIsPost: 0
+ab8 a18    m_cFileName: C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 a18    m_hWndReporting: 0x2b0830
+ab8 a18    m_nMsgNumber: 1
+ab8 a18    RedirectType: 1 RedirectTypeSingleFile
+ab8 a18    calling SendFile C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 a18 HTTPRequestHandler::SendFile 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp'
+ab8 a18 GetRegistryInt 'Software\Yahoo\YServer' 'InterimSleep' 0
+ab8 a18 GetRegistryString 'Software\Yahoo\YServer' 'InterimSleep'
+ab8 a18    RegQueryValueExt failed 2 for 'InterimSleep'
+ab8 a18 GetRegistryInt 'Software\Yahoo\YServer' 'ReportingInterval' 0
+ab8 a18 GetRegistryString 'Software\Yahoo\YServer' 'ReportingInterval'
+ab8 a18    RegQueryValueExt failed 2 for 'ReportingInterval'
+ab8 a18 GetRegistryInt 'Software\Yahoo\YServer' 'DontReportByPercent' 0
+ab8 a18 GetRegistryString 'Software\Yahoo\YServer' 'DontReportByPercent'
+ab8 a18    RegQueryValueExt failed 2 for 'DontReportByPercent'
+ab8 a18    SendFile - About to read file C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 a18    Opened 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp' OK
+ab8 a18 set m_lFileLen to 19791
+ab8 a18 HTTPRequestHandler::FormatHeader
+ab8 a18    200
+ab8 a18    OK
+ab8 a18    19791
+ab8 a18 send header:
+ab8 a18 <<<<<
+ab8 a18 
+
+HTTP/1.0 200 OK
+Date: Tue Nov 28 18:20:09 2006 GMT
+Server: Y!/1.0
+MIME-version: 1.0
+Content-type: text/asp
+Last-modified: Tue Nov 28 18:20:09 2006 GMT
+Content-length: 19791
+
+
+ab8 a18 >>>>>
+ab8 a18    calling send on 1a0: header 182 bytes
+ab8 a18    send returned 182
+ab8 a18 HTTPFileInfo::HTTPFileInfo C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp 19791
+ab8 a18   Sending file C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp
+ab8 a18 PostInfoToApp YSERVER_IPC_BEGIN 19791 0
+ab8 a18 SendMessage 0x2b0830
+ab8 a18 IPCInfo:
+ab8 a18    cFileName: 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp'
+ab8 a18    cUserID: 'rajesh_az09'
+ab8 a18    nStatus: 0
+ab8 a18    nType: YSERVER_IPC_BEGIN
+ab8 a18    lFileLen: 19791
+ab8 a18    lCurrBytes: 0
+ab8 a18    nMessageNumber: 1
+ab8 a18 SendMessage processed
+ab8 a18 NewThreadSend Starting
+ab8 a18 GetRegistryInt 'Software\Yahoo\YServer' 'SendTimeout' 0
+ab8 a18 GetRegistryString 'Software\Yahoo\YServer' 'SendTimeout'
+ab8 a18    RegQueryValueExt failed 2 for 'SendTimeout'
+ab8 a18 CreateThread SendThread_New
+ab8 a18    SendThread_New thread id: 2396
+ab8 95c SendThread_New 155fddc
+ab8 95c    calling send on 0x1a0 4096 bytes
+ab8 95c PostInfoToApp YSERVER_IPC_SENDING 4096 0
+ab8 95c    calling send on 0x1a0 4096 bytes
+ab8 95c PostInfoToApp YSERVER_IPC_SENDING 8192 0
+ab8 95c    calling send on 0x1a0 4096 bytes
+ab8 95c PostInfoToApp YSERVER_IPC_SENDING 12288 0
+ab8 95c    calling send on 0x1a0 4096 bytes
+ab8 95c PostInfoToApp YSERVER_IPC_SENDING 16384 0
+ab8 95c    calling send on 0x1a0 3407 bytes
+ab8 95c PostInfoToApp YSERVER_IPC_SENDING 19791 0
+ab8 95c leaving SendThread_New
+ab8 a18 SendThread_New succeeded
+ab8 a18 leaving NewThreadSend
+ab8 a18 PostInfoToApp YSERVER_IPC_FINISHED 19791 0
+ab8 a18 SendMessage 0x2b0830
+ab8 a18 IPCInfo:
+ab8 a18    cFileName: 'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp'
+ab8 a18    cUserID: 'rajesh_az09'
+ab8 a18    nStatus: 0
+ab8 a18    nType: YSERVER_IPC_FINISHED
+ab8 a18    lFileLen: 19791
+ab8 a18    lCurrBytes: 19791
+ab8 a18    nMessageNumber: 1
+ab8 a18 SendMessage processed
+ab8 a18    sent 19791 bytes of [19791 byte] file:
+ab8 a18       'C:\Inetpub\wwwroot\ServiceTicket\SaveFollowup.asp'
+ab8 a18 leaving HTTPRequestHandler::SendFile
+ab8 a18    unlink C:\PROGRA~1\Yahoo!\MESSEN~1\data\Messenger.rajesh_az09.1164718208156SaveFollowup.asp
+ab8 a18 exit HTTPRequestHandler::SendRedirectedFile
+ab8 a18 leaving HandleFileSend
+ab8 a18 HTTPRequestHandler::~HTTPRequestHandler
+ab8 a18    calling g_RQT.RemoveHTTPRQH, this = 8011304.
+ab8 a18 	after calling RemoveHTTPRQH, count = 0.
+ab8 a18    closesocket: 0x1a0
+ab8 a18 HTTPLog::~HTTPLog
+ab8 a18 leaving HandlerThread
+ab8 56c IsFreeEntryInThreadArray
+ab8 56c CloseHandle thread 0x228
+ab8 bf8 CYServerComponent::GetDownloadStatus
+ab8 bf8 HTTPRQTotals::GetTotals
+ab8 bf8 	Entering AllocateAndCopyToWideString
+ab8 bf8  Leaving AllocateAndCopyToWideStrign
+ab8 bf8 	Entering AllocateAndCopyToWideString
+ab8 bf8  Leaving AllocateAndCopyToWideStrign
+ab8 bf8 CYServerComponent::IsServerRunning
+ab8 bf8 CYServerComponent::StopServer
+ab8 ba0 WaitForMultipleObjects returned 0
+ab8 ba0 GetExitCodeThread for ListenerThread 0x15c: 0x103
+ab8 ba0 hKillEvent was signalled: need to kill listener thread
+ab8 ba0 calling closesocket on listener socket 0x16c
+ab8 ba0 waiting for ListenerThread to complete
+ab8 ba0    WaitForSingleObject 0x15c returned 0
+ab8 ba0 ListenerThread completed
+ab8 56c accept failed 10004
+ab8 56c IsFreeEntryInThreadArray
+ab8 56c accept failed 10038
+ab8 56c accept returned WSAENOTSOCK: returning
+ab8 56c AcceptAndHandleRequests failed
+ab8 56c CloseThreadArray
+ab8 56c leaving ListenerThread
+ab8 ba0 ReportInitProgress
+ab8 ba0 leaving ServerThread
+ab8 bf8 stopping server
+ab8 bf8 leaving CYServerComponent::StopServer
+ab8 bf8 Increment reference count for final release
+ab8 bf8 CYServerComponent::~CYServerComponent
+ab8 934 leaving CountdownThread
+ab8 bf8 back from message loop
+ab8 bf8 leaving WinMain

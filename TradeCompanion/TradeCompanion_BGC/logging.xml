@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log4net>
+  <!-- A1 is set to be a ConsoleAppender -->
+  <!--
+  <appender name="FileAppender" type="log4net.Appender.FileAppender">
+    <file value="scalper.log" />
+    <appendToFile value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+  -->
+  <appender name="TraceAppender" type="log4net.Appender.TraceAppender">
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\Currenex.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" /> 
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="100" />
+    <maximumFileSize value="10000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <appender name="TCRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\BGC.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" /> 
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="10" />
+    <maximumFileSize value="1000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+    <appender name="ArielRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\Ariel.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" /> 
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="10" />
+    <maximumFileSize value="1000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+    <appender name="DBFXRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\DBFX.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" /> 
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="10" />
+    <maximumFileSize value="1000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+<appender name="GainRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\Gain.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" /> 
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="10" />
+    <maximumFileSize value="1000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+      <appender name="EspeedRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\Espeed.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" /> 
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="10" />
+    <maximumFileSize value="1000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+  
+  <appender name="IcapRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\Icap.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" /> 
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="10" />
+    <maximumFileSize value="1000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <appender name="DukascopyRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\Dukascopy.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="100" />
+    <maximumFileSize value="10000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+  
+    <appender name="FxIntegralRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\FxIntegral.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="100" />
+    <maximumFileSize value="10000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+    
+   <appender name="MetaServerRollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="log\MetaServer.log" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+MinimalLock" /> 
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="100" />
+    <maximumFileSize value="10000KB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <appender name="MessageWindowAppender" type="TestScalper.MessageWindowAppender">
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+
+  <!-- Set root logger level to DEBUG and its only appender to A1 -->
+  <root>
+    <level value="ALL" />
+    <appender-ref ref="RollingFileAppender" />
+    <appender-ref ref="TraceAppender" /> 
+  </root>
+
+ <logger name="TradeCompanion.Util" additivity="false">
+	  <appender-ref ref="TCRollingFileAppender" />
+ </logger>
+
+  <logger name="ArielDriver.Util" additivity="false">
+	  <appender-ref ref="ArielRollingFileAppender" />
+ </logger>
+
+  <logger name="EspeedDriver.Util" additivity="false">
+	  <appender-ref ref="EspeedRollingFileAppender" />
+ </logger>
+
+   <logger name="MetaServerLog" additivity="false">
+	  <appender-ref ref="MetaServerRollingFileAppender" />
+ </logger>
+
+  <logger name="DBFX.DBFXClient.DBFXUtil" additivity="false">
+	  <appender-ref ref="DBFXRollingFileAppender" />
+  </logger>
+
+  <logger name="Gain.GainClient.GainUtil" additivity="false">
+	  <appender-ref ref="GainRollingFileAppender" />
+ </logger>
+
+  <logger name="Icap.com.scalper.fix.driver.ScalperFixSession" additivity="false">
+    <appender-ref ref="IcapRollingFileAppender" />
+  </logger>
+
+  <logger name="Icap.com.scalper.fix.driver.client.DefaultClient" additivity="false">
+    <appender-ref ref="IcapRollingFileAppender" />
+  </logger>
+
+  <logger name="Icap.com.scalper.fix.driver.FIXSessionListenerHelper" additivity="false">
+    <appender-ref ref="IcapRollingFileAppender" />
+  </logger>
+
+  <logger name="Icap.com.scalper.fix.driver.FIXSessionTimer" additivity="false">
+    <appender-ref ref="IcapRollingFileAppender" />
+  </logger>
+  
+  <logger name="Icap.com.scalper.fix.driver.FIXSocketConnection" additivity="false">
+    <appender-ref ref="IcapRollingFileAppender" />
+  </logger>
+
+  <logger name="Dukascopy.com.scalper.fix.driver.ScalperFixSession" additivity="false">
+    <appender-ref ref="DukascopyRollingFileAppender" />
+  </logger>
+
+  <logger name="Dukascopy.com.scalper.fix.driver.client.DefaultClient" additivity="false">
+    <appender-ref ref="DukascopyRollingFileAppender" />
+  </logger>
+
+  <logger name="Dukascopy.com.scalper.fix.driver.FIXSessionListenerHelper" additivity="false">
+    <appender-ref ref="DukascopyRollingFileAppender" />
+  </logger>
+
+  <logger name="Dukascopy.com.scalper.fix.driver.FIXSessionTimer" additivity="false">
+    <appender-ref ref="DukascopyRollingFileAppender" />
+  </logger>
+
+  <logger name="Dukascopy.com.scalper.fix.driver.FIXSocketConnection" additivity="false">
+    <appender-ref ref="DukascopyRollingFileAppender" />
+  </logger>
+
+  <logger name="Dukascopy.com.scalper.fix.driver.FIXSocketInitiator" additivity="false">
+    <appender-ref ref="DukascopyRollingFileAppender" />
+  </logger>
+  
+  <logger name="Dukascopy.com.scalper.fix.driver.DefaultMessageConnection" additivity="false">
+    <appender-ref ref="DukascopyRollingFileAppender" />
+  </logger>
+  <logger name="Dukascopy.com.scalper.fix.Message" additivity="false">
+    <appender-ref ref="DukascopyRollingFileAppender" />
+  </logger>
+    
+
+  <logger name="FxIntegral.com.scalper.fix.driver.ScalperFixSession" additivity="false">
+    <appender-ref ref="FxIntegralRollingFileAppender" />
+  </logger>
+
+  <logger name="FxIntegral.com.scalper.fix.driver.client.DefaultClient" additivity="false">
+    <appender-ref ref="FxIntegralRollingFileAppender" />
+  </logger>
+
+  <logger name="FxIntegral.com.scalper.fix.driver.FIXSessionListenerHelper" additivity="false">
+    <appender-ref ref="FxIntegralRollingFileAppender" />
+  </logger>
+
+  <logger name="FxIntegral.com.scalper.fix.driver.FIXSessionTimer" additivity="false">
+    <appender-ref ref="FxIntegralRollingFileAppender" />
+  </logger>
+
+  <logger name="FxIntegral.com.scalper.fix.driver.FIXSocketConnection" additivity="false">
+    <appender-ref ref="FxIntegralRollingFileAppender" />
+  </logger>
+
+  <logger name="FxIntegral.com.scalper.fix.driver.FIXSocketInitiator" additivity="false">
+    <appender-ref ref="FxIntegralRollingFileAppender" />
+  </logger>
+  
+  <logger name="FxIntegral.com.scalper.fix.driver.DefaultMessageConnection" additivity="false">
+    <appender-ref ref="FxIntegralRollingFileAppender" />
+  </logger>
+  <logger name="FxIntegral.com.scalper.fix.Message" additivity="false">
+    <appender-ref ref="FxIntegralRollingFileAppender" />
+  </logger>
+  
+  <!-- com.scalper.fix.driver.client.DefaultClient-->
+
+</log4net>
