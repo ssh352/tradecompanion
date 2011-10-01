@@ -1,0 +1,28 @@
+﻿
+
+#heading 
+{
+    background-color:Green;
+    background-position:center;
+    
+}
+#heading1
+{
+    background-color:Green;
+    background-position:center;
+}
+
+.Test1
+   {
+    width:498px;
+    height:100px;
+    text-align:justify;
+    }
+ .para1
+ {
+    float:right;
+    margin:0;
+    text-align:justify;
+  
+ }
+       

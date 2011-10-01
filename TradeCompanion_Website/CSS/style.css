@@ -1,0 +1,151 @@
+.text
+{
+margin-left: 25;
+margin-right: 60;
+font-family: Arial; 
+font-size: 9pt; 
+text-decoration: none; 
+font-weight: bold; 
+color: #6D89AB; 
+}
+
+.text2
+{
+margin-left: 25;
+margin-right: 60;
+font-family: Arial; 
+font-size: 8pt; 
+text-decoration: none; 
+font-weight: normal; 
+color: #6D89AB; 
+letter-spacing: 0;
+}
+
+.text3
+{
+margin-left: 25;
+margin-right: 60;
+font-family: Arial; 
+font-size: 8pt; 
+text-decoration: none; 
+font-weight: normal; 
+color: #6D89AB; 
+letter-spacing: 0;
+text-align: "justify";
+}
+
+.text33
+{
+margin-left: 25;
+margin-right: 60;
+font-family: Arial; 
+font-size: 8pt; 
+text-decoration: none; 
+font-weight: normal; 
+color: #878989; 
+letter-spacing: 0;
+text-align: "justify";
+}
+
+.text333
+{
+margin-left: 25;
+margin-right: 60;
+font-family: Arial; 
+font-size: 8pt; 
+text-decoration: none; 
+font-weight: bold; 
+color: #728DAD; 
+letter-spacing: 0;
+text-align: "justify";
+}
+
+.text4
+{
+margin-left: 25;
+margin-right: 60;
+font-family: Arial; 
+font-size: 8pt; 
+text-decoration: none; 
+font-weight: normal; 
+color: #878989; 
+letter-spacing: 0;
+text-align: justify;
+}
+
+.text5
+{
+margin-left: 25;
+margin-right: 60;
+font-family: Arial; 
+font-size: 10pt; 
+text-decoration: none; 
+font-weight: normal; 
+color: #878989; 
+letter-spacing: 0;
+text-align: justify;
+}
+
+.LinkButton
+{
+	text-align:center;  
+	vertical-align:middle;  
+	text-decoration:none;
+}
+
+a.red:link
+{
+font-size: 8pt;
+font-weight: normal;
+color: #BCB7AA;
+font-family:arial;
+text-decoration: none;
+}
+
+a.red:visited
+{
+font-size: 8pt;
+font-weight: normal;
+color: #BCB7AA;
+font-family:arial;
+text-decoration: none;
+}
+
+a.red:hover
+{
+font-size: 8pt;
+font-weight: normal;
+color: #F68E55;
+font-family:arial;
+text-decoration: none;
+}
+
+a.green:link
+{
+font-size: 8pt;
+font-weight: normal;
+color: #ffffff;
+font-family:arial;
+text-decoration: none;
+}
+
+a.green:visited
+{
+font-size: 8pt;
+font-weight: normal;
+color: #ffffff;
+font-family:arial;
+text-decoration: none;
+}
+
+a.green:hover
+{
+font-size: 8pt;
+font-weight: normal;
+color: #F68E55;
+font-family:arial;
+text-decoration: none;
+}
+
+
+

@@ -1,0 +1,1954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userRow" type="tns:UserRow" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserRow">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LoggedIn" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Version" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldpassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newpassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ModifyPasswordResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidatePasswordResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgotPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgotPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ForgotPasswordResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Loggedin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoggedinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoggedinResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersDS">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUsersDSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersDSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userRow" type="tns:UserRow" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EditUsersResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrderReturnDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orderRow" type="tns:OrderRow" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OrderRow">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Exchange" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Symbol" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MonthYear" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Side" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Price" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeStamp" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TradeCurrency" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExecOrderId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateID" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TradeCompanionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrenExID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateIDCustomer" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SenderId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MarketPrice" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddOrderReturnDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddOrderReturnDateResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orderRow" type="tns:OrderRow" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddOrderResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsUser">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="loginID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currenExID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrdersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddOrdersResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrderRows">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orderRows" type="tns:ArrayOfOrderRow" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOrderRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OrderRow" nillable="true" type="tns:OrderRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddOrderRowsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddOrderRowsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrdersDS">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetOrdersDSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrdersDSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrdersFromQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrdersFromQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrdersFromQueryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsEmailIDExist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emailId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsEmailIDExistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsEmailIDExistResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsLoginIDExist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsLoginIDExistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsLoginIDExistResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckDependency">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tradecompanionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckDependencyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckDependencyResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPLTradeDS">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPLTradeDSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPLTradeDSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPLTradeDSFromQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPLTradeDSFromQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPLTradeDSFromQueryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePasswordVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePasswordVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidatePasswordVersionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmailID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmailIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmailIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPIPSFromPLTradeQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPIPSFromPLTradeQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPIPSFromPLTradeQueryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGraphData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGraphDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGraphDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersDSFromQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsersDSFromQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersDSFromQueryResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="boolean" type="s:boolean" />
+      <s:element name="int" type="s:int" />
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="CreateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModifyPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ModifyPassword" />
+  </wsdl:message>
+  <wsdl:message name="ModifyPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ModifyPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidatePassword" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ForgotPassword" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ForgotPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoggedinSoapIn">
+    <wsdl:part name="parameters" element="tns:Loggedin" />
+  </wsdl:message>
+  <wsdl:message name="LoggedinSoapOut">
+    <wsdl:part name="parameters" element="tns:LoggedinResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsersDS" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsersDSResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:EditUsers" />
+  </wsdl:message>
+  <wsdl:message name="EditUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:EditUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderReturnDateSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrderReturnDate" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderReturnDateSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrderReturnDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrder" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrdersSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrders" />
+  </wsdl:message>
+  <wsdl:message name="AddOrdersSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderRowsSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrderRows" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderRowsSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrderRowsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersDSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrdersDS" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersDSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrdersDSResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="AddUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersFromQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrdersFromQuery" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersFromQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrdersFromQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsEmailIDExistSoapIn">
+    <wsdl:part name="parameters" element="tns:IsEmailIDExist" />
+  </wsdl:message>
+  <wsdl:message name="IsEmailIDExistSoapOut">
+    <wsdl:part name="parameters" element="tns:IsEmailIDExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsLoginIDExistSoapIn">
+    <wsdl:part name="parameters" element="tns:IsLoginIDExist" />
+  </wsdl:message>
+  <wsdl:message name="IsLoginIDExistSoapOut">
+    <wsdl:part name="parameters" element="tns:IsLoginIDExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckDependencySoapIn">
+    <wsdl:part name="parameters" element="tns:CheckDependency" />
+  </wsdl:message>
+  <wsdl:message name="CheckDependencySoapOut">
+    <wsdl:part name="parameters" element="tns:CheckDependencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPLTradeDS" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPLTradeDSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSFromQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:GetPLTradeDSFromQuery" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSFromQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:GetPLTradeDSFromQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidatePasswordVersion" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidatePasswordVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmailIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmailID" />
+  </wsdl:message>
+  <wsdl:message name="GetEmailIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmailIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPIPSFromPLTradeQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:GetPIPSFromPLTradeQuery" />
+  </wsdl:message>
+  <wsdl:message name="GetPIPSFromPLTradeQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:GetPIPSFromPLTradeQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGraphDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGraphData" />
+  </wsdl:message>
+  <wsdl:message name="GetGraphDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGraphDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSFromQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsersDSFromQuery" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSFromQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsersDSFromQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModifyPasswordHttpGetIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="oldpassword" type="s:string" />
+    <wsdl:part name="newpassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyPasswordHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordHttpGetIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordHttpGetIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="LoggedinHttpGetIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="status" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoggedinHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSHttpGetIn" />
+  <wsdl:message name="GetUsersDSHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersDSHttpGetIn" />
+  <wsdl:message name="GetOrdersDSHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="AddUserHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="userName" type="s:string" />
+    <wsdl:part name="emailId" type="s:string" />
+    <wsdl:part name="phoneNo" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="city" type="s:string" />
+    <wsdl:part name="country" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddUserHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersFromQueryHttpGetIn">
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersFromQueryHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="IsEmailIDExistHttpGetIn">
+    <wsdl:part name="emailId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsEmailIDExistHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="IsLoginIDExistHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsLoginIDExistHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserHttpGetIn">
+    <wsdl:part name="userId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="CheckDependencyHttpGetIn">
+    <wsdl:part name="tradecompanionId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckDependencyHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSHttpGetIn" />
+  <wsdl:message name="GetPLTradeDSHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSFromQueryHttpGetIn">
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSFromQueryHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordVersionHttpGetIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="version" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordVersionHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetEmailIDHttpGetIn">
+    <wsdl:part name="loginid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmailIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPIPSFromPLTradeQueryHttpGetIn">
+    <wsdl:part name="sql" type="s:string" />
+    <wsdl:part name="startDate" type="s:string" />
+    <wsdl:part name="endDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPIPSFromPLTradeQueryHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetGraphDataHttpGetIn">
+    <wsdl:part name="sql" type="s:string" />
+    <wsdl:part name="startDate" type="s:string" />
+    <wsdl:part name="endDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGraphDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSFromQueryHttpGetIn">
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSFromQueryHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ModifyPasswordHttpPostIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="oldpassword" type="s:string" />
+    <wsdl:part name="newpassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyPasswordHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordHttpPostIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordHttpPostIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="LoggedinHttpPostIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="status" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoggedinHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSHttpPostIn" />
+  <wsdl:message name="GetUsersDSHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersDSHttpPostIn" />
+  <wsdl:message name="GetOrdersDSHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="AddUserHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="userName" type="s:string" />
+    <wsdl:part name="emailId" type="s:string" />
+    <wsdl:part name="phoneNo" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="city" type="s:string" />
+    <wsdl:part name="country" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddUserHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersFromQueryHttpPostIn">
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOrdersFromQueryHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="IsEmailIDExistHttpPostIn">
+    <wsdl:part name="emailId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsEmailIDExistHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="IsLoginIDExistHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsLoginIDExistHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserHttpPostIn">
+    <wsdl:part name="userId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="CheckDependencyHttpPostIn">
+    <wsdl:part name="tradecompanionId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckDependencyHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSHttpPostIn" />
+  <wsdl:message name="GetPLTradeDSHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSFromQueryHttpPostIn">
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPLTradeDSFromQueryHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordVersionHttpPostIn">
+    <wsdl:part name="loginid" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="version" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePasswordVersionHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetEmailIDHttpPostIn">
+    <wsdl:part name="loginid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmailIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPIPSFromPLTradeQueryHttpPostIn">
+    <wsdl:part name="sql" type="s:string" />
+    <wsdl:part name="startDate" type="s:string" />
+    <wsdl:part name="endDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPIPSFromPLTradeQueryHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetGraphDataHttpPostIn">
+    <wsdl:part name="sql" type="s:string" />
+    <wsdl:part name="startDate" type="s:string" />
+    <wsdl:part name="endDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGraphDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSFromQueryHttpPostIn">
+    <wsdl:part name="sql" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUsersDSFromQueryHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="WebServicesScalperSoap">
+    <wsdl:operation name="CreateUser">
+      <wsdl:input message="tns:CreateUserSoapIn" />
+      <wsdl:output message="tns:CreateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPassword">
+      <wsdl:input message="tns:ModifyPasswordSoapIn" />
+      <wsdl:output message="tns:ModifyPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <wsdl:input message="tns:ValidatePasswordSoapIn" />
+      <wsdl:output message="tns:ValidatePasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <wsdl:input message="tns:ForgotPasswordSoapIn" />
+      <wsdl:output message="tns:ForgotPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Loggedin">
+      <wsdl:input message="tns:LoggedinSoapIn" />
+      <wsdl:output message="tns:LoggedinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDS">
+      <wsdl:input message="tns:GetUsersDSSoapIn" />
+      <wsdl:output message="tns:GetUsersDSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditUsers">
+      <wsdl:input message="tns:EditUsersSoapIn" />
+      <wsdl:output message="tns:EditUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderReturnDate">
+      <wsdl:input message="tns:AddOrderReturnDateSoapIn" />
+      <wsdl:output message="tns:AddOrderReturnDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrder">
+      <wsdl:input message="tns:AddOrderSoapIn" />
+      <wsdl:output message="tns:AddOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrders">
+      <wsdl:input message="tns:AddOrdersSoapIn" />
+      <wsdl:output message="tns:AddOrdersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderRows">
+      <wsdl:input message="tns:AddOrderRowsSoapIn" />
+      <wsdl:output message="tns:AddOrderRowsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersDS">
+      <wsdl:input message="tns:GetOrdersDSSoapIn" />
+      <wsdl:output message="tns:GetOrdersDSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input message="tns:AddUserSoapIn" />
+      <wsdl:output message="tns:AddUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersFromQuery">
+      <wsdl:input message="tns:GetOrdersFromQuerySoapIn" />
+      <wsdl:output message="tns:GetOrdersFromQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsEmailIDExist">
+      <wsdl:input message="tns:IsEmailIDExistSoapIn" />
+      <wsdl:output message="tns:IsEmailIDExistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginIDExist">
+      <wsdl:input message="tns:IsLoginIDExistSoapIn" />
+      <wsdl:output message="tns:IsLoginIDExistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input message="tns:DeleteUserSoapIn" />
+      <wsdl:output message="tns:DeleteUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDependency">
+      <wsdl:input message="tns:CheckDependencySoapIn" />
+      <wsdl:output message="tns:CheckDependencySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDS">
+      <wsdl:input message="tns:GetPLTradeDSSoapIn" />
+      <wsdl:output message="tns:GetPLTradeDSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDSFromQuery">
+      <wsdl:input message="tns:GetPLTradeDSFromQuerySoapIn" />
+      <wsdl:output message="tns:GetPLTradeDSFromQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePasswordVersion">
+      <wsdl:input message="tns:ValidatePasswordVersionSoapIn" />
+      <wsdl:output message="tns:ValidatePasswordVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailID">
+      <wsdl:input message="tns:GetEmailIDSoapIn" />
+      <wsdl:output message="tns:GetEmailIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPIPSFromPLTradeQuery">
+      <wsdl:input message="tns:GetPIPSFromPLTradeQuerySoapIn" />
+      <wsdl:output message="tns:GetPIPSFromPLTradeQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGraphData">
+      <wsdl:input message="tns:GetGraphDataSoapIn" />
+      <wsdl:output message="tns:GetGraphDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDSFromQuery">
+      <wsdl:input message="tns:GetUsersDSFromQuerySoapIn" />
+      <wsdl:output message="tns:GetUsersDSFromQuerySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServicesScalperHttpGet">
+    <wsdl:operation name="ModifyPassword">
+      <wsdl:input message="tns:ModifyPasswordHttpGetIn" />
+      <wsdl:output message="tns:ModifyPasswordHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <wsdl:input message="tns:ValidatePasswordHttpGetIn" />
+      <wsdl:output message="tns:ValidatePasswordHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <wsdl:input message="tns:ForgotPasswordHttpGetIn" />
+      <wsdl:output message="tns:ForgotPasswordHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Loggedin">
+      <wsdl:input message="tns:LoggedinHttpGetIn" />
+      <wsdl:output message="tns:LoggedinHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDS">
+      <wsdl:input message="tns:GetUsersDSHttpGetIn" />
+      <wsdl:output message="tns:GetUsersDSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersDS">
+      <wsdl:input message="tns:GetOrdersDSHttpGetIn" />
+      <wsdl:output message="tns:GetOrdersDSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input message="tns:AddUserHttpGetIn" />
+      <wsdl:output message="tns:AddUserHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersFromQuery">
+      <wsdl:input message="tns:GetOrdersFromQueryHttpGetIn" />
+      <wsdl:output message="tns:GetOrdersFromQueryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsEmailIDExist">
+      <wsdl:input message="tns:IsEmailIDExistHttpGetIn" />
+      <wsdl:output message="tns:IsEmailIDExistHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginIDExist">
+      <wsdl:input message="tns:IsLoginIDExistHttpGetIn" />
+      <wsdl:output message="tns:IsLoginIDExistHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input message="tns:DeleteUserHttpGetIn" />
+      <wsdl:output message="tns:DeleteUserHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDependency">
+      <wsdl:input message="tns:CheckDependencyHttpGetIn" />
+      <wsdl:output message="tns:CheckDependencyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDS">
+      <wsdl:input message="tns:GetPLTradeDSHttpGetIn" />
+      <wsdl:output message="tns:GetPLTradeDSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDSFromQuery">
+      <wsdl:input message="tns:GetPLTradeDSFromQueryHttpGetIn" />
+      <wsdl:output message="tns:GetPLTradeDSFromQueryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePasswordVersion">
+      <wsdl:input message="tns:ValidatePasswordVersionHttpGetIn" />
+      <wsdl:output message="tns:ValidatePasswordVersionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailID">
+      <wsdl:input message="tns:GetEmailIDHttpGetIn" />
+      <wsdl:output message="tns:GetEmailIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPIPSFromPLTradeQuery">
+      <wsdl:input message="tns:GetPIPSFromPLTradeQueryHttpGetIn" />
+      <wsdl:output message="tns:GetPIPSFromPLTradeQueryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGraphData">
+      <wsdl:input message="tns:GetGraphDataHttpGetIn" />
+      <wsdl:output message="tns:GetGraphDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDSFromQuery">
+      <wsdl:input message="tns:GetUsersDSFromQueryHttpGetIn" />
+      <wsdl:output message="tns:GetUsersDSFromQueryHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServicesScalperHttpPost">
+    <wsdl:operation name="ModifyPassword">
+      <wsdl:input message="tns:ModifyPasswordHttpPostIn" />
+      <wsdl:output message="tns:ModifyPasswordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <wsdl:input message="tns:ValidatePasswordHttpPostIn" />
+      <wsdl:output message="tns:ValidatePasswordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <wsdl:input message="tns:ForgotPasswordHttpPostIn" />
+      <wsdl:output message="tns:ForgotPasswordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Loggedin">
+      <wsdl:input message="tns:LoggedinHttpPostIn" />
+      <wsdl:output message="tns:LoggedinHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDS">
+      <wsdl:input message="tns:GetUsersDSHttpPostIn" />
+      <wsdl:output message="tns:GetUsersDSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersDS">
+      <wsdl:input message="tns:GetOrdersDSHttpPostIn" />
+      <wsdl:output message="tns:GetOrdersDSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input message="tns:AddUserHttpPostIn" />
+      <wsdl:output message="tns:AddUserHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersFromQuery">
+      <wsdl:input message="tns:GetOrdersFromQueryHttpPostIn" />
+      <wsdl:output message="tns:GetOrdersFromQueryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsEmailIDExist">
+      <wsdl:input message="tns:IsEmailIDExistHttpPostIn" />
+      <wsdl:output message="tns:IsEmailIDExistHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginIDExist">
+      <wsdl:input message="tns:IsLoginIDExistHttpPostIn" />
+      <wsdl:output message="tns:IsLoginIDExistHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input message="tns:DeleteUserHttpPostIn" />
+      <wsdl:output message="tns:DeleteUserHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDependency">
+      <wsdl:input message="tns:CheckDependencyHttpPostIn" />
+      <wsdl:output message="tns:CheckDependencyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDS">
+      <wsdl:input message="tns:GetPLTradeDSHttpPostIn" />
+      <wsdl:output message="tns:GetPLTradeDSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDSFromQuery">
+      <wsdl:input message="tns:GetPLTradeDSFromQueryHttpPostIn" />
+      <wsdl:output message="tns:GetPLTradeDSFromQueryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePasswordVersion">
+      <wsdl:input message="tns:ValidatePasswordVersionHttpPostIn" />
+      <wsdl:output message="tns:ValidatePasswordVersionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailID">
+      <wsdl:input message="tns:GetEmailIDHttpPostIn" />
+      <wsdl:output message="tns:GetEmailIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPIPSFromPLTradeQuery">
+      <wsdl:input message="tns:GetPIPSFromPLTradeQueryHttpPostIn" />
+      <wsdl:output message="tns:GetPIPSFromPLTradeQueryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGraphData">
+      <wsdl:input message="tns:GetGraphDataHttpPostIn" />
+      <wsdl:output message="tns:GetGraphDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDSFromQuery">
+      <wsdl:input message="tns:GetUsersDSFromQueryHttpPostIn" />
+      <wsdl:output message="tns:GetUsersDSFromQueryHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServicesScalperSoap" type="tns:WebServicesScalperSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateUser">
+      <soap:operation soapAction="http://tempuri.org/CreateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPassword">
+      <soap:operation soapAction="http://tempuri.org/ModifyPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <soap:operation soapAction="http://tempuri.org/ValidatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <soap:operation soapAction="http://tempuri.org/ForgotPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Loggedin">
+      <soap:operation soapAction="http://tempuri.org/Loggedin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDS">
+      <soap:operation soapAction="http://tempuri.org/GetUsersDS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUsers">
+      <soap:operation soapAction="http://tempuri.org/EditUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderReturnDate">
+      <soap:operation soapAction="http://tempuri.org/AddOrderReturnDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrder">
+      <soap:operation soapAction="http://tempuri.org/AddOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrders">
+      <soap:operation soapAction="http://tempuri.org/AddOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderRows">
+      <soap:operation soapAction="http://tempuri.org/AddOrderRows" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersDS">
+      <soap:operation soapAction="http://tempuri.org/GetOrdersDS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://tempuri.org/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersFromQuery">
+      <soap:operation soapAction="http://tempuri.org/GetOrdersFromQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsEmailIDExist">
+      <soap:operation soapAction="http://tempuri.org/IsEmailIDExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginIDExist">
+      <soap:operation soapAction="http://tempuri.org/IsLoginIDExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDependency">
+      <soap:operation soapAction="http://tempuri.org/CheckDependency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDS">
+      <soap:operation soapAction="http://tempuri.org/GetPLTradeDS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDSFromQuery">
+      <soap:operation soapAction="http://tempuri.org/GetPLTradeDSFromQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePasswordVersion">
+      <soap:operation soapAction="http://tempuri.org/ValidatePasswordVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailID">
+      <soap:operation soapAction="http://tempuri.org/GetEmailID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPIPSFromPLTradeQuery">
+      <soap:operation soapAction="http://tempuri.org/GetPIPSFromPLTradeQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGraphData">
+      <soap:operation soapAction="http://tempuri.org/GetGraphData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDSFromQuery">
+      <soap:operation soapAction="http://tempuri.org/GetUsersDSFromQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServicesScalperSoap12" type="tns:WebServicesScalperSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateUser">
+      <soap12:operation soapAction="http://tempuri.org/CreateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPassword">
+      <soap12:operation soapAction="http://tempuri.org/ModifyPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <soap12:operation soapAction="http://tempuri.org/ValidatePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <soap12:operation soapAction="http://tempuri.org/ForgotPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Loggedin">
+      <soap12:operation soapAction="http://tempuri.org/Loggedin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDS">
+      <soap12:operation soapAction="http://tempuri.org/GetUsersDS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUsers">
+      <soap12:operation soapAction="http://tempuri.org/EditUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderReturnDate">
+      <soap12:operation soapAction="http://tempuri.org/AddOrderReturnDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrder">
+      <soap12:operation soapAction="http://tempuri.org/AddOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrders">
+      <soap12:operation soapAction="http://tempuri.org/AddOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderRows">
+      <soap12:operation soapAction="http://tempuri.org/AddOrderRows" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersDS">
+      <soap12:operation soapAction="http://tempuri.org/GetOrdersDS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap12:operation soapAction="http://tempuri.org/AddUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersFromQuery">
+      <soap12:operation soapAction="http://tempuri.org/GetOrdersFromQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsEmailIDExist">
+      <soap12:operation soapAction="http://tempuri.org/IsEmailIDExist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginIDExist">
+      <soap12:operation soapAction="http://tempuri.org/IsLoginIDExist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap12:operation soapAction="http://tempuri.org/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDependency">
+      <soap12:operation soapAction="http://tempuri.org/CheckDependency" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDS">
+      <soap12:operation soapAction="http://tempuri.org/GetPLTradeDS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDSFromQuery">
+      <soap12:operation soapAction="http://tempuri.org/GetPLTradeDSFromQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePasswordVersion">
+      <soap12:operation soapAction="http://tempuri.org/ValidatePasswordVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailID">
+      <soap12:operation soapAction="http://tempuri.org/GetEmailID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPIPSFromPLTradeQuery">
+      <soap12:operation soapAction="http://tempuri.org/GetPIPSFromPLTradeQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGraphData">
+      <soap12:operation soapAction="http://tempuri.org/GetGraphData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDSFromQuery">
+      <soap12:operation soapAction="http://tempuri.org/GetUsersDSFromQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServicesScalperHttpGet" type="tns:WebServicesScalperHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ModifyPassword">
+      <http:operation location="/ModifyPassword" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <http:operation location="/ValidatePassword" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <http:operation location="/ForgotPassword" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Loggedin">
+      <http:operation location="/Loggedin" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDS">
+      <http:operation location="/GetUsersDS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersDS">
+      <http:operation location="/GetOrdersDS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <http:operation location="/AddUser" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersFromQuery">
+      <http:operation location="/GetOrdersFromQuery" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsEmailIDExist">
+      <http:operation location="/IsEmailIDExist" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginIDExist">
+      <http:operation location="/IsLoginIDExist" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <http:operation location="/DeleteUser" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDependency">
+      <http:operation location="/CheckDependency" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDS">
+      <http:operation location="/GetPLTradeDS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDSFromQuery">
+      <http:operation location="/GetPLTradeDSFromQuery" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePasswordVersion">
+      <http:operation location="/ValidatePasswordVersion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailID">
+      <http:operation location="/GetEmailID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPIPSFromPLTradeQuery">
+      <http:operation location="/GetPIPSFromPLTradeQuery" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGraphData">
+      <http:operation location="/GetGraphData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDSFromQuery">
+      <http:operation location="/GetUsersDSFromQuery" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServicesScalperHttpPost" type="tns:WebServicesScalperHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ModifyPassword">
+      <http:operation location="/ModifyPassword" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePassword">
+      <http:operation location="/ValidatePassword" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <http:operation location="/ForgotPassword" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Loggedin">
+      <http:operation location="/Loggedin" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDS">
+      <http:operation location="/GetUsersDS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersDS">
+      <http:operation location="/GetOrdersDS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <http:operation location="/AddUser" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersFromQuery">
+      <http:operation location="/GetOrdersFromQuery" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsEmailIDExist">
+      <http:operation location="/IsEmailIDExist" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsLoginIDExist">
+      <http:operation location="/IsLoginIDExist" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <http:operation location="/DeleteUser" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDependency">
+      <http:operation location="/CheckDependency" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDS">
+      <http:operation location="/GetPLTradeDS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPLTradeDSFromQuery">
+      <http:operation location="/GetPLTradeDSFromQuery" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePasswordVersion">
+      <http:operation location="/ValidatePasswordVersion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailID">
+      <http:operation location="/GetEmailID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPIPSFromPLTradeQuery">
+      <http:operation location="/GetPIPSFromPLTradeQuery" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGraphData">
+      <http:operation location="/GetGraphData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersDSFromQuery">
+      <http:operation location="/GetUsersDSFromQuery" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServicesScalper">
+    <wsdl:port name="WebServicesScalperSoap" binding="tns:WebServicesScalperSoap">
+      <soap:address location="http://88.208.220.198/WSScalper/WSScalper.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServicesScalperSoap12" binding="tns:WebServicesScalperSoap12">
+      <soap12:address location="http://88.208.220.198/WSScalper/WSScalper.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServicesScalperHttpGet" binding="tns:WebServicesScalperHttpGet">
+      <http:address location="http://88.208.220.198/WSScalper/WSScalper.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServicesScalperHttpPost" binding="tns:WebServicesScalperHttpPost">
+      <http:address location="http://88.208.220.198/WSScalper/WSScalper.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

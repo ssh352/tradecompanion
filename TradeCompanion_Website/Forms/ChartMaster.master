@@ -1,0 +1,370 @@
+<%@ Master Language="VB" CodeFile="ChartMaster.master.vb" Inherits="Forms_ChartMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Scalper Systems - Trading Software and Systems</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../CSS/drop_down.css">
+<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+<link rel="stylesheet" type="text/css" href="../CSS/InternalFormStyles.css">
+
+<script language=javascript type="text/javascript">
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="FrmTradeComp.aspx?Flag=TradeCompanion">Trade Companion</a>'
+////menu1[0]='<a href="FrmUserInfo.aspx?Flag=TradeCompanion">Trade Companion</a>'
+//menu1[1]='<a href="FrmUserInfo.aspx?Flag=TradeStation2000i">TradeStation 2000i</a>'
+//menu1[2]='<a href="FrmUserInfo.aspx?Flag=RadarScreen2000i">RadarScreen 2000i</a>'
+//menu1[3]='<a href="FrmUserInfo.aspx?Flag=OptionStation 2000i">OptionStation 2000i</a>'
+//menu1[4]='<a href="FrmUserInfo.aspx?Flag=ProSuite2000i">ProSuite 2000i</a>'
+//menu1[5]='<a href="FrmUserInfo.aspx?Flag=TradeStation8.0">TradeStation 8.0</a>'
+
+//Contents for menu 2, and so on
+var menu2=new Array()
+//menu2[0]='<a href="FrmSystems_Stock.aspx">Stock</a>'
+
+
+//FrmSystems_Forex.aspx
+menu2[1]='<a href="http://">Forex</a>'
+
+
+//menu2[2]='<a href="FrmSystems_Futures.aspx">Futures</a>'
+
+		
+var menuwidth='165px' //default menu width
+var menubgcolor='lightyellow'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+</script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="center">
+  <table id="Table_01" width="612" height="1" border="0" cellpadding="0" cellspacing="0" style="border:1px solid #000000; border-collapse: collapse" bordercolor="#111111">
+	<tr>
+		<td colspan="2" height="1" width="254">
+			<img src="../images/Internal/cont_01.jpg" alt="" width="254" height="101"></td>
+		<td colspan="2" height="1" width="429">
+			<img src="../images/Internal/cont_02.jpg" alt="" width="429" height="101" id="IMG5" language="javascript" onclick="return IMG5_onclick()"></td>
+		<td colspan="2" height="1" width="95">
+			<img src="../images/Internal/cont_03.jpg" alt="" width="95" height="101"></td>
+	</tr>
+	<tr>
+		<td colspan="6" height="28" width="778" background="../images/Internal/contt_04.jpg">
+			<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+        <tr>
+
+          <td width="33%" style="height: 19px">&nbsp;</td>
+
+          <td width="55%" style="text-align: right; height: 19px;">
+
+         <%-- <a class="red" href="Home.html">Home</a>--%>
+         
+                
+                                 <% If SignInFlag = False Then%>   
+                                 
+                                 <a class="red" href="../Home.html">Home</a>
+                                                
+                                                                 
+                                 <% ElseIf SignInFlag = True Then%> 
+                                 
+                                <a class="red" href="Home2.html">Home</a>
+                                                                                         
+                                                             
+                                 <%End If%>
+         
+                   
+                 <font color="#AFAB9F" style="font-size: 8pt">|</font>
+
+          <a class="red" href="FrmContact.aspx">Contact</a>
+
+          <font color="#AFAB9F" style="font-size: 8pt">|</font>
+
+          <%--<a class="red" href="FrmLinks.aspx">Links</a>--%>
+          
+          <a class="red" href="frmlinks.aspx">Links</a>
+
+          <font color="#AFAB9F" style="font-size: 8pt">|</font>
+
+          <a class="red" href="http://books.global-investor.com/pages/home.htm?ginPtrCode=21614" target="_blank">Books</a>
+
+          <font color="#AFAB9F" style="font-size: 8pt">|</font>
+
+          <a class="red" href="frmtestimonials.aspx">Testimonials</a>
+
+          </td>
+
+          <td width="12%" style="height: 19px">&nbsp;</td>
+
+        </tr>
+
+      </table>
+</td>
+	</tr>
+	<tr>
+		<td colspan="3" width="478" style="background-image: url(../images/Internal/cont_05.jpg); height: 1px;">
+			<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="101%" height="22">
+
+        <tr>
+
+          <td width="1%" style="height: 1px">&nbsp;</td>
+
+          <td width="9%" style="height: 1px">
+
+        
+
+          <a class="green" href="#" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, menu1, '150px')" onMouseout="delayhidemenu()" style="text-decoration: none">
+
+          Products</a>
+
+          </td>
+
+          <td width="2%" style="height: 1px">
+
+        
+
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">|</font>
+
+          </td>
+
+          <td width="9%" style="height: 1px">
+
+        
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">
+          <a class="green" href="#" onClick="return clickreturnvalue()" 
+          onMouseover="dropdownmenu(this, event, menu2, '150px')" 
+          onMouseout="delayhidemenu()" style="text-decoration: none">
+          Systems</a>
+          </font>
+          
+
+          </td>
+
+          <td width="2%" style="height: 1px">
+
+          
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">|</font>
+          </td>
+
+          <td width="9%" style="height: 1px">
+          
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">
+          <a class="green" href="FrmSeminars.aspx">
+          Seminars</a>
+          </font>
+         
+          
+          </td>
+
+          <td width="2%" style="height: 1px">
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">|</font>
+          </td>
+
+          <td width="10%" style="height: 1px">
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">
+          <a class="green" href="frmmembers.aspx">Members</a></font>
+          </td>
+
+          <td width="2%" style="height: 1px">
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">|</font>
+          </td>
+          
+          <td width="9%" style="height: 1px">
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">
+          <a class="green" href="../Forum/index.aspx">Forums</a> </font> 
+          </td>
+          
+
+          <td width="2%" style="height: 1px">
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">|</font>
+          </td>
+          
+          <td width="9%" style="height: 1px">
+          <font color="#FFFFFF" face="Arial" style="font-size: 8pt; ">
+          <a class="green" href="frmThanks.aspx">MyHomePage</a> </font> 
+          </td>
+
+          <td width="7%"></td>
+
+          <td width="7%"></td>
+
+          <td width="7%"></td>
+
+        </tr>
+
+      </table>
+          </td>
+			
+	<td colspan="3" width="300" style="height: 1px">
+			<img src="../images/Internal/cont_06.jpg" alt="" width="300" height="24" align="top" id="IMG4" language="javascript" onclick="return IMG4_onclick()"></td>
+	</tr>
+	<tr>
+		<td colspan="3" height="1" width="478">
+			<img src="../images/Internal/con_07_Chart.jpg" alt="" width="478" height="50">
+			
+			</td>
+		<td colspan="3" height="1" width="300">
+			<img src="../images/Internal/cont_08.jpg" alt="" width="300" height="50">
+			
+			</td>
+	</tr>
+	<tr>
+		<td height="12" width="778" colspan="6">
+			<div align="center">
+              
+              <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+             
+            </div>
+        </td>
+	</tr>
+	<tr>
+		<td colspan="6" width="778" style="height: 1px">
+			</td>
+	</tr>
+	<tr>
+		<td colspan="6" height="151" width="778">
+			<img src="../images/Internal/cont_24.jpg" alt="" width="778" height="140"></td>
+	</tr>
+	<tr>
+		<td height="1" width="231">
+			<img src="../images/Internal/spacer1.gif" width="231" height="1" alt=""></td>
+		<td height="1" width="23">
+			<img src="../images/Internal/spacer1.gif" width="23" height="1" alt=""></td>
+		<td height="1" width="224">
+			<img src="../images/Internal/spacer1.gif" width="224" height="1" alt=""></td>
+		<td height="1" width="205">
+			<img src="../images/Internal/spacer1.gif" width="205" height="1" alt=""></td>
+		<td height="1" width="29">
+			<img src="../images/Internal/spacer1.gif" width="29" height="1" alt=""></td>
+		<td height="1" width="66">
+			<img src="../images/Internal/spacer1.gif" width="66" height="1" alt=""></td>
+	</tr>
+</table>
+  </div> </form>
+</body>
+</html>

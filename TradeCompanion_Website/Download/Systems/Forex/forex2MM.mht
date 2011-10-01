@@ -1,0 +1,1089 @@
+Content-Type: multipart/related; type="text/html"; boundary="==TSBoundary-SPR"
+
+--==TSBoundary-SPR
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Content-ID: <Main>
+
+<html>
+
+<head>
+<title>TradeStation Performance Report</title>
+</head>
+
+<frameset cols="308,*">
+  <frame name="contents" target="main" src="cid:navigation.htm">
+  <frame name="second" scrolling="auto">
+  <noframes>
+  <body>
+
+  <p>This page uses frames, but your browser doesn't support them.</p>
+
+  </body>
+  </noframes>
+</frameset>
+
+</html>
+
+--==TSBoundary-SPR
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Content-ID: <Performance Summary>
+
+<HTML><HEAD><TITLE>TradeStation Performance Summary</TITLE><OR_DEFS Short_AdjustedNetProfitCTCDrawdown="100 * PerformanceSummary.Short_AdjustedNetProfit / abs(PerformanceSummary.Short_CTCDrawdown);" Long_AdjustedNetProfitCTCDrawdown="100 * PerformanceSummary.Long_AdjustedNetProfit / abs(PerformanceSummary.Long_CTCDrawdown);" All_AdjustedNetProfitCTCDrawdown="100 * PerformanceSummary.All_AdjustedNetProfit / abs(PerformanceSummary.All_CTCDrawdown);" Short_SelectNetProfitCTCDrawdown="100 * PerformanceSummary.Short_SelectNetProfit / abs(PerformanceSummary.Short_CTCDrawdown);" Long_SelectNetProfitCTCDrawdown="100 * PerformanceSummary.Long_SelectNetProfit / abs(PerformanceSummary.Long_CTCDrawdown);" All_SelectNetProfitCTCDrawdown="100 * PerformanceSummary.All_SelectNetProfit / abs(PerformanceSummary.All_CTCDrawdown);" Short_NetProfitCTCDrawdown="100 * PerformanceSummary.Short_TotalNetProfit / abs(PerformanceSummary.Short_CTCDrawdown);" Long_NetProfitCTCDrawdown="100 * PerformanceSummary.Long_TotalNetProfit / abs(PerformanceSummary.Long_CTCDrawdown);" All_NetProfitCTCDrawdown="100 * PerformanceSummary.All_TotalNetProfit / abs(PerformanceSummary.All_CTCDrawdown);" Short_CloseToCloseReturn="100 * PerformanceSummary.Short_TotalNetProfit / abs(PerformanceSummary.Short_CTCDrawdown);" Long_CloseToCloseReturn="100 * PerformanceSummary.Long_TotalNetProfit / abs(PerformanceSummary.Long_CTCDrawdown);" All_CloseToCloseReturn="100 * PerformanceSummary.All_TotalNetProfit / abs(PerformanceSummary.All_CTCDrawdown);" Long_AdjustedProfitFactor="PerformanceSummary.Long_AdjustedGrossProfit / abs( PerformanceSummary.Long_AdjustedGrossLoss );" Short_AdjustedProfitFactor="PerformanceSummary.Short_AdjustedGrossProfit / abs( PerformanceSummary.Short_AdjustedGrossLoss );" All_AdjustedProfitFactor="PerformanceSummary.All_AdjustedGrossProfit / abs( PerformanceSummary.All_AdjustedGrossLoss );" Short_AdjustedNetProfitMaxDrawDown="100 * PerformanceSummary.Short_AdjustedNetProfit / abs( PerformanceSummary.Short_MaxIntradayDrawDown );" Long_AdjustedNetProfitMaxDrawDown="100 * PerformanceSummary.Long_AdjustedNetProfit / abs( PerformanceSummary.Long_MaxIntradayDrawDown );" All_AdjustedNetProfitMaxDrawDown="100 * PerformanceSummary.All_AdjustedNetProfit / abs( PerformanceSummary.All_MaxIntradayDrawDown );" Short_AdjustedNetProfitLargestLoss="100 * PerformanceSummary.Short_AdjustedNetProfit / abs( PerformanceSummary.Short_LargestLosingTrade );" Long_AdjustedNetProfitLargestLoss="100 * PerformanceSummary.Long_AdjustedNetProfit / abs( PerformanceSummary.Long_LargestLosingTrade );" All_AdjustedNetProfitLargestLoss="100 * PerformanceSummary.All_AdjustedNetProfit / abs( PerformanceSummary.All_LargestLosingTrade );" Short_AdjustedNetProfit="PerformanceSummary.Short_AdjustedGrossProfit + PerformanceSummary.Short_AdjustedGrossLoss;" Long_AdjustedNetProfit="PerformanceSummary.Long_AdjustedGrossProfit + PerformanceSummary.Long_AdjustedGrossLoss;" All_AdjustedNetProfit="PerformanceSummary.All_AdjustedGrossProfit + PerformanceSummary.All_AdjustedGrossLoss;" Short_NumberEvenTrades="PerformanceSummary.Short_TotalNumberTrades - PerformanceSummary.Short_NumberLosingTrades - PerformanceSummary.Short_NumberWinningTrades;" Long_NumberEvenTrades="PerformanceSummary.Long_TotalNumberTrades - PerformanceSummary.Long_NumberLosingTrades - PerformanceSummary.Long_NumberWinningTrades;" All_NumberEvenTrades="PerformanceSummary.All_TotalNumberTrades - PerformanceSummary.All_NumberLosingTrades - PerformanceSummary.All_NumberWinningTrades;" All_TotalNumberTrades="TotalTradeAnalysis_NumberOfTrades;" All_Analysis_PercentInTheMarket="PerformanceSummary.Analysis_PercentInTheMarket;" OP_UnrealizePL="PerformanceSummary.All_OpenPositionPL;" Long_ReturnOnMaxDrawDown="100 * PerformanceSummary.Long_TotalNetProfit / abs( PerformanceSummary.Long_MaxIntradayDrawDown );" Short_ReturnOnMaxDrawDown="100 * PerformanceSummary.Short_TotalNetProfit / abs( PerformanceSummary.Short_MaxIntradayDrawDown );" All_ReturnOnMaxDrawDown="100 * PerformanceSummary.All_TotalNetProfit / abs( PerformanceSummary.All_MaxIntradayDrawDown );" Long_SelectNetProfitLargestLoss="100 * PerformanceSummary.Long_SelectNetProfit/ abs( PerformanceSummary.Long_LargestLosingTrade );" Short_SelectNetProfitLargestLoss="100 * PerformanceSummary.Short_SelectNetProfit/ abs( PerformanceSummary.Short_LargestLosingTrade );" All_SelectNetProfitLargestLoss="100 * PerformanceSummary.All_SelectNetProfit/ abs( PerformanceSummary.All_LargestLosingTrade );" Long_NetProfitMaxDrawDown="100 * PerformanceSummary.Long_TotalNetProfit/ abs( PerformanceSummary.Long_MaxIntradayDrawDown );" Short_NetProfitMaxDrawDown="100 * PerformanceSummary.Short_TotalNetProfit/ abs( PerformanceSummary.Short_MaxIntradayDrawDown );" All_NetProfitMaxDrawDown="100 * PerformanceSummary.All_TotalNetProfit/ abs( PerformanceSummary.All_MaxIntradayDrawDown );" Long_LargetLosingTradePercentGrossLoss="100 * PerformanceSummary.Long_LargestLosingTrade/PerformanceSummary.Long_GrossLoss;" Short_LargetLosingTradePercentGrossLoss="100 * PerformanceSummary.Short_LargestLosingTrade/PerformanceSummary.Short_GrossLoss;" All_LargetLosingTradePercentGrossLoss="100 * PerformanceSummary.All_LargestLosingTrade/PerformanceSummary.All_GrossLoss;" Long_LargetWinTradePercentGrossProfit="100 * PerformanceSummary.Long_LargestWinningTrade/PerformanceSummary.Long_GrossProfit;" Short_LargetWinTradePercentGrossProfit="100 * PerformanceSummary.Short_LargestWinningTrade/PerformanceSummary.Short_GrossProfit;" All_LargetWinTradePercentGrossProfit="100 * PerformanceSummary.All_LargestWinningTrade/PerformanceSummary.All_GrossProfit;" Long_NetProfitLargestLoss="100 * PerformanceSummary.Long_TotalNetProfit/ abs( PerformanceSummary.Long_LargestLosingTrade );" Short_NetProfitLargestLoss="100 * PerformanceSummary.Short_TotalNetProfit/ abs( PerformanceSummary.Short_LargestLosingTrade );" All_NetProfitLargestLoss="100 * PerformanceSummary.All_TotalNetProfit/ abs( PerformanceSummary.All_LargestLosingTrade );" Long_SelectProfitFactor="PerformanceSummary.Long_SelectGrossProfit / abs( PerformanceSummary.Long_SelectGrossLoss );" Short_SelectProfitFactor="PerformanceSummary.Short_SelectGrossProfit / abs( PerformanceSummary.Short_SelectGrossLoss );" All_SelectProfitFactor="PerformanceSummary.All_SelectGrossProfit / abs( PerformanceSummary.All_SelectGrossLoss );" Short_SelectNetProfit="PerformanceSummary.Short_SelectGrossProfit + PerformanceSummary.Short_SelectGrossLoss;" Long_SelectNetProfit="PerformanceSummary.Long_SelectGrossProfit + PerformanceSummary.Long_SelectGrossLoss;" All_SelectNetProfit="PerformanceSummary.All_SelectGrossProfit + PerformanceSummary.All_SelectGrossLoss;" Long_SelectNetProfitMaxDrawdown="100 * PerformanceSummary.Long_SelectNetProfit/ abs( PerformanceSummary.Long_MaxIntradayDrawDown );" Short_SelectNetProfitMaxDrawdown="100 * PerformanceSummary.Short_SelectNetProfit/ abs( PerformanceSummary.Short_MaxIntradayDrawDown );" All_SelectNetProfitMaxDrawdown="100 * PerformanceSummary.All_SelectNetProfit/ abs( PerformanceSummary.All_MaxIntradayDrawDown );" OpenPosition="PerformanceSummary.All_OpenPositionPL;" ProfitFactor_Short="PerformanceSummary.Short_GrossProfit / abs( PerformanceSummary.Short_GrossLoss );" ProfitFactor_Long="PerformanceSummary.Long_GrossProfit / abs( PerformanceSummary.Long_GrossLoss );" ProfitFactor_All="PerformanceSummary.All_GrossProfit / abs( PerformanceSummary.All_GrossLoss );" ProfitFactor="abs( PerformanceSummary.All_ProfitFactor );" RatioAvgWinAvgLoss="PerformanceSummary.All_RatioAvgWinAvgLoss;" PercentProfitable="PerformanceSummary.All_PercentProfitable;" GrossLoss="PerformanceSummary.All_GrossLoss;" GrossProfit="PerformanceSummary.All_GrossProfit;" NumberLosingTrades="PerformanceSummary.All_NumberLosingTrades;" LargestProfit="PerformanceSummary.All_LargestWinningTrade;" AverageWinningTrade="PerformanceSummary.All_AverageWinningTrade;" NumberWinningTrades="PerformanceSummary.All_NumberWinningTrades;"><!-- External support files --><LINK href="cid:TSSPR.CSS" type=text/css rel=stylesheet>
+<SCRIPT language=jscript src="cid:TSSPR.JS"></SCRIPT>
+
+<META content=TRUE name=AbsoluteFontEnabled>
+<META content=TRUE name=HelpInfo>
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<SCRIPT language=JScript>
+<!--
+
+var g_bSummaryIsTMPR = false;
+
+// Called when change in combo box value
+
+var bSummaryAlreadyCalled = false;
+
+function SummaryCallRightTable()
+{	
+  bSummaryAlreadyCalled = true;
+	varLstValue = document.sprForm.lstSprSummary.options[document.sprForm.lstSprSummary.selectedIndex].value;
+	
+	SummaryExpandColRowTable( varLstValue );
+
+	if ( varLstValue == 1 )
+	{
+		Table = tblSummaryStrategy;
+	}
+	else
+	{
+		Table = tblSummaryStrategy2;
+	}
+
+	if(document.images['imgSummaryStrategy'].alt == "Collapse")
+	{
+		document.images['imgSummaryStrategy'].src = "cid:GIFS/#3234";
+		with(Table)
+		for ( i = 0; i < rows.length; i++ )
+		{
+			if ( rows[ i ].className == 'Detail' )
+			{
+			  if ( g_bSummaryIsTMPR == false  )
+			  {
+			    rows[ i ].style.display = 'block';
+			  }
+			  else if ( rows[i].id != 'NoTMPRRow' )
+			  {
+				  rows[ i ].style.display = 'block';
+				}
+			}
+		}
+	}
+	else if(document.images['imgSummaryStrategy'].alt == "Expand")
+	{
+		document.images['imgSummaryStrategy'].src = "cid:GIFS/#3233";
+		with(Table)
+		for(i = 0; i < rows.length; i++)
+		{
+			if(rows[i].className == 'Detail')
+			{
+				rows[i].style.display = 'none';
+			}
+		}
+	}
+}
+ 
+function SummaryExpandTable(Table,TName,Picture) 
+{
+	if(document.sprForm.lstSprSummary.options[document.sprForm.lstSprSummary.selectedIndex].value == 2)
+	{
+		Table = tblSummaryStrategy2;
+	}
+	else
+	{
+		Table = tblSummaryStrategy;
+  }
+
+  ExpandTable(Table,TName,Picture, g_bSummaryIsTMPR );
+}
+
+// Called when switch between table and column view
+// Parm 1 means column view, 2 means table view
+function SummaryExpandColRowTable(parm)
+{
+	if (parm == 1)
+	{
+		document.getElementById('tblSummaryStrategy2').style.display = 'none';
+		document.getElementById('tblSummaryStrategy2').className = 'none';
+		document.getElementById('tblSummaryStrategy').style.display = 'block';
+	}
+	else
+	{
+		document.getElementById('tblSummaryStrategy').className = 'none';
+		document.getElementById('tblSummaryStrategy').style.display = 'none';
+		document.getElementById('tblSummaryStrategy2').style.display = 'block';
+	}	
+}
+
+function SummarySetListAndTableState( ListValue, ViewState )
+{
+	document.sprForm.lstSprSummary.selectedIndex = ListValue - 1;
+	document.images['imgSummaryStrategy'].alt	 = ViewState;
+
+	SummaryCallRightTable();
+}
+
+function SummarySetDefaultValues()
+{
+   if ( bSummaryAlreadyCalled == false )
+   {
+	   document.sprForm.lstSprSummary.selectedIndex = 0;
+	   document.images['imgSummaryStrategy'].alt	= 'Collapse';
+
+	   SummaryCallRightTable();
+   }
+}
+
+function SummaryConfigureAsTMPR()
+{
+  g_bSummaryIsTMPR = true;
+  
+  //---------------------------------------------
+  // hide combo-box table
+  //---------------------------------------------
+  tblHidden.style.display = 'none';
+  
+  //---------------------------------------------
+  // column view
+  //---------------------------------------------
+  var NoTMPRObjects = document.all.item("NoTMPRRow");
+  if ( NoTMPRObjects != null )
+  {
+    if ( NoTMPRObjects.length != null )
+    {
+      for (i = 0; i < NoTMPRObjects.length; i++ )
+      {
+        NoTMPRObjects[ i ].style.display = 'none';
+      }
+    }
+  }
+  //---------------------------------------------
+  // table view will not be shown
+  //---------------------------------------------
+  tblSummaryStrategy2.style.display = 'none';
+}
+
+// -->
+        </SCRIPT>
+<!-- Operations before printing -->
+<SCRIPT event=onbeforeprint for=window>
+
+// Hide elements while printing
+tdDisplay.style.display = 'none';
+tdImage0.style.display = 'none';
+
+// Display the table for the header and footer
+SwitchHeaderFooter('block');
+        </SCRIPT>
+<!-- Operations after printing -->
+<SCRIPT event=onafterprint for=window>
+
+// Show the elements hidden during printing
+tdDisplay.style.display = 'inline';
+tdImage0.style.display = 'inline';
+
+// Hide the table for the header and footer
+SwitchHeaderFooter('none');
+        </SCRIPT>
+</HEAD>
+<BODY bgColor=#ffffff leftMargin=5 topMargin=0 onload=SummarySetDefaultValues(); margin marginwidth="0"><FORM name=sprForm><!-- header -->
+<TABLE class=hiddentable id=hftable width="100%">
+<TBODY>
+<TR>
+<TD><SPAN class=Header><SPAN class=Header>TradeStation&nbsp;TradeManager&nbsp;Performance Report</SPAN></SPANHEIGHT="15"></SPAN></TD>
+<TD align=right><SPAN class=Header id=HeaderInfo>Scalper Forex, EURUSD, 60 min, 10/12/2003 23:00:00 - 07/07/2004 15:00:00</SPAN></TD></TR></TBODY></TABLE>
+<TABLE id=tblResize cellSpacing=0 cellPadding=0 width=640 border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE id=tblHidden cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD id=tdDisplay colSpan=4 height=1>Display: <SELECT style="BORDER-RIGHT: blue thick double; BORDER-TOP: blue thick double; BACKGROUND-IMAGE: url(none); BORDER-LEFT: blue thick double; BORDER-BOTTOM: blue thick double; FONT-FAMILY: Verdana" onchange=SummaryCallRightTable(); name=lstSprSummary> <OPTION value=1>Column View</OPTION> <OPTION value=2 selected>Table View</OPTION></SELECT></TD></TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD height=15></TD></TR></TBODY></TABLE>
+<TABLE id=tlbColumnViewTitle cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=title height=19>TradeStation Performance Summary</TD>
+<TD id=tdImage0 vAlign=center align=right bgColor=#0066cc height=19><A onclick="SummaryExpandTable(document.getElementById('tblSummaryStrategy'),'tblSummaryStrategy','imgSummaryStrategy'); return false;" href=""><IMG height=19 alt=Collapse src="cid:GIFS/#3234" width=70 border=0 name=imgSummaryStrategy></A></TD></TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD height=15></TD></TR></TBODY></TABLE>
+<TABLE class=none id=tblSummaryStrategy style="DISPLAY: none; BORDER-COLLAPSE: collapse" borderColor=#111111 cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="45%">&nbsp;</TD>
+<TD noWrap align=right width="15%"><B><A class=helpLink onclick="return HelpTip('all_trades__strategy_performance_report_');" href="?">All Trades</A></B><BR><IMG height=1 src="spacer.gif" width=110></TD>
+<TD noWrap align=right width="15%"><B><A class=helpLink onclick="return HelpTip('long_trades__strategy_performance_report_');" href="?">Long Trades</A></B><SPAN></SPAN><BR><IMG height=1 src="spacer.gif" width=110></TD>
+<TD noWrap align=right width="15%"><B><A class=helpLink onclick="return HelpTip('short_trades__strategy_performance_report_');" href="?">Short Trades</A></B><SPAN></SPAN><BR><IMG height=1 src="spacer.gif" width=110></TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('total_net_profit__strategy_performance_report_');" href="?">Total Net Profit</A></TD>
+<TD id=All_TotalNetProfit align=right width="15%" height=15>$242,130.00</TD>
+<TD id=Long_TotalNetProfit align=right width="15%" height=15>$131,790.00</TD>
+<TD id=Short_TotalNetProfit align=right width="15%" height=15>$110,340.00</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('gross_profit__strategy_performance_report_');" href="?">Gross Profit</A></TD>
+<TD id=All_GrossProfit align=right width="15%" height=15>$527,260.00</TD>
+<TD id=Long_GrossProfit align=right width="15%" height=15>$242,070.00</TD>
+<TD id=Short_GrossProfit align=right width="15%" height=15>$285,190.00</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('gross_loss__strategy_performance_report_');" href="?">Gross Loss</A></TD>
+<TD id=All_GrossLoss align=right width="15%" height=15><FONT color=red>($285,130.00)</FONT></TD>
+<TD id=Long_GrossLoss align=right width="15%" height=15><FONT color=red>($110,280.00)</FONT></TD>
+<TD id=Short_GrossLoss align=right width="15%"><FONT color=red>($174,850.00)</FONT></TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('profit_factor__strategy_performance_report_');" href="?">Profit Factor</A></TD>
+<TD id=ProfitFactor_All align=right width="15%" numberkind="real">1.85</TD>
+<TD id=ProfitFactor_Long align=right width="15%" numberkind="real">2.20</TD>
+<TD id=ProfitFactor_Short align=right width="15%" numberkind="real">1.63</TD></TR>
+<TR>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('open_position_p_l__strategy_performance_report_');" href="?">Open Position P/L</A></TD>
+<TD id=All_OpenPositionPL align=right width="15%" height=15>$0.00</TD>
+<TD id=Long_OpenPositionPL align=right width="15%" height=15>$0.00</TD>
+<TD id=Short_OpenPositionPL align=right width="15%" height=15>$0.00</TD></TR>
+<TR class=Detail>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('select_net_profit__strategy_performance_report_');" href="?">Select Total Net Profit</A></TD>
+<TD id=All_SelectNetProfit align=right width="15%" height=15>$266,330.00</TD>
+<TD id=Long_SelectNetProfit align=right width="15%" height=15>$131,790.00</TD>
+<TD id=Short_SelectNetProfit align=right width="15%" height=15>$134,540.00</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('select_gross_profit__strategy_performance_report_');" href="?">Select Gross Profit</A></TD>
+<TD id=All_SelectGrossProfit align=right width="15%" height=15>$497,860.00</TD>
+<TD id=Long_SelectGrossProfit align=right width="15%" height=15>$242,070.00</TD>
+<TD id=Short_SelectGrossProfit align=right width="15%" height=15>$255,790.00</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('select_gross_loss__strategy_performance_report_');" href="?">Select Gross Loss</A></TD>
+<TD id=All_SelectGrossLoss align=right width="15%" height=15><FONT color=red>($231,530.00)</FONT></TD>
+<TD id=Long_SelectGrossLoss align=right width="15%" height=15><FONT color=red>($110,280.00)</FONT></TD>
+<TD id=Short_SelectGrossLoss align=right width="15%" height=15><FONT color=red>($121,250.00)</FONT></TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('select_profit_factor__strategy_performance_report_');" href="?">Select Profit Factor</A></TD>
+<TD id=All_SelectProfitFactor align=right width="15%" numberkind="real">2.15</TD>
+<TD id=Long_SelectProfitFactor align=right width="15%" numberkind="real">2.20</TD>
+<TD id=Short_SelectProfitFactor align=right width="15%" numberkind="real">2.11</TD></TR>
+<TR class=Detail>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('adjusted_net_profit__strategy_performance_report_');" href="?">Adjusted Total Net Profit</A></TD>
+<TD id=All_AdjustedNetProfit align=right width="15%">$145,535.99</TD>
+<TD id=Long_AdjustedNetProfit align=right width="15%">$64,782.73</TD>
+<TD id=Short_AdjustedNetProfit align=right width="15%">$40,034.70</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('adjusted_gross_profit__strategy_performance_report_');" href="?">Adjusted Gross Profit</A></TD>
+<TD id=All_AdjustedGrossProfit align=right width="15%">$467,173.15</TD>
+<TD id=Long_AdjustedGrossProfit align=right width="15%">$197,118.73</TD>
+<TD id=Short_AdjustedGrossProfit align=right width="15%">$244,026.37</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('adjusted_gross_loss__strategy_performance_report_');" href="?">Adjusted Gross Loss</A></TD>
+<TD id=All_AdjustedGrossLoss align=right width="15%"><FONT color=red>($321,637.16)</FONT></TD>
+<TD id=Long_AdjustedGrossLoss align=right width="15%"><FONT color=red>($132,336.00)</FONT></TD>
+<TD id=Short_AdjustedGrossLoss align=right width="15%"><FONT color=red>($203,991.67)</FONT></TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('adjusted_profit_factor__strategy_performance_report_');" href="?">Adjusted Profit Factor</A></TD>
+<TD id=All_AdjustedProfitFactor align=right width="15%" numberkind="real">1.45</TD>
+<TD id=Long_AdjustedProfitFactor align=right width="15%" numberkind="real">1.49</TD>
+<TD id=Short_AdjustedProfitFactor align=right width="15%" numberkind="real">1.20</TD></TR>
+<TR class=Detail>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('total_number_of_trades__strategy_performance_report_');" href="?">Total Number of Trades</A></TD>
+<TD id=All_TotalNumberTrades align=right width="15%" numberkind="int">146</TD>
+<TD id=Long_TotalNumberTrades align=right width="15%" numberkind="int">57</TD>
+<TD id=Short_TotalNumberTrades align=right width="15%" numberkind="int">89</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('percent_profitable__strategy_performance_report_');" href="?">Percent Profitable</A></TD>
+<TD id=All_PercentProfitable align=right width="15%" numberkind="percent">52.74%</TD>
+<TD id=Long_PercentProfitable align=right width="15%" numberkind="percent">50.88%</TD>
+<TD id=Short_PercentProfitable align=right width="15%" numberkind="percent">53.93%</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('winning_trades__strategy_performance_report_');" href="?">Winning Trades</A></TD>
+<TD id=All_NumberWinningTrades align=right width="15%" numberkind="int">77</TD>
+<TD id=Long_NumberWinningTrades align=right width="15%" numberkind="int">29</TD>
+<TD id=Short_NumberWinningTrades align=right width="15%" numberkind="int">48</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('losing_trades__strategy_performance_report_');" href="?">Losing Trades</A></TD>
+<TD id=All_NumberLosingTrades align=right width="15%" numberkind="int">61</TD>
+<TD id=Long_NumberLosingTrades align=right width="15%" numberkind="int">25</TD>
+<TD id=Short_NumberLosingTrades align=right width="15%" numberkind="int">36</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('even_trades__strategy_performance_report_');" href="?">Even Trades</A></TD>
+<TD id=All_NumberEvenTrades align=right width="15%" numberkind="int">8</TD>
+<TD id=Long_NumberEvenTrades align=right width="15%" numberkind="int">3</TD>
+<TD id=Short_NumberEvenTrades align=right width="15%" numberkind="int">5</TD></TR>
+<TR>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('average_trade_win_loss__strategy_performance_report_');" href="?">Avg. Trade Net Profit</A></TD>
+<TD id=All_AvgTrade align=right width="15%" height=15>$1,658.42</TD>
+<TD id=Long_AvgTrade align=right width="15%" height=15>$2,312.11</TD>
+<TD id=Short_AvgTrade align=right width="15%" height=15>$1,239.78</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('average_winning_trade__strategy_performance_report_');" href="?">Avg. Winning Trade</A></TD>
+<TD id=All_AverageWinningTrade align=right width="15%" height=15>$6,847.53</TD>
+<TD id=Long_AverageWinningTrade align=right width="15%" height=15>$8,347.24</TD>
+<TD id=Short_AverageWinningTrade align=right width="15%" height=15>$5,941.46</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('average_losing_trade__strategy_performance_report_');" href="?">Avg. Losing Trade</A></TD>
+<TD id=All_AverageLosingTrade align=right width="15%" height=15><FONT color=red>($4,674.26)</FONT></TD>
+<TD id=Long_AverageLosingTrade align=right width="15%" height=15><FONT color=red>($4,411.20)</FONT></TD>
+<TD id=Short_AverageLosingTrade align=right width="15%" height=15><FONT color=red>($4,856.94)</FONT></TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('ratio_avg_win_avg_loss__strategy_performance_report_');" href="?">Ratio Avg. Winning:Avg. Losing</A></TD>
+<TD id=All_RatioAvgWinAvgLoss align=right width="15%" numberkind="real">1.46</TD>
+<TD id=Long_RatioAvgWinAvgLoss align=right width="15%" numberkind="real">1.89</TD>
+<TD id=Short_RatioAvgWinAvgLoss align=right width="15%" numberkind="real">1.22</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('largest_winning_trade__strategy_performance_report_');" href="?">Largest Winning Trade</A></TD>
+<TD id=All_LargestWinningTrade align=right width="15%" height=15>$29,400.00</TD>
+<TD id=Long_LargestWinningTrade align=right width="15%" height=15>$22,780.00</TD>
+<TD id=Short_LargestWinningTrade align=right width="15%" height=15>$29,400.00</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('largest_losing_trade__strategy_performance_report_');" href="?">Largest Losing Trade</A></TD>
+<TD id=All_LargestLosingTrade align=right width="15%" height=15><FONT color=red>($29,200.00)</FONT></TD>
+<TD id=Long_LargestLosingTrade align=right width="15%" height=15><FONT color=red>($15,470.00)</FONT></TD>
+<TD id=Short_LargestLosingTrade align=right width="15%" height=15><FONT color=red>($29,200.00)</FONT></TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('largest_winner_pcnt_of_gross_profit__strategy_performance_report_');" href="?">Largest Winner as % of Gross Profit</A></TD>
+<TD id=All_LargetWinTradePercentGrossProfit align=right width="15%" numberkind="percent">5.58%</TD>
+<TD id=Long_LargetWinTradePercentGrossProfit align=right width="15%" numberkind="percent">9.41%</TD>
+<TD id=Short_LargetWinTradePercentGrossProfit align=right width="15%" numberkind="percent">10.31%</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('largest_loser_pcnt_of_gross_loss__strategy_performance_report_');" href="?">Largest Loser as % of Gross Loss</A></TD>
+<TD id=All_LargetLosingTradePercentGrossLoss align=right width="15%" numberkind="percent">10.24%</TD>
+<TD id=Long_LargetLosingTradePercentGrossLoss align=right width="15%" numberkind="percent">14.03%</TD>
+<TD id=Short_LargetLosingTradePercentGrossLoss align=right width="15%" numberkind="percent">16.70%</TD></TR>
+<TR class=Detail>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('net_prft_largest_loss__strategy_performance_report_');" href="?">Net Profit as % of Largest Loss</A></TD>
+<TD id=All_NetProfitLargestLoss align=right width="15%" numberkind="percent">829.21%</TD>
+<TD id=Long_NetProfitLargestLoss align=right width="15%" numberkind="percent">851.91%</TD>
+<TD id=Short_NetProfitLargestLoss align=right width="15%" numberkind="percent">377.88%</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Select_Net_Profit_div_Largest_Loss__Strategy_Performance_Report_');" href="?">Select Net Profit as % of Largest Loss</A></TD>
+<TD id=All_SelectNetProfitLargestLoss align=right width="15%" numberkind="percent">912.09%</TD>
+<TD id=Long_SelectNetProfitLargestLoss align=right width="15%" numberkind="percent">851.91%</TD>
+<TD id=Short_SelectNetProfitLargestLoss align=right width="15%" numberkind="percent">460.75%</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Adjusted_Net_Profit_div_Largest_Loss__Strategy_Performance_Report_');" href="?">Adjusted Net Profit as % of Largest Loss</A></TD>
+<TD id=All_AdjustedNetProfitLargestLoss align=right width="15%" numberkind="percent">498.41%</TD>
+<TD id=Long_AdjustedNetProfitLargestLoss align=right width="15%" numberkind="percent">418.76%</TD>
+<TD id=Short_AdjustedNetProfitLargestLoss align=right width="15%" numberkind="percent">137.11%</TD></TR>
+<TR>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('maximum_consecutive_wins__strategy_performance_report_');" href="?">Max. Consecutive Winning Trades</A></TD>
+<TD id=All_MaxConsecutiveWinners align=right width="15%" numberkind="int">9</TD>
+<TD id=Long_MaxConsecutiveWinners align=right width="15%" numberkind="int">5</TD>
+<TD id=Short_MaxConsecutiveWinners align=right width="15%" numberkind="int">9</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('maximum_consecutive_losses__strategy_performance_report_');" href="?">Max. Consecutive Losing Trades</A></TD>
+<TD id=All_MaxConsecutiveLosers align=right width="15%" numberkind="int">4</TD>
+<TD id=Long_MaxConsecutiveLosers align=right width="15%" numberkind="int">3</TD>
+<TD id=Short_MaxConsecutiveLosers align=right width="15%" numberkind="int">5</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('average_number_of_bars_total_trades__strategy_performance_report_');" href="?">Avg. Bars in Total Trades</A></TD>
+<TD id=All_AvgBarsInTotalTrades align=right width="15%" numberkind="real">11.38</TD>
+<TD id=Long_AvgBarsInTotalTrades align=right width="15%" numberkind="real">11.86</TD>
+<TD id=Short_AvgBarsInTotalTrades align=right width="15%" numberkind="real">11.08</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('average_number_of_bars_in_winners__strategy_performance_report_');" href="?">Avg. Bars in Winning Trades</A></TD>
+<TD id=All_AvgNumBarsInWinners align=right width="15%" numberkind="real">12.12</TD>
+<TD id=Long_AvgNumBarsInWinners align=right width="15%" numberkind="real">12.69</TD>
+<TD id=Short_AvgNumBarsInWinners align=right width="15%" numberkind="real">11.77</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('average_number_of_bars_in_losers__strategy_performance_report_');" href="?">Avg. Bars in Losing Trades</A></TD>
+<TD id=All_AvgNumBarsInLosers align=right width="15%" numberkind="real">10.87</TD>
+<TD id=Long_AvgNumBarsInLosers align=right width="15%" numberkind="real">10.84</TD>
+<TD id=Short_AvgNumBarsInLosers align=right width="15%" numberkind="real">10.89</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('average_number_of_bars_in_even__strategy_performance_report_');" href="?">Avg. Bars in Even Trades</A></TD>
+<TD id=All_AvgNumBarsInEvens align=right width="15%" numberkind="real">8.25</TD>
+<TD id=Long_AvgNumBarsInEvens align=right width="15%" numberkind="real">12.33</TD>
+<TD id=Short_AvgNumBarsInEvens align=right width="15%" numberkind="real">5.80</TD></TR>
+<TR>
+<TD width="45%" height=15></TD>
+<TD align=right width="15%" height=15></TD>
+<TD align=right width="15%" height=15></TD>
+<TD align=right width="15%" height=15></TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('maximum_number_of_contracts_held__strategy_performance_report_');" href="?">Max. Shares/Contracts Held</A></TD>
+<TD id=All_MaxNumContractsHeld align=right width="15%" numberkind="int">21</TD>
+<TD id=Long_MaxNumContractsHeld align=right width="15%" numberkind="int">20</TD>
+<TD id=Short_MaxNumContractsHeld align=right width="15%" numberkind="int">21</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('account_size_required__strategy_performance_report_');" href="?">Account Size Required</A></TD>
+<TD id=All_AccountSizeRequired align=right width="15%">$52,550.00</TD>
+<TD id=Long_AccountSizeRequired align=right width="15%">$27,170.00</TD>
+<TD id=Short_AccountSizeRequired align=right width="15%">$70,200.00</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('total_slippage__strategy_performance_report_');" href="?">Total Slippage</A></TD>
+<TD id=All_Slippage align=right width="15%" height=15>$0.0000</TD>
+<TD id=Long_Slippage align=right width="15%" height=15>$0.0000</TD>
+<TD id=Short_Slippage align=right width="15%" height=15>$0.0000</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('total_commission__strategy_performance_report_');" href="?">Total Commission</A></TD>
+<TD id=All_CommissionPerTransaction align=right width="15%" height=15>$0.0000</TD>
+<TD id=Long_CommissionPerTransaction align=right width="15%" height=15>$0.0000</TD>
+<TD id=Short_CommissionPerTransaction align=right width="15%">$0.0000</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('return_on_initial_capital__strategy_performance_report_');" href="?">Return on Initial Capital</A></TD>
+<TD id=ReturnOnInitialCapital align=right width="15%" numberkind="percent">242.13%</TD>
+<TD align=right width="15%" height=15></TD>
+<TD align=right width="15%" height=15></TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('annual_rate_of_return__strategy_performance_report_');" href="?">Annual Rate of Return</A></TD>
+<TD id=AnnualRateOfReturn align=right width="15%" numberkind="percent">218.53%</TD>
+<TD align=right width="15%" height=15></TD>
+<TD align=right width="15%" height=15></TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('buy_hold_return__strategy_performance_report_');" href="?">Buy &amp; Hold Return</A></TD>
+<TD id=BuyHoldReturn align=right width="15%" numberkind="percent">1.20%</TD>
+<TD align=right width="15%" height=15></TD>
+<TD align=right width="15%" height=15></TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('return_on_account__strategy_performance_report_');" href="?">Return on Account</A></TD>
+<TD id=ReturnOnAccount align=right width="15%" numberkind="percent">460.76%</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('average_monthly_return__strategy_performance_report_');" href="?">Avg. Monthly Return</A></TD>
+<TD id=AverageMonthlyReturn align=right width="15%">$30,266.25</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Std_Deviation_of_Monthly_Return__Strategy_Performance_Report_');" href="?">Std. Deviation of Monthly Return</A></TD>
+<TD id=MonthlyReturn_STDEV align=right width="15%">$33,496.34</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('return_retracement_ratio__strategy_performance_report_');" href="?">Return Retracement Ratio</A></TD>
+<TD id=ReturnRetracementRatio align=right width="15%" numberkind="real">5.17</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('rina_index__strategy_performance_report_');" href="?">RINA Index</A></TD>
+<TD id=RINAIndex align=right width="15%" numberkind="real">102.84</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('sharpe_ratio__strategy_performance_report_');" href="?">Sharpe Ratio</A></TD>
+<TD id=SharpeRatio align=right width="15%" numberkind="real">n/a</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('k_ratio__strategy_performance_report_');" href="?">K-Ratio</A></TD>
+<TD id=KRatio align=right width="15%" numberkind="real">n/a</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('test_period__strategy_performance_report_');" href="?">Trading Period</A></TD>
+<TD id=TradingPeriod noWrap align=right width="15%" height=15>6 Mths, 22 Dys, 14 Hrs</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('percent_in_the_market__strategy_performance_report_');" href="?">Percent of Time in the Market</A></TD>
+<TD id=Analysis_PercentInTheMarket align=right width="15%" height=15 numberkind="percent">47.17%</TD>
+<TD align=right width="15%" height=15></TD>
+<TD align=right width="15%" height=15></TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('total_time_in_the_market_periods__strategy_performance_report_');" href="?">Time in the Market</A></TD>
+<TD id=TimeInTheMarket noWrap align=right width="15%" height=15>3 Mths, 4 Dys, 23 Hrs, 8 Mins</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('longest_flat_period__strategy_performance_report_');" href="?">Longest Flat Period</A></TD>
+<TD id=LongestFlatPeriod noWrap align=right width="15%" height=15>6 Dys, 1 Hr</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('maximum_equity_run_up_daily__strategy_performance_report_');" href="?">Max. Equity Run-up</A></TD>
+<TD id=MERU_Amount align=right width="15%">$261,350.00</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Max._Run_up_date__Strategy_Performance_Report_');" href="?">Date of Max. Equity Run-up</A></TD>
+<TD id=MERU_Date noWrap align=right width="15%">07/07/04 08:00</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('maximum_equity_run-up_div_initial_capital__strategy_performance_report_');" href="?">Max. Equity Run-up as % of Initial Capital</A></TD>
+<TD id=MERU_Percent align=right width="15%">261.35%</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%"></TD>
+<TD align=right width="15%"></TD>
+<TD align=right width="15%"></TD></TR><!--
+				                        PEAK TO VALLEY FIELDS
+		              -->
+<TR id=NoTMPRRow>
+<TD class=titlesection width="90%" colSpan=4><B>Max. Drawdown (Intra-day Peak to Valley)</B>&nbsp;</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('maximum_intraday_drawdown__strategy_performance_report_');" href="?">Value</A></TD>
+<TD id=All_MaxIntradayDrawDown align=right width="15%"><FONT color=red>($62,790.00)</FONT></TD>
+<TD id=Long_MaxIntradayDrawDown align=right width="15%"><FONT color=red>($34,530.00)</FONT></TD>
+<TD id=Short_MaxIntradayDrawDown align=right width="15%"><FONT color=red>($81,860.00)</FONT></TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Maximum_Drawdown_date__Strategy_Performance_Report_');" href="?">Date</A></TD>
+<TD id=MEDD_Date noWrap align=right width="15%">06/22/04 20:00</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Max_Equity_Drawdown_div_Initial_Capital_pv__Strategy_Performance_Report_');" href="?">as % of Initial Capital</A></TD>
+<TD id=MEDD_Percent align=right width="15%" numberkind="percent">62.79%</TD>
+<TD id=Long_MaxPTV_Drawdown_div_InitCap align=right width="15%">81.86%</TD>
+<TD id=Short_MaxPTV_Drawdown_div_InitCap align=right width="15%">34.53%</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('net_profit_div_max__equity_drawdown_cc__strategy_performance_report_');" href="?">Net Profit as % of Drawdown</A></TD>
+<TD id=All_NetProfitMaxDrawDown align=right width="15%" numberkind="percent">385.62%</TD>
+<TD id=Long_NetProfitMaxDrawDown align=right width="15%" numberkind="percent">381.67%</TD>
+<TD id=Short_NetProfitMaxDrawDown align=right width="15%" numberkind="percent">134.79%</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Select_Net_Profit_div_Max__Equity_Drawdown_PV__Strategy_Performance_Report_');" href="?">Select Net Profit as % of Drawdown</A></TD>
+<TD id=All_SelectNetProfitMaxDrawdown align=right width="15%" numberkind="percent">424.16%</TD>
+<TD id=Long_SelectNetProfitMaxDrawdown align=right width="15%" numberkind="percent">381.67%</TD>
+<TD id=Short_SelectNetProfitMaxDrawdown align=right width="15%" numberkind="percent">164.35%</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Adj_Net_Prft_max_Drawdown__Strategy_Performance_Report_');" href="?">Adjusted Net Profit as % of Drawdown</A></TD>
+<TD id=All_AdjustedNetProfitMaxDrawDown align=right width="15%" numberkind="percent">231.78%</TD>
+<TD id=Long_AdjustedNetProfitMaxDrawDown align=right width="15%" numberkind="percent">187.61%</TD>
+<TD id=Short_AdjustedNetProfitMaxDrawDown align=right width="15%" numberkind="percent">48.91%</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR><!--
+				                                CLOSE TO CLOSE
+                  -->
+<TR>
+<TD class=titlesection width="90%" colSpan=4><B>Max. Drawdown (Trade Close to Trade Close)</B></TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('max__equity_drawdown_cc__strategy_performance_report_');" href="?">Value</A></TD>
+<TD id=All_CTCDrawdown align=right width="15%"><FONT color=red>($52,550.00)</FONT></TD>
+<TD id=Long_CTCDrawdown align=right width="15%"><FONT color=red>($27,170.00)</FONT></TD>
+<TD id=Short_CTCDrawdown align=right width="15%"><FONT color=red>($70,200.00)</FONT></TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Date_of_Max_Equity_Drawdown_CC__Strategy_Performance_Report_');" href="?">Date</A></TD>
+<TD id=All_CTCDrawdownDate noWrap align=right width="15%">06/22/04 08:00</TD>
+<TD id=Long_CTCDrawdownDate align=right width="15%">&nbsp;</TD>
+<TD id=Short_CTCDrawdownDate align=right width="15%">&nbsp;</TD></TR>
+<TR class=Detail id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Max_Equity_Drawdown_div_Initial_Capital_CC__Strategy_Performance_Report_');" href="?">as % of Initial Capital</A></TD>
+<TD id=All_CTCDrawDownInitialCapital align=right width="15%" numberkind="percent">52.55%</TD>
+<TD id=Long_CTCDrawDownInitialCapital align=right width="15%" numberkind="percent">27.17%</TD>
+<TD id=Short_CTCDrawDownInitialCapital align=right width="15%" numberkind="percent">70.20%</TD></TR>
+<TR>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('net_profit_div_max__equity_drawdown_cc__strategy_performance_report_');" href="?">Net Profit as % of Drawdown</A></TD>
+<TD id=All_NetProfitCTCDrawDown align=right width="15%" numberkind="percent">460.76%</TD>
+<TD id=Long_NetProfitCTCDrawDown align=right width="15%" numberkind="percent">485.06%</TD>
+<TD id=Short_NetProfitCTCDrawDown align=right width="15%" numberkind="percent">157.18%</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('Select_Net_Profit_div_Max_Equity_Drawdown_CC__Strategy_Performance_Report_');" href="?">Select Net Profit as % of Drawdown</A></TD>
+<TD id=All_SelectNetProfitCTCDrawDown align=right width="15%" numberkind="percent">506.81%</TD>
+<TD id=Long_SelectNetProfitCTCDrawDown align=right width="15%" numberkind="percent">485.06%</TD>
+<TD id=Short_SelectNetProfitCTCDrawDown align=right width="15%" numberkind="percent">191.65%</TD></TR>
+<TR class=Detail>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('adjusted_net_profit_div_max__equity_drawdown_cc__strategy_performance_report_');" href="?">Adjusted Net Profit as % of Drawdown</A></TD>
+<TD id=All_AdjustedNetProfitCTCDrawDown align=right width="15%" numberkind="percent">276.95%</TD>
+<TD id=Long_AdjustedNetProfitCTCDrawDown align=right width="15%" numberkind="percent">238.43%</TD>
+<TD id=Short_AdjustedNetProfitCTCDrawDown align=right width="15%" numberkind="percent">57.03%</TD></TR>
+<TR>
+<TD width="45%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%"><A class=helpLink onclick="return HelpTip('maximum_drawdown__strategy_performance_report_');" href="?">Max. Trade Drawdown</A></TD>
+<TD id=All_MaxTradeDrawDown align=right width="15%" height=15><FONT color=red>($30,800.00)</FONT></TD>
+<TD id=Long_MaxTradeDrawDown align=right width="15%" height=15><FONT color=red>($18,360.00)</FONT></TD>
+<TD id=Short_MaxTradeDrawDown align=right width="15%" height=15><FONT color=red>($30,800.00)</FONT></TD></TR>
+<TR id=NoTMPRRow>
+<TD width="45%" height=15></TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%" height=15></TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR>
+<TR>
+<TD width="45%" height=15></TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD>
+<TD align=right width="15%">&nbsp;</TD></TR></TBODY></TABLE>
+<TABLE class=Detail id=tblSummaryStrategy2 style="DISPLAY: block" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD class=titlesub width="35%" height=15><A class=helpLinkTitleSection onclick="return HelpTip('all_trades__strategy_performance_report_');" href="?">All Trades</A></TD>
+<TD class=titlesub width="15%" height=15></TD>
+<TD class=titlesub width="38%" height=15></TD>
+<TD class=titlesub width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15>&nbsp;</TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('total_net_profit__strategy_performance_report_');" href="?">Total Net Profit</A></TD>
+<TD id=All_TotalNetProfit align=right width="15%" height=15>$242,130.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('profit_factor__strategy_performance_report_');" href="?">Profit Factor</A></TD>
+<TD id=ProfitFactor_All align=right width="12%" height=15 numberkind="real">1.85</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('gross_profit__strategy_performance_report_');" href="?">Gross Profit</A></TD>
+<TD id=All_GrossProfit align=right width="15%" height=15>$527,260.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('gross_loss__strategy_performance_report_');" href="?">Gross Loss</A></TD>
+<TD id=All_GrossLoss align=right width="12%" height=15><FONT color=red>($285,130.00)</FONT></TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('open_position_p_l__strategy_performance_report_');" href="?">Open Position Profit/Loss</A></TD>
+<TD id=All_OpenPositionPL align=right width="15%" height=15>$0.00</TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('select_net_profit__strategy_performance_report_');" href="?">Select Total Net Profit</A></TD>
+<TD id=All_SelectNetProfit align=right width="15%" height=15>$266,330.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('select_profit_factor__strategy_performance_report_');" href="?">Select Profit Factor</A></TD>
+<TD id=All_SelectProfitFactor align=right width="12%" height=15 numberkind="real">2.15</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('select_gross_profit__strategy_performance_report_');" href="?">Select Gross Profit</A></TD>
+<TD id=All_SelectGrossProfit align=right width="15%" height=15>$497,860.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('select_gross_loss__strategy_performance_report_');" href="?">Select Gross Loss</A></TD>
+<TD id=All_SelectGrossLoss align=right width="12%" height=15><FONT color=red>($231,530.00)</FONT></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('adjusted_net_profit__strategy_performance_report_');" href="?">Adjusted Total Net Profit</A></TD>
+<TD id=All_AdjustedNetProfit align=right width="15%" height=15>$145,535.99</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('adjusted_profit_factor__strategy_performance_report_');" href="?">Adjusted Profit Factor</A></TD>
+<TD id=All_AdjustedProfitFactor align=right width="12%" height=15 numberkind="real">1.45</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('adjusted_gross_profit__strategy_performance_report_');" href="?">Adjusted Gross Profit</A></TD>
+<TD id=All_AdjustedGrossProfit align=right width="15%" height=15>$467,173.15</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('adjusted_gross_loss__strategy_performance_report_');" href="?">Adjusted Gross Loss</A></TD>
+<TD id=All_AdjustedGrossLoss align=right width="12%" height=15><FONT color=red>($321,637.16)</FONT></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('total_number_of_trades__strategy_performance_report_');" href="?">Total Number of Trades</A></TD>
+<TD id=All_TotalNumberTrades align=right width="15%" height=15 numberkind="int">146</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('percent_profitable__strategy_performance_report_');" href="?">Percent Profitable</A></TD>
+<TD id=All_PercentProfitable align=right width="12%" height=15 numberkind="percent">52.74%</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('winning_trades__strategy_performance_report_');" href="?">Winning Trades</A></TD>
+<TD id=All_NumberWinningTrades align=right width="15%" height=15 numberkind="int">77</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('losing_trades__strategy_performance_report_');" href="?">Losing Trades</A></TD>
+<TD id=All_NumberLosingTrades align=right width="12%" height=15 numberkind="int">61</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('even_trades__strategy_performance_report_');" href="?">Even Trades</A></TD>
+<TD id=All_NumberEvenTrades align=right width="15%" height=15 numberkind="int">8</TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_trade_win_loss__strategy_performance_report_');" href="?">Avg. Trade Net Profit</A></TD>
+<TD id=All_AvgTrade align=right width="15%" height=15>$1,658.42</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('ratio_avg_win_avg_loss__strategy_performance_report_');" href="?">Ratio Avg. Win:Avg. Loss</A></TD>
+<TD id=All_RatioAvgWinAvgLoss align=right width="12%" height=15 numberkind="real">1.46</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_winning_trade__strategy_performance_report_');" href="?">Avg. Winning Trade</A></TD>
+<TD id=All_AverageWinningTrade align=right width="15%" height=15>$6,847.53</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('average_losing_trade__strategy_performance_report_');" href="?">Avg. Losing Trade</A></TD>
+<TD id=All_AverageLosingTrade align=right width="12%" height=15><FONT color=red>($4,674.26)</FONT></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('largest_winning_trade__strategy_performance_report_');" href="?">Largest Winning Trade</A></TD>
+<TD id=All_LargestWinningTrade align=right width="15%" height=15>$29,400.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('largest_losing_trade__strategy_performance_report_');" href="?">Largest Losing Trade</A></TD>
+<TD id=All_LargestLosingTrade align=right width="12%" height=15><FONT color=red>($29,200.00)</FONT></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('largest_winner_pcnt_of_gross_profit__strategy_performance_report_');" href="?">Largest Winner as % of Gross Profit</A></TD>
+<TD id=All_LargetWinTradePercentGrossProfit align=right width="15%" height=15 numberkind="percent">5.58%</TD>
+<TD noWrap width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('largest_loser_pcnt_of_gross_loss__strategy_performance_report_');" href="?">Largest Loser as % of Gross Loss</A></TD>
+<TD id=All_LargetLosingTradePercentGrossLoss align=right width="12%" height=15 numberkind="percent">10.24%</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('net_prft_largest_loss__strategy_performance_report_');" href="?">Net Profit as % of Largest Loss</A></TD>
+<TD id=All_NetProfitLargestLoss align=right width="15%" height=15 numberkind="percent">829.21%</TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('Select_Net_Profit_div_Largest_Loss__Strategy_Performance_Report_');" href="?">Slct. Net Profit as % of Largest Loss</A></TD>
+<TD id=All_SelectNetProfitLargestLoss align=right width="15%" height=15 numberkind="percent">912.09%</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('Adjusted_Net_Profit_div_Largest_Loss__Strategy_Performance_Report_.');" href="?">Adj. Net Profit as % of Largest Loss</A></TD>
+<TD id=All_AdjustedNetProfitLargestLoss align=right width="12%" height=15 numberkind="percent">498.41%</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('maximum_consecutive_wins__strategy_performance_report_');" href="?">Max. Consecutive Winning Trades</A></TD>
+<TD id=All_MaxConsecutiveWinners align=right width="15%" height=15 numberkind="int">9</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('maximum_consecutive_losses__strategy_performance_report_');" href="?">Max. Consecutive Losing Trades</A></TD>
+<TD id=All_MaxConsecutiveLosers align=right width="12%" height=15 numberkind="int">4</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_number_of_bars_in_winners__strategy_performance_report_');" href="?">Avg. Bars in Winning Trades</A></TD>
+<TD id=All_AvgNumBarsInWinners align=right width="15%" height=15 numberkind="real">12.12</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('average_number_of_bars_in_losers__strategy_performance_report_');" href="?">Avg. Bars in Losing Trades</A></TD>
+<TD id=All_AvgNumBarsInLosers align=right width="12%" height=15 numberkind="real">10.87</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_number_of_bars_total_trades__strategy_performance_report_');" href="?">Avg. Bars in Total Trades</A></TD>
+<TD id=All_AvgBarsInTotalTrades align=right width="15%" numberkind="real">11.38</TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('maximum_number_of_contracts_held__strategy_performance_report_');" href="?">Max. Shares/Contracts Held</A></TD>
+<TD id=All_MaxNumContractsHeld align=right width="15%" height=15 numberkind="int">21</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('account_size_required__strategy_performance_report_');" href="?">Account Size Required</A></TD>
+<TD id=All_AccountSizeRequired align=right width="12%" height=15>$52,550.00</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('total_commission__strategy_performance_report_');" href="?">Total Commission</A></TD>
+<TD id=All_CommissionPerTransaction align=right width="15%" height=15>$0.0000</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('total_slippage__strategy_performance_report_');" href="?">Total Slippage</A></TD>
+<TD id=All_Slippage align=right width="12%" height=15>$0.0000</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('return_on_initial_capital__strategy_performance_report_');" href="?">Return on Initial Capital</A></TD>
+<TD id=ReturnOnInitialCapital align=right width="15%" height=15 numberkind="percent">242.13%</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('annual_rate_of_return__strategy_performance_report_');" href="?">Annual Rate of Return</A></TD>
+<TD id=AnnualRateOfReturn align=right width="12%" height=15 numberkind="percent">218.53%</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('buy_hold_return__strategy_performance_report_');" href="?">Buy and Hold Return</A></TD>
+<TD id=BuyHoldReturn align=right width="15%" height=15 numberkind="percent">1.20%</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('return_on_account__strategy_performance_report_');" href="?">Return on Account</A></TD>
+<TD id=ReturnOnAccount align=right width="12%" height=15 numberkind="percent">460.76%</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_monthly_return__strategy_performance_report_');" href="?">Avg. Monthly Return</A></TD>
+<TD id=AverageMonthlyReturn align=right width="15%" height=15>$30,266.25</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('Std_Deviation_of_Monthly_Return__Strategy_Performance_Report_');" href="?">Std. Deviation of Monthly Return</A></TD>
+<TD id=MonthlyReturn_STDEV align=right width="12%" height=15>$33,496.34</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('return_retracement_ratio__strategy_performance_report_');" href="?">Return Retracement Ratio</A></TD>
+<TD id=ReturnRetracementRatio align=right width="15%" height=15 numberkind="real">5.17</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('rina_index__strategy_performance_report_');" href="?">RINA Index</A></TD>
+<TD id=RINAIndex align=right width="12%" height=15 numberkind="real">102.84</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('sharpe_ratio__strategy_performance_report_');" href="?">Sharpe Ratio</A></TD>
+<TD id=SharpeRatio align=right width="15%" height=15 numberkind="real">n/a</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('k_ratio__strategy_performance_report_');" href="?">K-Ratio</A></TD>
+<TD id=KRatio align=right width="12%" height=15 numberkind="real">n/a</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('test_period__strategy_performance_report_');" href="?">Trading Period</A></TD>
+<TD id=TradingPeriod align=right width="15%" height=15 numberkind="percent">6 Mths, 22 Dys, 14 Hrs</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('percent_in_the_market__strategy_performance_report_');" href="?">Percent of Time in the Market</A></TD>
+<TD id=All_Analysis_PercentInTheMarket align=right width="12%" height=15 numberkind="percent">47.17%</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('total_time_in_the_market_periods__strategy_performance_report_');" href="?">Time in the Market</A></TD>
+<TD id=TimeInTheMarket align=right width="15%" height=15>3 Mths, 4 Dys, 23 Hrs, 8 Mins</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('longest_flat_period__strategy_performance_report_');" href="?">Longest Flat Period</A></TD>
+<TD id=LongestFlatPeriod align=right width="12%" height=15 numberkind="real">6 Dys, 1 Hr</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('maximum_equity_run_up_daily__strategy_performance_report_');" href="?">Max. Equity Run-up</A></TD>
+<TD id=MERU_Amount align=right width="15%" height=15>$261,350.00</TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('Max._Run_up_date__Strategy_Performance_Report_');" href="?">Date of Max. E. Run-up</A></TD>
+<TD id=MERU_Date align=right width="15%" height=15>07/07/04 08:00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('maximum_equity_run-up_div_initial_capital__strategy_performance_report_');" href="?">Max. E. Run-up as % of Initial Capital</A></TD>
+<TD id=MERU_Percent align=right width="12%" height=15 numberkind="percent">261.35%</TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD class=titlesection width="50%" colSpan=2 height=15>
+<P align=left><SPAN style="LETTER-SPACING: -1pt"><B>Max. Drawdown (Intra-day Peak to Valley)</B></SPAN></P></TD>
+<TD class=titlesection width="50%" colSpan=2 height=15>
+<P align=left><B>&nbsp;&nbsp; <SPAN style="LETTER-SPACING: -1pt">Max. Drawdown (Trade Close to Trade Close)</SPAN></B></P></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('maximum_drawdown__strategy_performance_report_');" href="?">Value</A></TD>
+<TD id=All_MaxIntradayDrawDown align=right width="15%" height=15><FONT color=red>($62,790.00)</FONT></TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('max__equity_drawdown_cc__strategy_performance_report_');" href="?">Value</A></TD>
+<TD id=All_CTCDrawdown align=right width="12%" height=15><FONT color=red>($52,550.00)</FONT></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('Maximum_Drawdown_date__Strategy_Performance_Report_');" href="?">Date</A></TD>
+<TD id=MEDD_Date align=right width="15%" height=15>06/22/04 20:00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('Date_of_Max_Equity_Drawdown_CC__Strategy_Performance_Report_');" href="?">Date</A></TD>
+<TD id=All_CTCDrawdownDate align=right width="12%" height=15>06/22/04 08:00</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD noWrap width="35%" height=15><A class=helpLink onclick="return HelpTip('Max_Equity_Drawdown_div_Initial_Capital_pv__Strategy_Performance_Report_');" href="?">as % of Initial Capital</A></TD>
+<TD id=MEDD_Percent align=right width="15%" height=15 numberkind="percent">62.79%
+<TD noWrap width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('Max_Equity_Drawdown_div_Initial_Capital_CC__Strategy_Performance_Report_');" href="?">as % of Initial Capital</A></TD>
+<TD id=All_CTCDrawDownInitialCapital align=right width="12%" height=15 numberkind="percent">52.55%</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('net_prft_max_drawdown__strategy_performance_report_');" href="?">Net Profit as % of Drawdown</A></TD>
+<TD id=All_NetProfitMaxDrawDown align=right width="15%" height=15 numberkind="percent">385.62%
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('net_profit_div_max__equity_drawdown_cc__strategy_performance_report_');" href="?">Net Profit as % of Drawdown</A></TD>
+<TD id=All_NetProfitCTCDrawdown align=right width="12%" height=15 numberkind="percent">460.76%</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('Select_Net_Profit_div_Max__Equity_Drawdown_PV__Strategy_Performance_Report_');" href="?">Slct. Net Profit as % of Drawdown</A></TD>
+<TD id=All_SelectNetProfitMaxDrawdown align=right width="15%" height=15 numberkind="percent">424.16%
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('Select_Net_Profit_div_Max_Equity_Drawdown_CC__Strategy_Performance_Report_');" href="?">Slct. Net Profit as % of Drawdown</A></TD>
+<TD id=All_SelectNetProfitCTCDrawdown align=right width="12%" height=15 numberkind="percent">506.81%</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('Adj_Net_Prft_max_Drawdown__Strategy_Performance_Report_');" href="?">Adj. Net Prof as % of Drawdown</A></TD>
+<TD id=All_AdjustedNetProfitMaxDrawDown align=right width="15%" height=15 numberkind="percent">231.78%
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('adj_net_prft_max_drawdown__strategy_performance_report_');" href="?">Adj. Net Profit as % of Drawdown</A></TD>
+<TD id=All_AdjustedNetProfitCTCDrawDown align=right width="12%" height=15 numberkind="percent">276.95%</TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('maximum_drawdown__strategy_performance_report_');" href="?">Max. Trade Drawdown</A></TD>
+<TD id=All_MaxTradeDrawDown align=right width="15%" height=15><FONT color=red>($30,800.00)</FONT></TD>
+<TD width="38%" height=15>&nbsp;</TD>
+<TD width="12%" height=15>&nbsp;</TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD class=titlesub width="35%" height=15><A class=helpLinkTitleSection onclick="return HelpTip('long_trades__strategy_performance_report_');" href="?">Long Trades</A></TD>
+<TD class=titlesub width="15%" height=15></TD>
+<TD class=titlesub width="38%" height=15></TD>
+<TD class=titlesub width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('total_net_profit__strategy_performance_report_');" href="?">Total Net Profit</A></TD>
+<TD id=Long_TotalNetProfit align=right width="15%" height=15>$131,790.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('profit_factor__strategy_performance_report_');" href="?">Profit Factor</A></TD>
+<TD id=ProfitFactor_Long align=right width="12%" height=15 numberkind="real">2.20</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('gross_profit__strategy_performance_report_');" href="?">Gross Profit</A></TD>
+<TD id=Long_GrossProfit align=right width="15%" height=15>$242,070.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('gross_loss__strategy_performance_report_');" href="?">Gross Loss</A></TD>
+<TD id=Long_GrossLoss align=right width="12%" height=15><FONT color=red>($110,280.00)</FONT></TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('open_position_p_l__strategy_performance_report_');" href="?">Open Position Profit/Loss</A></TD>
+<TD id=Long_OpenPositionPL align=right width="15%" height=15>$0.00</TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('select_net_profit__strategy_performance_report_');" href="?">Select Total Net Profit</A></TD>
+<TD id=Long_SelectNetProfit align=right width="15%" height=15>$131,790.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('select_profit_factor__strategy_performance_report_');" href="?">Select Profit Factor</A></TD>
+<TD id=Long_SelectProfitFactor align=right width="12%" height=15 numberkind="real">2.20</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('select_gross_profit__strategy_performance_report_');" href="?">Select Gross Profit</A></TD>
+<TD id=Long_SelectGrossProfit align=right width="15%" height=15>$242,070.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('select_gross_loss__strategy_performance_report_');" href="?">Select Gross Loss</A></TD>
+<TD id=Long_SelectGrossLoss align=right width="12%" height=15><FONT color=red>($110,280.00)</FONT></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('adjusted_net_profit__strategy_performance_report_');" href="?">Adjusted Total Net Profit</A></TD>
+<TD id=Long_AdjustedNetProfit align=right width="15%" height=15>$64,782.73</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('adjusted_profit_factor__strategy_performance_report_');" href="?">Adjusted Profit Factor</A></TD>
+<TD id=Long_AdjustedProfitFactor align=right width="12%" height=15 numberkind="real">1.49</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('adjusted_gross_profit__strategy_performance_report_');" href="?">Adjusted Gross Profit</A></TD>
+<TD id=Long_AdjustedGrossProfit align=right width="15%" height=15>$197,118.73</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('adjusted_gross_loss__strategy_performance_report_');" href="?">Adjusted Gross Loss</A></TD>
+<TD id=Long_AdjustedGrossLoss align=right width="12%" height=15><FONT color=red>($132,336.00)</FONT></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('total_number_of_trades__strategy_performance_report_');" href="?">Total Number of Trades</A></TD>
+<TD id=Long_TotalNumberTrades align=right width="15%" height=15 numberkind="int">57</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('percent_profitable__strategy_performance_report_');" href="?">Percent Profitable</A></TD>
+<TD id=Long_PercentProfitable align=right width="12%" height=15 numberkind="percent">50.88%</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('winning_trades__strategy_performance_report_');" href="?">Winning Trades</A></TD>
+<TD id=Long_NumberWinningTrades align=right width="15%" height=15 numberkind="int">29</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('losing_trades__strategy_performance_report_');" href="?">Losing Trades</A></TD>
+<TD id=Long_NumberLosingTrades align=right width="12%" height=15 numberkind="int">25</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('even_trades__strategy_performance_report_');" href="?">Even Trades</A></TD>
+<TD id=Long_NumberEvenTrades align=right width="15%" height=15 numberkind="int">3</TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_trade_win_loss__strategy_performance_report_');" href="?">Avg. Trade Net Profit</A></TD>
+<TD id=Long_AvgTrade align=right width="15%" height=15>$2,312.11</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('ratio_avg_win_avg_loss__strategy_performance_report_');" href="?">Ratio Avg. Win:Avg. Loss</A></TD>
+<TD id=Long_RatioAvgWinAvgLoss align=right width="12%" height=15 numberkind="real">1.89</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_winning_trade__strategy_performance_report_');" href="?">Avg. Winning Trade</A></TD>
+<TD id=Long_AverageWinningTrade align=right width="15%" height=15>$8,347.24</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('average_losing_trade__strategy_performance_report_');" href="?">Avg. Losing Trade</A></TD>
+<TD id=Long_AverageLosingTrade align=right width="12%" height=15><FONT color=red>($4,411.20)</FONT></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('largest_winning_trade__strategy_performance_report_');" href="?">Largest Winning Trade</A></TD>
+<TD id=Long_LargestWinningTrade align=right width="15%" height=15>$22,780.00</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('largest_losing_trade__strategy_performance_report_');" href="?">Largest Losing Trade</A></TD>
+<TD id=Long_LargestLosingTrade align=right width="12%" height=15><FONT color=red>($15,470.00)</FONT></TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('largest_winner_pcnt_of_gross_profit__strategy_performance_report_');" href="?">Largest Winner as % of Gross Profit</A></TD>
+<TD id=Long_LargetWinTradePercentGrossProfit align=right width="15%" height=15 numberkind="percent">9.41%</TD>
+<TD noWrap width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('largest_loser_pcnt_of_gross_loss__strategy_performance_report_');" href="?">Largest Loser as % of Gross Loss</A></TD>
+<TD id=Long_LargetLosingTradePercentGrossLoss align=right width="12%" height=15 numberkind="percent">14.03%</TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('maximum_consecutive_wins__strategy_performance_report_');" href="?">Max. Consecutive Winning Trades</A></TD>
+<TD id=Long_MaxConsecutiveWinners align=right width="15%" height=15 numberkind="int">5</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('maximum_consecutive_losses__strategy_performance_report_');" href="?">Max. Consecutive Losing Trades</A></TD>
+<TD id=Long_MaxConsecutiveLosers align=right width="12%" height=15 numberkind="int">3</TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_number_of_bars_in_winners__strategy_performance_report_');" href="?">Avg. Bars in Winning Trades</A></TD>
+<TD id=Long_AvgNumBarsInWinners align=right width="15%" height=15 numberkind="real">12.69</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('average_number_of_bars_in_losers__strategy_performance_report_');" href="?">Avg. Bars in Losing Trades</A></TD>
+<TD id=Long_AvgNumBarsInLosers align=right width="12%" height=15 numberkind="real">10.84</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('average_number_of_bars_total_trades__strategy_performance_report_');" href="?">Avg. Bars in Total Trades</A></TD>
+<TD id=Long_AvgBarsInTotalTrades align=right width="15%" numberkind="real">11.86</TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15></TD>
+<TD width="15%" height=15></TD>
+<TD width="38%" height=15></TD>
+<TD width="12%" height=15></TD></TR>
+<TR>
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('maximum_number_of_contracts_held__strategy_performance_report_');" href="?">Max. Shares/Contracts Held</A></TD>
+<TD id=Long_MaxNumContractsHeld align=right width="15%" height=15 numberkind="int">20</TD>
+<TD width="38%" height=15>&nbsp;&nbsp; <A class=helpLink onclick="return HelpTip('account_size_required__strategy_performance_report_');" href="?">Account Size Required</A></TD>
+<TD id=Long_AccountSizeRequired align=right width="12%" height=15>$27,170.00</TD></TR>
+<TR class=Detail style="DISPLAY: block">
+<TD width="35%" height=15><A class=helpLink onclick="return HelpTip('total_commission__strategy_perform
