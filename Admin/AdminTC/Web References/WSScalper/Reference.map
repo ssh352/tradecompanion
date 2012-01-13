@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Results>
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://88.208.220.198/WSScalper/WSScalper.asmx?disco" filename="WSScalper.disco" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://88.208.220.198/WSScalper/WSScalper.asmx?wsdl" filename="WSScalper.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://81.136.209.20/WSScalper/WSScalper.asmx?disco" filename="WSScalper.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://81.136.209.20/WSScalper/WSScalper.asmx?wsdl" filename="WSScalper.wsdl" />
   </Results>
 </DiscoveryClientResultsFile>

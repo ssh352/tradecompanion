@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
       <s:element name="CreateUser">
@@ -121,7 +121,7 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="AddOrder">
+      <s:element name="AddOrderReturnDate">
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="orderRow" type="tns:OrderRow" />
@@ -150,6 +150,20 @@
           <s:element minOccurs="1" maxOccurs="1" name="MarketPrice" type="s:double" />
         </s:sequence>
       </s:complexType>
+      <s:element name="AddOrderReturnDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddOrderReturnDateResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orderRow" type="tns:OrderRow" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="AddOrderResponse">
         <s:complexType>
           <s:sequence>
@@ -502,6 +516,12 @@
   </wsdl:message>
   <wsdl:message name="EditUsersSoapOut">
     <wsdl:part name="parameters" element="tns:EditUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderReturnDateSoapIn">
+    <wsdl:part name="parameters" element="tns:AddOrderReturnDate" />
+  </wsdl:message>
+  <wsdl:message name="AddOrderReturnDateSoapOut">
+    <wsdl:part name="parameters" element="tns:AddOrderReturnDateResponse" />
   </wsdl:message>
   <wsdl:message name="AddOrderSoapIn">
     <wsdl:part name="parameters" element="tns:AddOrder" />
@@ -884,6 +904,10 @@
       <wsdl:input message="tns:EditUsersSoapIn" />
       <wsdl:output message="tns:EditUsersSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="AddOrderReturnDate">
+      <wsdl:input message="tns:AddOrderReturnDateSoapIn" />
+      <wsdl:output message="tns:AddOrderReturnDateSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="AddOrder">
       <wsdl:input message="tns:AddOrderSoapIn" />
       <wsdl:output message="tns:AddOrderSoapOut" />
@@ -1174,6 +1198,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="AddOrderReturnDate">
+      <soap:operation soapAction="http://tempuri.org/AddOrderReturnDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="AddOrder">
       <soap:operation soapAction="http://tempuri.org/AddOrder" style="document" />
       <wsdl:input>
@@ -1386,6 +1419,15 @@
     </wsdl:operation>
     <wsdl:operation name="EditUsers">
       <soap12:operation soapAction="http://tempuri.org/EditUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderReturnDate">
+      <soap12:operation soapAction="http://tempuri.org/AddOrderReturnDate" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1897,16 +1939,16 @@
   </wsdl:binding>
   <wsdl:service name="WebServicesScalper">
     <wsdl:port name="WebServicesScalperSoap" binding="tns:WebServicesScalperSoap">
-      <soap:address location="http://88.208.220.198/WSScalper/WSScalper.asmx" />
+      <soap:address location="http://81.136.209.20/WSScalper/WSScalper.asmx" />
     </wsdl:port>
     <wsdl:port name="WebServicesScalperSoap12" binding="tns:WebServicesScalperSoap12">
-      <soap12:address location="http://88.208.220.198/WSScalper/WSScalper.asmx" />
+      <soap12:address location="http://81.136.209.20/WSScalper/WSScalper.asmx" />
     </wsdl:port>
     <wsdl:port name="WebServicesScalperHttpGet" binding="tns:WebServicesScalperHttpGet">
-      <http:address location="http://88.208.220.198/WSScalper/WSScalper.asmx" />
+      <http:address location="http://81.136.209.20/WSScalper/WSScalper.asmx" />
     </wsdl:port>
     <wsdl:port name="WebServicesScalperHttpPost" binding="tns:WebServicesScalperHttpPost">
-      <http:address location="http://88.208.220.198/WSScalper/WSScalper.asmx" />
+      <http:address location="http://81.136.209.20/WSScalper/WSScalper.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

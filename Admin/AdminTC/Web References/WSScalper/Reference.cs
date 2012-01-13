@@ -44,6 +44,8 @@ namespace AdminTC.WSScalper {
         
         private System.Threading.SendOrPostCallback EditUsersOperationCompleted;
         
+        private System.Threading.SendOrPostCallback AddOrderReturnDateOperationCompleted;
+        
         private System.Threading.SendOrPostCallback AddOrderOperationCompleted;
         
         private System.Threading.SendOrPostCallback AddOrdersOperationCompleted;
@@ -136,6 +138,9 @@ namespace AdminTC.WSScalper {
         
         /// <remarks/>
         public event EditUsersCompletedEventHandler EditUsersCompleted;
+        
+        /// <remarks/>
+        public event AddOrderReturnDateCompletedEventHandler AddOrderReturnDateCompleted;
         
         /// <remarks/>
         public event AddOrderCompletedEventHandler AddOrderCompleted;
@@ -396,6 +401,35 @@ namespace AdminTC.WSScalper {
             if ((this.EditUsersCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.EditUsersCompleted(this, new EditUsersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/AddOrderReturnDate", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.DateTime AddOrderReturnDate(OrderRow orderRow) {
+            object[] results = this.Invoke("AddOrderReturnDate", new object[] {
+                        orderRow});
+            return ((System.DateTime)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void AddOrderReturnDateAsync(OrderRow orderRow) {
+            this.AddOrderReturnDateAsync(orderRow, null);
+        }
+        
+        /// <remarks/>
+        public void AddOrderReturnDateAsync(OrderRow orderRow, object userState) {
+            if ((this.AddOrderReturnDateOperationCompleted == null)) {
+                this.AddOrderReturnDateOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddOrderReturnDateOperationCompleted);
+            }
+            this.InvokeAsync("AddOrderReturnDate", new object[] {
+                        orderRow}, this.AddOrderReturnDateOperationCompleted, userState);
+        }
+        
+        private void OnAddOrderReturnDateOperationCompleted(object arg) {
+            if ((this.AddOrderReturnDateCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.AddOrderReturnDateCompleted(this, new AddOrderReturnDateCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -1455,6 +1489,32 @@ namespace AdminTC.WSScalper {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    public delegate void AddOrderReturnDateCompletedEventHandler(object sender, AddOrderReturnDateCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class AddOrderReturnDateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal AddOrderReturnDateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.DateTime Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.DateTime)(this.results[0]));
             }
         }
     }

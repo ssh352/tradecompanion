@@ -175,16 +175,10 @@
     <None Include="Resources\ref.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Util\SpinningProgress\SpinningProgress.csproj">
-      <Project>{59CC9C38-978A-4D68-B595-E6790AA4DE11}</Project>
-      <Name>SpinningProgress</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferenceUrl Include="http://88.208.220.198/WSScalper/WSScalper.asmx">
+    <WebReferenceUrl Include="http://81.136.209.20/WSScalper/WSScalper.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\WSScalper\</RelPath>
-      <UpdateFromURL>http://88.208.220.198/WSScalper/WSScalper.asmx</UpdateFromURL>
+      <UpdateFromURL>http://81.136.209.20/WSScalper/WSScalper.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
@@ -217,6 +211,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Util\SpinningProgress\SpinningProgress.csproj">
+      <Project>{59CC9C38-978A-4D68-B595-E6790AA4DE11}</Project>
+      <Name>SpinningProgress</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

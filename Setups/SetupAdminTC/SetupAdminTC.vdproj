@@ -15,14 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_4475A3A46433C989CD5BAA8D077FBCF5"
-        "OwnerKey" = "8:_F0F841750EDDD73A4860D6944ABA44A1"
+        "MsmKey" = "8:_517FB59CD9D0668BB3D389104ECCFF73"
+        "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4475A3A46433C989CD5BAA8D077FBCF5"
-        "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
+        "MsmKey" = "8:_517FB59CD9D0668BB3D389104ECCFF73"
+        "OwnerKey" = "8:_B580ECBB5B657E0BD912793A0E024D3D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -33,7 +33,25 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A358FFB8AF978456DF6526EF42E09C7A"
+        "MsmKey" = "8:_B580ECBB5B657E0BD912793A0E024D3D"
+        "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B6DAA498F21A7ABE951E479EE733AF05"
+        "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B6DAA498F21A7ABE951E479EE733AF05"
+        "OwnerKey" = "8:_B580ECBB5B657E0BD912793A0E024D3D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CA2D097681016298CA600217BBCE9BE8"
         "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -45,54 +63,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_D91701D6F030E8780BE6C73295A36749"
-        "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D91701D6F030E8780BE6C73295A36749"
-        "OwnerKey" = "8:_EF72D257F80D17E56465FE84C0D5030E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_DC50FC864C97A0F9A23E30F26ADFE677"
-        "OwnerKey" = "8:_4475A3A46433C989CD5BAA8D077FBCF5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_E053E9339DF753A594DF83D18F171C04"
-        "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EF72D257F80D17E56465FE84C0D5030E"
-        "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F0F841750EDDD73A4860D6944ABA44A1"
-        "OwnerKey" = "8:_E053E9339DF753A594DF83D18F171C04"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F0F841750EDDD73A4860D6944ABA44A1"
-        "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F5299BBF96F3122147C0D7A07D44C746"
-        "OwnerKey" = "8:_F0F841750EDDD73A4860D6944ABA44A1"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_8CD9BFC781BC4518BA80C8181E28E9B7"
         "MsmSig" = "8:_UNDEFINED"
@@ -100,37 +70,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A358FFB8AF978456DF6526EF42E09C7A"
+        "OwnerKey" = "8:_CA2D097681016298CA600217BBCE9BE8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E053E9339DF753A594DF83D18F171C04"
+        "OwnerKey" = "8:_B580ECBB5B657E0BD912793A0E024D3D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F0F841750EDDD73A4860D6944ABA44A1"
+        "OwnerKey" = "8:_517FB59CD9D0668BB3D389104ECCFF73"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4475A3A46433C989CD5BAA8D077FBCF5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EF72D257F80D17E56465FE84C0D5030E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D91701D6F030E8780BE6C73295A36749"
+        "OwnerKey" = "8:_B6DAA498F21A7ABE951E479EE733AF05"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -215,7 +173,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "Version" = "8:2.0.50727"
+                "FrameworkVersion" = "8:2.0.50727"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=9832"
                 }
@@ -223,20 +181,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4475A3A46433C989CD5BAA8D077FBCF5"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_517FB59CD9D0668BB3D389104ECCFF73"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Interop.stdole, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Janus.Windows.Common.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4475A3A46433C989CD5BAA8D077FBCF5"
+                    "_517FB59CD9D0668BB3D389104ECCFF73"
                     {
-                    "Name" = "8:Interop.stdole.dll"
+                    "Name" = "8:Janus.Windows.Common.v3.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Interop.stdole.dll"
+            "SourcePath" = "8:Janus.Windows.Common.v3.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
@@ -254,14 +212,76 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A358FFB8AF978456DF6526EF42E09C7A"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B580ECBB5B657E0BD912793A0E024D3D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SpinningProgress, Version=1.0.2641.32449, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Janus.Windows.GridEX.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A358FFB8AF978456DF6526EF42E09C7A"
+                    "_B580ECBB5B657E0BD912793A0E024D3D"
+                    {
+                    "Name" = "8:Janus.Windows.GridEX.v3.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Janus.Windows.GridEX.v3.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B6DAA498F21A7ABE951E479EE733AF05"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Janus.Data.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_B6DAA498F21A7ABE951E479EE733AF05"
+                    {
+                    "Name" = "8:Janus.Data.v3.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Janus.Data.v3.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CA2D097681016298CA600217BBCE9BE8"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SpinningProgress, Version=1.0.4396.4836, Culture=neutral, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_CA2D097681016298CA600217BBCE9BE8"
                     {
                     "Name" = "8:SpinningProgress.dll"
                     "Attributes" = "3:512"
@@ -303,170 +323,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D91701D6F030E8780BE6C73295A36749"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Janus.Windows.Common.v2, Version=2.0.1183.0, Culture=neutral, PublicKeyToken=21d5517571b185bf"
-                "ScatterAssemblies"
-                {
-                    "_D91701D6F030E8780BE6C73295A36749"
-                    {
-                    "Name" = "8:Janus.Windows.Common.v2.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Janus.Windows.Common.v2.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DC50FC864C97A0F9A23E30F26ADFE677"
-            {
-            "SourcePath" = "8:stdole2.tlb"
-            "TargetName" = "8:stdole2.tlb"
-            "Tag" = "8:"
-            "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:2"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E053E9339DF753A594DF83D18F171C04"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:AxInterop.APILib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_E053E9339DF753A594DF83D18F171C04"
-                    {
-                    "Name" = "8:AxInterop.APILib.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:AxInterop.APILib.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EF72D257F80D17E56465FE84C0D5030E"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Janus.Windows.GridEX.v2, Version=2.0.1183.0, Culture=neutral, PublicKeyToken=21d5517571b185bf"
-                "ScatterAssemblies"
-                {
-                    "_EF72D257F80D17E56465FE84C0D5030E"
-                    {
-                    "Name" = "8:janus.windows.gridex.v2.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:janus.windows.gridex.v2.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F0F841750EDDD73A4860D6944ABA44A1"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Interop.APILib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F0F841750EDDD73A4860D6944ABA44A1"
-                    {
-                    "Name" = "8:Interop.APILib.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Interop.APILib.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F5299BBF96F3122147C0D7A07D44C746"
-            {
-            "SourcePath" = "8:API.ocx"
-            "TargetName" = "8:API.ocx"
-            "Tag" = "8:"
-            "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:4"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -519,6 +375,7 @@
         "MsiBootstrapper"
         {
         "LangId" = "3:1033"
+        "RequiresElevation" = "11:FALSE"
         }
         "Product"
         {
@@ -527,6 +384,7 @@
         "ProductCode" = "8:{A5802978-4847-457C-A2F8-0D90A735035C}"
         "PackageCode" = "8:{BB2C00C1-008F-48A4-A7B5-106CBDDC72D5}"
         "UpgradeCode" = "8:{77E28C03-420F-4F84-ACAA-0D99A6FBE7EC}"
+        "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
@@ -644,9 +502,9 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_43F82A25B7274906B18C33DBBEB53B50"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7A408CB00258482A9505C3DBD5F10D4C"
             {
-            "Name" = "8:TCAdmin"
+            "Name" = "8:AdminTC"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1059,7 +917,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8CD9BFC781BC4518BA80C8181E28E9B7"
             {
-            "SourcePath" = "8:..\\..\\Admin\\AdminTC\\obj\\Release\\AdminTC.exe"
+            "SourcePath" = "8:..\\..\\Admin\\AdminTC\\obj\\x86\\Release\\AdminTC.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_95405F15B10B4DF9AA145289E78A1D8E"
@@ -1085,9 +943,6 @@
                 {
                 }
             }
-        }
-        "VJSharpPlugin"
-        {
         }
     }
 }
