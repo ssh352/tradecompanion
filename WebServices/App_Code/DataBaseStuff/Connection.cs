@@ -18,7 +18,7 @@ namespace WebServices.Scalper.DatabaseStuff
     /// </summary>
     public class Connection
     {
- string connectionString = "User=SYSDBA;Password=masterkey;Database=TradeCompanion;DataSource=tradecompanion.co.uk;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=15;Pooling=true;MinPoolSize=0;MaxPoolSize=100;Packet Size=8192;ServerType=0;";
+        string connectionString = "User=SYSDBA;Password=masterkey;Database=TradeCompanion;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=15;Pooling=true;MinPoolSize=0;MaxPoolSize=100;Packet Size=8192;ServerType=0;";
         FbConnection dbcon;
         public IDbCommand dbcmd;
         string sql;

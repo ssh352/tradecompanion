@@ -1,40 +1,41 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{64392F64-43AD-4DBA-A6C2-3B68C2558A53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminTC", "Admin\AdminTC\AdminTC.csproj", "{5A519F59-4A27-4B1D-AA23-EABBC884EE7C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setups", "Setups", "{18DB06E2-40CB-4B3F-A55D-529FCA6AB4AD}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BGC_TC", "Setups\BGC_TC\BGC_TC.vdproj", "{A772C19F-4CA0-4ABF-B6F0-6EF5B22A409C}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Admin TC", "Setups\SetupAdminTC\SetupAdminTC.vdproj", "{E124F64D-69A9-485C-8876-B912FB2CF4C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TradeCompanion", "TradeCompanion", "{9404CD86-F3D8-44EC-A7E6-AF868FC0AA44}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TradeStation", "TradeStation", "{1010A7D2-A4CD-4D59-8B74-9F22E95ED88C}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TradeCompanion_BGC", "TradeCompanion\TradeCompanion_BGC\TradeCompanion_BGC.vbproj", "{292AE349-F237-4A37-8276-0C16626D764F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TS2000i", "TS2000i", "{161D3F79-4DD8-490B-86FB-A44CC69D0B02}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TS8.1", "TS8.1", "{BDEC6A28-513E-42FF-941C-5D9399184FD4}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TSSignal2000i", "TradeStaion\TS2000i\TSSignal2000i\TSSignal2000i.vbproj", "{4CC34215-6263-444A-B994-943D9A7F73EF}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RegUtil", "TradeStaion\TS8.1\RegUtil\RegUtil.vbproj", "{6619A082-91B3-43B4-A25B-E27BD781C885}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServices", "WebServices", "{4E4B0167-84F1-45A8-BC43-44AF5CD5B7A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Util", "Util", "{A1E5AAB0-4437-4AF7-8AB4-C583C7AA586A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminTC", "Admin\AdminTC\AdminTC.csproj", "{5A519F59-4A27-4B1D-AA23-EABBC884EE7C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BGC_TC", "Setups\BGC_TC\BGC_TC.vdproj", "{A772C19F-4CA0-4ABF-B6F0-6EF5B22A409C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Admin TC", "Setups\SetupAdminTC\SetupAdminTC.vdproj", "{E124F64D-69A9-485C-8876-B912FB2CF4C7}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TradeCompanion_BGC", "TradeCompanion\TradeCompanion_BGC\TradeCompanion_BGC.vbproj", "{292AE349-F237-4A37-8276-0C16626D764F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TSSignal2000i", "TradeStaion\TS2000i\TSSignal2000i\TSSignal2000i.vbproj", "{4CC34215-6263-444A-B994-943D9A7F73EF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RegUtil", "TradeStaion\TS8.1\RegUtil\RegUtil.vbproj", "{6619A082-91B3-43B4-A25B-E27BD781C885}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpinningProgress", "Admin\Util\SpinningProgress\SpinningProgress.csproj", "{59CC9C38-978A-4D68-B595-E6790AA4DE11}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrenExFixDriver", "TradeCompanion\CurrenExFixDriver\CurrenExFixDriver.csproj", "{3069122A-8CBE-40D2-AD59-8788705B3725}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\Scalper\WebServices\", "WebServices\", "{63CCDD62-77DB-4D05-90DC-ACF9991D51A5}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebServices", "WebServices\", "{63CCDD62-77DB-4D05-90DC-ACF9991D51A5}"
 	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/WebServices"
 		Debug.AspNetCompiler.PhysicalPath = "WebServices\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebServices\"
@@ -203,8 +204,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5A519F59-4A27-4B1D-AA23-EABBC884EE7C} = {64392F64-43AD-4DBA-A6C2-3B68C2558A53}
 		{A1E5AAB0-4437-4AF7-8AB4-C583C7AA586A} = {64392F64-43AD-4DBA-A6C2-3B68C2558A53}
+		{5A519F59-4A27-4B1D-AA23-EABBC884EE7C} = {64392F64-43AD-4DBA-A6C2-3B68C2558A53}
 		{A772C19F-4CA0-4ABF-B6F0-6EF5B22A409C} = {18DB06E2-40CB-4B3F-A55D-529FCA6AB4AD}
 		{E124F64D-69A9-485C-8876-B912FB2CF4C7} = {18DB06E2-40CB-4B3F-A55D-529FCA6AB4AD}
 		{292AE349-F237-4A37-8276-0C16626D764F} = {9404CD86-F3D8-44EC-A7E6-AF868FC0AA44}

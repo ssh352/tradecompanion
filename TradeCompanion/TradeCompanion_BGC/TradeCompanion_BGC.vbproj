@@ -830,10 +830,10 @@
     <None Include="Web References\WSScalper\WSScalper.wsdl" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://www.tradecompanion.co.uk/WSScalper/WSScalper.asmx">
+    <WebReferenceUrl Include="http://81.136.209.20/WSScalper/WSScalper.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\WSScalper\</RelPath>
-      <UpdateFromURL>http://www.tradecompanion.co.uk/WSScalper/WSScalper.asmx</UpdateFromURL>
+      <UpdateFromURL>http://81.136.209.20/WSScalper/WSScalper.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
