@@ -26,7 +26,7 @@ namespace AdminTC.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://88.208.220.198/WSScalper/WSScalper.asmx")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://81.136.209.20/WSScalper/WSScalper.asmx")]
         public string AdminTC_WSScalper_WebServicesScalper {
             get {
                 return ((string)(this["AdminTC_WSScalper_WebServicesScalper"]));
