@@ -273,6 +273,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_5FCC312237E2B6D10B77AEE3A139AE6B"
+        "OwnerKey" = "8:_13A51A2BD58CEE3740EFF69BC64ECBB0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6007057826E4BE6047CDB82E1BC8CD8C"
         "OwnerKey" = "8:_55A2B47B5F7249D3B3DFBAB3D18F1A39"
         "MsmSig" = "8:_UNDEFINED"
@@ -287,6 +293,12 @@
         {
         "MsmKey" = "8:_6272D384E9BC486A8E60872BDB1C61D4"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6687D7BA575F6C3AAF3345B29D296F98"
+        "OwnerKey" = "8:_378474C52C6B59DA7790D0830A9DD904"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1901,6 +1913,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5FCC312237E2B6D10B77AEE3A139AE6B"
+            {
+            "SourcePath" = "8:ClientAPI.ocx"
+            "TargetName" = "8:ClientAPI.ocx"
+            "Tag" = "8:"
+            "Folder" = "8:_49993C2F84064041BDC2F7D1E30F9079"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:4"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6007057826E4BE6047CDB82E1BC8CD8C"
             {
             "AssemblyRegister" = "3:1"
@@ -1950,6 +1982,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6687D7BA575F6C3AAF3345B29D296F98"
+            {
+            "SourcePath" = "8:fxcore.dll"
+            "TargetName" = "8:fxcore.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_49993C2F84064041BDC2F7D1E30F9079"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6D55645147B64CB1A7FE1A5E41C9A5BD"
@@ -3620,7 +3672,7 @@
                 {
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_2DA0AB5ADBCD41B6A4AA63A31EA1D1E8"
                     {
-                    "Name" = "8:TradeCompanion"
+                    "Name" = "8:AutoShark"
                     "AlwaysCreate" = "11:TRUE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
@@ -3648,7 +3700,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Auto Shark"
         "ProductCode" = "8:{E11C5ECF-166E-4901-A2ED-B5A0626813D5}"
-        "PackageCode" = "8:{9C56AAD9-D47E-49C3-9DF5-776705B825E8}"
+        "PackageCode" = "8:{3A42A972-83EE-4EAC-BE66-EEF2360189E8}"
         "UpgradeCode" = "8:{20E8B613-8910-4288-B3C0-23E1F4547236}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -3940,7 +3992,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EDC70990C8B54FE5A5F1B36A3CE76873"
             {
-            "Name" = "8:TradeCompanion"
+            "Name" = "8:AutoShark"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
