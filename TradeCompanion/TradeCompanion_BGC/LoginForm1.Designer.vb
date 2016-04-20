@@ -28,18 +28,18 @@ Partial Class LoginForm1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm1))
-        Me.LogoPictureBox = New System.Windows.Forms.PictureBox
-        Me.UsernameLabel = New System.Windows.Forms.Label
-        Me.PasswordLabel = New System.Windows.Forms.Label
-        Me.UsernameTextBox = New System.Windows.Forms.TextBox
-        Me.PasswordTextBox = New System.Windows.Forms.TextBox
-        Me.OK = New System.Windows.Forms.Button
-        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog
-        Me.ServerLabel = New System.Windows.Forms.Label
-        Me.CmbServer = New System.Windows.Forms.ComboBox
-        Me.chkRememberPassword = New System.Windows.Forms.CheckBox
-        Me.createAccount = New System.Windows.Forms.Button
-        Me.forgotPassword = New System.Windows.Forms.LinkLabel
+        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
+        Me.UsernameLabel = New System.Windows.Forms.Label()
+        Me.PasswordLabel = New System.Windows.Forms.Label()
+        Me.UsernameTextBox = New System.Windows.Forms.TextBox()
+        Me.PasswordTextBox = New System.Windows.Forms.TextBox()
+        Me.OK = New System.Windows.Forms.Button()
+        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.ServerLabel = New System.Windows.Forms.Label()
+        Me.CmbServer = New System.Windows.Forms.ComboBox()
+        Me.chkRememberPassword = New System.Windows.Forms.CheckBox()
+        Me.createAccount = New System.Windows.Forms.Button()
+        Me.forgotPassword = New System.Windows.Forms.LinkLabel()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,8 +48,9 @@ Partial Class LoginForm1
         Me.LogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.LogoPictureBox.Image = CType(resources.GetObject("LogoPictureBox.Image"), System.Drawing.Image)
         Me.LogoPictureBox.Location = New System.Drawing.Point(-1, -2)
+        Me.LogoPictureBox.Margin = New System.Windows.Forms.Padding(4)
         Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(423, 105)
+        Me.LogoPictureBox.Size = New System.Drawing.Size(564, 129)
         Me.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
@@ -58,9 +59,10 @@ Partial Class LoginForm1
         '
         Me.UsernameLabel.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsernameLabel.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.UsernameLabel.Location = New System.Drawing.Point(42, 110)
+        Me.UsernameLabel.Location = New System.Drawing.Point(56, 135)
+        Me.UsernameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.UsernameLabel.Name = "UsernameLabel"
-        Me.UsernameLabel.Size = New System.Drawing.Size(84, 23)
+        Me.UsernameLabel.Size = New System.Drawing.Size(112, 28)
         Me.UsernameLabel.TabIndex = 0
         Me.UsernameLabel.Text = "&Loginid  "
         Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -69,26 +71,29 @@ Partial Class LoginForm1
         '
         Me.PasswordLabel.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordLabel.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.PasswordLabel.Location = New System.Drawing.Point(42, 142)
+        Me.PasswordLabel.Location = New System.Drawing.Point(56, 175)
+        Me.PasswordLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.PasswordLabel.Name = "PasswordLabel"
-        Me.PasswordLabel.Size = New System.Drawing.Size(84, 23)
+        Me.PasswordLabel.Size = New System.Drawing.Size(112, 28)
         Me.PasswordLabel.TabIndex = 2
         Me.PasswordLabel.Text = "&Password"
         Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'UsernameTextBox
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(161, 113)
+        Me.UsernameTextBox.Location = New System.Drawing.Point(215, 139)
+        Me.UsernameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UsernameTextBox.Name = "UsernameTextBox"
-        Me.UsernameTextBox.Size = New System.Drawing.Size(220, 20)
+        Me.UsernameTextBox.Size = New System.Drawing.Size(292, 22)
         Me.UsernameTextBox.TabIndex = 1
         '
         'PasswordTextBox
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(161, 145)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(215, 178)
+        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(220, 20)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(292, 22)
         Me.PasswordTextBox.TabIndex = 2
         '
         'OK
@@ -98,9 +103,10 @@ Partial Class LoginForm1
         Me.OK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.OK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.OK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OK.Location = New System.Drawing.Point(275, 228)
+        Me.OK.Location = New System.Drawing.Point(367, 281)
+        Me.OK.Margin = New System.Windows.Forms.Padding(4)
         Me.OK.Name = "OK"
-        Me.OK.Size = New System.Drawing.Size(106, 27)
+        Me.OK.Size = New System.Drawing.Size(141, 33)
         Me.OK.TabIndex = 5
         Me.OK.Text = "&Login"
         Me.OK.UseVisualStyleBackColor = False
@@ -109,9 +115,10 @@ Partial Class LoginForm1
         '
         Me.ServerLabel.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ServerLabel.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.ServerLabel.Location = New System.Drawing.Point(42, 179)
+        Me.ServerLabel.Location = New System.Drawing.Point(56, 220)
+        Me.ServerLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.ServerLabel.Name = "ServerLabel"
-        Me.ServerLabel.Size = New System.Drawing.Size(84, 23)
+        Me.ServerLabel.Size = New System.Drawing.Size(112, 28)
         Me.ServerLabel.TabIndex = 8
         Me.ServerLabel.Text = "&Server"
         '
@@ -120,17 +127,19 @@ Partial Class LoginForm1
         Me.CmbServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbServer.FormattingEnabled = True
         Me.CmbServer.Items.AddRange(New Object() {"CurrenEx", "Ariel", "Espeed", "DBFX", "Gain", "Icap", "Dukascopy", "FxIntegral"})
-        Me.CmbServer.Location = New System.Drawing.Point(161, 176)
+        Me.CmbServer.Location = New System.Drawing.Point(215, 217)
+        Me.CmbServer.Margin = New System.Windows.Forms.Padding(4)
         Me.CmbServer.Name = "CmbServer"
-        Me.CmbServer.Size = New System.Drawing.Size(220, 21)
+        Me.CmbServer.Size = New System.Drawing.Size(292, 24)
         Me.CmbServer.TabIndex = 3
         '
         'chkRememberPassword
         '
         Me.chkRememberPassword.AutoSize = True
-        Me.chkRememberPassword.Location = New System.Drawing.Point(162, 205)
+        Me.chkRememberPassword.Location = New System.Drawing.Point(216, 252)
+        Me.chkRememberPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.chkRememberPassword.Name = "chkRememberPassword"
-        Me.chkRememberPassword.Size = New System.Drawing.Size(126, 17)
+        Me.chkRememberPassword.Size = New System.Drawing.Size(164, 21)
         Me.chkRememberPassword.TabIndex = 4
         Me.chkRememberPassword.Text = "Remember Password"
         Me.chkRememberPassword.UseVisualStyleBackColor = True
@@ -142,9 +151,10 @@ Partial Class LoginForm1
         Me.createAccount.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.createAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.createAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.createAccount.Location = New System.Drawing.Point(161, 228)
+        Me.createAccount.Location = New System.Drawing.Point(215, 281)
+        Me.createAccount.Margin = New System.Windows.Forms.Padding(4)
         Me.createAccount.Name = "createAccount"
-        Me.createAccount.Size = New System.Drawing.Size(104, 26)
+        Me.createAccount.Size = New System.Drawing.Size(139, 32)
         Me.createAccount.TabIndex = 7
         Me.createAccount.Text = "&Create Account"
         Me.createAccount.UseVisualStyleBackColor = False
@@ -153,9 +163,10 @@ Partial Class LoginForm1
         '
         Me.forgotPassword.AutoSize = True
         Me.forgotPassword.LinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.forgotPassword.Location = New System.Drawing.Point(288, 268)
+        Me.forgotPassword.Location = New System.Drawing.Point(384, 330)
+        Me.forgotPassword.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.forgotPassword.Name = "forgotPassword"
-        Me.forgotPassword.Size = New System.Drawing.Size(95, 13)
+        Me.forgotPassword.Size = New System.Drawing.Size(126, 17)
         Me.forgotPassword.TabIndex = 9
         Me.forgotPassword.TabStop = True
         Me.forgotPassword.Text = "&Forgot Password ?"
@@ -163,10 +174,10 @@ Partial Class LoginForm1
         'LoginForm1
         '
         Me.AcceptButton = Me.OK
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(421, 290)
+        Me.ClientSize = New System.Drawing.Size(561, 357)
         Me.Controls.Add(Me.forgotPassword)
         Me.Controls.Add(Me.createAccount)
         Me.Controls.Add(Me.chkRememberPassword)
@@ -179,12 +190,13 @@ Partial Class LoginForm1
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.LogoPictureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoginForm1"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "TradeCompanion"
+        Me.Text = "AutoShark"
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

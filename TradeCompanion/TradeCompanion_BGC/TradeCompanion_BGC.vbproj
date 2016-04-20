@@ -757,6 +757,8 @@
     <Content Include="RepeatCount.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Jpeg.jpg" />
+    <None Include="Resources\Png .png" />
     <Content Include="scalper_pip.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

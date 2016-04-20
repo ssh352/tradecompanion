@@ -57,6 +57,7 @@ Public Class LoginForm1
             'result = 1 'wsScalper.ValidatePasswordVersion(UsernameTextBox.Text.Trim(), PasswordTextBox.Text.Trim(), verInfo.FileMajorPart.ToString() + "." + verInfo.FileMinorPart.ToString() + "." + verInfo.FileBuildPart.ToString())
             'If (result = 1) Then
             If (UsernameTextBox.Text.Trim() = "Franco" And PasswordTextBox.Text.Trim() = "Dummicio") Then
+                'If (UsernameTextBox.Text.Trim() = "" And PasswordTextBox.Text.Trim() = "") Then
                 Dim Keys As SettingsHome = SettingsHome.getInstance()
                 Keys.emailID = "" 'WSScalper.GetEmailID(UsernameTextBox.Text.Trim())
                 Keys.LoginidTC = UsernameTextBox.Text.Trim()
