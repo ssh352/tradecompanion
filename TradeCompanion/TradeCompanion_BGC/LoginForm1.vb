@@ -23,7 +23,7 @@ Public Class LoginForm1
 
         Try
             Dim verInfo As FileVersionInfo = FileVersionInfo.GetVersionInfo(Application.ExecutablePath)
-            Dim wsScalper As New WSScalper.WebServicesScalper
+            'Dim wsScalper As New WSScalper.WebServicesScalper
             Dim result As Integer
 
             'Check if we need to save the password
@@ -54,10 +54,11 @@ Public Class LoginForm1
 
             'continue with login
 
-            result = wsScalper.ValidatePasswordVersion(UsernameTextBox.Text.Trim(), PasswordTextBox.Text.Trim(), verInfo.FileMajorPart.ToString() + "." + verInfo.FileMinorPart.ToString() + "." + verInfo.FileBuildPart.ToString())
-            If (result = 1) Then
+            'result = 1 'wsScalper.ValidatePasswordVersion(UsernameTextBox.Text.Trim(), PasswordTextBox.Text.Trim(), verInfo.FileMajorPart.ToString() + "." + verInfo.FileMinorPart.ToString() + "." + verInfo.FileBuildPart.ToString())
+            'If (result = 1) Then
+            If (UsernameTextBox.Text.Trim() = "Franco" And PasswordTextBox.Text.Trim() = "Dummicio") Then
                 Dim Keys As SettingsHome = SettingsHome.getInstance()
-                Keys.emailID = wsScalper.GetEmailID(UsernameTextBox.Text.Trim())
+                Keys.emailID = "" 'WSScalper.GetEmailID(UsernameTextBox.Text.Trim())
                 Keys.LoginidTC = UsernameTextBox.Text.Trim()
                 Keys.ExchangeServer = CmbServer.SelectedIndex + 1
                 'Dim automate As XmlRead = New XmlRead()
@@ -65,20 +66,21 @@ Public Class LoginForm1
 
                 'check for the trades which are not logged in, login to sever if found
                 Dim ah As AlertsHome = New AlertsHome
-                ds = ah.getUnloggedTrades()
-                If (ds.Tables(0).Rows.Count > 0) Then
-                    Try
-                        AsyncCallWebServices(Keys)
-                    Catch ex As Exception
-                        'Problem in logging tradec
-                        Util.WriteDebugLog(ex.Message + ex.StackTrace)
-                    End Try
-                End If
+                'ds = ah.getUnloggedTrades()
+                'If (ds.Tables(0).Rows.Count > 0) Then
+                'Try
+                'AsyncCallWebServices(Keys)
+                'Catch ex As Exception
+                'Problem in logging tradec
+                '   Util.WriteDebugLog(ex.Message + ex.StackTrace)
+                'End Try
+                '   End If
                 Me.DialogResult = Windows.Forms.DialogResult.OK
-            ElseIf (result = -1) Then
-                MsgBox("Invalid username or password", MsgBoxStyle.OkOnly, "TradeCompanion")
             Else
-                MsgBox("Connection Error", MsgBoxStyle.OkOnly, "TradeCompanion")
+                'ElseIf (result = -1) Then
+                MsgBox("Invalid username or password", MsgBoxStyle.OkOnly, "TradeCompanion")
+                'Else
+                'MsgBox("Connection Error", MsgBoxStyle.OkOnly, "TradeCompanion")
             End If
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.OkOnly, "TradeCompanion")

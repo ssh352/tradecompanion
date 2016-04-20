@@ -91,7 +91,7 @@ Public Class AlertsHome
 
             SyncLock Me
                 DateIDServerLog = dateID
-                AsyncCallWebServices(orderRow)
+                'AsyncCallWebServices(orderRow)
             End SyncLock
         Catch ex As Exception
             'unsuccessfull logged
@@ -191,7 +191,7 @@ Public Class AlertsHome
             Dim cmd As OleDbCommand = New OleDbCommand(sql, conn, trans)
             Dim n As Integer = cmd.ExecuteNonQuery
             trans.Commit()
-            ServerLog(signal, DateID, USDMarketPrice)
+            'ServerLog(signal, DateID, USDMarketPrice)
 
         Catch ex As Exception
             Throw ex
