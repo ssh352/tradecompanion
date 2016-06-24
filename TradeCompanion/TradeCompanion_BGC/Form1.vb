@@ -978,14 +978,14 @@ Public Class Form1
     Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         keys.setSettings()
         Try
-            'Dim wsScalper As New WSScalper.WebServicesScalper
-            'Dim result As Boolean
-            'result = wsScalper.Loggedin(keys.LoginidTC, False)
-            'If (result = True) Then
-            'Util.WriteDebugLog("Successful Logout From Server")
-            'Else
-            'Util.WriteDebugLog("Problem Server Logout")
-            'End If
+            Dim wsScalper As New WSScalper.WebServicesScalper
+            Dim result As Boolean
+            result = wsScalper.Loggedin(keys.LoginidTC, False)
+            If (result = True) Then
+                Util.WriteDebugLog("Successful Logout From Server")
+            Else
+                Util.WriteDebugLog("Problem Server Logout")
+            End If
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.OkOnly, "TradeCompanion")
         End Try
