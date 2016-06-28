@@ -268,10 +268,10 @@ Public Class Trader
                             End If
                         Case ExchangeServer.FxIntegral
                             If reason.Equals("UserAuthenticationFailure") Then
-                                MessageBox.Show("Password Wrong", "TradeCompanion")
+                                MessageBox.Show("Password Wrong", "AutoShark")
                                 ReconnectRequest(_isMarketDataConnection)
                             ElseIf (reason.Equals("UserNameSetUp")) Then
-                                MessageBox.Show("UserName is wrong", "TradeCompanion")
+                                MessageBox.Show("UserName is wrong", "AutoShark")
                                 ReconnectRequest(_isMarketDataConnection)
                             Else
                                 initiateReconnect()

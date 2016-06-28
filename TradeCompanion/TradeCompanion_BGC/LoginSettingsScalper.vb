@@ -14,33 +14,33 @@ Public Class LoginSettingsScalper
         'do validation if any field is blank
         'do the validation for retype new password
         If (txtLoginID.Text = "" Or txtPassword.Text = "" Or txtNewPassword.Text = "" Or txtRNewPassword.Text = "") Then
-            MsgBox("All fields are mandatory", MsgBoxStyle.OkOnly, "TradeCompanion")
+            MsgBox("All fields are mandatory", MsgBoxStyle.OkOnly, "AutoShark")
             Return
         End If
 
         If (txtNewPassword.Text.Trim().Length < 3) Then
-            MsgBox("Minimun length 3 characters for password. Please type again", MsgBoxStyle.OkOnly, "TradeCompanion")
+            MsgBox("Minimun length 3 characters for password. Please type again", MsgBoxStyle.OkOnly, "AutoShark")
             txtNewPassword.Text = ""
             txtRNewPassword.Text = ""
             Return
         End If
 
         If (txtNewPassword.Text.Trim().Length > 15) Then
-            MsgBox("Maximun length 15 characters for password. Please type again", MsgBoxStyle.OkOnly, "TradeCompanion")
+            MsgBox("Maximun length 15 characters for password. Please type again", MsgBoxStyle.OkOnly, "AutoShark")
             txtNewPassword.Text = ""
             txtRNewPassword.Text = ""
             Return
         End If
 
         If (txtNewPassword.Text.Trim().IndexOf(" ") >= 0) Then
-            MsgBox("Password should not contain spaces. Please type again", MsgBoxStyle.OkOnly, "TradeCompanion")
+            MsgBox("Password should not contain spaces. Please type again", MsgBoxStyle.OkOnly, "AutoShark")
             txtNewPassword.Text = ""
             txtRNewPassword.Text = ""
             Return
         End If
 
         If (txtNewPassword.Text.Trim() <> txtRNewPassword.Text.Trim()) Then
-            MsgBox("New password and Retype new password are not same. Please type again", MsgBoxStyle.OkOnly, "TradeCompanion")
+            MsgBox("New password and Retype new password are not same. Please type again", MsgBoxStyle.OkOnly, "AutoShark")
             txtNewPassword.Text = ""
             txtRNewPassword.Text = ""
             Return
@@ -51,13 +51,13 @@ Public Class LoginSettingsScalper
             Dim result As Boolean
             result = wsScalper.ModifyPassword(txtLoginID.Text.Trim(), txtPassword.Text.Trim(), txtNewPassword.Text.Trim())
             If (result = True) Then
-                MsgBox("Password updated successfully", MsgBoxStyle.OkOnly, "TradeCompanion")
+                MsgBox("Password updated successfully", MsgBoxStyle.OkOnly, "AutoShark")
             Else
-                MsgBox("Invalid loginid or password", MsgBoxStyle.OkOnly, "TradeCompanion")
+                MsgBox("Invalid loginid or password", MsgBoxStyle.OkOnly, "AutoShark")
                 Return
             End If
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.OkOnly, "TradeCompanion")
+            MsgBox(ex.Message, MsgBoxStyle.OkOnly, "AutoShark")
             Util.WriteDebugLog("LoginSettingsScalper -- " & ex.Message)
         End Try
 

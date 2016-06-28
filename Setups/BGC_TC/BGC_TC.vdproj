@@ -1073,7 +1073,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:2.0.50727  "
+                "FrameworkVersion" = "8:2.0.50727   "
                 "AllowLaterVersions" = "11:TRUE"
                 "InstallUrl" = "8:http://www.microsoft.com/downloads/details.aspx?familyid=0856eacb-4362-4b0d-8edd-aab15c5e04f5&displaylang=en"
                 }
@@ -3700,7 +3700,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Auto Shark"
         "ProductCode" = "8:{E11C5ECF-166E-4901-A2ED-B5A0626813D5}"
-        "PackageCode" = "8:{3A42A972-83EE-4EAC-BE66-EEF2360189E8}"
+        "PackageCode" = "8:{7C5BE9DE-6F54-4FA6-A615-2C7C64C243D8}"
         "UpgradeCode" = "8:{20E8B613-8910-4288-B3C0-23E1F4547236}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -3950,7 +3950,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_89B2E6C8A8304190830752F9544A4432"
             {
-            "Name" = "8:TradeCompanion"
+            "Name" = "8:AutoShark"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"

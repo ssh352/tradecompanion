@@ -987,7 +987,7 @@ Public Class Form1
                 Util.WriteDebugLog("Problem Server Logout")
             End If
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.OkOnly, "TradeCompanion")
+            MsgBox(ex.Message, MsgBoxStyle.OkOnly, "AutoShark")
         End Try
 
         mDoNotConnect = True
@@ -1482,13 +1482,13 @@ Public Class Form1
             Util.WriteDebugLog(" .... Connecting")
             If (SettingsHome.getInstance().ExchangeServer = ExchangeServer.Espeed) Then
                 If (ConnectHT.Count = 1) Then
-                    MessageBox.Show("Espeed does not support multiple connections", "TradeCompanion")
+                    MessageBox.Show("Espeed does not support multiple connections", "AutoShark")
                     Return
                 End If
             End If
             If (SettingsHome.getInstance().ExchangeServer = ExchangeServer.Icap) Then
                 If (ConnectHT.Count = 1) Then
-                    MessageBox.Show("Icap does not support multiple connections", "TradeCompanion")
+                    MessageBox.Show("Icap does not support multiple connections", "AutoShark")
                     Return
                 End If
             End If
@@ -1910,10 +1910,10 @@ Public Class Form1
                     _trader.SubscribeMarketData()
                     'automate.Addmarketsettings()
                 Else
-                    MessageBox.Show("No active connections", "Tradecompanion")
+                    MessageBox.Show("No active connections", "AutoShark")
                 End If
             Else
-                MessageBox.Show("No connections available", "Tradecompanion")
+                MessageBox.Show("No connections available", "AutoShark")
             End If
         Catch ex As Exception
             Util.WriteDebugLog(" ERROR  AssignTrderConnection" + ex.Message)
@@ -2070,11 +2070,11 @@ Public Class Form1
                 gridEXExporter.Export(stream)
                 Select Case TabControl1.SelectedIndex
                     Case TAB_PAGE_OPEN.TAB_ORDERS
-                        MessageBox.Show("Orders Exported", "TradeCompanion")
+                        MessageBox.Show("Orders Exported", "AutoShark")
                     Case TAB_PAGE_OPEN.TAB_ALERTS
-                        MessageBox.Show("Alerts Exported", "TradeCompanion")
+                        MessageBox.Show("Alerts Exported", "AutoShark")
                     Case TAB_PAGE_OPEN.TAB_MDHISTORY
-                        MessageBox.Show("MDHistroy Exported", "TradeCompanion")
+                        MessageBox.Show("MDHistroy Exported", "AutoShark")
                 End Select
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
