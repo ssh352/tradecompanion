@@ -725,7 +725,7 @@ Public Class StrategyPerformanceReport
                 alertdata.actiontype = AlertsManager.ACTION_SELL
             End If
             If NetCc1 = 0 Then
-                MsgBox("No open position available.", MsgBoxStyle.OkOnly, "TradeCompanion")
+                MsgBox("No open position available.", MsgBoxStyle.OkOnly, "AutoShark")
                 grdSpotPosition.Focus()
                 Exit Sub
             End If
@@ -746,19 +746,19 @@ Public Class StrategyPerformanceReport
                 Dim obj As Object = Form1.GetSingletonOrderform().ConnectHT.Item(sID)
                 Dim trader As Trader = CType(obj, Trader)
                 If Not trader.Stat = Form1.ConnectionStatus.CONNECTED Then
-                    MsgBox("ID " + alertdata.senderID + " is not connected.", MsgBoxStyle.OkOnly, "TradeCompanion")
+                    MsgBox("ID " + alertdata.senderID + " is not connected.", MsgBoxStyle.OkOnly, "AutoShark")
                     grdSpotPosition.Focus()
                     Return
                 End If
             Else
-                MsgBox("ID " + alertdata.senderID + " is not connected.", MsgBoxStyle.OkOnly, "TradeCompanion")
+                MsgBox("ID " + alertdata.senderID + " is not connected.", MsgBoxStyle.OkOnly, "AutoShark")
                 grdSpotPosition.Focus()
                 Return
             End If
 
             'Form1.GetSingletonOrderform().watcher_NewAlert(alertdata)
             del_watcher.BeginInvoke(alertdata, Nothing, Nothing)
-            MessageBox.Show("Order placed: " + action + " " + alertdata.symbol + " " + alertdata.contracts.ToString, "TradeCompanion")
+            MessageBox.Show("Order placed: " + action + " " + alertdata.symbol + " " + alertdata.contracts.ToString, "AutoShark")
             grdSpotPosition.Focus()
         End If
     End Sub

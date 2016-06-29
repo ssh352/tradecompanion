@@ -65,11 +65,11 @@ Public Class SignUP
  
 
         If Not (msgSting = "Mandatory Fields:") Then
-            MessageBox.Show(msgSting, "Tradecompanion")
+            MessageBox.Show(msgSting, "AutoShark")
             Return False
         Else
             If Not (dataError = "Validation Error:") Then
-                MessageBox.Show(dataError, "Tradecompanion")
+                MessageBox.Show(dataError, "AutoShark")
                 Return False
             Else
                 Return True

@@ -154,7 +154,7 @@ Public Class IDMappingTable
             If (Directory.Exists(FolderBrowserDialogMT4Path.SelectedPath + "\experts\files\")) Then
                 TextBoxMT4Path.Text = FolderBrowserDialogMT4Path.SelectedPath
             Else
-                MessageBox.Show("Not a valid MT4 installation path", "TradeCompanion")
+                MessageBox.Show("Not a valid MT4 installation path", "AutoShark")
             End If
         End If
     End Sub

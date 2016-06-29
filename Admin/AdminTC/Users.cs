@@ -185,7 +185,7 @@ namespace AdminTC
 
                     if (!edit)
                     {
-                        u.Password = "bgcsystems";//deafault password for the new user
+                        u.Password = "shark123";//deafault password for the new user
                         i = ws.CreateUser(u);
                         frmAdmin.GetSingletonAdminform().RefreshDataset(true);
                     }

@@ -76,12 +76,12 @@ Public Class LoginForm1
                 End If
                 Me.DialogResult = Windows.Forms.DialogResult.OK
             ElseIf (result = -1) Then
-                MsgBox("Invalid username or password", MsgBoxStyle.OkOnly, "TradeCompanion")
+                MsgBox("Invalid username or password", MsgBoxStyle.OkOnly, "AutoShark")
             Else
-                MsgBox("Connection Error", MsgBoxStyle.OkOnly, "TradeCompanion")
+                MsgBox("Connection Error", MsgBoxStyle.OkOnly, "AutoShark")
             End If
         Catch ex As Exception
-            MsgBox(ex.Message, MsgBoxStyle.OkOnly, "TradeCompanion")
+            MsgBox(ex.Message, MsgBoxStyle.OkOnly, "AutoShark")
             Util.WriteDebugLog("Error -- " & ex.Message)
         End Try
 

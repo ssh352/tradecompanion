@@ -44,7 +44,7 @@ Public Class DisconnectForm
 
                     disCount = disCount + 1
                     If (s1.QLength > 0) Then
-                        If MessageBox.Show(s1.QLength.ToString() + " trades to be executed for id " + s1.ConnectionId + Environment.NewLine + "Are you sure, you want to disconnect?", "TradeCompanion", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.No Then
+                        If MessageBox.Show(s1.QLength.ToString() + " trades to be executed for id " + s1.ConnectionId + Environment.NewLine + "Are you sure, you want to disconnect?", "AutoShark", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.No Then
                             Continue For
                         End If
                         Form1.GetSingletonOrderform().AddInLogWindow("Alert rejected:" + s1.ConnectionId + " disconnected by user", Color.Red)
@@ -73,7 +73,7 @@ Public Class DisconnectForm
         If Not disCount = 0 Then
             Me.Close()
         Else
-            MessageBox.Show("Select atleast one connection", "TradeCompanion")
+            MessageBox.Show("Select atleast one connection", "AutoShark")
         End If
 
     End Sub

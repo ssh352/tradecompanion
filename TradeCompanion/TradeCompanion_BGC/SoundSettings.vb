@@ -46,12 +46,12 @@ Public Class SoundSettings
                             FileCopy(openFileDialog1.FileName, Application.StartupPath + "\Sounds\" + txtMySound.Text.Trim())
                         Catch ex As Exception
                             Util.WriteDebugLog("SoundSettings ---" & ex.Message)
-                            MessageBox.Show(ex.Message, "TradeCompanion")
+                            MessageBox.Show(ex.Message, "AutoShark")
                         End Try
                     End If
                 End If
             Else
-                MsgBox("Select the sound file", MsgBoxStyle.OkOnly, "TradeCompanion")
+                MsgBox("Select the sound file", MsgBoxStyle.OkOnly, "AutoShark")
                 Exit Sub
             End If
         End If

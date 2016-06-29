@@ -313,7 +313,7 @@
 '        settingsTrade.getSettings()
 '        If dsCrash.Tables("manual").Rows.Count > 0 Then
 '            dsCrash.Tables("manual").Rows(0).Item("defaulttradetype") = settingsTrade.TradeTypeManual
-'            dsCrash.Tables("automatic").Rows(0).Item("defaulttradetype") = SettingsTrade.TradeTypeAuto
+'            dsCrash.Tables("automatic").Rows(0).Item("defaulttradetype") = settingsTrade.TradeTypeAuto
 '            dsCrash.Tables("automatic").Rows(0).Item("tradesizeover10m") = settingsTrade.TradeTypeAutoOver10Mil
 '            dsCrash.Tables("automatic").Rows(0).Item("discardalertInterval") = SettingsHome.getInstance().DiscardAlertInterval
 '        Else

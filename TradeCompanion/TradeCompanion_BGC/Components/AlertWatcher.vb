@@ -13,7 +13,7 @@ Public Class AlertWatcher
             watcher.Path = appSettings.TradeStationMonitorPath
         ElseIf (appSettings.Platform = "MetaTrader") Then 'MetaTrader
             If (appSettings.MetaTraderMonitorPath = "") Then
-                MessageBox.Show("Metatrader 4 is not installed", "TradeCompanion")
+                MessageBox.Show("Metatrader 4 is not installed", "AutoShark")
                 Exit Sub
             End If
             watcher.Path = appSettings.MetaTraderMonitorPath
@@ -42,7 +42,7 @@ Public Class AlertWatcher
             watcher.Path = appSettings.TradeStationMonitorPath
         ElseIf (PlatForm = "MetaTrader") Then 'MetaTrader
             If (appSettings.MetaTraderMonitorPath = "") Then
-                MessageBox.Show("Metatrader 4 is not installed", "TradeCompanion")
+                MessageBox.Show("Metatrader 4 is not installed", "AutoShark")
                 Exit Sub
             End If
             watcher.Path = appSettings.MetaTraderMonitorPath + "\experts\files\"

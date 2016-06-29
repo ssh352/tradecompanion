@@ -294,7 +294,7 @@ Public Class SettingsHome
     Public Shared Function getInstance() As SettingsHome
         If (settings Is Nothing) Then
             settings = New SettingsHome()
-            settings.setDBFXVersion()
+            'settings.setDBFXVersion()
             settings.getSettings()
         End If
         Return settings
