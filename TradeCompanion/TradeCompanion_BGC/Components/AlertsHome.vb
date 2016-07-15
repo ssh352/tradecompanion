@@ -37,7 +37,7 @@ Public Class AlertsHome
             Case ExchangeServer.Icap
                 DBDir = Application.StartupPath + "\TradeCompanionIcap.mdb"
         End Select
-        Dim connstr As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + DBDir + ";"
+        Dim connstr As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + DBDir + ";"
         m_datasourcename = connstr
     End Sub
 
