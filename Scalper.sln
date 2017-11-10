@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{64392F64-43AD-4DBA-A6C2-3B68C2558A53}"
 EndProject
@@ -157,8 +157,8 @@ Global
 		{292AE349-F237-4A37-8276-0C16626D764F}.Release|.NET.ActiveCfg = Release|Any CPU
 		{292AE349-F237-4A37-8276-0C16626D764F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{292AE349-F237-4A37-8276-0C16626D764F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{292AE349-F237-4A37-8276-0C16626D764F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{292AE349-F237-4A37-8276-0C16626D764F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{292AE349-F237-4A37-8276-0C16626D764F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{292AE349-F237-4A37-8276-0C16626D764F}.Release|Mixed Platforms.Build.0 = Release|x86
 		{292AE349-F237-4A37-8276-0C16626D764F}.Release|x64.ActiveCfg = Release|Any CPU
 		{292AE349-F237-4A37-8276-0C16626D764F}.Release|x64.Build.0 = Release|Any CPU
 		{292AE349-F237-4A37-8276-0C16626D764F}.Release|x86.ActiveCfg = Release|x86

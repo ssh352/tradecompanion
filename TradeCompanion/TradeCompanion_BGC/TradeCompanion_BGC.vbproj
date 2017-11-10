@@ -546,6 +546,7 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="trade companion.bmp" />
   </ItemGroup>
   <ItemGroup>
