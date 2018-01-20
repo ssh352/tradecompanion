@@ -1,4 +1,4 @@
-<%@ Page Language="VB" MasterPageFile="~/Forms/MstForContents.master" AutoEventWireup="false" CodeFile="PrivacyPolicy.aspx.vb" Inherits="Forms_PrivacyPolicy" title="TradeCompanion- Privacy Policy" %>
+<%@ Page Language="VB" MasterPageFile="~/Forms/MstForContents.master" AutoEventWireup="false" CodeFile="PrivacyPolicy.aspx.vb" Inherits="Forms_PrivacyPolicy" title="Autoshark- Privacy Policy" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    <div align="left">
         <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber11">
@@ -34,7 +34,7 @@
                         <td><b>Email:</b>&nbsp;&nbsp;&nbsp;</td> <td> <a href="mailto:support@tradecompanion.co.uk">support@tradecompanion.co.uk</a> <br /><br /></td>
                         </tr>
                             <tr><td><b>Postal:</b>&nbsp;&nbsp;&nbsp;</td> 
-                                <td>TradeCompanion Holdings Ltd <br />  
+                                <td>Autoshark Holdings Ltd <br />  
                                 36 Spiral Square  <br />
                                 London E16DY  <br />
                                 London :  +44 208 144 5476 <br />

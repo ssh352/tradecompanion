@@ -1,8 +1,8 @@
 //Contents for menu 1
 var menu1=new Array()
-menu1[0]='<a href="FrmTradeComp.aspx">Trade Companion</a>'
-//menu1[0]='<a href="FrmTradeComp.aspx?Flag=TradeCompanion">Trade Companion</a>'
-//menu1[0]='<a href="FrmUserInfo.aspx?Flag=TradeCompanion">Trade Companion</a>'
+menu1[0]='<a href="FrmTradeComp.aspx">Autoshark</a>'
+//menu1[0]='<a href="FrmTradeComp.aspx?Flag=TradeCompanion">Autoshark</a>'
+//menu1[0]='<a href="FrmUserInfo.aspx?Flag=TradeCompanion">Autoshark</a>'
 //menu1[1]='<a href="FrmUserInfo.aspx?Flag=TradeStation2000i">TradeStation 2000i</a>'
 //menu1[2]='<a href="FrmUserInfo.aspx?Flag=RadarScreen2000i">RadarScreen 2000i</a>'
 //menu1[3]='<a href="FrmUserInfo.aspx?Flag=OptionStation2000i">OptionStation 2000i</a>'

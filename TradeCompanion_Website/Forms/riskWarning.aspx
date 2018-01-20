@@ -1,4 +1,4 @@
-<%@ Page Language="VB" MasterPageFile="~/Forms/MstForContents.master" AutoEventWireup="false" CodeFile="riskWarning.aspx.vb" Inherits="Forms_riskWarning" title="TradeCompanion> Risk Warning" %>
+<%@ Page Language="VB" MasterPageFile="~/Forms/MstForContents.master" AutoEventWireup="false" CodeFile="riskWarning.aspx.vb" Inherits="Forms_riskWarning" title="Autoshark> Risk Warning" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    <asp:Panel ID="Panel1" runat="server" Height="700px" Width="500px">
     <table style="width: 510px; font-size: 9pt; font-family: Arial;">
@@ -59,8 +59,8 @@
                <font color="#000000"><span style="font-size: 9pt;" id="Span4" runat="server">
                                
                    There are risks associated with utilizing an Internet-based trading system including, but not
-                 limited to, the failure of hardware, software, and Internet connection. TradeCompanion is not 
-                 responsible for communication failures or delays when trading via the Internet. TradeCompanion 
+                 limited to, the failure of hardware, software, and Internet connection. Autoshark is not 
+                 responsible for communication failures or delays when trading via the Internet. Autoshark 
                  employs back up systems and contingency plans to minimize the possibility of system failure, and 
                  trading via telephone is always available.                   
                     </span></font>
@@ -75,9 +75,9 @@
                <font color="#000000"><span style="font-size: 9pt;" id="Span5" runat="server">
                                
                    Any opinions, news, research, analyses, prices, or other information contained on this website
-                  are provided as general market commentary, and do not constitute investment advice. TradeCompanion
+                  are provided as general market commentary, and do not constitute investment advice. Autoshark
                    is not liable for any loss or damage, including without limitation, any loss of profit, which may 
-                   arise directly or indirectly from use of or reliance on such information. TradeCompanion has taken 
+                   arise directly or indirectly from use of or reliance on such information. Autoshark has taken 
                    reasonable measures to ensure the accuracy of the information on the website. The content on this 
                    website is subject to change at any time without notice.                   
                     </span></font>

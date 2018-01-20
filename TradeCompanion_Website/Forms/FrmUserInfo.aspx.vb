@@ -63,8 +63,8 @@ Partial Class FrmUserInfo
 
 
         If Request.QueryString("Flag") = "TradeCompanion" Then
-            StrOrder = "Trade Companion"
-            'Response.Write("<script language='javascript'>alert ('TradeCompanion');</script>")
+            StrOrder = "Autoshark"
+            'Response.Write("<script language='javascript'>alert ('Autoshark');</script>")
 
         ElseIf Request.QueryString("Flag") = "TradeStation2000i" Then
             StrOrder = "TradeStation 2000i"
@@ -268,12 +268,12 @@ Partial Class FrmUserInfo
             Dim rowseffected As Integer = objCmd.ExecuteNonQuery()
 
             If (rowseffected >= 1) Then
-                Dim subject As String = "[BGC Trade Companion] User Info Request"
+                Dim subject As String = "[BGC Autoshark] User Info Request"
                 fbcon.Close()
                 Dim Body As String
                 Body = "Hi ," + Environment.NewLine
                 Body = Body + "A request was made to send you your  password for the" + Environment.NewLine
-                Body = Body + "BGC Trade Companion Login. Your details are as follows:" + Environment.NewLine + Environment.NewLine
+                Body = Body + "BGC Autoshark Login. Your details are as follows:" + Environment.NewLine + Environment.NewLine
                 Body = Body + "Loginid    : " + loginId + Environment.NewLine
                 Body = Body + "Password    : " + pwd + Environment.NewLine + Environment.NewLine + Environment.NewLine
                 Body = Body + "Regards, " + Environment.NewLine + "-BGC"

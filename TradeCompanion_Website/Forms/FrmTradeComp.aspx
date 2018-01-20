@@ -1,4 +1,4 @@
-<%@ Page Language="VB" MasterPageFile="~/Forms/MstForContents.master" AutoEventWireup="false" CodeFile="FrmTradeComp.aspx.vb" Inherits="Forms_FrmTradeComp" title="Scalper - Products - TradeCompanion" %>
+<%@ Page Language="VB" MasterPageFile="~/Forms/MstForContents.master" AutoEventWireup="false" CodeFile="FrmTradeComp.aspx.vb" Inherits="Forms_FrmTradeComp" title="Products - Autoshark" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script language="javascript" type="text/javascript">
 <!--
@@ -30,9 +30,9 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
       <tr>
         <td width="100%" colspan="2" id="Trade" runat="server">
         <p align="justify" style="margin-left: 5; margin-right: 5"><b>
-        <font color="#64829A" face="Arial">Trade Companion<br>
+        <font color="#64829A" face="Arial">Autoshark<br>
         </font></b><font face="Arial"><span style="font-size: 9pt">Supporting multiple FX servers each with their own set of rules was 
-        demanding. Trade Companion understands all investment objectives of a 
+        demanding. Autoshark understands all investment objectives of a 
         trader and makes all dealing decisions for the trader. Trader can see 
         the live profit/loss made and can strategically place orders to earn 
         more profit. All the components in this software are loosely coupled and 
@@ -164,7 +164,7 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
           <tr>
             <td width="100%" style="text-align: center"><font face="Arial" size="5" id="Automated" runat="server">
             <font color="#64829A">Automated Trading 
-            with Trade Companion</font></font>&nbsp;</td>
+            with Autoshark</font></font>&nbsp;</td>
           </tr>
           <tr>
             <td width="100%">
@@ -189,7 +189,7 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
                       available to today’s finance savvy investor. This has 
                       created an explosion in growth within the foreign exchange 
                       automated trading market which looks set to continue. e-Forex 
-                      talks with Franco Dimuccio from Trade Companion, an 
+                      talks with Franco Dimuccio from Autoshark, an 
                       authorised reseller of Tradestation Technologies, which 
                       has linked up with the liquidity providers,
                           about their 
@@ -237,12 +237,12 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
             <td width="100%" align="left" id="Can" runat="server" style="height: 15px">
             <%--<p style="margin-left: 5; margin-right: 5">--%>
             <font color="#64829A" face="Arial" style="font-size: 9pt; font-weight: 700">
-            Can you tell us about Trade Companion?</font></td>
+            Can you tell us about Autoshark?</font></td>
           </tr>
           <tr>
             <td width="100%" id="Can1" runat="server">
             <p align="justify" style="margin-left: 5; margin-right: 5">
-            <font face="Arial"><span style="font-size: 9pt">Trade Companion 
+            <font face="Arial"><span style="font-size: 9pt">Autoshark 
             is an automated trading tool designed to help assist FX market 
             participants Automate their strategies into a multi-bank platform
              and, is designed to be a flexible product which can be used to 
@@ -250,7 +250,7 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
              ability to provide fully automated trading signals or semi-automated 
              signals that allow the client to decide whether or not to send or 
              allocate an order to managed accounts, and is very easy for an 
-             individual trader running his own portfolio to use. Trade Companion
+             individual trader running his own portfolio to use. Autoshark
               gives the retail trader similar liquidity and speed to that that 
               institutional players already enjoy. Typically, clients will have 
               their strategy back tested and be happy to start trading but only 
@@ -301,14 +301,14 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
           <tr>
             <td width="100%" id="Integrating1" runat="server">
             <p style="margin-left: 5; margin-right: 5" align="justify">
-            <font face="Arial" style="font-size: 9pt">No, Trade Companion 
+            <font face="Arial" style="font-size: 9pt">No, Autoshark 
             have integrated all the technology involved. This gives not only
              the institutional investor but also the “long-ignored” retail 
              investor or smaller company the access they need to enter the
               automated trading arena without the expensive costs of programmers 
               and IT integration. All are able to seamlessly execute orders 
               generated by their TradeStation strategy without any programming!
-              Tradecompanion is able to Automate and execute your strategy written 
+              Autoshark is able to Automate and execute your strategy written 
               in TradeStation, Excel, Wealthlab, Fix, C++, Visual Basic, .NET or 
               any other proprietary platforms on one account.</font></td>
           </tr>
@@ -320,17 +320,17 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
             <td width="100%" align="left" id="Illustrate1" runat="server" >
             <%--<p style="margin-left: 5; margin-right: 5">--%>
             <font face="Arial" style="font-size: 9pt; font-weight: 700" color="#64829A">
-            Can you illustrate some of the key features of Trade Companion?</font></td>
+            Can you illustrate some of the key features of Autoshark?</font></td>
           </tr>
           <tr>
             <td width="100%" id="Illustrate" runat="server" >
             <p style="margin-left: 5; margin-right: 5" align="justify">
-            <font face="Arial" style="font-size: 9pt">Trade Companion 
+            <font face="Arial" style="font-size: 9pt">Autoshark 
             supports multiple strategies on multiple currency pairs.
             Supports , MT4, TradeStation2000i, Neuroshell & Tradestation
              8 Do walk forward tests before going live .Create your 
              own equity graph for promotional and performance update 
-             through the website. Trade companion also allows the 
+             through the website. Autoshark also allows the 
              client to be given the signal that a trade needs to be
               done but the client can decide whether or not to 
               send the order.
@@ -358,7 +358,7 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
              Director of BGC Foreign Exchange said, "We want to give our
               clients the ability to choose which front end dealing platforms
                they trade on whilst providing them with competitive pricing 
-               and clearing services. Trade Companion is an excellent product
+               and clearing services. Autoshark is an excellent product
                 that will help us to achieve this and is the first charting 
                 package available on our growing suite of FX products."
 &quot;</font></td>
@@ -378,7 +378,7 @@ style="border-collapse: collapse" bordercolor="#111111" width="98%" id="AutoNumb
             <p align="justify" style="word-spacing: -1; margin-left: 5; margin-right: 5">
             <font face="Arial" style="font-size: 9pt">We have 2 
             partners who work very close with us and do a lost of
-             business with Trade Companion there  accounts are 
+             business with Autoshark there  accounts are 
               traded live and you can watch there performance every
                day as the graphs are updated on a Daily basis  some 
                on the accounts are Demo and Live mixed to test Strats 

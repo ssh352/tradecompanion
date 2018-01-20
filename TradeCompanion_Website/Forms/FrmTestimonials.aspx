@@ -8,11 +8,11 @@
     </caption>
     <tr>
     <td style="width:540px; text-align: justify; height: 81px;" bgcolor="gainsboro">
-        <span style="font-size: 9pt; font-family: Arial;">"Information is a key for a Tradecompanion. I have 
+        <span style="font-size: 9pt; font-family: Arial;">"Information is a key for a Autoshark. I have 
     used several sources over the past year. One fellow trader recommended me 
     Trade The News and I signed up for a trial. I have totaled over $14,000 in 
     profit during the trial subscription! You are the most incredible source of 
-    breaking news for the TradeCompanion have ever seen - great on time information 
+    breaking news for the Autoshark have ever seen - great on time information 
     that is moving the market! You made my trading an absolute dream! I love your
      service!"</span>
     </td>
@@ -132,7 +132,7 @@
     <tr>
     <td style="width:540px; text-align:justify" bgcolor="gainsboro">
         <span style="font-size: 9pt; font-family: Arial">
-    Firstly, I would like to state that Trade Companion
+    Firstly, I would like to state that Autoshark
      has been more than generous in their support of our operations in 
      terms of training and development of our staff, management and board. 
      Whatever we have needed we have received irrespective of the contracted 

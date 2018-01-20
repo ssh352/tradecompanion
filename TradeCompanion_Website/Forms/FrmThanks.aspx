@@ -27,7 +27,7 @@
             <td align="left" colspan="3" style="height: 23px" valign="top">
                 <span style="font-size: 9pt">
                 <strong><span style="color: steelblue; font-family: Arial"><span style="color: steelblue">
-                Download TradeCompanion &nbsp;
+                Download Autoshark &nbsp;
                     <br />
                     <br />
                     [ Version - 1.0 / Build - 35 ]</span><asp:HyperLink ID="HyperLink2" runat="server" ImageUrl="~/Images/index2_25.jpg" NavigateUrl="~/Download/Products/TC_Setup.zip">HyperLink</asp:HyperLink><br />

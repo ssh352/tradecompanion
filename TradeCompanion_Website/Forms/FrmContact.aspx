@@ -25,7 +25,7 @@
         <td runat="server" align="center" colspan="3" style="color: #000000; height: 21px; font-size: 28pt;">
             <span style="font-size: 13pt; font-family: Arial; color: #64829A"><strong>
                                        
-                        Tradecompanion Holdings Plc
+                        Autoshark Holdings Plc
             <br />
             </strong></span>
             <p align="center" class="MsoNormal" style="margin: 0.05pt 0in 0pt; text-align: center;
@@ -44,7 +44,7 @@
             <table style="width: 494px">
                 <tr class="TDTEXT">
                     <td style="width: 135px; height: 21px;">
-                        <span><span style="font-family: Arial; font-size: 9pt;">TradeCompanion Holdings Ltd
+                        <span><span style="font-family: Arial; font-size: 9pt;">Autoshark Holdings Ltd
                         </span></span></td>
                     <td style="width: 140px; font-family: Times New Roman; height: 21px;" >
                         </td>

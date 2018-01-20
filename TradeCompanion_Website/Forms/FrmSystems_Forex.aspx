@@ -15,7 +15,7 @@
                     Introduction<br />
             </strong>
                     The future of automated trading technology is now.
-                    TradeCompanion  platform is an intellectual, quantitative 
+                    Autoshark  platform is an intellectual, quantitative 
                     dealing platform that has a systematic operation with 
                     winning tactics. It uses an applied mathematical methodology. 
                     This is the true meaning of Automation.<br />
@@ -56,8 +56,8 @@
             <font color="#000000"><span style="font-size: 9pt;" id="Span1" runat="server">
                                
                     Using a unique computer analysis program, 
-                    Tradecompanion calculates the buy and sell 
-                    signals at exactly the right moment. TradeCompanion 
+                    Autoshark calculates the buy and sell 
+                    signals at exactly the right moment. Autoshark 
                      is an automated computerized neural network 
                      that utilizes applied proprietary technology 
                      computations and arithmetical formula calculations
@@ -75,15 +75,15 @@
                 <p id="P3" align="justify" style="margin-right: 5; line-height:150%" runat=server>
             <font color="#000000"><span style="font-size: 9pt;" id="Span2" runat="server">
            
-                    TradeCompanion has  pre-programmed intellectual 
+                    Autoshark has  pre-programmed intellectual 
                     scholar ability to achieve unparalleled performance
                      with a direct dealer integrated interface. 
                      This dealer interface enables instantaneous, 
-                     multiple time ordered execution. TradeCompanion 
+                     multiple time ordered execution. Autoshark 
                      does such an exuberant amount of winning strategies, 
                      that he puts the odds of success in your favor. With 
                      a proven mathematical diversification your probability 
-                     of success with TradeCompannon is undeniable.TradeCompanion
+                     of success with TradeCompannon is undeniable.Autoshark
                        is the first of its kind. <br />
                                         
                     </span></font>
