@@ -77,7 +77,7 @@
                         <span style="font-family: Arial;font-size: 9pt">
                         <strong>
                         Email for Sales :</strong><span style="font-size: 9pt; font-family: Arial;text-decoration: underline; color:#0000ff">
-                            sales@tradecompanion.co.uk</span></span>
+                            sales@autoshark.co.uk</span></span>
                             <span style="font-size: 9pt;
                                 font-family: Arial"> </span>
                         </td>
@@ -95,7 +95,7 @@
                     <td class="TDTEXT" colspan="2" style="height: 17px">
                         <span style="font-family: Arial"><span style="font-size: 9pt">
                         <strong>Support :</strong> <span style="color: #0000ff; text-decoration: underline">
-                            support@tradecompanion.co.uk</span><span style="font-size: 9pt;
+                            support@autoshark.co.uk</span><span style="font-size: 9pt;
                                 font-family: Arial"> </span><span style="color: #0000ff; text-decoration: underline">
                             </span></span></span>
                         </td>

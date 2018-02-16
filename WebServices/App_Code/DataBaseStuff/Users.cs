@@ -270,7 +270,12 @@ namespace WebServices.Scalper.DatabaseStuff
                
                 objCmd = new FbCommand(sql);
 
-                objCmd.Parameters.Add(paramLoginID);
+                FbParameter paramLogID;
+                paramLogID = new FbParameter("@LoginID", FbDbType.VarChar, 50);
+                paramLogID.Value = loginId;
+                objCmd.Parameters.Add(paramLogID);
+
+                //objCmd.Parameters.Add(paramLoginID);
 
                 FbParameter paramUsername;
                 paramUsername = new FbParameter("@Username", FbDbType.VarChar, 20);
@@ -285,7 +290,12 @@ namespace WebServices.Scalper.DatabaseStuff
                 objCmd.Parameters.Add(paramPwd);
 
 
-                objCmd.Parameters.Add(paramEmailId);
+
+                FbParameter paramEmaId;
+                paramEmaId = new FbParameter("@EmailId", FbDbType.VarChar, 50);
+                paramEmaId.Value = emailId;
+                objCmd.Parameters.Add(paramEmaId);
+                //objCmd.Parameters.Add(paramEmailId);
 
                 FbParameter paramPhoneno;
                 paramPhoneno = new FbParameter("@Phoneno", FbDbType.VarChar, 20);
@@ -329,23 +339,23 @@ namespace WebServices.Scalper.DatabaseStuff
 
                 if (result == 1)
                 {
-                        string subject = "[BGC Trade Companion] User Info Request";
+                        string subject = "AutoShark User Info Request";
 
                         String Body = "Hi ," + Environment.NewLine +
                         "A request was made to send you your  password for the" + Environment.NewLine +
-                        "BGC Trade Companion Login. Your details are as follows:" + Environment.NewLine + Environment.NewLine +
+                        "AutoShark Login. Your details are as follows:" + Environment.NewLine + Environment.NewLine +
                         "Loginid    : " + loginId + Environment.NewLine +
                         "Password    : " + pwd + Environment.NewLine + Environment.NewLine + Environment.NewLine +
-                        "Regards, " + Environment.NewLine + "-BGC";
-                        bool mailed = Utils.SendEmail(emailId, "UserInfo@tradercompanion.co.uk", subject, Body,"");
+                        "Regards, " + Environment.NewLine + "-AutoShark";
+                        bool mailed = Utils.SendEmail(emailId, "info@autoshark.co.uk", subject, Body,"");
                         
                         if (mailed)
                         {
                             //send the email to franco about signing up
                             //send the new password by email
-                            subject = "[BGC Trade Companion] NewUser Signup";
+                            subject = "AutoShark NewUser Signup";
                             Body = emailText;
-                            mailed = Utils.SendEmail("gireesh21@gmail.com", "NewUserSignupInfo@scalper.co.uk", subject, Body, "sales@bgcfx.com");
+                            mailed = Utils.SendEmail("franco@autoshark.co.uk", "info@autoshark.co.uk", subject, Body, "rahul.sax@gmail.com");
                             //Logclass.WriteDebuglog("(AddUser)Email Sent to emailid" + emailId);
                             //Logclass.WriteDebuglog("used SQL" + sql );
                         }

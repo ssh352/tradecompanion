@@ -536,7 +536,9 @@
       <DependentUpon>WarningDuplicateAlerts.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="My Project\Settings.settings">
       <CustomToolNamespace>My</CustomToolNamespace>
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -784,6 +786,7 @@
     </Content>
     <Content Include="TradeCompanion.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="TradeCompanionArielBGC.mdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

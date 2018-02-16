@@ -1,0 +1,383 @@
+2018-02-13 23:38:38,143 [4156] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@rediffmail.com
+Name: 4566 
+Address: 44633
+Town/City: 3456
+Country: 3336
+
+CONTACT INFO
+
+Telephone: 346
+Email Address: rahul_kiit@rediffmail.com
+
+
+2018-02-13 23:38:40,406 [4156] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-13 23:38:40,520 [4156] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-13 23:38:40,530 [4156] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-13 23:38:40,535 [4156] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-13 23:46:09,102 [11088] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@rediffmail.com
+Name: wetf 
+Address: dfg
+Town/City: w
+Country: eer
+
+CONTACT INFO
+
+Telephone: 344656
+Email Address: rahul_kiit@rediffmail.com
+
+
+2018-02-13 23:48:55,921 [11088] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-13 23:48:56,094 [11088] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-13 23:48:56,122 [11088] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-13 23:48:56,134 [11088] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-13 23:50:39,195 [8728] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@rediffmail.com
+Name: 489506 596y
+Address: 99
+Town/City: 95906
+Country: 9490
+
+CONTACT INFO
+
+Telephone: 5900
+Email Address: rahul_kiit@rediffmail.com
+
+
+2018-02-13 23:50:39,221 [8728] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-13 23:50:39,281 [8728] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-13 23:50:39,296 [8728] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-13 23:50:39,311 [8728] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-13 23:52:28,305 [11508] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@redif.com
+Name: 39045 
+Address: 4i995
+Town/City: 93900
+Country: 49950
+
+CONTACT INFO
+
+Telephone: 499900
+Email Address: rahul_kiit@redif.com
+
+
+2018-02-13 23:54:08,167 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-13 23:54:11,065 [7412] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@redif.com
+Name: 39045 
+Address: 4i995
+Town/City: 93900
+Country: 49950
+
+CONTACT INFO
+
+Telephone: 499900
+Email Address: rahul_kiit@redif.com
+
+
+2018-02-13 23:54:11,077 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-13 23:55:46,529 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:19:05,713 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:19:08,062 [7412] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-14 09:19:08,079 [7412] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:19:08,105 [7412] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:19:08,119 [7412] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:21:02,871 [11508] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@rediffmail.com
+Name: 11224 
+Address: 234
+Town/City: 334
+Country: 334
+
+CONTACT INFO
+
+Telephone: 3345
+Email Address: rahul_kiit@rediffmail.com
+
+
+2018-02-14 09:21:18,111 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-14 09:21:18,145 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:21:53,922 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:21:53,935 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:26:30,033 [11508] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@rediffmail.com
+Name: 123 
+Address: 123
+Town/City: 233
+Country: 234
+
+CONTACT INFO
+
+Telephone: 234
+Email Address: rahul_kiit@rediffmail.com
+
+
+2018-02-14 09:26:41,930 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-14 09:26:41,971 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:26:54,109 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:26:54,121 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:31:21,017 [11508] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@rediffmail.com
+Name: 234 
+Address: 234
+Town/City: 234
+Country: 334
+
+CONTACT INFO
+
+Telephone: 234
+Email Address: rahul_kiit@rediffmail.com
+
+
+2018-02-14 09:31:21,223 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-14 09:31:21,237 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:31:40,042 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:31:40,054 [11508] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:34:44,594 [9924] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@rre.com
+Name: 334 
+Address: 234
+Town/City: 234
+Country: 234
+
+CONTACT INFO
+
+Telephone: 334
+Email Address: rahul_kiit@rre.com
+
+
+2018-02-14 09:34:44,831 [9924] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-14 09:34:44,845 [9924] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:34:46,507 [9924] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:34:46,518 [9924] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:34:54,684 [9924] INFO  Logclass [(null)] - (ExecuteSQLCommandNQ) SQL Failed insert into users (id,loginid, username,passwords, emailid,phoneno,actives,loggedin,address,RegistrationDate,Trial,Lastupdated) values (gen_id(gen_users_id, 1), @LoginId,@Username,@Password,@EmailId,@Phoneno,@Actives,@Loggedin,@Address,@RegistrationDate,@Trial,@Lastupdated);
+2018-02-14 09:34:54,709 [9924] INFO  Logclass [(null)] - (ExecuteSQLCommandNQ)Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 13   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteNonQuery()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLCommandNQ() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 96
+2018-02-14 09:41:46,628 [8924] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: rahul_kiit@rediffmail.com
+Name: 234 
+Address: 234
+Town/City: 234
+Country: 334
+
+CONTACT INFO
+
+Telephone: 334
+Email Address: rahul_kiit@rediffmail.com
+
+
+2018-02-14 09:41:46,828 [8924] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-14 09:41:46,853 [8924] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:41:59,960 [8924] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:41:59,971 [8924] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:42:03,070 [8924] INFO  Logclass [(null)] - (ExecuteSQLCommandNQ) SQL Failed insert into users (id,loginid, username,passwords, emailid,phoneno,actives,loggedin,address,RegistrationDate,Trial,Lastupdated) values (gen_id(gen_users_id, 1), @LoginId,@Username,@Password,@EmailId,@Phoneno,@Actives,@Loggedin,@Address,@RegistrationDate,@Trial,@Lastupdated);
+2018-02-14 09:42:03,082 [8924] INFO  Logclass [(null)] - (ExecuteSQLCommandNQ)Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 13   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteNonQuery()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLCommandNQ() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 96
+2018-02-14 09:42:23,325 [8924] INFO  Logclass [(null)] - (SendEmail)Sending Email to rahul_kiit@rediffmail.com
+2018-02-14 09:45:00,446 [8924] INFO  Logclass [(null)] - (SendEmail)Exception Sending EmailThe SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+2018-02-14 09:45:00,551 [8924] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT max(ID) from users;
+2018-02-14 09:45:00,570 [8924] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 21   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:45:41,167 [13264] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: tgyhh@jffkf.com
+Name: 234 
+Address: 334
+Town/City: 234
+Country: 234
+
+CONTACT INFO
+
+Telephone: 234
+Email Address: tgyhh@jffkf.com
+
+
+2018-02-14 09:45:41,218 [13264] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-14 09:45:41,232 [13264] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:45:41,259 [13264] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:45:41,273 [13264] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:45:42,751 [13264] INFO  Logclass [(null)] - (ExecuteSQLCommandNQ) SQL Failed insert into users (id,loginid, username,passwords, emailid,phoneno,actives,loggedin,address,RegistrationDate,Trial,Lastupdated) values (gen_id(gen_users_id, 1), @LoginId,@Username,@Password,@EmailId,@Phoneno,@Actives,@Loggedin,@Address,@RegistrationDate,@Trial,@Lastupdated);
+2018-02-14 09:45:42,761 [13264] INFO  Logclass [(null)] - (ExecuteSQLCommandNQ)Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 13   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteNonQuery()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLCommandNQ() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 96
+2018-02-14 09:45:44,281 [13264] INFO  Logclass [(null)] - (SendEmail)Sending Email to tgyhh@jffkf.com
+2018-02-14 09:45:52,473 [13264] INFO  Logclass [(null)] - (SendEmail)Email sent totgyhh@jffkf.com
+2018-02-14 09:45:52,506 [13264] INFO  Logclass [(null)] - (SendEmail)Sending Email to gireesh21@gmail.com
+2018-02-14 09:46:01,893 [13264] INFO  Logclass [(null)] - (SendEmail)Email sent togireesh21@gmail.com
+2018-02-14 09:46:01,936 [13264] INFO  Logclass [(null)] -  Return Result
+2018-02-14 09:46:59,903 [12908] INFO  Logclass [(null)] - emailtextPERSONAL DETAILS
+
+Loginid: sukirtirahulsaxena@gmail.com
+Name: rahul 
+Address: 334
+Town/City: 234
+Country: 234
+
+CONTACT INFO
+
+Telephone: 234
+Email Address: sukirtirahulsaxena@gmail.com
+
+
+2018-02-14 09:46:59,935 [12908] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE LoginID = @LoginID;
+2018-02-14 09:46:59,947 [12908] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:46:59,972 [12908] INFO  Logclass [(null)] - (ExecuteSQLScalar) SQL Failed SELECT COUNT(*) FROM USERS WHERE emailid = @EmailId;
+2018-02-14 09:46:59,985 [12908] INFO  Logclass [(null)] - (ExecuteSQLScalar) Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 28   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteScalar()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLScalar() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 133
+2018-02-14 09:47:01,578 [12908] INFO  Logclass [(null)] - (ExecuteSQLCommandNQ) SQL Failed insert into users (id,loginid, username,passwords, emailid,phoneno,actives,loggedin,address,RegistrationDate,Trial,Lastupdated) values (gen_id(gen_users_id, 1), @LoginId,@Username,@Password,@EmailId,@Phoneno,@Actives,@Loggedin,@Address,@RegistrationDate,@Trial,@Lastupdated);
+2018-02-14 09:47:01,588 [12908] INFO  Logclass [(null)] - (ExecuteSQLCommandNQ)Error Dynamic SQL Error
+SQL error code = -204
+Table unknown
+USERS
+At line 1, column 13   at FirebirdSql.Data.FirebirdClient.FbCommand.ExecuteNonQuery()
+   at WebServices.Scalper.DatabaseStuff.Connection.ExecuteSQLCommandNQ() in e:\franco\tradecompanion\WebServices\App_Code\DataBaseStuff\Connection.cs:line 96
+2018-02-14 09:47:03,244 [12908] INFO  Logclass [(null)] - (SendEmail)Sending Email to sukirtirahulsaxena@gmail.com
+2018-02-14 09:47:12,125 [12908] INFO  Logclass [(null)] - (SendEmail)Email sent tosukirtirahulsaxena@gmail.com
+2018-02-14 09:47:12,155 [12908] INFO  Logclass [(null)] - (SendEmail)Sending Email to gireesh21@gmail.com
+2018-02-14 09:47:20,537 [12908] INFO  Logclass [(null)] - (SendEmail)Email sent togireesh21@gmail.com
+2018-02-14 09:47:20,566 [12908] INFO  Logclass [(null)] -  Return Result

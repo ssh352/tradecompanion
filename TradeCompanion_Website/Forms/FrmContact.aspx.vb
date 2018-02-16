@@ -2,8 +2,8 @@
 Partial Class Forms_FrmContact
     Inherits System.Web.UI.Page
 
-    Dim ObjClsInputValidity As ClsInputValidity
-    Dim ObjClsMail As New ClsMail
+    ' ObjClsInputValidity As ClsInputValidity
+    'Dim ObjClsMail As New ClsMail
 
     Dim MailSub, MailTo, MailFrom, MailBody, ServerName As String
 
@@ -21,9 +21,9 @@ Partial Class Forms_FrmContact
             Response.Write("<script language='javascript'>alert ('Please Enter EMail Address');</script>")
             Exit Sub
         Else
-            ObjClsInputValidity = New ClsInputValidity
+            'ObjClsInputValidity = New ClsInputValidity
 
-            ValidityFlag = ObjClsInputValidity.EmailInputValidate(TxtEMailID.Text)
+            'ValidityFlag = ObjClsInputValidity.EmailInputValidate(TxtEMailID.Text)
             If ValidityFlag = False Then
                 Response.Write("<script language='javascript'>alert ('Please Enter Valid EMail Address');</script>")
                 TxtEMailID.Text = ""
@@ -94,9 +94,9 @@ Partial Class Forms_FrmContact
 
         '************************************************************************
 
-        ObjClsMail = New ClsMail
+        'ObjClsMail = New ClsMail
 
-        Flag = ObjClsMail.SendMail(MailSub, MailTo, MailFrom, "", MailBody, ServerName)
+        'Flag = ObjClsMail.SendMail(MailSub, MailTo, MailFrom, "", MailBody, ServerName)
 
         If Flag = True Then
 

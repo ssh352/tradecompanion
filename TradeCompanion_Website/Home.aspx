@@ -1146,8 +1146,16 @@
 
       <td colspan="34" width="778" style="height: 132px">
 
-      <img src="images/index2_79.jpg" border="0" usemap="#Map" width="778" height="132"></td>
-
+      <!--<img src="images/index2_79.jpg" border="0" usemap="#Map" width="778" height="132"></td>-->
+      <p align="center" style="margin-right: 5; line-height:150%" >
+               <font color="#808080"><span style="font-size: 12pt;">
+                www.autoshark.co.uk - TradeStation Technologies Reseller  </br>  
+               Tel: London + 44 208 144 5476 - Mobile + 44 798 565 0067</br>
+                TradeCompanion Holding Ltd, 36 Spital Square</br>
+                London E16DY</br> </br> 
+                Copyright @2018</br>
+                </span></font>
+            </p>
       <td width="1" style="height: 132px"><img src="images/spacer.gif" width="1" height="132" ></td>
 
     </tr>

@@ -151,6 +151,7 @@ Public Class Form1
         Me.dtpStartDate = New System.Windows.Forms.DateTimePicker()
         Me.lblToDate = New System.Windows.Forms.Label()
         Me.btnPlaceOrder = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnDisconnect = New System.Windows.Forms.Button()
         Me.grpExecutionMode = New System.Windows.Forms.GroupBox()
         Me.rbAuto = New System.Windows.Forms.RadioButton()
@@ -185,6 +186,7 @@ Public Class Form1
         Me.TabControl1 = New Crownwood.Magic.Controls.TabControl()
         Me.TabOrders = New Crownwood.Magic.Controls.TabPage()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.pbxMarketDataStatus = New System.Windows.Forms.PictureBox()
         Me.btnSubscribeMarketData = New System.Windows.Forms.Button()
         Me.btnDisconnectMarketData = New System.Windows.Forms.Button()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
@@ -203,20 +205,20 @@ Public Class Form1
         Me.RestoreToolStrip = New System.Windows.Forms.ToolStripMenuItem()
         Me.MinimizeToolStrip = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStrip = New System.Windows.Forms.ToolStripMenuItem()
-        Me.pbxMarketDataStatus = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         TabAlerts = New Crownwood.Magic.Controls.TabPage()
         TabAlerts.SuspendLayout()
         CType(Me.grdAlerts, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.grpFilter.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpExecutionMode.SuspendLayout()
         Me.mnuMain.SuspendLayout()
         Me.TabOrders.SuspendLayout()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
+        CType(Me.pbxMarketDataStatus, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer2.Panel1.SuspendLayout()
         Me.SplitContainer2.Panel2.SuspendLayout()
         Me.SplitContainer2.SuspendLayout()
@@ -228,8 +230,6 @@ Public Class Form1
         Me.TabLog.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
-        CType(Me.pbxMarketDataStatus, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabAlerts
@@ -238,7 +238,7 @@ Public Class Form1
         TabAlerts.Location = New System.Drawing.Point(0, 0)
         TabAlerts.Name = "TabAlerts"
         TabAlerts.Selected = False
-        TabAlerts.Size = New System.Drawing.Size(1190, 534)
+        TabAlerts.Size = New System.Drawing.Size(1192, 556)
         TabAlerts.TabIndex = 1
         TabAlerts.Title = "Alerts"
         '
@@ -249,7 +249,7 @@ Public Class Form1
         Me.grdAlerts.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.grdAlerts.Location = New System.Drawing.Point(0, 0)
         Me.grdAlerts.Name = "grdAlerts"
-        Me.grdAlerts.Size = New System.Drawing.Size(1190, 534)
+        Me.grdAlerts.Size = New System.Drawing.Size(1192, 556)
         Me.grdAlerts.TabIndex = 0
         '
         'Panel1
@@ -263,9 +263,9 @@ Public Class Form1
         Me.Panel1.Controls.Add(Me.btnDisconnect)
         Me.Panel1.Controls.Add(Me.grpExecutionMode)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 28)
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1190, 105)
+        Me.Panel1.Size = New System.Drawing.Size(1192, 91)
         Me.Panel1.TabIndex = 2
         Me.Panel1.Tag = ""
         '
@@ -277,9 +277,9 @@ Public Class Form1
         Me.btnConnect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.btnConnect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnConnect.Location = New System.Drawing.Point(596, 7)
+        Me.btnConnect.Location = New System.Drawing.Point(497, 6)
         Me.btnConnect.Name = "btnConnect"
-        Me.btnConnect.Size = New System.Drawing.Size(142, 33)
+        Me.btnConnect.Size = New System.Drawing.Size(118, 29)
         Me.btnConnect.TabIndex = 8
         Me.btnConnect.Text = " Connect Trade"
         Me.btnConnect.UseVisualStyleBackColor = False
@@ -288,18 +288,18 @@ Public Class Form1
         '
         Me.GroupBox2.Controls.Add(Me.StatusPanel)
         Me.GroupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GroupBox2.Location = New System.Drawing.Point(378, 2)
+        Me.GroupBox2.Location = New System.Drawing.Point(315, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(212, 101)
+        Me.GroupBox2.Size = New System.Drawing.Size(177, 87)
         Me.GroupBox2.TabIndex = 21
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Connection Status"
         '
         'StatusPanel
         '
-        Me.StatusPanel.Location = New System.Drawing.Point(7, 17)
+        Me.StatusPanel.Location = New System.Drawing.Point(6, 15)
         Me.StatusPanel.Name = "StatusPanel"
-        Me.StatusPanel.Size = New System.Drawing.Size(198, 79)
+        Me.StatusPanel.Size = New System.Drawing.Size(165, 68)
         Me.StatusPanel.TabIndex = 21
         '
         'grpFilter
@@ -310,9 +310,9 @@ Public Class Form1
         Me.grpFilter.Controls.Add(Me.btnGetOrders)
         Me.grpFilter.Controls.Add(Me.dtpStartDate)
         Me.grpFilter.Controls.Add(Me.lblToDate)
-        Me.grpFilter.Location = New System.Drawing.Point(728, 7)
+        Me.grpFilter.Location = New System.Drawing.Point(607, 6)
         Me.grpFilter.Name = "grpFilter"
-        Me.grpFilter.Size = New System.Drawing.Size(282, 92)
+        Me.grpFilter.Size = New System.Drawing.Size(235, 80)
         Me.grpFilter.TabIndex = 20
         Me.grpFilter.TabStop = False
         Me.grpFilter.Text = "Filter Orders"
@@ -324,9 +324,9 @@ Public Class Form1
         Me.btnExport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.btnExport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExport.Location = New System.Drawing.Point(186, 53)
+        Me.btnExport.Location = New System.Drawing.Point(155, 46)
         Me.btnExport.Name = "btnExport"
-        Me.btnExport.Size = New System.Drawing.Size(88, 25)
+        Me.btnExport.Size = New System.Drawing.Size(73, 22)
         Me.btnExport.TabIndex = 23
         Me.btnExport.Text = "Export"
         Me.btnExport.UseVisualStyleBackColor = False
@@ -335,18 +335,18 @@ Public Class Form1
         '
         Me.dtpEndDate.CustomFormat = "MM/dd/yyyy"
         Me.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpEndDate.Location = New System.Drawing.Point(46, 53)
+        Me.dtpEndDate.Location = New System.Drawing.Point(38, 46)
         Me.dtpEndDate.Name = "dtpEndDate"
         Me.dtpEndDate.ShowCheckBox = True
-        Me.dtpEndDate.Size = New System.Drawing.Size(133, 22)
+        Me.dtpEndDate.Size = New System.Drawing.Size(111, 20)
         Me.dtpEndDate.TabIndex = 22
         '
         'lblFromDate
         '
         Me.lblFromDate.AutoSize = True
-        Me.lblFromDate.Location = New System.Drawing.Point(6, 22)
+        Me.lblFromDate.Location = New System.Drawing.Point(5, 19)
         Me.lblFromDate.Name = "lblFromDate"
-        Me.lblFromDate.Size = New System.Drawing.Size(40, 17)
+        Me.lblFromDate.Size = New System.Drawing.Size(30, 13)
         Me.lblFromDate.TabIndex = 15
         Me.lblFromDate.Text = "From"
         '
@@ -357,9 +357,9 @@ Public Class Form1
         Me.btnGetOrders.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.btnGetOrders.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.btnGetOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGetOrders.Location = New System.Drawing.Point(186, 16)
+        Me.btnGetOrders.Location = New System.Drawing.Point(155, 14)
         Me.btnGetOrders.Name = "btnGetOrders"
-        Me.btnGetOrders.Size = New System.Drawing.Size(88, 26)
+        Me.btnGetOrders.Size = New System.Drawing.Size(73, 22)
         Me.btnGetOrders.TabIndex = 19
         Me.btnGetOrders.Text = "Get Orders"
         Me.btnGetOrders.UseVisualStyleBackColor = False
@@ -368,18 +368,18 @@ Public Class Form1
         '
         Me.dtpStartDate.CustomFormat = "MM/dd/yyyy"
         Me.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpStartDate.Location = New System.Drawing.Point(46, 17)
+        Me.dtpStartDate.Location = New System.Drawing.Point(38, 15)
         Me.dtpStartDate.Name = "dtpStartDate"
         Me.dtpStartDate.ShowCheckBox = True
-        Me.dtpStartDate.Size = New System.Drawing.Size(133, 22)
+        Me.dtpStartDate.Size = New System.Drawing.Size(111, 20)
         Me.dtpStartDate.TabIndex = 16
         '
         'lblToDate
         '
         Me.lblToDate.AutoSize = True
-        Me.lblToDate.Location = New System.Drawing.Point(7, 54)
+        Me.lblToDate.Location = New System.Drawing.Point(6, 47)
         Me.lblToDate.Name = "lblToDate"
-        Me.lblToDate.Size = New System.Drawing.Size(25, 17)
+        Me.lblToDate.Size = New System.Drawing.Size(20, 13)
         Me.lblToDate.TabIndex = 17
         Me.lblToDate.Text = "To"
         '
@@ -391,13 +391,23 @@ Public Class Form1
         Me.btnPlaceOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.btnPlaceOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.btnPlaceOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnPlaceOrder.Location = New System.Drawing.Point(596, 72)
+        Me.btnPlaceOrder.Location = New System.Drawing.Point(497, 62)
         Me.btnPlaceOrder.Name = "btnPlaceOrder"
-        Me.btnPlaceOrder.Size = New System.Drawing.Size(129, 33)
+        Me.btnPlaceOrder.Size = New System.Drawing.Size(107, 29)
         Me.btnPlaceOrder.TabIndex = 11
         Me.btnPlaceOrder.Text = "Manual Order"
         Me.btnPlaceOrder.UseVisualStyleBackColor = False
         Me.btnPlaceOrder.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.TradeCompanion.My.Resources.Resources.Png_
+        Me.PictureBox1.Location = New System.Drawing.Point(848, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(144, 81)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
         'btnDisconnect
         '
@@ -407,9 +417,9 @@ Public Class Form1
         Me.btnDisconnect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.btnDisconnect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.btnDisconnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDisconnect.Location = New System.Drawing.Point(596, 39)
+        Me.btnDisconnect.Location = New System.Drawing.Point(497, 34)
         Me.btnDisconnect.Name = "btnDisconnect"
-        Me.btnDisconnect.Size = New System.Drawing.Size(159, 34)
+        Me.btnDisconnect.Size = New System.Drawing.Size(132, 29)
         Me.btnDisconnect.TabIndex = 9
         Me.btnDisconnect.Text = "Disconnect Trade"
         Me.btnDisconnect.UseVisualStyleBackColor = False
@@ -421,9 +431,9 @@ Public Class Form1
         Me.grpExecutionMode.Controls.Add(Me.rbManual)
         Me.grpExecutionMode.Controls.Add(Me.rbNoExecution)
         Me.grpExecutionMode.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpExecutionMode.Location = New System.Drawing.Point(7, 2)
+        Me.grpExecutionMode.Location = New System.Drawing.Point(6, 2)
         Me.grpExecutionMode.Name = "grpExecutionMode"
-        Me.grpExecutionMode.Size = New System.Drawing.Size(363, 103)
+        Me.grpExecutionMode.Size = New System.Drawing.Size(302, 89)
         Me.grpExecutionMode.TabIndex = 4
         Me.grpExecutionMode.TabStop = False
         Me.grpExecutionMode.Text = "Automatic Execution Mode"
@@ -434,9 +444,9 @@ Public Class Form1
         Me.rbAuto.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.rbAuto.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbAuto.ForeColor = System.Drawing.Color.Maroon
-        Me.rbAuto.Location = New System.Drawing.Point(42, 69)
+        Me.rbAuto.Location = New System.Drawing.Point(35, 60)
         Me.rbAuto.Name = "rbAuto"
-        Me.rbAuto.Size = New System.Drawing.Size(134, 24)
+        Me.rbAuto.Size = New System.Drawing.Size(106, 20)
         Me.rbAuto.TabIndex = 2
         Me.rbAuto.Text = "Automated"
         '
@@ -445,9 +455,9 @@ Public Class Form1
         Me.rbManual.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.rbManual.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbManual.ForeColor = System.Drawing.Color.Maroon
-        Me.rbManual.Location = New System.Drawing.Point(42, 45)
+        Me.rbManual.Location = New System.Drawing.Point(35, 39)
         Me.rbManual.Name = "rbManual"
-        Me.rbManual.Size = New System.Drawing.Size(244, 20)
+        Me.rbManual.Size = New System.Drawing.Size(203, 17)
         Me.rbManual.TabIndex = 1
         Me.rbManual.Text = "Manual Confirmation"
         '
@@ -456,9 +466,9 @@ Public Class Form1
         Me.rbNoExecution.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.rbNoExecution.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbNoExecution.ForeColor = System.Drawing.Color.Maroon
-        Me.rbNoExecution.Location = New System.Drawing.Point(42, 17)
+        Me.rbNoExecution.Location = New System.Drawing.Point(35, 15)
         Me.rbNoExecution.Name = "rbNoExecution"
-        Me.rbNoExecution.Size = New System.Drawing.Size(176, 25)
+        Me.rbNoExecution.Size = New System.Drawing.Size(147, 21)
         Me.rbNoExecution.TabIndex = 0
         Me.rbNoExecution.Text = "No Execution"
         '
@@ -468,7 +478,7 @@ Public Class Form1
         Me.mnuMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile, Me.ViewToolStripMenuItem, Me.SettingToolStripMenuItem, Me.mnuHelp})
         Me.mnuMain.Location = New System.Drawing.Point(0, 0)
         Me.mnuMain.Name = "mnuMain"
-        Me.mnuMain.Size = New System.Drawing.Size(1190, 28)
+        Me.mnuMain.Size = New System.Drawing.Size(1192, 24)
         Me.mnuMain.TabIndex = 8
         Me.mnuMain.Text = "MenuStrip1"
         '
@@ -476,76 +486,76 @@ Public Class Form1
         '
         Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuConnect, Me.mnuChangePassword, Me.ExitToolStripMenuItem, Me.mnuExit})
         Me.mnuFile.Name = "mnuFile"
-        Me.mnuFile.Size = New System.Drawing.Size(44, 24)
+        Me.mnuFile.Size = New System.Drawing.Size(37, 20)
         Me.mnuFile.Text = "File"
         '
         'mnuConnect
         '
         Me.mnuConnect.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MarketDataConnToolStripMenuItem, Me.TradeConnToolStripMenuItem})
         Me.mnuConnect.Name = "mnuConnect"
-        Me.mnuConnect.Size = New System.Drawing.Size(201, 26)
+        Me.mnuConnect.Size = New System.Drawing.Size(168, 22)
         Me.mnuConnect.Text = "Connect"
         '
         'MarketDataConnToolStripMenuItem
         '
         Me.MarketDataConnToolStripMenuItem.Name = "MarketDataConnToolStripMenuItem"
-        Me.MarketDataConnToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
+        Me.MarketDataConnToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.MarketDataConnToolStripMenuItem.Text = "Market Data"
         '
         'TradeConnToolStripMenuItem
         '
         Me.TradeConnToolStripMenuItem.Name = "TradeConnToolStripMenuItem"
-        Me.TradeConnToolStripMenuItem.Size = New System.Drawing.Size(166, 26)
+        Me.TradeConnToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
         Me.TradeConnToolStripMenuItem.Text = "Trade"
         '
         'mnuChangePassword
         '
         Me.mnuChangePassword.Enabled = False
         Me.mnuChangePassword.Name = "mnuChangePassword"
-        Me.mnuChangePassword.Size = New System.Drawing.Size(201, 26)
+        Me.mnuChangePassword.Size = New System.Drawing.Size(168, 22)
         Me.mnuChangePassword.Text = "Change password"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(198, 6)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(165, 6)
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(201, 26)
+        Me.mnuExit.Size = New System.Drawing.Size(168, 22)
         Me.mnuExit.Text = "Exit"
         '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StrategyPerformanceReportToolStripMenuItem, Me.MappingTableToolStripMenuItem, Me.IDMappingTableToolStripMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(53, 24)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.ViewToolStripMenuItem.Text = "View"
         '
         'StrategyPerformanceReportToolStripMenuItem
         '
         Me.StrategyPerformanceReportToolStripMenuItem.Name = "StrategyPerformanceReportToolStripMenuItem"
-        Me.StrategyPerformanceReportToolStripMenuItem.Size = New System.Drawing.Size(275, 26)
+        Me.StrategyPerformanceReportToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
         Me.StrategyPerformanceReportToolStripMenuItem.Text = "Strategy Performance Report"
         '
         'MappingTableToolStripMenuItem
         '
         Me.MappingTableToolStripMenuItem.Name = "MappingTableToolStripMenuItem"
-        Me.MappingTableToolStripMenuItem.Size = New System.Drawing.Size(275, 26)
+        Me.MappingTableToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
         Me.MappingTableToolStripMenuItem.Text = "Currency Mapping"
         '
         'IDMappingTableToolStripMenuItem
         '
         Me.IDMappingTableToolStripMenuItem.Name = "IDMappingTableToolStripMenuItem"
-        Me.IDMappingTableToolStripMenuItem.Size = New System.Drawing.Size(275, 26)
+        Me.IDMappingTableToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
         Me.IDMappingTableToolStripMenuItem.Text = "Connection Mapping"
         '
         'SettingToolStripMenuItem
         '
         Me.SettingToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UseSymbolMappingToolStripMenuItem, Me.FilterAlertsToolStripMenuItem, Me.UseDefaultTradesizeToolStripMenuItem, Me.CToolStripMenuItem, Me.ConfigurationToolStripMenuItem})
         Me.SettingToolStripMenuItem.Name = "SettingToolStripMenuItem"
-        Me.SettingToolStripMenuItem.Size = New System.Drawing.Size(74, 24)
+        Me.SettingToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.SettingToolStripMenuItem.Text = "Settings"
         '
         'UseSymbolMappingToolStripMenuItem
@@ -554,93 +564,93 @@ Public Class Form1
         Me.UseSymbolMappingToolStripMenuItem.CheckOnClick = True
         Me.UseSymbolMappingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.UseSymbolMappingToolStripMenuItem.Name = "UseSymbolMappingToolStripMenuItem"
-        Me.UseSymbolMappingToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.UseSymbolMappingToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.UseSymbolMappingToolStripMenuItem.Text = "Use Symbol Mapping"
         '
         'FilterAlertsToolStripMenuItem
         '
         Me.FilterAlertsToolStripMenuItem.CheckOnClick = True
         Me.FilterAlertsToolStripMenuItem.Name = "FilterAlertsToolStripMenuItem"
-        Me.FilterAlertsToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.FilterAlertsToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.FilterAlertsToolStripMenuItem.Text = "Filter Alerts"
         '
         'UseDefaultTradesizeToolStripMenuItem
         '
         Me.UseDefaultTradesizeToolStripMenuItem.CheckOnClick = True
         Me.UseDefaultTradesizeToolStripMenuItem.Name = "UseDefaultTradesizeToolStripMenuItem"
-        Me.UseDefaultTradesizeToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.UseDefaultTradesizeToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.UseDefaultTradesizeToolStripMenuItem.Text = "Use Default Tradesize"
         '
         'CToolStripMenuItem
         '
         Me.CToolStripMenuItem.Name = "CToolStripMenuItem"
-        Me.CToolStripMenuItem.Size = New System.Drawing.Size(224, 6)
+        Me.CToolStripMenuItem.Size = New System.Drawing.Size(184, 6)
         '
         'ConfigurationToolStripMenuItem
         '
         Me.ConfigurationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CurrenExTradeToolStripMenuItem, Me.CurrenExMarketDataToolStripMenuItem, Me.LoginTCToolStripMenuItem, Me.TradeToolStripMenuItem, Me.SoundsToolStripMenuItem})
         Me.ConfigurationToolStripMenuItem.Name = "ConfigurationToolStripMenuItem"
-        Me.ConfigurationToolStripMenuItem.Size = New System.Drawing.Size(227, 26)
+        Me.ConfigurationToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.ConfigurationToolStripMenuItem.Text = "Configuration"
         '
         'CurrenExTradeToolStripMenuItem
         '
         Me.CurrenExTradeToolStripMenuItem.Name = "CurrenExTradeToolStripMenuItem"
-        Me.CurrenExTradeToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CurrenExTradeToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
         Me.CurrenExTradeToolStripMenuItem.Text = "CurrenEx Trade"
         '
         'CurrenExMarketDataToolStripMenuItem
         '
         Me.CurrenExMarketDataToolStripMenuItem.Name = "CurrenExMarketDataToolStripMenuItem"
-        Me.CurrenExMarketDataToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CurrenExMarketDataToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
         Me.CurrenExMarketDataToolStripMenuItem.Text = "CurrenEx MarketData"
         '
         'LoginTCToolStripMenuItem
         '
         Me.LoginTCToolStripMenuItem.Name = "LoginTCToolStripMenuItem"
-        Me.LoginTCToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.LoginTCToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
         Me.LoginTCToolStripMenuItem.Text = "Login TC"
         '
         'TradeToolStripMenuItem
         '
         Me.TradeToolStripMenuItem.Name = "TradeToolStripMenuItem"
-        Me.TradeToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.TradeToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
         Me.TradeToolStripMenuItem.Text = "Trade"
         '
         'SoundsToolStripMenuItem
         '
         Me.SoundsToolStripMenuItem.Name = "SoundsToolStripMenuItem"
-        Me.SoundsToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SoundsToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
         Me.SoundsToolStripMenuItem.Text = "Sounds"
         '
         'mnuHelp
         '
         Me.mnuHelp.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuUserManual, Me.AboutTradeCompanionToolStripMenuItem})
         Me.mnuHelp.Name = "mnuHelp"
-        Me.mnuHelp.Size = New System.Drawing.Size(53, 24)
+        Me.mnuHelp.Size = New System.Drawing.Size(44, 20)
         Me.mnuHelp.Text = "Help"
         '
         'mnuUserManual
         '
         Me.mnuUserManual.Name = "mnuUserManual"
-        Me.mnuUserManual.Size = New System.Drawing.Size(247, 26)
+        Me.mnuUserManual.Size = New System.Drawing.Size(205, 22)
         Me.mnuUserManual.Text = "User Manual"
         '
         'AboutTradeCompanionToolStripMenuItem
         '
         Me.AboutTradeCompanionToolStripMenuItem.Name = "AboutTradeCompanionToolStripMenuItem"
-        Me.AboutTradeCompanionToolStripMenuItem.Size = New System.Drawing.Size(247, 26)
+        Me.AboutTradeCompanionToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
         Me.AboutTradeCompanionToolStripMenuItem.Text = "About Trade Companion"
         '
         'TabControl1
         '
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.HideTabsMode = Crownwood.Magic.Controls.TabControl.HideTabsModes.ShowAlways
-        Me.TabControl1.Location = New System.Drawing.Point(0, 133)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 115)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.SelectedTab = Me.TabOrders
-        Me.TabControl1.Size = New System.Drawing.Size(1190, 563)
+        Me.TabControl1.Size = New System.Drawing.Size(1192, 581)
         Me.TabControl1.TabIndex = 10
         Me.TabControl1.TabPages.AddRange(New Crownwood.Magic.Controls.TabPage() {Me.TabOrders, TabAlerts, Me.TabMDHistory, Me.TabLog})
         '
@@ -649,7 +659,7 @@ Public Class Form1
         Me.TabOrders.Controls.Add(Me.SplitContainer1)
         Me.TabOrders.Location = New System.Drawing.Point(0, 0)
         Me.TabOrders.Name = "TabOrders"
-        Me.TabOrders.Size = New System.Drawing.Size(1190, 534)
+        Me.TabOrders.Size = New System.Drawing.Size(1192, 556)
         Me.TabOrders.TabIndex = 0
         Me.TabOrders.Title = "Orders"
         '
@@ -670,9 +680,18 @@ Public Class Form1
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.grdIndSys)
-        Me.SplitContainer1.Size = New System.Drawing.Size(1190, 534)
-        Me.SplitContainer1.SplitterDistance = 260
+        Me.SplitContainer1.Size = New System.Drawing.Size(1192, 556)
+        Me.SplitContainer1.SplitterDistance = 270
         Me.SplitContainer1.TabIndex = 20
+        '
+        'pbxMarketDataStatus
+        '
+        Me.pbxMarketDataStatus.Location = New System.Drawing.Point(970, 7)
+        Me.pbxMarketDataStatus.Name = "pbxMarketDataStatus"
+        Me.pbxMarketDataStatus.Size = New System.Drawing.Size(23, 20)
+        Me.pbxMarketDataStatus.TabIndex = 22
+        Me.pbxMarketDataStatus.TabStop = False
+        Me.pbxMarketDataStatus.Visible = False
         '
         'btnSubscribeMarketData
         '
@@ -682,9 +701,9 @@ Public Class Form1
         Me.btnSubscribeMarketData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.btnSubscribeMarketData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.btnSubscribeMarketData.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSubscribeMarketData.Location = New System.Drawing.Point(812, 3)
+        Me.btnSubscribeMarketData.Location = New System.Drawing.Point(677, 3)
         Me.btnSubscribeMarketData.Name = "btnSubscribeMarketData"
-        Me.btnSubscribeMarketData.Size = New System.Drawing.Size(198, 37)
+        Me.btnSubscribeMarketData.Size = New System.Drawing.Size(165, 32)
         Me.btnSubscribeMarketData.TabIndex = 21
         Me.btnSubscribeMarketData.Text = "Subscribe Marketdata"
         Me.btnSubscribeMarketData.UseVisualStyleBackColor = False
@@ -697,9 +716,9 @@ Public Class Form1
         Me.btnDisconnectMarketData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.btnDisconnectMarketData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.btnDisconnectMarketData.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDisconnectMarketData.Location = New System.Drawing.Point(989, 3)
+        Me.btnDisconnectMarketData.Location = New System.Drawing.Point(824, 3)
         Me.btnDisconnectMarketData.Name = "btnDisconnectMarketData"
-        Me.btnDisconnectMarketData.Size = New System.Drawing.Size(217, 37)
+        Me.btnDisconnectMarketData.Size = New System.Drawing.Size(181, 32)
         Me.btnDisconnectMarketData.TabIndex = 20
         Me.btnDisconnectMarketData.Text = "Unsubscribe Marketdata"
         Me.btnDisconnectMarketData.UseVisualStyleBackColor = False
@@ -717,7 +736,7 @@ Public Class Form1
         'SplitContainer2.Panel2
         '
         Me.SplitContainer2.Panel2.Controls.Add(Me.OpenPositionGridEX)
-        Me.SplitContainer2.Size = New System.Drawing.Size(1190, 260)
+        Me.SplitContainer2.Size = New System.Drawing.Size(1192, 270)
         Me.SplitContainer2.SplitterDistance = 460
         Me.SplitContainer2.TabIndex = 24
         '
@@ -728,7 +747,7 @@ Public Class Form1
         Me.grdMarketData.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.grdMarketData.Location = New System.Drawing.Point(0, 0)
         Me.grdMarketData.Name = "grdMarketData"
-        Me.grdMarketData.Size = New System.Drawing.Size(460, 260)
+        Me.grdMarketData.Size = New System.Drawing.Size(460, 270)
         Me.grdMarketData.TabIndex = 19
         '
         'OpenPositionGridEX
@@ -738,7 +757,7 @@ Public Class Form1
         Me.OpenPositionGridEX.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Near
         Me.OpenPositionGridEX.Location = New System.Drawing.Point(0, 0)
         Me.OpenPositionGridEX.Name = "OpenPositionGridEX"
-        Me.OpenPositionGridEX.Size = New System.Drawing.Size(726, 260)
+        Me.OpenPositionGridEX.Size = New System.Drawing.Size(728, 270)
         Me.OpenPositionGridEX.TabIndex = 23
         Me.OpenPositionGridEX.TableHeaders = Janus.Windows.GridEX.InheritableBoolean.[True]
         '
@@ -751,7 +770,7 @@ Public Class Form1
         Me.grdIndSys.HeaderFormatStyle.TextAlignment = Janus.Windows.GridEX.TextAlignment.Center
         Me.grdIndSys.Location = New System.Drawing.Point(0, 0)
         Me.grdIndSys.Name = "grdIndSys"
-        Me.grdIndSys.Size = New System.Drawing.Size(1190, 270)
+        Me.grdIndSys.Size = New System.Drawing.Size(1192, 282)
         Me.grdIndSys.TabIndex = 0
         '
         'TabMDHistory
@@ -760,7 +779,7 @@ Public Class Form1
         Me.TabMDHistory.Location = New System.Drawing.Point(0, 0)
         Me.TabMDHistory.Name = "TabMDHistory"
         Me.TabMDHistory.Selected = False
-        Me.TabMDHistory.Size = New System.Drawing.Size(1190, 534)
+        Me.TabMDHistory.Size = New System.Drawing.Size(1192, 556)
         Me.TabMDHistory.TabIndex = 2
         Me.TabMDHistory.Title = "MD History"
         '
@@ -769,7 +788,7 @@ Public Class Form1
         Me.grdMDHistory.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grdMDHistory.Location = New System.Drawing.Point(0, 0)
         Me.grdMDHistory.Name = "grdMDHistory"
-        Me.grdMDHistory.Size = New System.Drawing.Size(1190, 534)
+        Me.grdMDHistory.Size = New System.Drawing.Size(1192, 556)
         Me.grdMDHistory.TabIndex = 0
         '
         'TabLog
@@ -778,7 +797,7 @@ Public Class Form1
         Me.TabLog.Location = New System.Drawing.Point(0, 0)
         Me.TabLog.Name = "TabLog"
         Me.TabLog.Selected = False
-        Me.TabLog.Size = New System.Drawing.Size(1190, 534)
+        Me.TabLog.Size = New System.Drawing.Size(1192, 556)
         Me.TabLog.TabIndex = 3
         Me.TabLog.Title = "Log Window"
         '
@@ -790,15 +809,15 @@ Public Class Form1
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1190, 534)
+        Me.Panel2.Size = New System.Drawing.Size(1192, 556)
         Me.Panel2.TabIndex = 0
         '
         'btnClearLog
         '
         Me.btnClearLog.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnClearLog.Location = New System.Drawing.Point(148, 487)
+        Me.btnClearLog.Location = New System.Drawing.Point(123, 515)
         Me.btnClearLog.Name = "btnClearLog"
-        Me.btnClearLog.Size = New System.Drawing.Size(115, 31)
+        Me.btnClearLog.Size = New System.Drawing.Size(96, 27)
         Me.btnClearLog.TabIndex = 2
         Me.btnClearLog.Text = "Clear"
         Me.btnClearLog.UseVisualStyleBackColor = True
@@ -806,9 +825,9 @@ Public Class Form1
         'btnExportLog
         '
         Me.btnExportLog.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnExportLog.Location = New System.Drawing.Point(11, 487)
+        Me.btnExportLog.Location = New System.Drawing.Point(9, 515)
         Me.btnExportLog.Name = "btnExportLog"
-        Me.btnExportLog.Size = New System.Drawing.Size(115, 31)
+        Me.btnExportLog.Size = New System.Drawing.Size(96, 27)
         Me.btnExportLog.TabIndex = 1
         Me.btnExportLog.Text = "Export"
         Me.btnExportLog.UseVisualStyleBackColor = True
@@ -823,7 +842,7 @@ Public Class Form1
         Me.RichTextBoxLog.Name = "RichTextBoxLog"
         Me.RichTextBoxLog.ReadOnly = True
         Me.RichTextBoxLog.ShowSelectionMargin = True
-        Me.RichTextBoxLog.Size = New System.Drawing.Size(1190, 475)
+        Me.RichTextBoxLog.Size = New System.Drawing.Size(1192, 505)
         Me.RichTextBoxLog.TabIndex = 0
         Me.RichTextBoxLog.Text = ""
         '
@@ -839,56 +858,37 @@ Public Class Form1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RestoreToolStrip, Me.MinimizeToolStrip, Me.ExitToolStrip})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(146, 82)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(124, 70)
         '
         'RestoreToolStrip
         '
         Me.RestoreToolStrip.Name = "RestoreToolStrip"
-        Me.RestoreToolStrip.Size = New System.Drawing.Size(145, 26)
+        Me.RestoreToolStrip.Size = New System.Drawing.Size(123, 22)
         Me.RestoreToolStrip.Text = "Restore"
         '
         'MinimizeToolStrip
         '
         Me.MinimizeToolStrip.Name = "MinimizeToolStrip"
-        Me.MinimizeToolStrip.Size = New System.Drawing.Size(145, 26)
+        Me.MinimizeToolStrip.Size = New System.Drawing.Size(123, 22)
         Me.MinimizeToolStrip.Text = "Minimize"
         '
         'ExitToolStrip
         '
         Me.ExitToolStrip.Name = "ExitToolStrip"
-        Me.ExitToolStrip.Size = New System.Drawing.Size(145, 26)
+        Me.ExitToolStrip.Size = New System.Drawing.Size(123, 22)
         Me.ExitToolStrip.Text = "Exit"
-        '
-        'pbxMarketDataStatus
-        '
-        Me.pbxMarketDataStatus.Location = New System.Drawing.Point(1164, 8)
-        Me.pbxMarketDataStatus.Name = "pbxMarketDataStatus"
-        Me.pbxMarketDataStatus.Size = New System.Drawing.Size(28, 23)
-        Me.pbxMarketDataStatus.TabIndex = 22
-        Me.pbxMarketDataStatus.TabStop = False
-        Me.pbxMarketDataStatus.Visible = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.TradeCompanion.My.Resources.Resources.Png_
-        Me.PictureBox1.Location = New System.Drawing.Point(1018, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(172, 94)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
-        Me.ClientSize = New System.Drawing.Size(1190, 696)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.ClientSize = New System.Drawing.Size(1192, 696)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.mnuMain)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.mnuMain
-        Me.MinimumSize = New System.Drawing.Size(1208, 135)
+        Me.MinimumSize = New System.Drawing.Size(1007, 117)
         Me.Name = "Form1"
         Me.Text = "AutoShark"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -899,6 +899,7 @@ Public Class Form1
         Me.GroupBox2.ResumeLayout(False)
         Me.grpFilter.ResumeLayout(False)
         Me.grpFilter.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpExecutionMode.ResumeLayout(False)
         Me.grpExecutionMode.PerformLayout()
         Me.mnuMain.ResumeLayout(False)
@@ -908,6 +909,7 @@ Public Class Form1
         Me.SplitContainer1.Panel1.PerformLayout()
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         Me.SplitContainer1.ResumeLayout(False)
+        CType(Me.pbxMarketDataStatus, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer2.Panel1.ResumeLayout(False)
         Me.SplitContainer2.Panel2.ResumeLayout(False)
         Me.SplitContainer2.ResumeLayout(False)
@@ -919,8 +921,6 @@ Public Class Form1
         Me.TabLog.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.ContextMenuStrip1.ResumeLayout(False)
-        CType(Me.pbxMarketDataStatus, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2150,22 +2150,22 @@ Public Class Form1
             client = New SmtpClient(ConfigurationManager.AppSettings("SmtpServer"))
             client.Port = ConfigurationManager.AppSettings("Port")
             fromAddr = New MailAddress(smtpUserID, EServerDependents.GetEServerSender(), System.Text.Encoding.UTF8)
-            ToAddr = New MailAddress(mailToAddr, "Franco Dimuccio", System.Text.Encoding.UTF8)
+            ToAddr = New MailAddress(mailToAddr, "AutoShark", System.Text.Encoding.UTF8)
 
             client.Credentials = New System.Net.NetworkCredential(smtpUserID, ConfigurationManager.AppSettings("Pass"))
-            client.EnableSsl = True
+            client.EnableSsl = False
 
             mesg = New MailMessage(fromAddr, ToAddr)
-            mesg.Subject = "Tradecompanion logs from -" + EServerDependents.GetEServerSender() + " on " + System.DateTime.Now
+            mesg.Subject = "AutoShark logs from -" + EServerDependents.GetEServerSender() + " on " + System.DateTime.Now
             mesg.SubjectEncoding = System.Text.Encoding.UTF8
-            mesg.Body = "Hi, " + vbCrLf + _
-                        "  Attached are the logs created by " + SettingsHome.getInstance().ExchangeServer + " Client. " + vbCrLf + _
-                        "  Log Details: " + vbCrLf + _
-                        "     Creation Date: " + System.DateTime.Now + vbCrLf + _
-                        "     User ID: " + EServerDependents.GetEServerSender() + vbCrLf + _
-                        "     Login IP: " + EServerDependents.GetEServerSender() + vbCrLf + _
-                        vbCrLf + vbCrLf + _
-                        "Regards, " + vbCrLf + "-TradeCompanion"
+            mesg.Body = "Hi, " + vbCrLf +
+                        "  Attached are the logs created by " + SettingsHome.getInstance().ExchangeServer + " Client. " + vbCrLf +
+                        "  Log Details: " + vbCrLf +
+                        "     Creation Date: " + System.DateTime.Now + vbCrLf +
+                        "     User ID: " + EServerDependents.GetEServerSender() + vbCrLf +
+                        "     Login IP: " + EServerDependents.GetEServerSender() + vbCrLf +
+                        vbCrLf + vbCrLf +
+                        "Regards, " + vbCrLf + "-AutoShark"
 
             mesg.BodyEncoding = System.Text.Encoding.UTF8
             Try

@@ -68,7 +68,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://81.136.209.20/WSScalper/WSScalper.asmx")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("http://109.228.52.167:4046/WSScalper.asmx")>  _
         Public ReadOnly Property TradeCompanion_WSScalper_WebServicesScalper() As String
             Get
                 Return CType(Me("TradeCompanion_WSScalper_WebServicesScalper"),String)

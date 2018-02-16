@@ -13,15 +13,15 @@ Public Class SignUP
         If (Validate()) Then
             Dim result As Integer = wsServ.AddUser(emailID, username, emailID, phoneNo, address, city, country)
             If (result = -10 Or result = -11) Then
-                MessageBox.Show("Email id already registered", "Tradercompanion")
+                MessageBox.Show("Email id already registered", "AutoShark")
             ElseIf (result = -2) Then
-                MessageBox.Show("Connection Problem, please try after some time", "Tradercompanion")
+                MessageBox.Show("Connection Problem, please try after some time", "AutoShark")
             ElseIf (result = -4) Then
-                MessageBox.Show("Email error, please try after some time", "Tradercompanion")
+                MessageBox.Show("Email error, please try after some time", "AutoShark")
             ElseIf (result = -5) Then
-                MessageBox.Show("Database error, please contact software provider", "Tradercompanion")
+                MessageBox.Show("Database error, please contact software provider", "AutoShark")
             ElseIf (result > 0) Then
-                MessageBox.Show("Thank you  for signing up, Email is sent to you with login details. ", "Tradercompanion")
+                MessageBox.Show("Thank you  for signing up, Email is sent to you with login details. ", "AutoShark")
                 'Set the Registered to true
                 Dim key As Microsoft.Win32.RegistryKey
                 key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey("SOFTWARE\\BGC\\Settings")

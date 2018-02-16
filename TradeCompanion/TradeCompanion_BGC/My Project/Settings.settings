@@ -11,7 +11,7 @@
       <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\bin\TradeCompanion.mdb</Value>
     </Setting>
     <Setting Name="TradeCompanion_WSScalper_WebServicesScalper" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://81.136.209.20/WSScalper/WSScalper.asmx</Value>
+      <Value Profile="(Default)">http://109.228.52.167:4046/WSScalper.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

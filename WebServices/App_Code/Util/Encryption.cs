@@ -66,6 +66,8 @@ namespace WebServices.Scalper.Util
             //smtpServer = "88.208.220.198";
             //smtpUserID = "logs@tradercompanion.co.uk";
             //smtpPasswd = "shusiloo";
+            //smtpUserID = "rahul.sax@gmail.com";
+            //smtpPasswd = "aloochat";
 
             //System.Configuration.ConfigurationManager.AppSettings["SMTPUserID"]
             try
@@ -76,7 +78,7 @@ namespace WebServices.Scalper.Util
                 ToAddr = new MailAddress(mailToAddr, emailto, System.Text.Encoding.UTF8);
 
                 client.Credentials = new System.Net.NetworkCredential(smtpUserID, smtpPasswd);
-                client.EnableSsl = true;
+                client.EnableSsl  = false;
 
                 mesg = new MailMessage(fromAddr, ToAddr);
                 mesg.Subject = subject;//"[BGC Trade Companion] User Info Request";
