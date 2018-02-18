@@ -633,14 +633,14 @@ Public Class Form1
         'mnuUserManual
         '
         Me.mnuUserManual.Name = "mnuUserManual"
-        Me.mnuUserManual.Size = New System.Drawing.Size(205, 22)
+        Me.mnuUserManual.Size = New System.Drawing.Size(165, 22)
         Me.mnuUserManual.Text = "User Manual"
         '
         'AboutTradeCompanionToolStripMenuItem
         '
         Me.AboutTradeCompanionToolStripMenuItem.Name = "AboutTradeCompanionToolStripMenuItem"
-        Me.AboutTradeCompanionToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
-        Me.AboutTradeCompanionToolStripMenuItem.Text = "About Trade Companion"
+        Me.AboutTradeCompanionToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.AboutTradeCompanionToolStripMenuItem.Text = "About AutoShark"
         '
         'TabControl1
         '

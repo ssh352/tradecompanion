@@ -37,10 +37,9 @@ Partial Class AboutTradeCompanion
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightBlue
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightBlue
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(419, 331)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(314, 269)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(136, 28)
+        Me.Button1.Size = New System.Drawing.Size(102, 23)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "OK"
         Me.Button1.UseVisualStyleBackColor = False
@@ -48,41 +47,37 @@ Partial Class AboutTradeCompanion
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(67, 183)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(50, 149)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(186, 17)
+        Me.Label1.Size = New System.Drawing.Size(142, 13)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "© 2006 All Rights Reserved."
+        Me.Label1.Text = "© 2018 All Rights Reserved."
         '
         'lblVersion
         '
         Me.lblVersion.AutoSize = True
-        Me.lblVersion.Location = New System.Drawing.Point(67, 140)
-        Me.lblVersion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblVersion.Location = New System.Drawing.Point(50, 114)
         Me.lblVersion.Name = "lblVersion"
-        Me.lblVersion.Size = New System.Drawing.Size(56, 17)
+        Me.lblVersion.Size = New System.Drawing.Size(42, 13)
         Me.lblVersion.TabIndex = 3
         Me.lblVersion.Text = "Version"
         '
         'RichTextBox1
         '
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Location = New System.Drawing.Point(71, 218)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RichTextBox1.Location = New System.Drawing.Point(53, 177)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(305, 142)
+        Me.RichTextBox1.Size = New System.Drawing.Size(229, 115)
         Me.RichTextBox1.TabIndex = 4
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        Me.RichTextBox1.Text = "Support: " & Global.Microsoft.VisualBasic.ChrW(10) & "Email:support@autoshark.co.uk"
         '
         'lblBuild
         '
         Me.lblBuild.AutoSize = True
-        Me.lblBuild.Location = New System.Drawing.Point(67, 162)
-        Me.lblBuild.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblBuild.Location = New System.Drawing.Point(50, 132)
         Me.lblBuild.Name = "lblBuild"
-        Me.lblBuild.Size = New System.Drawing.Size(91, 17)
+        Me.lblBuild.Size = New System.Drawing.Size(68, 13)
         Me.lblBuild.TabIndex = 5
         Me.lblBuild.Text = "Build Version"
         '
@@ -90,18 +85,17 @@ Partial Class AboutTradeCompanion
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(-1, -2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(629, 139)
+        Me.PictureBox1.Size = New System.Drawing.Size(472, 113)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
         'AboutTradeCompanion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(627, 374)
+        Me.ClientSize = New System.Drawing.Size(470, 304)
         Me.Controls.Add(Me.lblBuild)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.lblVersion)
@@ -109,12 +103,11 @@ Partial Class AboutTradeCompanion
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AboutTradeCompanion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "About Trade Companion"
+        Me.Text = "About Auto Shark"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
